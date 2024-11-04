@@ -1,0 +1,786 @@
+
+*** Running vivado
+    with args -log axi_adxcvr.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_adxcvr.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source axi_adxcvr.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1002.609 ; gain = 118.461
+Command: synth_design -top axi_adxcvr -part xczu7ev-fbvb900-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1636
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 2114.125 ; gain = 373.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:39]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 0 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 0 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized0' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 1 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized0' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized0' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 1 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized0' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized1' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 2 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized1' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized1' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 2 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized1' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized2' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 3 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized2' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized2' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 3 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized2' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized3' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 4 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized3' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized3' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 4 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized3' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized4' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 5 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized4' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized4' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 5 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized4' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized5' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 6 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized5' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized5' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 6 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized5' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized6' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 7 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized6' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized6' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 7 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized6' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized7' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 8 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized7' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized7' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 8 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized7' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized8' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 9 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized8' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized8' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 9 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized8' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized9' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 10 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized9' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized9' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 10 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized9' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized10' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 11 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized10' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized10' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 11 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized10' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized11' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 12 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized11' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized11' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 12 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized11' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized12' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 13 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized12' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized12' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 13 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized12' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized13' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 14 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized13' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized13' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 14 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized13' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized14' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 15 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized14' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized14' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 15 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized14' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized15' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 16 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized15' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized15' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 16 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized15' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized16' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 17 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized16' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized16' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 17 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized16' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized17' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 18 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized17' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized17' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 18 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized17' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized18' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 19 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized18' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized18' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 19 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized18' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized19' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 20 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized19' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized19' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 20 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized19' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized20' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 21 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized20' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized20' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 21 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized20' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized21' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 22 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized21' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized21' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 22 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized21' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized22' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 23 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized22' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized22' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 23 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized22' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized23' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 24 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized23' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized23' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 24 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized23' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized24' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 25 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized24' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized24' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 25 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized24' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized25' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 26 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized25' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized25' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 26 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized25' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized26' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 27 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized26' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized26' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 27 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized26' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized27' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 28 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized27' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized27' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 28 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized27' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized28' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 29 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized28' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized28' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 29 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized28' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized29' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 30 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized29' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized29' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 30 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized29' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mdrp__parameterized30' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+	Parameter XCVR_ID bound to: 31 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mdrp__parameterized30' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mdrp.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_mstatus__parameterized30' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+	Parameter XCVR_ID bound to: 31 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_mstatus__parameterized30' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_mstatus.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_es' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_es.v:38]
+	Parameter XCVR_TYPE bound to: 0 - type: integer 
+	Parameter TX_OR_RX_N bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_es' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_es.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axi_adxcvr_up' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_up.v:38]
+	Parameter ID bound to: 0 - type: integer 
+	Parameter NUM_OF_LANES bound to: 8 - type: integer 
+	Parameter XCVR_TYPE bound to: 0 - type: integer 
+	Parameter LINK_MODE bound to: 1 - type: integer 
+	Parameter FPGA_TECHNOLOGY bound to: 0 - type: integer 
+	Parameter FPGA_FAMILY bound to: 0 - type: integer 
+	Parameter SPEED_GRADE bound to: 0 - type: integer 
+	Parameter DEV_PACKAGE bound to: 0 - type: integer 
+	Parameter FPGA_VOLTAGE bound to: 16'b0000000000000000 
+	Parameter TX_OR_RX_N bound to: 0 - type: integer 
+	Parameter QPLL_ENABLE bound to: 1 - type: integer 
+	Parameter LPM_OR_DFE_N bound to: 1 - type: integer 
+	Parameter RATE bound to: 3'b000 
+	Parameter TX_DIFFCTRL bound to: 4'b1000 
+	Parameter TX_POSTCURSOR bound to: 5'b00000 
+	Parameter TX_PRECURSOR bound to: 5'b00000 
+	Parameter SYS_CLK_SEL bound to: 2'b11 
+	Parameter OUT_CLK_SEL bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr_up' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_up.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_axi' [C:/GitHub/jesd204/ips/axi_adxcvr/up_axi.v:38]
+	Parameter AXI_ADDRESS_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_axi' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/up_axi.v:38]
+WARNING: [Synth 8-689] width (16) of port connection 'up_axi_awaddr' does not match port width (12) of module 'up_axi' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:4322]
+WARNING: [Synth 8-689] width (16) of port connection 'up_axi_araddr' does not match port width (12) of module 'up_axi' [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:4332]
+INFO: [Synth 8-6155] done synthesizing module 'axi_adxcvr' (0#1) [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:39]
+WARNING: [Synth 8-6014] Unused sequential element up_ies_status_reg was removed.  [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr_up.v:461]
+WARNING: [Synth 8-3848] Net up_es_reset_16 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:628]
+WARNING: [Synth 8-3848] Net up_es_reset_17 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:661]
+WARNING: [Synth 8-3848] Net up_es_reset_18 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:694]
+WARNING: [Synth 8-3848] Net up_es_reset_19 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:727]
+WARNING: [Synth 8-3848] Net up_es_reset_20 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:767]
+WARNING: [Synth 8-3848] Net up_es_reset_21 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:800]
+WARNING: [Synth 8-3848] Net up_es_reset_22 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:833]
+WARNING: [Synth 8-3848] Net up_es_reset_23 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:866]
+WARNING: [Synth 8-3848] Net up_es_reset_24 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:906]
+WARNING: [Synth 8-3848] Net up_es_reset_25 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:939]
+WARNING: [Synth 8-3848] Net up_es_reset_26 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:972]
+WARNING: [Synth 8-3848] Net up_es_reset_27 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:1005]
+WARNING: [Synth 8-3848] Net up_es_reset_28 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:1045]
+WARNING: [Synth 8-3848] Net up_es_reset_29 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:1078]
+WARNING: [Synth 8-3848] Net up_es_reset_30 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:1111]
+WARNING: [Synth 8-3848] Net up_es_reset_31 in module/entity axi_adxcvr does not have driver. [C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.v:1144]
+WARNING: [Synth 8-7129] Port up_axi_awaddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_awaddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[3] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[2] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_arready in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rvalid in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[31] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[30] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[29] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[28] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[27] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[26] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[25] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[24] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[23] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[22] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[21] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[20] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[19] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[18] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[17] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[16] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[15] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[14] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[13] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[12] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[11] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[10] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[9] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[8] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[7] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[6] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[5] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[4] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[3] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[2] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[1] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rdata[0] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rresp[1] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_rresp[0] in module axi_adxcvr_es is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized30 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized30 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized30 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized30 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized30 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized30 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized26 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized26 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized26 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized26 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized26 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized26 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized24 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbserr in module axi_adxcvr_mstatus__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_prbslocked in module axi_adxcvr_mstatus__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[1] in module axi_adxcvr_mstatus__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_bufstatus[0] in module axi_adxcvr_mstatus__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_pll_locked in module axi_adxcvr_mstatus__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rst_done in module axi_adxcvr_mstatus__parameterized21 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:30 . Memory (MB): peak = 2233.180 ; gain = 492.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 2251.090 ; gain = 510.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:31 . Memory (MB): peak = 2251.090 ; gain = 510.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'up_fsm_reg' in module 'axi_adxcvr_es'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             ES_FSM_IDLE |         000000000000000000000001 |                            00000
+     ES_FSM_HOFFSET_READ |         000000000000000000000010 |                            00001
+     ES_FSM_HOFFSET_RRDY |         000000000000000000000100 |                            00010
+    ES_FSM_HOFFSET_WRITE |         000000000000000000001000 |                            00011
+     ES_FSM_HOFFSET_WRDY |         000000000000000000010000 |                            00100
+     ES_FSM_VOFFSET_READ |         000000000000000000100000 |                            00101
+     ES_FSM_VOFFSET_RRDY |         000000000000000001000000 |                            00110
+    ES_FSM_VOFFSET_WRITE |         000000000000000010000000 |                            00111
+     ES_FSM_VOFFSET_WRDY |         000000000000000100000000 |                            01000
+        ES_FSM_CTRL_READ |         000000000000001000000000 |                            01001
+        ES_FSM_CTRL_RRDY |         000000000000010000000000 |                            01010
+      ES_FSM_START_WRITE |         000000000000100000000000 |                            01011
+       ES_FSM_START_WRDY |         000000000001000000000000 |                            01100
+      ES_FSM_STATUS_READ |         000000000010000000000000 |                            01101
+      ES_FSM_STATUS_RRDY |         000000000100000000000000 |                            01110
+       ES_FSM_STOP_WRITE |         000000001000000000000000 |                            01111
+        ES_FSM_STOP_WRDY |         000000010000000000000000 |                            10000
+        ES_FSM_SCNT_READ |         000000100000000000000000 |                            10001
+        ES_FSM_SCNT_RRDY |         000001000000000000000000 |                            10010
+        ES_FSM_ECNT_READ |         000010000000000000000000 |                            10011
+        ES_FSM_ECNT_RRDY |         000100000000000000000000 |                            10100
+        ES_FSM_AXI_WRITE |         001000000000000000000000 |                            10101
+        ES_FSM_AXI_READY |         010000000000000000000000 |                            10110
+           ES_FSM_UPDATE |         100000000000000000000000 |                            10111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'up_fsm_reg' using encoding 'one-hot' in module 'axi_adxcvr_es'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:34 . Memory (MB): peak = 2320.910 ; gain = 580.031
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               29 Bit    Registers := 2     
+	               16 Bit    Registers := 225   
+	               12 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 450   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	  31 Input   32 Bit        Muxes := 1     
+	  24 Input   24 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 15    
+	   2 Input   16 Bit        Muxes := 89    
+	   3 Input   16 Bit        Muxes := 70    
+	  11 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	  11 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 83    
+	   2 Input    1 Bit        Muxes := 214   
+	   3 Input    1 Bit        Muxes := 15    
+	  11 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:23 . Memory (MB): peak = 3158.406 ; gain = 1417.527
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:24 . Memory (MB): peak = 3158.406 ; gain = 1417.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:01:26 . Memory (MB): peak = 3182.602 ; gain = 1441.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_adxcvr  | i_mstatus_ch_15/up_pll_locked_int_reg   | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_adxcvr  | i_mstatus_ch_15/up_rst_done_int_reg     | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_adxcvr  | i_mstatus_ch_15/up_prbserr_int_reg      | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_adxcvr  | i_mstatus_ch_15/up_prbslocked_int_reg   | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|axi_adxcvr  | i_mstatus_ch_15/up_bufstatus_int_reg[1] | 9      | 2     | YES          | NO                 | YES               | 2      | 0       | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY8 |     6|
+|3     |LUT1   |     2|
+|4     |LUT2   |  1078|
+|5     |LUT3   |   173|
+|6     |LUT4   |   135|
+|7     |LUT5   |   183|
+|8     |LUT6   |   857|
+|9     |SRL16E |     6|
+|10    |FDCE   |  2154|
+|11    |FDPE   |    10|
+|12    |FDRE   |   141|
+|13    |FDSE   |     2|
+|14    |IBUF   |   724|
+|15    |OBUF   |  3386|
+|16    |OBUFT  |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+------------------------------------+------+
+|      |Instance          |Module                              |Cells |
++------+------------------+------------------------------------+------+
+|1     |top               |                                    |  8874|
+|2     |  i_axi           |up_axi                              |   412|
+|3     |  i_es            |axi_adxcvr_es                       |   427|
+|4     |  i_mdrp_ch_0     |axi_adxcvr_mdrp                     |    71|
+|5     |  i_mdrp_ch_1     |axi_adxcvr_mdrp__parameterized0     |    87|
+|6     |  i_mdrp_ch_10    |axi_adxcvr_mdrp__parameterized9     |    55|
+|7     |  i_mdrp_ch_11    |axi_adxcvr_mdrp__parameterized10    |    55|
+|8     |  i_mdrp_ch_12    |axi_adxcvr_mdrp__parameterized11    |    55|
+|9     |  i_mdrp_ch_13    |axi_adxcvr_mdrp__parameterized12    |    55|
+|10    |  i_mdrp_ch_14    |axi_adxcvr_mdrp__parameterized13    |    55|
+|11    |  i_mdrp_ch_15    |axi_adxcvr_mdrp__parameterized14    |    54|
+|12    |  i_mdrp_ch_16    |axi_adxcvr_mdrp__parameterized15    |     3|
+|13    |  i_mdrp_ch_17    |axi_adxcvr_mdrp__parameterized16    |     2|
+|14    |  i_mdrp_ch_18    |axi_adxcvr_mdrp__parameterized17    |     2|
+|15    |  i_mdrp_ch_19    |axi_adxcvr_mdrp__parameterized18    |     2|
+|16    |  i_mdrp_ch_2     |axi_adxcvr_mdrp__parameterized1     |    87|
+|17    |  i_mdrp_ch_20    |axi_adxcvr_mdrp__parameterized19    |     2|
+|18    |  i_mdrp_ch_21    |axi_adxcvr_mdrp__parameterized20    |     2|
+|19    |  i_mdrp_ch_22    |axi_adxcvr_mdrp__parameterized21    |     2|
+|20    |  i_mdrp_ch_23    |axi_adxcvr_mdrp__parameterized22    |     2|
+|21    |  i_mdrp_ch_24    |axi_adxcvr_mdrp__parameterized23    |     2|
+|22    |  i_mdrp_ch_25    |axi_adxcvr_mdrp__parameterized24    |     2|
+|23    |  i_mdrp_ch_26    |axi_adxcvr_mdrp__parameterized25    |     2|
+|24    |  i_mdrp_ch_27    |axi_adxcvr_mdrp__parameterized26    |     2|
+|25    |  i_mdrp_ch_28    |axi_adxcvr_mdrp__parameterized27    |     2|
+|26    |  i_mdrp_ch_29    |axi_adxcvr_mdrp__parameterized28    |     2|
+|27    |  i_mdrp_ch_3     |axi_adxcvr_mdrp__parameterized2     |   102|
+|28    |  i_mdrp_ch_30    |axi_adxcvr_mdrp__parameterized29    |     2|
+|29    |  i_mdrp_ch_31    |axi_adxcvr_mdrp__parameterized30    |     2|
+|30    |  i_mdrp_ch_4     |axi_adxcvr_mdrp__parameterized3     |    87|
+|31    |  i_mdrp_ch_5     |axi_adxcvr_mdrp__parameterized4     |   102|
+|32    |  i_mdrp_ch_6     |axi_adxcvr_mdrp__parameterized5     |   102|
+|33    |  i_mdrp_ch_7     |axi_adxcvr_mdrp__parameterized6     |   102|
+|34    |  i_mdrp_ch_8     |axi_adxcvr_mdrp__parameterized7     |    55|
+|35    |  i_mdrp_ch_9     |axi_adxcvr_mdrp__parameterized8     |    55|
+|36    |  i_mdrp_cm_0     |axi_adxcvr_mdrp_0                   |    71|
+|37    |  i_mdrp_cm_12    |axi_adxcvr_mdrp__parameterized11_1  |    54|
+|38    |  i_mdrp_cm_16    |axi_adxcvr_mdrp__parameterized15_2  |     3|
+|39    |  i_mdrp_cm_20    |axi_adxcvr_mdrp__parameterized19_3  |     2|
+|40    |  i_mdrp_cm_24    |axi_adxcvr_mdrp__parameterized23_4  |     2|
+|41    |  i_mdrp_cm_28    |axi_adxcvr_mdrp__parameterized27_5  |     2|
+|42    |  i_mdrp_cm_4     |axi_adxcvr_mdrp__parameterized3_6   |    87|
+|43    |  i_mdrp_cm_8     |axi_adxcvr_mdrp__parameterized7_7   |    55|
+|44    |  i_mdrp_es_0     |axi_adxcvr_mdrp_8                   |    71|
+|45    |  i_mdrp_es_1     |axi_adxcvr_mdrp__parameterized0_9   |    87|
+|46    |  i_mdrp_es_10    |axi_adxcvr_mdrp__parameterized9_10  |    55|
+|47    |  i_mdrp_es_11    |axi_adxcvr_mdrp__parameterized10_11 |    55|
+|48    |  i_mdrp_es_12    |axi_adxcvr_mdrp__parameterized11_12 |    55|
+|49    |  i_mdrp_es_13    |axi_adxcvr_mdrp__parameterized12_13 |    55|
+|50    |  i_mdrp_es_14    |axi_adxcvr_mdrp__parameterized13_14 |    55|
+|51    |  i_mdrp_es_15    |axi_adxcvr_mdrp__parameterized14_15 |    43|
+|52    |  i_mdrp_es_16    |axi_adxcvr_mdrp__parameterized15_16 |     3|
+|53    |  i_mdrp_es_17    |axi_adxcvr_mdrp__parameterized16_17 |     2|
+|54    |  i_mdrp_es_18    |axi_adxcvr_mdrp__parameterized17_18 |     2|
+|55    |  i_mdrp_es_19    |axi_adxcvr_mdrp__parameterized18_19 |     2|
+|56    |  i_mdrp_es_2     |axi_adxcvr_mdrp__parameterized1_20  |    87|
+|57    |  i_mdrp_es_20    |axi_adxcvr_mdrp__parameterized19_21 |     2|
+|58    |  i_mdrp_es_21    |axi_adxcvr_mdrp__parameterized20_22 |     2|
+|59    |  i_mdrp_es_22    |axi_adxcvr_mdrp__parameterized21_23 |     2|
+|60    |  i_mdrp_es_23    |axi_adxcvr_mdrp__parameterized22_24 |     2|
+|61    |  i_mdrp_es_24    |axi_adxcvr_mdrp__parameterized23_25 |     2|
+|62    |  i_mdrp_es_25    |axi_adxcvr_mdrp__parameterized24_26 |     2|
+|63    |  i_mdrp_es_26    |axi_adxcvr_mdrp__parameterized25_27 |     2|
+|64    |  i_mdrp_es_27    |axi_adxcvr_mdrp__parameterized26_28 |     2|
+|65    |  i_mdrp_es_28    |axi_adxcvr_mdrp__parameterized27_29 |     2|
+|66    |  i_mdrp_es_29    |axi_adxcvr_mdrp__parameterized28_30 |     2|
+|67    |  i_mdrp_es_3     |axi_adxcvr_mdrp__parameterized2_31  |   102|
+|68    |  i_mdrp_es_30    |axi_adxcvr_mdrp__parameterized29_32 |     2|
+|69    |  i_mdrp_es_31    |axi_adxcvr_mdrp__parameterized30_33 |     2|
+|70    |  i_mdrp_es_4     |axi_adxcvr_mdrp__parameterized3_34  |    87|
+|71    |  i_mdrp_es_5     |axi_adxcvr_mdrp__parameterized4_35  |   102|
+|72    |  i_mdrp_es_6     |axi_adxcvr_mdrp__parameterized5_36  |   102|
+|73    |  i_mdrp_es_7     |axi_adxcvr_mdrp__parameterized6_37  |   102|
+|74    |  i_mdrp_es_8     |axi_adxcvr_mdrp__parameterized7_38  |    55|
+|75    |  i_mdrp_es_9     |axi_adxcvr_mdrp__parameterized8_39  |    55|
+|76    |  i_mstatus_ch_0  |axi_adxcvr_mstatus                  |    10|
+|77    |  i_mstatus_ch_1  |axi_adxcvr_mstatus__parameterized0  |    12|
+|78    |  i_mstatus_ch_10 |axi_adxcvr_mstatus__parameterized9  |     1|
+|79    |  i_mstatus_ch_11 |axi_adxcvr_mstatus__parameterized10 |     1|
+|80    |  i_mstatus_ch_12 |axi_adxcvr_mstatus__parameterized11 |     1|
+|81    |  i_mstatus_ch_13 |axi_adxcvr_mstatus__parameterized12 |     7|
+|82    |  i_mstatus_ch_14 |axi_adxcvr_mstatus__parameterized13 |    13|
+|83    |  i_mstatus_ch_15 |axi_adxcvr_mstatus__parameterized14 |     7|
+|84    |  i_mstatus_ch_2  |axi_adxcvr_mstatus__parameterized1  |    12|
+|85    |  i_mstatus_ch_3  |axi_adxcvr_mstatus__parameterized2  |    12|
+|86    |  i_mstatus_ch_4  |axi_adxcvr_mstatus__parameterized3  |    12|
+|87    |  i_mstatus_ch_5  |axi_adxcvr_mstatus__parameterized4  |    12|
+|88    |  i_mstatus_ch_6  |axi_adxcvr_mstatus__parameterized5  |    12|
+|89    |  i_mstatus_ch_7  |axi_adxcvr_mstatus__parameterized6  |     3|
+|90    |  i_mstatus_ch_8  |axi_adxcvr_mstatus__parameterized7  |     1|
+|91    |  i_mstatus_ch_9  |axi_adxcvr_mstatus__parameterized8  |     1|
+|92    |  i_up            |axi_adxcvr_up                       |  1102|
++------+------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:01:31 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 456 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:32 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:01:32 . Memory (MB): peak = 3196.234 ; gain = 1455.355
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 3208.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 731 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3254.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 725 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 724 instances
+
+Synth Design complete, checksum: ae8f4849
+INFO: [Common 17-83] Releasing license: Synthesis
+153 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:51 . Memory (MB): peak = 3254.527 ; gain = 1535.512
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/ips/axi_adxcvr/axi_adxcvr.runs/synth_1/axi_adxcvr.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_adxcvr_utilization_synth.rpt -pb axi_adxcvr_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 13:53:22 2024...
