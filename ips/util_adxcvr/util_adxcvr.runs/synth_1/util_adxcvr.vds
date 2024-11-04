@@ -1,0 +1,1366 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov  4 16:22:21 2024
+# Process ID: 18556
+# Current directory: C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.runs/synth_1
+# Command line: vivado.exe -log util_adxcvr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source util_adxcvr.tcl
+# Log file: C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.runs/synth_1/util_adxcvr.vds
+# Journal file: C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.runs/synth_1\vivado.jou
+# Running On: PSD033, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 8388 MB
+#-----------------------------------------------------------
+source util_adxcvr.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1001.395 ; gain = 118.125
+Command: synth_design -top util_adxcvr -part xczu7ev-fbvb900-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28520
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'rx_bitslip_req_s', assumed default net type 'wire' [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:490]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 3175.184 ; gain = 334.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'util_adxcvr' [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:39]
+INFO: [Synth 8-6157] synthesizing module 'util_adxcvr_xcm' [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xcm.v:38]
+	Parameter XCVR_TYPE bound to: 8 - type: integer 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL_FBDIV_RATIO bound to: 1 - type: integer 
+	Parameter POR_CFG bound to: 16'b0000000000000110 
+	Parameter PPF0_CFG bound to: 16'b0000011000000000 
+	Parameter PPF1_CFG bound to: 16'b0000011000000000 
+	Parameter QPLL_CFG bound to: 27'b000011010000000000110000001 
+	Parameter QPLL_FBDIV bound to: 10'b0000110000 
+	Parameter QPLL_CFG0 bound to: 16'b0011001100011100 
+	Parameter QPLL_CFG1 bound to: 16'b1101000000111000 
+	Parameter QPLL_CFG1_G3 bound to: 16'b1101000000111000 
+	Parameter QPLL_CFG2 bound to: 16'b0000111111000000 
+	Parameter QPLL_CFG2_G3 bound to: 16'b0000111111000000 
+	Parameter QPLL_CFG3 bound to: 16'b0000000100100000 
+	Parameter QPLL_CFG4 bound to: 16'b0000000000000011 
+	Parameter QPLL_CP_G3 bound to: 16'b0000000000011111 
+	Parameter QPLL_LPF bound to: 16'b0000000100110111 
+	Parameter QPLL_CP bound to: 16'b0000000001111111 
+INFO: [Synth 8-6157] synthesizing module 'GTHE4_COMMON' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:44340]
+	Parameter AEN_QPLL0_FBDIV bound to: 1'b1 
+	Parameter AEN_QPLL1_FBDIV bound to: 1'b1 
+	Parameter AEN_SDM0TOGGLE bound to: 1'b0 
+	Parameter AEN_SDM1TOGGLE bound to: 1'b0 
+	Parameter A_SDM0TOGGLE bound to: 1'b0 
+	Parameter A_SDM1DATA_HIGH bound to: 9'b000000000 
+	Parameter A_SDM1DATA_LOW bound to: 16'b0000000000000000 
+	Parameter A_SDM1TOGGLE bound to: 1'b0 
+	Parameter BIAS_CFG0 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG1 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG2 bound to: 16'b0000000100100100 
+	Parameter BIAS_CFG3 bound to: 16'b0000000001000001 
+	Parameter BIAS_CFG4 bound to: 16'b0000000000010000 
+	Parameter BIAS_CFG_RSVD bound to: 16'b0000000000000000 
+	Parameter COMMON_CFG0 bound to: 16'b0000000000000000 
+	Parameter COMMON_CFG1 bound to: 16'b0000000000000000 
+	Parameter POR_CFG bound to: 16'b0000000000000110 
+	Parameter PPF0_CFG bound to: 16'b0000011000000000 
+	Parameter PPF1_CFG bound to: 16'b0000011000000000 
+	Parameter QPLL0CLKOUT_RATE bound to: HALF - type: string 
+	Parameter QPLL0_CFG0 bound to: 16'b0011001100011100 
+	Parameter QPLL0_CFG1 bound to: 16'b1101000000111000 
+	Parameter QPLL0_CFG1_G3 bound to: 16'b1101000000111000 
+	Parameter QPLL0_CFG2 bound to: 16'b0000111111000000 
+	Parameter QPLL0_CFG2_G3 bound to: 16'b0000111111000000 
+	Parameter QPLL0_CFG3 bound to: 16'b0000000100100000 
+	Parameter QPLL0_CFG4 bound to: 16'b0000000000000011 
+	Parameter QPLL0_CP bound to: 10'b0001111111 
+	Parameter QPLL0_CP_G3 bound to: 10'b0000011111 
+	Parameter QPLL0_FBDIV bound to: 48 - type: integer 
+	Parameter QPLL0_FBDIV_G3 bound to: 160 - type: integer 
+	Parameter QPLL0_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter QPLL0_INIT_CFG1 bound to: 8'b00000000 
+	Parameter QPLL0_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter QPLL0_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter QPLL0_LPF bound to: 10'b0100110111 
+	Parameter QPLL0_LPF_G3 bound to: 10'b0111010101 
+	Parameter QPLL0_PCI_EN bound to: 1'b0 
+	Parameter QPLL0_RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter QPLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL0_SDM_CFG0 bound to: 16'b0000000010000000 
+	Parameter QPLL0_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter QPLL0_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter QPLL1CLKOUT_RATE bound to: HALF - type: string 
+	Parameter QPLL1_CFG0 bound to: 16'b0011001100011100 
+	Parameter QPLL1_CFG1 bound to: 16'b1101000000111000 
+	Parameter QPLL1_CFG1_G3 bound to: 16'b1101000000111000 
+	Parameter QPLL1_CFG2 bound to: 16'b0000111111000000 
+	Parameter QPLL1_CFG2_G3 bound to: 16'b0000111111000000 
+	Parameter QPLL1_CFG3 bound to: 16'b0000000100100000 
+	Parameter QPLL1_CFG4 bound to: 16'b0000000000000011 
+	Parameter QPLL1_CP bound to: 10'b1111111111 
+	Parameter QPLL1_CP_G3 bound to: 10'b0011111111 
+	Parameter QPLL1_FBDIV bound to: 48 - type: integer 
+	Parameter QPLL1_FBDIV_G3 bound to: 80 - type: integer 
+	Parameter QPLL1_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter QPLL1_INIT_CFG1 bound to: 8'b00000000 
+	Parameter QPLL1_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter QPLL1_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter QPLL1_LPF bound to: 10'b0100110101 
+	Parameter QPLL1_LPF_G3 bound to: 10'b0111010100 
+	Parameter QPLL1_PCI_EN bound to: 1'b0 
+	Parameter QPLL1_RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter QPLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL1_SDM_CFG0 bound to: 16'b0000000010000000 
+	Parameter QPLL1_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter QPLL1_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR2 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR3 bound to: 16'b0000000000000000 
+	Parameter RXRECCLKOUT0_SEL bound to: 2'b00 
+	Parameter RXRECCLKOUT1_SEL bound to: 2'b00 
+	Parameter SARC_ENB bound to: 1'b0 
+	Parameter SARC_SEL bound to: 1'b0 
+	Parameter SDM0INITSEED0_0 bound to: 16'b0000000100010001 
+	Parameter SDM0INITSEED0_1 bound to: 9'b000010001 
+	Parameter SDM1INITSEED0_0 bound to: 16'b0000000100010001 
+	Parameter SDM1INITSEED0_1 bound to: 9'b000010001 
+	Parameter SIM_MODE bound to: FAST - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTHE4_COMMON' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:44340]
+INFO: [Synth 8-6155] done synthesizing module 'util_adxcvr_xcm' (0#1) [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xcm.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_adxcvr_xch' [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:38]
+	Parameter XCVR_TYPE bound to: 8 - type: integer 
+	Parameter LINK_MODE bound to: 1 - type: integer 
+	Parameter DATA_PATH_WIDTH bound to: 4 - type: integer 
+	Parameter CPLL_FBDIV bound to: 2 - type: integer 
+	Parameter CPLL_FBDIV_4_5 bound to: 5 - type: integer 
+	Parameter CPLL_CFG0 bound to: 16'b0000000111111010 
+	Parameter CPLL_CFG1 bound to: 16'b0000000000100011 
+	Parameter CPLL_CFG2 bound to: 16'b0000000000000010 
+	Parameter CPLL_CFG3 bound to: 16'b0000000000000000 
+	Parameter CH_HSPMUX bound to: 16'b0010010000100100 
+	Parameter PREIQ_FREQ_BST bound to: 0 - type: integer 
+	Parameter RXPI_CFG0 bound to: 16'b0000000000000010 
+	Parameter RXPI_CFG1 bound to: 16'b0000000000010101 
+	Parameter RTX_BUF_CML_CTRL bound to: 3'b011 
+	Parameter TX_OUT_DIV bound to: 1 - type: integer 
+	Parameter TX_CLK25_DIV bound to: 20 - type: integer 
+	Parameter TX_POLARITY bound to: 0 - type: integer 
+	Parameter TX_PI_BIASSET bound to: 16'b0000000000000001 
+	Parameter TXPI_CFG bound to: 16'b0000000001010100 
+	Parameter A_TXDIFFCTRL bound to: 16'b0000000000010110 
+	Parameter RX_OUT_DIV bound to: 1 - type: integer 
+	Parameter RX_CLK25_DIV bound to: 20 - type: integer 
+	Parameter RX_DFE_LPM_CFG bound to: 16'b0000000100000100 
+	Parameter RX_PMA_CFG bound to: 1994880 - type: integer 
+	Parameter RX_CDR_CFG bound to: 73'b0000010110000000000000000001000111111111100010000010000000000000000100000 
+	Parameter RXCDR_CFG0 bound to: 16'b0000000000000010 
+	Parameter RXCDR_CFG2 bound to: 16'b0000001001101001 
+	Parameter RXCDR_CFG2_GEN2 bound to: 10'b1001100101 
+	Parameter RXCDR_CFG2_GEN4 bound to: 16'b0000000010110100 
+	Parameter RXCDR_CFG3 bound to: 16'b0000000000010010 
+	Parameter RXCDR_CFG3_GEN2 bound to: 6'b011010 
+	Parameter RXCDR_CFG3_GEN3 bound to: 16'b0000000000010010 
+	Parameter RXCDR_CFG3_GEN4 bound to: 16'b0000000000100100 
+	Parameter RXDFE_KH_CFG2 bound to: 16'b0000001000000000 
+	Parameter RXDFE_KH_CFG3 bound to: 16'b0100000100000001 
+	Parameter RX_WIDEMODE_CDR bound to: 2'b00 
+	Parameter RX_XMODE_SEL bound to: 1'b1 
+	Parameter TXDRV_FREQBAND bound to: 0 - type: integer 
+	Parameter TXFE_CFG0 bound to: 16'b0000001111000010 
+	Parameter TXFE_CFG1 bound to: 16'b0110110000000000 
+	Parameter TXFE_CFG2 bound to: 16'b0110110000000000 
+	Parameter TXFE_CFG3 bound to: 16'b0110110000000000 
+	Parameter TXPI_CFG0 bound to: 16'b0000001100000000 
+	Parameter TXPI_CFG1 bound to: 16'b0001000000000000 
+	Parameter TXSWBST_EN bound to: 0 - type: integer 
+	Parameter RX_POLARITY bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1258]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1258]
+INFO: [Synth 8-6157] synthesizing module 'GTHE4_CHANNEL' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:43148]
+	Parameter ACJTAG_DEBUG_MODE bound to: 1'b0 
+	Parameter ACJTAG_MODE bound to: 1'b0 
+	Parameter ACJTAG_RESET bound to: 1'b0 
+	Parameter ADAPT_CFG0 bound to: 16'b0001000000000000 
+	Parameter ADAPT_CFG1 bound to: 16'b1100100000000000 
+	Parameter ADAPT_CFG2 bound to: 16'b0000000000000000 
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b1111111111 
+	Parameter ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter A_RXOSCALRESET bound to: 1'b0 
+	Parameter A_RXPROGDIVRESET bound to: 1'b0 
+	Parameter A_RXTERMINATION bound to: 1'b1 
+	Parameter A_TXDIFFCTRL bound to: 5'b10110 
+	Parameter A_TXPROGDIVRESET bound to: 1'b0 
+	Parameter CAPBYPASS_FORCE bound to: 1'b0 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CDR_SWAP_MODE_EN bound to: 1'b0 
+	Parameter CFOK_PWRSVE_EN bound to: 1'b1 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CH_HSPMUX bound to: 16'b0010010000100100 
+	Parameter CKCAL1_CFG_0 bound to: 16'b1100000011000000 
+	Parameter CKCAL1_CFG_1 bound to: 16'b0101000011000000 
+	Parameter CKCAL1_CFG_2 bound to: 16'b0000000000001010 
+	Parameter CKCAL1_CFG_3 bound to: 16'b0000000000000000 
+	Parameter CKCAL2_CFG_0 bound to: 16'b1100000011000000 
+	Parameter CKCAL2_CFG_1 bound to: 16'b1000000011000000 
+	Parameter CKCAL2_CFG_2 bound to: 16'b0000000000000000 
+	Parameter CKCAL2_CFG_3 bound to: 16'b0000000000000000 
+	Parameter CKCAL2_CFG_4 bound to: 16'b0000000000000000 
+	Parameter CKCAL_RSVD0 bound to: 16'b0000000010000000 
+	Parameter CKCAL_RSVD1 bound to: 16'b0000010000000000 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 12 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 8 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG0 bound to: 16'b0000000111111010 
+	Parameter CPLL_CFG1 bound to: 16'b0000000000100011 
+	Parameter CPLL_CFG2 bound to: 16'b0000000000000010 
+	Parameter CPLL_CFG3 bound to: 16'b0000000000000000 
+	Parameter CPLL_FBDIV bound to: 2 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter CTLE3_OCAP_EXT_CTRL bound to: 3'b000 
+	Parameter CTLE3_OCAP_EXT_EN bound to: 1'b0 
+	Parameter DDI_CTRL bound to: 2'b00 
+	Parameter DDI_REALIGN_WAIT bound to: 15 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DELAY_ELEC bound to: 1'b0 
+	Parameter DMONITOR_CFG0 bound to: 10'b0000000000 
+	Parameter DMONITOR_CFG1 bound to: 8'b00000000 
+	Parameter ES_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: TRUE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: TRUE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER0 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER1 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER2 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER3 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER4 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER5 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER6 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER7 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER8 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER9 bound to: 16'b0000000000000000 
+	Parameter ES_QUAL_MASK0 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK1 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK2 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK3 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK4 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK5 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK6 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK7 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK8 bound to: 16'b1111111111111111 
+	Parameter ES_QUAL_MASK9 bound to: 16'b1111111111111111 
+	Parameter ES_SDATA_MASK0 bound to: 16'b1111111111111111 
+	Parameter ES_SDATA_MASK1 bound to: 16'b1111111111111111 
+	Parameter ES_SDATA_MASK2 bound to: 16'b0000000011111111 
+	Parameter ES_SDATA_MASK3 bound to: 16'b0000000000000000 
+	Parameter ES_SDATA_MASK4 bound to: 16'b0000000000000000 
+	Parameter ES_SDATA_MASK5 bound to: 16'b1111111111111111 
+	Parameter ES_SDATA_MASK6 bound to: 16'b1111111111111111 
+	Parameter ES_SDATA_MASK7 bound to: 16'b1111111111111111 
+	Parameter ES_SDATA_MASK8 bound to: 16'b1111111111111111 
+	Parameter ES_SDATA_MASK9 bound to: 16'b1111111111111111 
+	Parameter EYE_SCAN_SWAP_EN bound to: 1'b0 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 5'b00000 
+	Parameter ISCAN_CK_PH_SEL2 bound to: 1'b0 
+	Parameter LOCAL_MASTER bound to: 1'b1 
+	Parameter LPBK_BIAS_CTRL bound to: 3'b100 
+	Parameter LPBK_EN_RCAL_B bound to: 1'b0 
+	Parameter LPBK_EXT_RCAL bound to: 4'b1000 
+	Parameter LPBK_IND_CTRL0 bound to: 3'b000 
+	Parameter LPBK_IND_CTRL1 bound to: 3'b000 
+	Parameter LPBK_IND_CTRL2 bound to: 3'b000 
+	Parameter LPBK_RG_CTRL bound to: 4'b1110 
+	Parameter OOBDIVCTL bound to: 2'b00 
+	Parameter OOB_PWRUP bound to: 1'b0 
+	Parameter PCI3_AUTO_REALIGN bound to: OVR_1K_BLK - type: string 
+	Parameter PCI3_PIPE_RX_ELECIDLE bound to: 1'b0 
+	Parameter PCI3_RX_ASYNC_EBUF_BYPASS bound to: 2'b00 
+	Parameter PCI3_RX_ELECIDLE_EI2_ENABLE bound to: 1'b0 
+	Parameter PCI3_RX_ELECIDLE_H2L_COUNT bound to: 6'b000000 
+	Parameter PCI3_RX_ELECIDLE_H2L_DISABLE bound to: 3'b000 
+	Parameter PCI3_RX_ELECIDLE_HI_COUNT bound to: 6'b000000 
+	Parameter PCI3_RX_ELECIDLE_LP4_DISABLE bound to: 1'b0 
+	Parameter PCI3_RX_FIFO_DISABLE bound to: 1'b0 
+	Parameter PCIE3_CLK_COR_EMPTY_THRSH bound to: 5'b00000 
+	Parameter PCIE3_CLK_COR_FULL_THRSH bound to: 6'b010000 
+	Parameter PCIE3_CLK_COR_MAX_LAT bound to: 5'b00100 
+	Parameter PCIE3_CLK_COR_MIN_LAT bound to: 5'b00000 
+	Parameter PCIE3_CLK_COR_THRSH_TIMER bound to: 6'b001000 
+	Parameter PCIE_BUFG_DIV_CTRL bound to: 16'b0011010100000000 
+	Parameter PCIE_PLL_SEL_MODE_GEN12 bound to: 2'b10 
+	Parameter PCIE_PLL_SEL_MODE_GEN3 bound to: 2'b10 
+	Parameter PCIE_PLL_SEL_MODE_GEN4 bound to: 2'b10 
+	Parameter PCIE_RXPCS_CFG_GEN3 bound to: 16'b0000101010100101 
+	Parameter PCIE_RXPMA_CFG bound to: 16'b0010100000001010 
+	Parameter PCIE_TXPCS_CFG_GEN3 bound to: 16'b0010010010100100 
+	Parameter PCIE_TXPMA_CFG bound to: 16'b0010100000001010 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD0 bound to: 16'b0000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00011001 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PREIQ_FREQ_BST bound to: 0 - type: integer 
+	Parameter PROCESS_PAR bound to: 3'b010 
+	Parameter RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter RCLK_SIPO_DLY_ENB bound to: 1'b0 
+	Parameter RCLK_SIPO_INV_EN bound to: 1'b0 
+	Parameter RESET_POWERSAVE_DISABLE bound to: 1'b0 
+	Parameter RTX_BUF_CML_CTRL bound to: 3'b010 
+	Parameter RTX_BUF_TERM_CTRL bound to: 2'b00 
+	Parameter RXBUFRESET_TIME bound to: 5'b00011 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 57 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 3 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG0 bound to: 16'b0000000000000010 
+	Parameter RXCDR_CFG0_GEN3 bound to: 16'b0000000000000011 
+	Parameter RXCDR_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG1_GEN3 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG2 bound to: 16'b0000001001100101 
+	Parameter RXCDR_CFG2_GEN2 bound to: 10'b1001100101 
+	Parameter RXCDR_CFG2_GEN3 bound to: 16'b0000001001100101 
+	Parameter RXCDR_CFG2_GEN4 bound to: 16'b0000000010110100 
+	Parameter RXCDR_CFG3 bound to: 16'b0000000000010010 
+	Parameter RXCDR_CFG3_GEN2 bound to: 6'b011010 
+	Parameter RXCDR_CFG3_GEN3 bound to: 16'b0000000000010010 
+	Parameter RXCDR_CFG3_GEN4 bound to: 16'b0000000000100100 
+	Parameter RXCDR_CFG4 bound to: 16'b0101110011110110 
+	Parameter RXCDR_CFG4_GEN3 bound to: 16'b0101110011110110 
+	Parameter RXCDR_CFG5 bound to: 16'b1011010001101011 
+	Parameter RXCDR_CFG5_GEN3 bound to: 16'b0001010001101011 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG0 bound to: 16'b0010001000000001 
+	Parameter RXCDR_LOCK_CFG1 bound to: 16'b1001111111111111 
+	Parameter RXCDR_LOCK_CFG2 bound to: 16'b0111011111000011 
+	Parameter RXCDR_LOCK_CFG3 bound to: 16'b0000000000000001 
+	Parameter RXCDR_LOCK_CFG4 bound to: 16'b0000000000000000 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCFOK_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXCFOK_CFG1 bound to: 16'b1000000000010101 
+	Parameter RXCFOK_CFG2 bound to: 16'b0000001010101110 
+	Parameter RXCKCAL1_IQ_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter RXCKCAL1_I_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter RXCKCAL1_Q_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter RXCKCAL2_DX_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter RXCKCAL2_D_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter RXCKCAL2_S_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter RXCKCAL2_X_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDFELPM_KL_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFELPM_KL_CFG1 bound to: 16'b1010000011100010 
+	Parameter RXDFELPM_KL_CFG2 bound to: 16'b0000000100000000 
+	Parameter RXDFE_CFG0 bound to: 16'b0000101000000000 
+	Parameter RXDFE_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_GC_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_GC_CFG1 bound to: 16'b1000000000000000 
+	Parameter RXDFE_GC_CFG2 bound to: 16'b1111111111100000 
+	Parameter RXDFE_H2_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H2_CFG1 bound to: 16'b0000000000000010 
+	Parameter RXDFE_H3_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H3_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_H4_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H4_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_H5_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H5_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_H6_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H6_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_H7_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H7_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_H8_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H8_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_H9_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H9_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_HA_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HA_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_HB_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HB_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_HC_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HC_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_HD_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HD_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_HE_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HE_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_HF_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HF_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_KH_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_KH_CFG1 bound to: 16'b1000000000000000 
+	Parameter RXDFE_KH_CFG2 bound to: 16'b0010011000010011 
+	Parameter RXDFE_KH_CFG3 bound to: 16'b0100000100011100 
+	Parameter RXDFE_OS_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_OS_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXDFE_PWR_SAVING bound to: 1'b0 
+	Parameter RXDFE_UT_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_UT_CFG1 bound to: 16'b0000000000000011 
+	Parameter RXDFE_UT_CFG2 bound to: 16'b0000000000000000 
+	Parameter RXDFE_VP_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_VP_CFG1 bound to: 16'b1000000000110011 
+	Parameter RXDLY_CFG bound to: 16'b0000000000010000 
+	Parameter RXDLY_LCFG bound to: 16'b0000000000110000 
+	Parameter RXELECIDLE_CFG bound to: SIGCFG_4 - type: string 
+	Parameter RXGBOX_FIFO_INIT_RD_ADDR bound to: 4 - type: integer 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_CFG bound to: 16'b0000000000000000 
+	Parameter RXLPM_GC_CFG bound to: 16'b1000000000000000 
+	Parameter RXLPM_KH_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXLPM_KH_CFG1 bound to: 16'b0000000000000010 
+	Parameter RXLPM_OS_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXLPM_OS_CFG1 bound to: 16'b1000000000000010 
+	Parameter RXOOB_CFG bound to: 9'b000000110 
+	Parameter RXOOB_CLK_CFG bound to: PMA - type: string 
+	Parameter RXOSCALRESET_TIME bound to: 5'b00011 
+	Parameter RXOUT_DIV bound to: 1 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00011 
+	Parameter RXPHBEACON_CFG bound to: 16'b0000000000000000 
+	Parameter RXPHDLY_CFG bound to: 16'b0010000001110000 
+	Parameter RXPHSAMP_CFG bound to: 16'b0010000100000000 
+	Parameter RXPHSLIP_CFG bound to: 16'b1001100100110011 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPI_AUTO_BW_SEL_BYPASS bound to: 1'b0 
+	Parameter RXPI_CFG0 bound to: 16'b0000000000000010 
+	Parameter RXPI_CFG1 bound to: 16'b0000000000010101 
+	Parameter RXPI_LPM bound to: 1'b0 
+	Parameter RXPI_SEL_LC bound to: 2'b00 
+	Parameter RXPI_STARTCODE bound to: 2'b00 
+	Parameter RXPI_VREFSEL bound to: 1'b0 
+	Parameter RXPMACLK_SEL bound to: DATA - type: string 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXPRBS_LINKACQ_CNT bound to: 15 - type: integer 
+	Parameter RXREFCLKDIV2_SEL bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RXSYNC_MULTILANE bound to: 1'b1 
+	Parameter RXSYNC_OVRD bound to: 1'b0 
+	Parameter RXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter RX_AFE_CM_EN bound to: 1'b0 
+	Parameter RX_BIAS_CFG0 bound to: 16'b0001010101010100 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CAPFF_SARC_ENB bound to: 1'b0 
+	Parameter RX_CLK25_DIV bound to: 20 - type: integer 
+	Parameter RX_CLKMUX_EN bound to: 1'b1 
+	Parameter RX_CLK_SLIP_OVRD bound to: 5'b00000 
+	Parameter RX_CM_BUF_CFG bound to: 4'b1010 
+	Parameter RX_CM_BUF_PD bound to: 1'b0 
+	Parameter RX_CM_SEL bound to: 3 - type: integer 
+	Parameter RX_CM_TRIM bound to: 10 - type: integer 
+	Parameter RX_CTLE3_LPF bound to: 8'b11111111 
+	Parameter RX_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DEGEN_CTRL bound to: 3'b011 
+	Parameter RX_DFELPM_CFG0 bound to: 6 - type: integer 
+	Parameter RX_DFELPM_CFG1 bound to: 1'b1 
+	Parameter RX_DFELPM_KLKH_AGC_STUP_EN bound to: 1'b1 
+	Parameter RX_DFE_AGC_CFG0 bound to: 2'b10 
+	Parameter RX_DFE_AGC_CFG1 bound to: 4 - type: integer 
+	Parameter RX_DFE_KL_LPM_KH_CFG0 bound to: 1 - type: integer 
+	Parameter RX_DFE_KL_LPM_KH_CFG1 bound to: 4 - type: integer 
+	Parameter RX_DFE_KL_LPM_KL_CFG0 bound to: 2'b01 
+	Parameter RX_DFE_KL_LPM_KL_CFG1 bound to: 4 - type: integer 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_DIV2_MODE_B bound to: 1'b0 
+	Parameter RX_DIVRESET_TIME bound to: 5'b00001 
+	Parameter RX_EN_CTLE_RCAL_B bound to: 1'b0 
+	Parameter RX_EN_HI_LR bound to: 1'b1 
+	Parameter RX_EXT_RL_CTRL bound to: 9'b000000000 
+	Parameter RX_EYESCAN_VS_CODE bound to: 7'b0000000 
+	Parameter RX_EYESCAN_VS_NEG_DIR bound to: 1'b0 
+	Parameter RX_EYESCAN_VS_RANGE bound to: 2'b00 
+	Parameter RX_EYESCAN_VS_UT_SIGN bound to: 1'b0 
+	Parameter RX_FABINT_USRCLK_FLOP bound to: 1'b0 
+	Parameter RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter RX_PMA_POWER_SAVE bound to: 1'b0 
+	Parameter RX_PMA_RSV0 bound to: 16'b0000000000000000 
+	Parameter RX_PROGDIV_CFG bound to: 0.000000 - type: double 
+	Parameter RX_PROGDIV_RATE bound to: 16'b0000000000000001 
+	Parameter RX_RESLOAD_CTRL bound to: 4'b0000 
+	Parameter RX_RESLOAD_OVRD bound to: 1'b0 
+	Parameter RX_SAMPLE_PERIOD bound to: 3'b111 
+	Parameter RX_SIG_VALID_DLY bound to: 11 - type: integer 
+	Parameter RX_SUM_DFETAPREP_EN bound to: 1'b0 
+	Parameter RX_SUM_IREF_TUNE bound to: 4'b0100 
+	Parameter RX_SUM_RESLOAD_CTRL bound to: 4'b0011 
+	Parameter RX_SUM_VCMTUNE bound to: 4'b0110 
+	Parameter RX_SUM_VCM_OVWR bound to: 1'b0 
+	Parameter RX_SUM_VREF_TUNE bound to: 3'b100 
+	Parameter RX_TUNE_AFE_OS bound to: 2'b00 
+	Parameter RX_VREG_CTRL bound to: 3'b101 
+	Parameter RX_VREG_PDB bound to: 1'b1 
+	Parameter RX_WIDEMODE_CDR bound to: 2'b01 
+	Parameter RX_WIDEMODE_CDR_GEN3 bound to: 2'b00 
+	Parameter RX_WIDEMODE_CDR_GEN4 bound to: 2'b01 
+	Parameter RX_XCLK_SEL bound to: RXDES - type: string 
+	Parameter RX_XMODE_SEL bound to: 1'b0 
+	Parameter SAMPLE_CLK_PHASE bound to: 1'b0 
+	Parameter SAS_12G_MODE bound to: 1'b0 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b1111 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_MODE bound to: FAST - type: string 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: Z - type: string 
+	Parameter SRSTMODE bound to: 1'b0 
+	Parameter TAPDLY_SET_TX bound to: 2'b00 
+	Parameter TEMPERATURE_PAR bound to: 4'b0010 
+	Parameter TERM_RCAL_CFG bound to: 15'b100001000010001 
+	Parameter TERM_RCAL_OVRD bound to: 3'b000 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV0 bound to: 8'b00000000 
+	Parameter TST_RSV1 bound to: 8'b00000000 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b1000000000010000 
+	Parameter TXDLY_LCFG bound to: 16'b0000000000110000 
+	Parameter TXDRVBIAS_N bound to: 4'b1010 
+	Parameter TXFIFO_ADDR_CFG bound to: LOW - type: string 
+	Parameter TXGBOX_FIFO_INIT_RD_ADDR bound to: 4 - type: integer 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOUT_DIV bound to: 1 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00011 
+	Parameter TXPHDLY_CFG0 bound to: 16'b0110000001110000 
+	Parameter TXPHDLY_CFG1 bound to: 16'b0000000000001111 
+	Parameter TXPH_CFG bound to: 16'b0000001100100011 
+	Parameter TXPH_CFG2 bound to: 16'b0000000000000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPI_CFG bound to: 16'b0000000001010100 
+	Parameter TXPI_CFG0 bound to: 2'b00 
+	Parameter TXPI_CFG1 bound to: 2'b00 
+	Parameter TXPI_CFG2 bound to: 2'b00 
+	Parameter TXPI_CFG3 bound to: 1'b0 
+	Parameter TXPI_CFG4 bound to: 1'b0 
+	Parameter TXPI_CFG5 bound to: 3'b000 
+	Parameter TXPI_GRAY_SEL bound to: 1'b0 
+	Parameter TXPI_INVSTROBE_SEL bound to: 1'b0 
+	Parameter TXPI_LPM bound to: 1'b0 
+	Parameter TXPI_PPM bound to: 1'b0 
+	Parameter TXPI_PPMCLK_SEL bound to: TXUSRCLK2 - type: string 
+	Parameter TXPI_PPM_CFG bound to: 8'b00000000 
+	Parameter TXPI_SYNFREQ_PPM bound to: 3'b001 
+	Parameter TXPI_VREFSEL bound to: 1'b0 
+	Parameter TXPMARESET_TIME bound to: 5'b00011 
+	Parameter TXREFCLKDIV2_SEL bound to: 1'b0 
+	Parameter TXSYNC_MULTILANE bound to: 1'b1 
+	Parameter TXSYNC_OVRD bound to: 1'b0 
+	Parameter TXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter TX_CLK25_DIV bound to: 20 - type: integer 
+	Parameter TX_CLKMUX_EN bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter TX_DCC_LOOP_RST_CFG bound to: 16'b0000000000000100 
+	Parameter TX_DEEMPH0 bound to: 6'b000000 
+	Parameter TX_DEEMPH1 bound to: 6'b000000 
+	Parameter TX_DEEMPH2 bound to: 6'b000000 
+	Parameter TX_DEEMPH3 bound to: 6'b000000 
+	Parameter TX_DIVRESET_TIME bound to: 5'b00001 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_DRVMUX_CTRL bound to: 2 - type: integer 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b100 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b011 
+	Parameter TX_FABINT_USRCLK_FLOP bound to: 1'b0 
+	Parameter TX_FIFO_BYP_EN bound to: 1'b0 
+	Parameter TX_IDLE_DATA_ZERO bound to: 1'b0 
+	Parameter TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1011111 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1011110 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1011100 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1011010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1011000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000101 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000011 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PHICAL_CFG0 bound to: 16'b0000000000000000 
+	Parameter TX_PHICAL_CFG1 bound to: 16'b0111111000000000 
+	Parameter TX_PHICAL_CFG2 bound to: 16'b0000001000000001 
+	Parameter TX_PI_BIASSET bound to: 1 - type: integer 
+	Parameter TX_PI_IBIAS_MID bound to: 2'b00 
+	Parameter TX_PMADATA_OPT bound to: 1'b0 
+	Parameter TX_PMA_POWER_SAVE bound to: 1'b0 
+	Parameter TX_PMA_RSV0 bound to: 16'b0000000000001000 
+	Parameter TX_PREDRV_CTRL bound to: 2 - type: integer 
+	Parameter TX_PROGCLK_SEL bound to: PREPI - type: string 
+	Parameter TX_PROGDIV_CFG bound to: 0.000000 - type: double 
+	Parameter TX_PROGDIV_RATE bound to: 16'b0000000000000001 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b00000000110010 
+	Parameter TX_RXDETECT_REF bound to: 4 - type: integer 
+	Parameter TX_SAMPLE_PERIOD bound to: 3'b111 
+	Parameter TX_SARC_LPBK_ENB bound to: 1'b0 
+	Parameter TX_SW_MEAS bound to: 2'b00 
+	Parameter TX_VREG_CTRL bound to: 3'b000 
+	Parameter TX_VREG_PDB bound to: 1'b0 
+	Parameter TX_VREG_VREFSEL bound to: 2'b00 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter USB_BOTH_BURST_IDLE bound to: 1'b0 
+	Parameter USB_BURSTMAX_U3WAKE bound to: 7'b1111111 
+	Parameter USB_BURSTMIN_U3WAKE bound to: 7'b1100011 
+	Parameter USB_CLK_COR_EQ_EN bound to: 1'b0 
+	Parameter USB_EXT_CNTL bound to: 1'b1 
+	Parameter USB_IDLEMAX_POLLING bound to: 10'b1010111011 
+	Parameter USB_IDLEMIN_POLLING bound to: 10'b0100101011 
+	Parameter USB_LFPSPING_BURST bound to: 9'b000000101 
+	Parameter USB_LFPSPOLLING_BURST bound to: 9'b000110001 
+	Parameter USB_LFPSPOLLING_IDLE_MS bound to: 9'b000000100 
+	Parameter USB_LFPSU1EXIT_BURST bound to: 9'b000011101 
+	Parameter USB_LFPSU2LPEXIT_BURST_MS bound to: 9'b001100011 
+	Parameter USB_LFPSU3WAKE_BURST_MS bound to: 9'b111110011 
+	Parameter USB_LFPS_TPERIOD bound to: 4'b0011 
+	Parameter USB_LFPS_TPERIOD_ACCURATE bound to: 1'b1 
+	Parameter USB_MODE bound to: 1'b0 
+	Parameter USB_PCIE_ERR_REP_DIS bound to: 1'b0 
+	Parameter USB_PING_SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter USB_PING_SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter USB_POLL_SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter USB_POLL_SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter USB_RAW_ELEC bound to: 1'b0 
+	Parameter USB_RXIDLE_P0_CTRL bound to: 1'b1 
+	Parameter USB_TXIDLE_TUNE_ENABLE bound to: 1'b1 
+	Parameter USB_U1_SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter USB_U1_SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter USB_U2_SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter USB_U2_SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter USE_PCS_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter Y_ALL_MODE bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'GTHE4_CHANNEL' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:43148]
+WARNING: [Synth 8-689] width (2) of port connection 'RXBUFSTATUS' does not match port width (3) of module 'GTHE4_CHANNEL' [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:2407]
+WARNING: [Synth 8-689] width (2) of port connection 'RXHEADER' does not match port width (6) of module 'GTHE4_CHANNEL' [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:2496]
+WARNING: [Synth 8-689] width (6) of port connection 'TXDIFFCTRL' does not match port width (5) of module 'GTHE4_CHANNEL' [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:2593]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits' [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits' (0#1) [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized0' [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized0' (0#1) [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized1' [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized1' (0#1) [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized2' [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized2' (0#1) [C:/GitHub/jesd204/ips/util_adxcvr/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'util_adxcvr_xch' (0#1) [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_adxcvr' (0#1) [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:39]
+WARNING: [Synth 8-6014] Unused sequential element rx_bufstatus_sticky_0_reg was removed.  [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:421]
+WARNING: [Synth 8-3848] Net rx_header in module/entity util_adxcvr_xch does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:122]
+WARNING: [Synth 8-3848] Net rx_block_sync in module/entity util_adxcvr_xch does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_xch.v:123]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:754]
+WARNING: [Synth 8-3848] Net rx_header_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:762]
+WARNING: [Synth 8-3848] Net rx_block_sync_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:763]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:768]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:794]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:795]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:796]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_8 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:812]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:835]
+WARNING: [Synth 8-3848] Net rx_header_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:843]
+WARNING: [Synth 8-3848] Net rx_block_sync_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:844]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:849]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:869]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:870]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:871]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_9 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:887]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:910]
+WARNING: [Synth 8-3848] Net rx_header_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:918]
+WARNING: [Synth 8-3848] Net rx_block_sync_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:919]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:924]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:944]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:945]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:946]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_10 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:962]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:985]
+WARNING: [Synth 8-3848] Net rx_header_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:993]
+WARNING: [Synth 8-3848] Net rx_block_sync_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:994]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:999]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1019]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1020]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1021]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_11 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1037]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1062]
+WARNING: [Synth 8-3848] Net rx_header_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1070]
+WARNING: [Synth 8-3848] Net rx_block_sync_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1071]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1076]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1102]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1103]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1104]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_12 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1120]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1143]
+WARNING: [Synth 8-3848] Net rx_header_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1151]
+WARNING: [Synth 8-3848] Net rx_block_sync_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1152]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1157]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1177]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1178]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1179]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_13 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1195]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1218]
+WARNING: [Synth 8-3848] Net rx_header_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1226]
+WARNING: [Synth 8-3848] Net rx_block_sync_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1227]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1232]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1252]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1253]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1254]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_14 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1270]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1293]
+WARNING: [Synth 8-3848] Net rx_header_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1301]
+WARNING: [Synth 8-3848] Net rx_block_sync_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1302]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1307]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1327]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1328]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1329]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_15 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1345]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1370]
+WARNING: [Synth 8-3848] Net rx_header_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1378]
+WARNING: [Synth 8-3848] Net rx_block_sync_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1379]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1384]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1410]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1411]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1412]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_16 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1428]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1451]
+WARNING: [Synth 8-3848] Net rx_header_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1459]
+WARNING: [Synth 8-3848] Net rx_block_sync_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1460]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1465]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1485]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1486]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1487]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_17 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1503]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1526]
+WARNING: [Synth 8-3848] Net rx_header_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1534]
+WARNING: [Synth 8-3848] Net rx_block_sync_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1535]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1540]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1560]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1561]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1562]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_18 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1578]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1601]
+WARNING: [Synth 8-3848] Net rx_header_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1609]
+WARNING: [Synth 8-3848] Net rx_block_sync_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1610]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1615]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1635]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1636]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1637]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_19 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1653]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_20 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1678]
+WARNING: [Synth 8-3848] Net rx_header_20 in module/entity util_adxcvr does not have driver. [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.v:1686]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_out_clk_8 driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_charisk_8[3] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_charisk_8[2] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_charisk_8[1] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_charisk_8[0] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_disperr_8[3] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_disperr_8[2] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_disperr_8[1] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_disperr_8[0] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_notintable_8[3] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_notintable_8[2] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_notintable_8[1] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_notintable_8[0] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[31] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[30] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[29] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[28] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[27] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[26] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[25] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[24] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[23] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[22] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[21] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[20] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[19] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[18] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[17] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[16] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[15] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[14] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[13] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[12] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[11] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[10] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[9] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[8] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[7] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[6] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[5] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[4] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[3] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[2] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[1] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port rx_data_8[0] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port tx_8_p driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port tx_8_n driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port tx_out_clk_8 driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[15] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[14] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[13] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[12] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[11] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[10] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[9] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[8] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[7] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[6] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[5] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[4] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[3] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[2] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[1] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_rdata_8[0] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_cm_ready_8 driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[15] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[14] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[13] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[12] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[11] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[10] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[9] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[8] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[7] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[6] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[5] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[4] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[3] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[2] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[1] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_rdata_8[0] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_es_ready_8 driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_pll_locked_8 driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rst_done_8 driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[15] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[14] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[13] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[12] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[11] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[10] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[9] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[8] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[7] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[6] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[5] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[4] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[3] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[2] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[1] driven by constant 0
+WARNING: [Synth 8-3917] design util_adxcvr has port up_rx_rdata_8[0] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port rx_header[1] in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header[0] in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_clk_2x in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_clk_2x in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_lpm_dfe_n in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_diffctrl[4] in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_8[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_8[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_8[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_8[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_8[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_8[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_9[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_9[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_9[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_9[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_9[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_9[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_10[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_10[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_10[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_10[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_10[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_10[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_11[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_11[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_11[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_11[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_11[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_11[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_12 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_12[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_12[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_12 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_12 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_12 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_12 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_12[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_12[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_12[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_12[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_13 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_13[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_13[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_13 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_13 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_13 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_13 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_13[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_13[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_13[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_13[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_14 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_14[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_14[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_14 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_14 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_14 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_14 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_14[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_14[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_14[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_14[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_15 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_15[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_15[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_15 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_15 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_15 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_15 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_15[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_15[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_15[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_15[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_16 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_16[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_16[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_16 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_16 in module util_adxcvr is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 3276.391 ; gain = 435.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 3294.277 ; gain = 453.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 3294.277 ; gain = 453.398
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 3306.371 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc]
+Finished Parsing XDC File [C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3417.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 3417.832 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:01:00 . Memory (MB): peak = 3417.832 ; gain = 576.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:01:00 . Memory (MB): peak = 3417.832 ; gain = 576.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property ASYNC_REG = true for i_xch_0/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_0/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_1/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_1/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_2/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_2/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_3/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_3/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_4/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_4/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_5/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_5/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_6/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_6/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_7/up_rx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_7/up_rx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for i_xch_0/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_0/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_1/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_1/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_2/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_2/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_3/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_3/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_4/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_4/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_5/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_5/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_6/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_6/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_7/up_tx_rst_done_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_7/up_tx_rst_done_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for i_xch_0/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_0/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_0/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_0/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_0/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_0/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_1/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_1/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_1/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_1/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_1/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_1/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_2/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_2/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_2/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_2/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_2/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_2/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_3/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_3/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_3/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_3/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_3/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_3/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_4/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_4/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_4/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_4/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_4/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_4/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_5/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_5/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_5/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_5/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_5/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_5/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_6/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_6/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_6/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_6/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_6/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_6/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_7/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_7/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_7/rx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_7/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_7/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_7/rx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for i_xch_0/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_0/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_0/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_0/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_0/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_0/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_1/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_1/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_1/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_1/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_1/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_1/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_2/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_2/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_2/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_2/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_2/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_2/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_3/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_3/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_3/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_3/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_3/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_3/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_4/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_4/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_4/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_4/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_4/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_4/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_5/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_5/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_5/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_5/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_5/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_5/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_6/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_6/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_6/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_6/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_6/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_6/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_7/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_7/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_7/tx_rate_m1_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_7/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_7/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for i_xch_7/tx_rate_m2_reg. (constraint file  C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr_constr.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:01:00 . Memory (MB): peak = 3417.832 ; gain = 576.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:01:01 . Memory (MB): peak = 3417.832 ; gain = 576.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 36    
+	               12 Bit    Registers := 10    
+	                5 Bit    Registers := 32    
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 40    
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 112   
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 28    
+	   2 Input   12 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 100   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 3417.832 ; gain = 576.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:02:21 . Memory (MB): peak = 3869.074 ; gain = 1028.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:22 . Memory (MB): peak = 3888.109 ; gain = 1047.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:02:23 . Memory (MB): peak = 3901.715 ; gain = 1060.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:02:28 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:02:28 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:02:29 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:02:29 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:02:29 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:02:29 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |    12|
+|2     |BUFG_GT       |    32|
+|3     |GTHE4_CHANNEL |     8|
+|4     |GTHE4_COMMON  |     2|
+|5     |LUT1          |     1|
+|6     |LUT2          |   126|
+|7     |LUT3          |    24|
+|8     |LUT4          |   436|
+|9     |LUT5          |    16|
+|10    |LUT6          |   216|
+|11    |FDCE          |   784|
+|12    |FDRE          |   352|
+|13    |IBUF          |  1458|
+|14    |OBUF          |  3480|
+|15    |OBUFT         |   288|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:02:29 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7551 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:02:08 . Memory (MB): peak = 3916.078 ; gain = 951.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:02:30 . Memory (MB): peak = 3916.078 ; gain = 1075.199
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 3924.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1470 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_0/BUFG_GT_SYNC for BUFG_GT i_xch_0/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_0/BUFG_GT_SYNC_1 for BUFG_GT i_xch_0/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_1/BUFG_GT_SYNC for BUFG_GT i_xch_1/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_1/BUFG_GT_SYNC_1 for BUFG_GT i_xch_1/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_2/BUFG_GT_SYNC for BUFG_GT i_xch_2/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_2/BUFG_GT_SYNC_1 for BUFG_GT i_xch_2/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_3/BUFG_GT_SYNC for BUFG_GT i_xch_3/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_3/BUFG_GT_SYNC_1 for BUFG_GT i_xch_3/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_4/BUFG_GT_SYNC for BUFG_GT i_xch_4/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_4/BUFG_GT_SYNC_1 for BUFG_GT i_xch_4/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_5/BUFG_GT_SYNC for BUFG_GT i_xch_5/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_5/BUFG_GT_SYNC_1 for BUFG_GT i_xch_5/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_6/BUFG_GT_SYNC for BUFG_GT i_xch_6/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_6/BUFG_GT_SYNC_1 for BUFG_GT i_xch_6/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_7/BUFG_GT_SYNC for BUFG_GT i_xch_7/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC i_xch_7/BUFG_GT_SYNC_1 for BUFG_GT i_xch_7/i_tx_bufg
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3980.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1470 instances were transformed.
+  BUFG => BUFGCE: 12 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1458 instances
+
+Synth Design complete, checksum: 8c61d459
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 315 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:03:06 . Memory (MB): peak = 3980.715 ; gain = 2265.645
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/ips/util_adxcvr/util_adxcvr.runs/synth_1/util_adxcvr.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file util_adxcvr_utilization_synth.rpt -pb util_adxcvr_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 16:27:00 2024...
