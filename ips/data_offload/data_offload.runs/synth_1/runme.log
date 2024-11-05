@@ -1,0 +1,477 @@
+
+*** Running vivado
+    with args -log data_offload.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_offload.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source data_offload.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1002.766 ; gain = 118.555
+Command: synth_design -top data_offload -part xczu7ev-fbvb900-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32072
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2105.141 ; gain = 377.727
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'data_offload' [C:/GitHub/jesd204/ips/data_offload/data_offload.v:37]
+INFO: [Synth 8-6157] synthesizing module 'data_offload_fsm' [C:/GitHub/jesd204/ips/data_offload/data_offload_fsm.v:41]
+	Parameter TX_OR_RXN_PATH bound to: 0 - type: integer 
+	Parameter SYNC_EXT_ADD_INTERNAL_CDC bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sync_event' [C:/GitHub/jesd204/ips/data_offload/sync_event.v:38]
+	Parameter NUM_OF_EVENTS bound to: 1 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sync_bits' [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_event' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_event.v:38]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized0' [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 1 - type: integer 
+	Parameter ASYNC_CLK bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized0' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized1' [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 1 - type: integer 
+	Parameter ASYNC_CLK bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized1' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized2' [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 1 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized2' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'data_offload_fsm' (0#1) [C:/GitHub/jesd204/ips/data_offload/data_offload_fsm.v:41]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo_asym' [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo_asym.v:37]
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+	Parameter S_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter S_ADDRESS_WIDTH bound to: 4 - type: integer 
+	Parameter M_DATA_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo' [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 3 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+	Parameter M_AXIS_REGISTERED bound to: 1 - type: integer 
+	Parameter ALMOST_EMPTY_THRESHOLD bound to: 4 - type: integer 
+	Parameter ALMOST_FULL_THRESHOLD bound to: 2 - type: integer 
+	Parameter TLAST_EN bound to: 0 - type: integer 
+	Parameter TKEEP_EN bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ad_mem' [C:/GitHub/jesd204/ips/data_offload/ad_mem.v:38]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_mem' (0#1) [C:/GitHub/jesd204/ips/data_offload/ad_mem.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo_address_generator' [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo_address_generator.v:38]
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 3 - type: integer 
+	Parameter ALMOST_EMPTY_THRESHOLD bound to: 4 - type: integer 
+	Parameter ALMOST_FULL_THRESHOLD bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sync_gray' [C:/GitHub/jesd204/ips/data_offload/sync_gray.v:45]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_gray' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_gray.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo_address_generator' (0#1) [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo_address_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo' (0#1) [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo_asym' (0#1) [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo_asym.v:37]
+INFO: [Synth 8-6157] synthesizing module 'data_offload_regmap' [C:/GitHub/jesd204/ips/data_offload/data_offload_regmap.v:37]
+	Parameter ID bound to: 0 - type: integer 
+	Parameter MEM_TYPE bound to: 0 - type: integer 
+	Parameter MEM_SIZE_LOG2 bound to: 10 - type: integer 
+	Parameter TX_OR_RXN_PATH bound to: 0 - type: integer 
+	Parameter AUTO_BRINGUP bound to: 1 - type: integer 
+	Parameter HAS_BYPASS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sync_data' [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+	Parameter NUM_OF_BITS bound to: 3 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_data' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+INFO: [Synth 8-6157] synthesizing module 'sync_data__parameterized0' [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+	Parameter NUM_OF_BITS bound to: 4 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_data__parameterized0' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+INFO: [Synth 8-6157] synthesizing module 'sync_data__parameterized1' [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+	Parameter NUM_OF_BITS bound to: 5 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_data__parameterized1' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized3' [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+	Parameter NUM_OF_BITS bound to: 2 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized3' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_data__parameterized2' [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+	Parameter NUM_OF_BITS bound to: 10 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_data__parameterized2' (0#1) [C:/GitHub/jesd204/ips/data_offload/sync_data.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'data_offload_regmap' (0#1) [C:/GitHub/jesd204/ips/data_offload/data_offload_regmap.v:37]
+INFO: [Synth 8-6157] synthesizing module 'up_axi' [C:/GitHub/jesd204/ips/data_offload/up_axi.v:38]
+	Parameter AXI_ADDRESS_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_axi' (0#1) [C:/GitHub/jesd204/ips/data_offload/up_axi.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo__parameterized0' [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 0 - type: integer 
+	Parameter ASYNC_CLK bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo__parameterized0' (0#1) [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'data_offload' (0#1) [C:/GitHub/jesd204/ips/data_offload/data_offload.v:37]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_counter_reg was removed.  [C:/GitHub/jesd204/ips/data_offload/util_axis_fifo_asym.v:297]
+WARNING: [Synth 8-7129] Port s_axis_tkeep[0] in module util_axis_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tlast in module util_axis_fifo__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_awaddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_awaddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[3] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[2] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dst_underflow in module data_offload_regmap is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[7] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[6] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[5] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[4] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[3] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[2] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[1] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tkeep[0] in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_tlast in module util_axis_fifo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_resetn in module sync_bits__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_clk in module sync_bits__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_clk in module data_offload_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module data_offload is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2201.547 ; gain = 474.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2219.449 ; gain = 492.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2219.500 ; gain = 492.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wr_fsm_state_reg' in module 'data_offload_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_fsm_state_reg' in module 'data_offload_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+           WR_STATE_IDLE |                            00001 |                            00001
+         WR_STATE_PRE_WR |                            00010 |                            00010
+           WR_STATE_SYNC |                            00100 |                            00100
+             WR_STATE_WR |                            01000 |                            01000
+        WR_STATE_WAIT_RD |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'wr_fsm_state_reg' in module 'data_offload_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+           RD_STATE_IDLE |                             0001 |                             0001
+         RD_STATE_PRE_RD |                             0010 |                             0010
+             RD_STATE_RD |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rd_fsm_state_reg' in module 'data_offload_fsm'
+INFO: [Synth 8-7082] The signal m_ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2222.715 ; gain = 495.301
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 4     
+	   3 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 31    
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               14 Bit    Registers := 2     
+	               10 Bit    Registers := 7     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 22    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 90    
++---RAMs : 
+	              512 Bit	(8 X 64 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 1     
+	  15 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 28    
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design data_offload has port s_axi_bresp[1] driven by constant 0
+WARNING: [Synth 8-3917] design data_offload has port s_axi_bresp[0] driven by constant 0
+WARNING: [Synth 8-3917] design data_offload has port s_axi_rresp[1] driven by constant 0
+WARNING: [Synth 8-3917] design data_offload has port s_axi_rresp[0] driven by constant 0
+WARNING: [Synth 8-7129] Port s_axi_awaddr[1] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[0] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[1] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[0] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module data_offload is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_underflow in module data_offload is either unconnected or has no load
+INFO: [Synth 8-7082] The signal genblk1[0].i_fifo/fifo.async_clocks.i_mem/m_ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal genblk1[1].i_fifo/fifo.async_clocks.i_mem/m_ram_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (3 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:49 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name  | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|data_offload | genblk1[0].i_fifo/fifo.async_clocks.i_mem/m_ram_reg | 8 x 64(NO_CHANGE)      | W |   | 8 x 64(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|data_offload | genblk1[1].i_fifo/fifo.async_clocks.i_mem/m_ram_reg | 8 x 64(NO_CHANGE)      | W |   | 8 x 64(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
++-------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:49 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name  | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|data_offload | genblk1[0].i_fifo/fifo.async_clocks.i_mem/m_ram_reg | 8 x 64(NO_CHANGE)      | W |   | 8 x 64(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
+|data_offload | genblk1[1].i_fifo/fifo.async_clocks.i_mem/m_ram_reg | 8 x 64(NO_CHANGE)      | W |   | 8 x 64(WRITE_FIRST)    |   | R | Port A and B     | 0      | 1      |                 | 
++-------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance genblk1[0].i_fifo/fifo.async_clocks.i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance genblk1[1].i_fifo/fifo.async_clocks.i_mem/m_ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:49 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|data_offload | i_regmap/src_sw_resetn_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|data_offload | i_regmap/dst_sw_resetn_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |LUT1     |    14|
+|3     |LUT2     |    78|
+|4     |LUT3     |   151|
+|5     |LUT4     |    31|
+|6     |LUT5     |    34|
+|7     |LUT6     |    60|
+|8     |RAMB36E2 |     2|
+|9     |SRL16E   |     2|
+|10    |FDRE     |   399|
+|11    |FDSE     |    32|
+|12    |IBUF     |   311|
+|13    |OBUF     |   287|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------------------+------------------------------------+------+
+|      |Instance                                  |Module                              |Cells |
++------+------------------------------------------+------------------------------------+------+
+|1     |top                                       |                                    |  1404|
+|2     |  i_bypass_fifo                           |util_axis_fifo_asym                 |   134|
+|3     |    \genblk1[0].i_fifo                    |util_axis_fifo                      |    68|
+|4     |      \fifo.i_address_gray                |util_axis_fifo_address_generator_19 |    66|
+|5     |        \g_async_clock.i_raddr_sync_gray  |sync_gray_20                        |    27|
+|6     |        \g_async_clock.i_waddr_sync_gray  |sync_gray_21                        |    25|
+|7     |    \genblk1[1].i_fifo                    |util_axis_fifo_17                   |    65|
+|8     |      \fifo.i_address_gray                |util_axis_fifo_address_generator    |    64|
+|9     |        \g_async_clock.i_raddr_sync_gray  |sync_gray                           |    25|
+|10    |        \g_async_clock.i_waddr_sync_gray  |sync_gray_18                        |    25|
+|11    |  i_data_offload_fsm                      |data_offload_fsm                    |    51|
+|12    |    i_sync_wr_sync                        |sync_bits__parameterized2_13        |     2|
+|13    |    i_wr_empty_sync                       |sync_event_14                       |    15|
+|14    |      i_sync_in                           |sync_bits_15                        |     4|
+|15    |      i_sync_out                          |sync_bits_16                        |     3|
+|16    |    i_wr_init_req_sync                    |sync_bits__parameterized1           |     3|
+|17    |  i_measured_length_cdc                   |util_axis_fifo__parameterized0      |    23|
+|18    |    \zerodeep.i_raddr_sync                |sync_bits__parameterized2_11        |     5|
+|19    |    \zerodeep.i_waddr_sync                |sync_bits__parameterized2_12        |     6|
+|20    |  i_regmap                                |data_offload_regmap                 |   216|
+|21    |    i_ddr_calib_done_sync                 |sync_bits__parameterized2           |     4|
+|22    |    i_dst_fsm_status                      |sync_data__parameterized0           |    15|
+|23    |      i_sync_in                           |sync_bits_9                         |     3|
+|24    |      i_sync_out                          |sync_bits_10                        |     3|
+|25    |    i_dst_oneshot_sync                    |sync_bits__parameterized2_0         |     2|
+|26    |    i_dst_xfer_control                    |sync_bits__parameterized3           |    20|
+|27    |    i_src_fsm_status                      |sync_data__parameterized1           |    19|
+|28    |      i_sync_in                           |sync_bits_7                         |     3|
+|29    |      i_sync_out                          |sync_bits_8                         |     3|
+|30    |    i_src_xfer_control                    |sync_bits__parameterized3_1         |     3|
+|31    |    i_sync_src_transfer_length            |sync_data__parameterized2           |    19|
+|32    |      i_sync_in                           |sync_bits_5                         |     3|
+|33    |      i_sync_out                          |sync_bits_6                         |     3|
+|34    |    i_wr_overflow_sync                    |sync_event                          |    12|
+|35    |      i_sync_in                           |sync_bits_3                         |     4|
+|36    |      i_sync_out                          |sync_bits_4                         |     3|
+|37    |    \sync_rx_path.i_sync_xfer_control     |sync_data                           |    17|
+|38    |      i_sync_in                           |sync_bits                           |     3|
+|39    |      i_sync_out                          |sync_bits_2                         |     3|
+|40    |  i_up_axi                                |up_axi                              |   239|
++------+------------------------------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:53 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 3136.543 ; gain = 1409.129
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3136.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 314 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3198.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 314 instances were transformed.
+  BUFG => BUFGCE: 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 311 instances
+
+Synth Design complete, checksum: 5d164137
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:01:03 . Memory (MB): peak = 3198.684 ; gain = 1494.102
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/ips/data_offload/data_offload.runs/synth_1/data_offload.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file data_offload_utilization_synth.rpt -pb data_offload_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  5 16:30:37 2024...

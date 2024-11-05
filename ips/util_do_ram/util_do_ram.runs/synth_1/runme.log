@@ -1,0 +1,463 @@
+
+*** Running vivado
+    with args -log util_do_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source util_do_ram.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source util_do_ram.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1002.430 ; gain = 92.391
+Command: synth_design -top util_do_ram -part xczu7ev-fbvb900-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21448
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 3177.047 ; gain = 335.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'util_do_ram' [C:/GitHub/jesd204/ips/util_do_ram/util_do_ram.v:40]
+INFO: [Synth 8-6157] synthesizing module 'ad_mem_asym' [C:/GitHub/jesd204/ips/util_do_ram/ad_mem_asym.v:41]
+	Parameter A_ADDRESS_WIDTH bound to: 10 - type: integer 
+	Parameter A_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter B_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter B_DATA_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_mem_asym' (0#1) [C:/GitHub/jesd204/ips/util_do_ram/ad_mem_asym.v:41]
+INFO: [Synth 8-6157] synthesizing module 'ad_mem_asym__parameterized0' [C:/GitHub/jesd204/ips/util_do_ram/ad_mem_asym.v:41]
+	Parameter A_ADDRESS_WIDTH bound to: 10 - type: integer 
+	Parameter A_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter B_ADDRESS_WIDTH bound to: 12 - type: integer 
+	Parameter B_DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_mem_asym__parameterized0' (0#1) [C:/GitHub/jesd204/ips/util_do_ram/ad_mem_asym.v:41]
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo' [C:/GitHub/jesd204/ips/util_do_ram/util_axis_fifo.v:37]
+	Parameter DATA_WIDTH bound to: 128 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 2 - type: integer 
+	Parameter ASYNC_CLK bound to: 0 - type: integer 
+	Parameter M_AXIS_REGISTERED bound to: 0 - type: integer 
+	Parameter TLAST_EN bound to: 1 - type: integer 
+	Parameter TKEEP_EN bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'util_axis_fifo_address_generator' [C:/GitHub/jesd204/ips/util_do_ram/util_axis_fifo_address_generator.v:38]
+	Parameter ASYNC_CLK bound to: 0 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 2 - type: integer 
+	Parameter ALMOST_EMPTY_THRESHOLD bound to: 2'b00 
+	Parameter ALMOST_FULL_THRESHOLD bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo_address_generator' (0#1) [C:/GitHub/jesd204/ips/util_do_ram/util_axis_fifo_address_generator.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_axis_fifo' (0#1) [C:/GitHub/jesd204/ips/util_do_ram/util_axis_fifo.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'util_do_ram' (0#1) [C:/GitHub/jesd204/ips/util_do_ram/util_do_ram.v:40]
+WARNING: [Synth 8-6014] Unused sequential element memwrite.lsb_reg was removed.  [C:/GitHub/jesd204/ips/util_do_ram/ad_mem_asym.v:109]
+Info : Asymmetric Ram write pattern identified
+WARNING: [Synth 8-6014] Unused sequential element memwrite.lsb_reg was removed.  [C:/GitHub/jesd204/ips/util_do_ram/ad_mem_asym.v:109]
+Info : Asymmetric Ram write pattern identified
+WARNING: [Synth 8-6014] Unused sequential element fifo.valid_reg was removed.  [C:/GitHub/jesd204/ips/util_do_ram/util_axis_fifo.v:243]
+WARNING: [Synth 8-3848] Net m_axis_strb in module/entity util_do_ram does not have driver. [C:/GitHub/jesd204/ips/util_do_ram/util_do_ram.v:76]
+WARNING: [Synth 8-3848] Net m_axis_user in module/entity util_do_ram does not have driver. [C:/GitHub/jesd204/ips/util_do_ram/util_do_ram.v:78]
+WARNING: [Synth 8-7129] Port m_axis_strb[15] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[14] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[13] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[12] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[11] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[10] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[9] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[8] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[7] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[6] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[5] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[4] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[3] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[2] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[1] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[0] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_user[0] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_request_length[5] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_request_length[4] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_request_length[3] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_request_length[2] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_request_length[1] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wr_request_length[0] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_request_length[3] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_request_length[2] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_request_length[1] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_request_length[0] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[63] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[62] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[61] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[60] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[59] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[58] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[57] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[56] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[55] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[54] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[53] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[52] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[51] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[50] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[49] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[48] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[47] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[46] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[45] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[44] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[43] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[42] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[41] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[40] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[39] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[38] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[37] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[36] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[35] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[34] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[33] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[32] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[31] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[30] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[29] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[28] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[27] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[26] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[25] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[24] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[23] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[22] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[21] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[20] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[19] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[18] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[17] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[16] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[15] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[14] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[13] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[12] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[11] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[10] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[9] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[8] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[7] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[6] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[5] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[4] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[3] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[2] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[1] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_strb[0] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_user[0] in module util_do_ram is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:28 . Memory (MB): peak = 3279.484 ; gain = 438.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:30 . Memory (MB): peak = 3289.355 ; gain = 447.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:30 . Memory (MB): peak = 3289.355 ; gain = 447.902
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3289.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/GitHub/jesd204/ips/util_do_ram/util_do_ram_constr.xdc]
+Finished Parsing XDC File [C:/GitHub/jesd204/ips/util_do_ram/util_do_ram_constr.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3388.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 3388.672 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:01:12 . Memory (MB): peak = 3388.672 ; gain = 547.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:01:12 . Memory (MB): peak = 3388.672 ; gain = 547.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:01:12 . Memory (MB): peak = 3388.672 ; gain = 547.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "ad_mem_asym:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "ad_mem_asym__parameterized0:/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "ad_mem_asym__parameterized0:/m_ram_reg"
+INFO: [Synth 8-6904] The RAM "util_axis_fifo:/fifo.sync_clocks.ram_reg" of size (depth=4 x width=145) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:01:13 . Memory (MB): peak = 3388.672 ; gain = 547.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
+	   3 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	             512K Bit	(4096 X 128 bit)          RAMs := 1     
+	              64K Bit	(4096 X 16 bit)          RAMs := 1     
+	              580 Bit	(4 X 145 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "util_do_ram/i_rd_fifo/fifo.sync_clocks.ram_reg" of size (depth=4 x width=145) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-7129] Port m_axis_strb[15] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[14] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[13] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[12] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[11] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[10] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[9] in module util_do_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_strb[8] in module util_do_ram is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 9 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 4 for RAM "util_do_ram/i_mem_data/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "util_do_ram/i_mem_keep/m_ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "util_do_ram/i_mem_keep/m_ram_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:01:17 . Memory (MB): peak = 3388.672 ; gain = 547.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-------------------------------+
+|Module Name | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights               | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-------------------------------+
+|util_do_ram | i_mem_data/m_ram_reg | 1 K x 512(NO_CHANGE)   | W |   | 4 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 14     | 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 | 
+|util_do_ram | i_mem_keep/m_ram_reg | 1 K x 64(NO_CHANGE)    | W |   | 4 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 1,1                           | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-------------------------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                         | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------------------------------+-----------+----------------------+----------------+
+|util_do_ram | i_rd_fifo/fifo.sync_clocks.ram_reg | Implied   | 4 x 145              | RAM32M16 x 11  | 
++------------+------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:02:13 . Memory (MB): peak = 3859.637 ; gain = 1018.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:02:13 . Memory (MB): peak = 3860.758 ; gain = 1019.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-------------------------------+
+|Module Name | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights               | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-------------------------------+
+|util_do_ram | i_mem_data/m_ram_reg | 1 K x 512(NO_CHANGE)   | W |   | 4 K x 128(WRITE_FIRST) |   | R | Port A and B     | 1      | 14     | 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 | 
+|util_do_ram | i_mem_keep/m_ram_reg | 1 K x 64(NO_CHANGE)    | W |   | 4 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 1,1                           | 
++------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-------------------------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+------------------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                         | Inference | Size (Depth x Width) | Primitives     | 
++------------+------------------------------------+-----------+----------------------+----------------+
+|util_do_ram | i_rd_fifo/fifo.sync_clocks.ram_reg | Implied   | 4 x 145              | RAM32M16 x 11  | 
++------------+------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:02:14 . Memory (MB): peak = 3889.395 ; gain = 1047.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:02:21 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:02:21 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:02:21 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:02:21 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:02:21 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:02:21 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY8   |     2|
+|3     |LUT1     |     7|
+|4     |LUT2     |    10|
+|5     |LUT3     |     9|
+|6     |LUT4     |    10|
+|7     |LUT5     |     8|
+|8     |LUT6     |    19|
+|9     |RAM32M   |     1|
+|10    |RAM32M16 |    10|
+|11    |RAMB18E2 |     1|
+|12    |RAMB36E2 |    16|
+|13    |FDRE     |    71|
+|14    |FDSE     |     1|
+|15    |IBUF     |   609|
+|16    |OBUF     |   167|
+|17    |OBUFT    |    17|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:02:22 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 93 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:01:49 . Memory (MB): peak = 3889.883 ; gain = 949.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:02:23 . Memory (MB): peak = 3889.883 ; gain = 1048.430
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3901.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 624 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3935.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 622 instances were transformed.
+  BUFG => BUFGCE: 2 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 609 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 10 instances
+
+Synth Design complete, checksum: a70be5a3
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:03:05 . Memory (MB): peak = 3935.469 ; gain = 2216.281
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/ips/util_do_ram/util_do_ram.runs/synth_1/util_do_ram.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 3935.469 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file util_do_ram_utilization_synth.rpt -pb util_do_ram_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  5 16:54:04 2024...
