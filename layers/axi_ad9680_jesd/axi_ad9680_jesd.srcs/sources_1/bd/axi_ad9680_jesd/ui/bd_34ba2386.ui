@@ -1,0 +1,194 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"0.533708",
+   "Default View_TopLeft":"-403,0",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_device_clk -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_link_clk -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_irq -pg 1 -lvl 3 -x 1000 -y 160 -defaultsOSRD
+preplace port port-id_phy_en_char_align -pg 1 -lvl 3 -x 1000 -y 40 -defaultsOSRD
+preplace port port-id_sysref -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_rx_data_tvalid -pg 1 -lvl 3 -x 1000 -y 80 -defaultsOSRD
+preplace portBus rx_sync -pg 1 -lvl 3 -x 1000 -y 20 -defaultsOSRD
+preplace portBus rx_data_tdata -pg 1 -lvl 3 -x 1000 -y 60 -defaultsOSRD
+preplace portBus rx_sof -pg 1 -lvl 3 -x 1000 -y 100 -defaultsOSRD
+preplace portBus phy_data -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace portBus phy_header -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace portBus phy_charisk -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace portBus phy_notintable -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace portBus phy_disperr -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace portBus phy_block_sync -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace inst axi_jesd204_rx -pg 1 -lvl 2 -x 800 -y 160 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 23 22 21 25 26 24 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61} -defaultsOSRD -pinDir s_axi left -pinY s_axi 0L -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 60L -pinDir irq right -pinY irq 0R -pinDir core_clk left -pinY core_clk 40L -pinDir core_reset_ext left -pinY core_reset_ext 100L -pinDir core_reset left -pinY core_reset 200L -pinDir device_clk left -pinY device_clk 80L -pinDir device_reset left -pinY device_reset 220L -pinBusDir core_cfg_lanes_disable left -pinBusY core_cfg_lanes_disable 240L -pinBusDir core_cfg_links_disable left -pinBusY core_cfg_links_disable 260L -pinBusDir core_cfg_octets_per_multiframe left -pinBusY core_cfg_octets_per_multiframe 280L -pinBusDir core_cfg_octets_per_frame left -pinBusY core_cfg_octets_per_frame 300L -pinDir core_cfg_disable_scrambler left -pinY core_cfg_disable_scrambler 320L -pinDir core_cfg_disable_char_replacement left -pinY core_cfg_disable_char_replacement 340L -pinBusDir core_cfg_frame_align_err_threshold left -pinBusY core_cfg_frame_align_err_threshold 360L -pinBusDir device_cfg_octets_per_multiframe left -pinBusY device_cfg_octets_per_multiframe 380L -pinBusDir device_cfg_octets_per_frame left -pinBusY device_cfg_octets_per_frame 420L -pinBusDir device_cfg_beats_per_multiframe left -pinBusY device_cfg_beats_per_multiframe 440L -pinBusDir device_cfg_lmfc_offset left -pinBusY device_cfg_lmfc_offset 480L -pinDir device_cfg_sysref_oneshot left -pinY device_cfg_sysref_oneshot 520L -pinDir device_cfg_sysref_disable left -pinY device_cfg_sysref_disable 540L -pinDir device_cfg_buffer_early_release left -pinY device_cfg_buffer_early_release 560L -pinBusDir device_cfg_buffer_delay left -pinBusY device_cfg_buffer_delay 580L -pinBusDir core_ilas_config_valid left -pinBusY core_ilas_config_valid 600L -pinBusDir core_ilas_config_addr left -pinBusY core_ilas_config_addr 620L -pinBusDir core_ilas_config_data left -pinBusY core_ilas_config_data 640L -pinDir device_event_sysref_alignment_error left -pinY device_event_sysref_alignment_error 660L -pinDir device_event_sysref_edge left -pinY device_event_sysref_edge 680L -pinDir core_event_frame_alignment_error left -pinY core_event_frame_alignment_error 700L -pinDir core_event_unexpected_lane_state_error left -pinY core_event_unexpected_lane_state_error 720L -pinBusDir core_ctrl_err_statistics_mask left -pinBusY core_ctrl_err_statistics_mask 740L -pinDir core_ctrl_err_statistics_reset left -pinY core_ctrl_err_statistics_reset 760L -pinBusDir core_status_err_statistics_cnt left -pinBusY core_status_err_statistics_cnt 780L -pinBusDir core_status_ctrl_state left -pinBusY core_status_ctrl_state 800L -pinBusDir core_status_lane_cgs_state left -pinBusY core_status_lane_cgs_state 820L -pinBusDir core_status_lane_emb_state left -pinBusY core_status_lane_emb_state 840L -pinBusDir core_status_lane_ifs_ready left -pinBusY core_status_lane_ifs_ready 860L -pinBusDir core_status_lane_latency left -pinBusY core_status_lane_latency 880L -pinBusDir core_status_lane_frame_align_err_cnt left -pinBusY core_status_lane_frame_align_err_cnt 900L -pinBusDir status_synth_params0 left -pinBusY status_synth_params0 920L -pinBusDir status_synth_params1 left -pinBusY status_synth_params1 940L -pinBusDir status_synth_params2 left -pinBusY status_synth_params2 960L
+preplace inst jesd204_rx -pg 1 -lvl 1 -x 250 -y 220 -swap {0 16 2 17 4 5 6 7 8 9 10 14 15 39 40 41 42 1 3 11 12 26 13 29 31 18 19 20 21 22 23 24 25 27 28 30 32 33 34 35 44 43 45 36 37 38 46 47 49 50 48 51 52 53 54} -defaultsOSRD -pinDir clk left -pinY clk 0L -pinDir reset right -pinY reset 140R -pinDir device_clk left -pinY device_clk 20L -pinDir device_reset right -pinY device_reset 160R -pinBusDir phy_data left -pinBusY phy_data 40L -pinBusDir phy_header left -pinBusY phy_header 60L -pinBusDir phy_charisk left -pinBusY phy_charisk 80L -pinBusDir phy_notintable left -pinBusY phy_notintable 100L -pinBusDir phy_disperr left -pinBusY phy_disperr 120L -pinBusDir phy_block_sync left -pinBusY phy_block_sync 140L -pinDir sysref left -pinY sysref 160L -pinDir lmfc_edge right -pinY lmfc_edge 100R -pinDir lmfc_clk right -pinY lmfc_clk 120R -pinDir device_event_sysref_alignment_error right -pinY device_event_sysref_alignment_error 600R -pinDir device_event_sysref_edge right -pinY device_event_sysref_edge 620R -pinDir event_frame_alignment_error right -pinY event_frame_alignment_error 640R -pinDir event_unexpected_lane_state_error right -pinY event_unexpected_lane_state_error 660R -pinBusDir sync right -pinBusY sync 0R -pinDir phy_en_char_align right -pinY phy_en_char_align 20R -pinBusDir rx_data right -pinBusY rx_data 40R -pinDir rx_valid right -pinY rx_valid 60R -pinBusDir rx_eof right -pinBusY rx_eof 340R -pinBusDir rx_sof right -pinBusY rx_sof 80R -pinBusDir rx_eomf right -pinBusY rx_eomf 400R -pinBusDir rx_somf right -pinBusY rx_somf 440R -pinBusDir cfg_lanes_disable right -pinBusY cfg_lanes_disable 180R -pinBusDir cfg_links_disable right -pinBusY cfg_links_disable 200R -pinBusDir cfg_octets_per_multiframe right -pinBusY cfg_octets_per_multiframe 220R -pinBusDir cfg_octets_per_frame right -pinBusY cfg_octets_per_frame 240R -pinDir cfg_disable_scrambler right -pinY cfg_disable_scrambler 260R -pinDir cfg_disable_char_replacement right -pinY cfg_disable_char_replacement 280R -pinBusDir cfg_frame_align_err_threshold right -pinBusY cfg_frame_align_err_threshold 300R -pinBusDir device_cfg_octets_per_multiframe right -pinBusY device_cfg_octets_per_multiframe 320R -pinBusDir device_cfg_octets_per_frame right -pinBusY device_cfg_octets_per_frame 360R -pinBusDir device_cfg_beats_per_multiframe right -pinBusY device_cfg_beats_per_multiframe 380R -pinBusDir device_cfg_lmfc_offset right -pinBusY device_cfg_lmfc_offset 420R -pinDir device_cfg_sysref_oneshot right -pinY device_cfg_sysref_oneshot 460R -pinDir device_cfg_sysref_disable right -pinY device_cfg_sysref_disable 480R -pinDir device_cfg_buffer_early_release right -pinY device_cfg_buffer_early_release 500R -pinBusDir device_cfg_buffer_delay right -pinBusY device_cfg_buffer_delay 520R -pinDir ctrl_err_statistics_reset right -pinY ctrl_err_statistics_reset 700R -pinBusDir ctrl_err_statistics_mask right -pinBusY ctrl_err_statistics_mask 680R -pinBusDir status_err_statistics_cnt right -pinBusY status_err_statistics_cnt 720R -pinBusDir ilas_config_valid right -pinBusY ilas_config_valid 540R -pinBusDir ilas_config_addr right -pinBusY ilas_config_addr 560R -pinBusDir ilas_config_data right -pinBusY ilas_config_data 580R -pinBusDir status_ctrl_state right -pinBusY status_ctrl_state 740R -pinBusDir status_lane_cgs_state right -pinBusY status_lane_cgs_state 760R -pinBusDir status_lane_ifs_ready right -pinBusY status_lane_ifs_ready 800R -pinBusDir status_lane_latency right -pinBusY status_lane_latency 820R -pinBusDir status_lane_emb_state right -pinBusY status_lane_emb_state 780R -pinBusDir status_lane_frame_align_err_cnt right -pinBusY status_lane_frame_align_err_cnt 840R -pinBusDir status_synth_params0 right -pinBusY status_synth_params0 860R -pinBusDir status_synth_params1 right -pinBusY status_synth_params1 880R -pinBusDir status_synth_params2 right -pinBusY status_synth_params2 900R
+preplace netloc Net 1 0 2 40 140 520J
+preplace netloc axi_jesd204_rx_core_cfg_disable_char_replacement 1 1 1 N 500
+preplace netloc axi_jesd204_rx_core_cfg_disable_scrambler 1 1 1 N 480
+preplace netloc axi_jesd204_rx_core_cfg_frame_align_err_threshold 1 1 1 N 520
+preplace netloc axi_jesd204_rx_core_cfg_lanes_disable 1 1 1 N 400
+preplace netloc axi_jesd204_rx_core_cfg_links_disable 1 1 1 N 420
+preplace netloc axi_jesd204_rx_core_cfg_octets_per_frame 1 1 1 N 460
+preplace netloc axi_jesd204_rx_core_cfg_octets_per_multiframe 1 1 1 N 440
+preplace netloc axi_jesd204_rx_core_ctrl_err_statistics_mask 1 1 1 N 900
+preplace netloc axi_jesd204_rx_core_ctrl_err_statistics_reset 1 1 1 N 920
+preplace netloc axi_jesd204_rx_core_reset 1 1 1 N 360
+preplace netloc axi_jesd204_rx_device_cfg_beats_per_multiframe 1 1 1 N 600
+preplace netloc axi_jesd204_rx_device_cfg_buffer_delay 1 1 1 N 740
+preplace netloc axi_jesd204_rx_device_cfg_buffer_early_release 1 1 1 N 720
+preplace netloc axi_jesd204_rx_device_cfg_lmfc_offset 1 1 1 N 640
+preplace netloc axi_jesd204_rx_device_cfg_octets_per_frame 1 1 1 N 580
+preplace netloc axi_jesd204_rx_device_cfg_octets_per_multiframe 1 1 1 N 540
+preplace netloc axi_jesd204_rx_device_cfg_sysref_disable 1 1 1 N 700
+preplace netloc axi_jesd204_rx_device_cfg_sysref_oneshot 1 1 1 N 680
+preplace netloc axi_jesd204_rx_device_reset 1 1 1 N 380
+preplace netloc axi_jesd204_rx_irq 1 2 1 NJ 160
+preplace netloc jesd204_rx_0_status_lane_frame_align_err_cnt 1 1 1 N 1060
+preplace netloc jesd204_rx_0_status_synth_params0 1 1 1 N 1080
+preplace netloc jesd204_rx_0_status_synth_params1 1 1 1 N 1100
+preplace netloc jesd204_rx_0_status_synth_params2 1 1 1 N 1120
+preplace netloc jesd204_rx_device_event_sysref_alignment_error 1 1 1 N 820
+preplace netloc jesd204_rx_device_event_sysref_edge 1 1 1 N 840
+preplace netloc jesd204_rx_event_frame_alignment_error 1 1 1 N 860
+preplace netloc jesd204_rx_event_unexpected_lane_state_error 1 1 1 N 880
+preplace netloc jesd204_rx_ilas_config_addr 1 1 1 N 780
+preplace netloc jesd204_rx_ilas_config_data 1 1 1 N 800
+preplace netloc jesd204_rx_ilas_config_valid 1 1 1 N 760
+preplace netloc jesd204_rx_status_ctrl_state 1 1 1 N 960
+preplace netloc jesd204_rx_status_err_statistics_cnt 1 1 1 N 940
+preplace netloc jesd204_rx_status_lane_cgs_state 1 1 1 N 980
+preplace netloc jesd204_rx_status_lane_emb_state 1 1 1 N 1000
+preplace netloc jesd204_rx_status_lane_ifs_ready 1 1 1 N 1020
+preplace netloc jesd204_rx_status_lane_latency 1 1 1 N 1040
+preplace netloc link_clk_1 1 0 2 20 100 580J
+preplace netloc s_axi_aclk_1 1 0 2 NJ 80 480J
+preplace netloc s_axi_aresetn_1 1 0 2 NJ 120 540J
+preplace netloc jesd204_rx_sync 1 1 2 460J 20 NJ
+preplace netloc jesd204_rx_phy_en_char_align 1 1 2 500J 40 NJ
+preplace netloc sysref_1 1 0 1 NJ 380
+preplace netloc jesd204_rx_rx_data 1 1 2 560J 60 NJ
+preplace netloc jesd204_rx_rx_valid 1 1 2 600J 80 NJ
+preplace netloc jesd204_rx_rx_sof 1 1 2 620J 100 NJ
+preplace netloc phy_data_1 1 0 1 NJ 260
+preplace netloc phy_header_1 1 0 1 NJ 280
+preplace netloc phy_charisk_1 1 0 1 NJ 300
+preplace netloc phy_notintable_1 1 0 1 NJ 320
+preplace netloc phy_disperr_1 1 0 1 NJ 340
+preplace netloc phy_block_sync_1 1 0 1 NJ 360
+preplace netloc s_axi_1 1 0 2 NJ 160 NJ
+levelinfo -pg 1 0 250 800 1000
+pagesize -pg 1 -db -bbox -sgen -180 0 1180 1180
+",
+   "No Loops_ScaleFactor":"0.427119",
+   "No Loops_TopLeft":"-1028,0",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x -20 -y 750 -defaultsOSRD
+preplace port port-id_device_clk -pg 1 -lvl 0 -x -20 -y 270 -defaultsOSRD
+preplace port port-id_link_clk -pg 1 -lvl 0 -x -20 -y 250 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x -20 -y 770 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x -20 -y 790 -defaultsOSRD
+preplace port port-id_irq -pg 1 -lvl 3 -x 1820 -y 250 -defaultsOSRD
+preplace inst axi_jesd204_rx -pg 1 -lvl 2 -x 1250 -y 150 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 58 59 30 60 43 42 61 39 29 28 50 51 25 27 22 40 41 38 37 36 35 34 33 46 47 45 24 21 44 48 32 31 20 26 23 49 52 53 54 55 56 57} -defaultsOSRD -pinY s_axi 180L -pinY s_axi_aclk 620L -pinY s_axi_aresetn 640L -pinY irq 100R -pinY core_clk 660L -pinY core_reset_ext 300L -pinY core_reset 640R -pinY device_clk 680L -pinY device_reset 580R -pinBusY core_cfg_lanes_disable 80R -pinBusY core_cfg_links_disable 60R -pinBusY core_cfg_octets_per_multiframe 660R -pinBusY core_cfg_octets_per_frame 680R -pinY core_cfg_disable_scrambler 20R -pinY core_cfg_disable_char_replacement 40R -pinBusY core_cfg_frame_align_err_threshold 0R -pinBusY device_cfg_octets_per_multiframe 600R -pinBusY device_cfg_octets_per_frame 620R -pinBusY device_cfg_beats_per_multiframe 560R -pinBusY device_cfg_lmfc_offset 540R -pinY device_cfg_sysref_oneshot 520R -pinY device_cfg_sysref_disable 500R -pinY device_cfg_buffer_early_release 480R -pinBusY device_cfg_buffer_delay 460R -pinBusY core_ilas_config_valid 360L -pinBusY core_ilas_config_addr 380L -pinBusY core_ilas_config_data 340L -pinY device_event_sysref_alignment_error 260L -pinY device_event_sysref_edge 220L -pinY core_event_frame_alignment_error 320L -pinY core_event_unexpected_lane_state_error 400L -pinBusY core_ctrl_err_statistics_mask 440R -pinY core_ctrl_err_statistics_reset 420R -pinBusY core_status_err_statistics_cnt 200L -pinBusY core_status_ctrl_state 280L -pinBusY core_status_lane_cgs_state 240L -pinBusY core_status_lane_emb_state 420L -pinBusY core_status_lane_ifs_ready 440L -pinBusY core_status_lane_latency 460L -pinBusY core_status_lane_frame_align_err_cnt 480L -pinBusY status_synth_params0 500L -pinBusY status_synth_params1 520L -pinBusY status_synth_params2 540L
+preplace inst jesd204_rx -pg 1 -lvl 1 -x 570 -y 150 -swap {5 39 6 36 7 8 9 10 25 26 27 11 12 23 19 43 47 13 24 14 15 42 18 22 16 4 3 40 41 1 2 0 37 38 35 34 33 32 31 30 28 29 17 45 46 44 21 20 49 50 48 51 52 53 54} -defaultsOSRD -pinY clk 100L -pinY reset 500L -pinY device_clk 120L -pinY device_reset 440L -pinBusY phy_data 140L -pinBusY phy_header 160L -pinBusY phy_charisk 180L -pinBusY phy_notintable 200L -pinBusY phy_disperr 220L -pinBusY phy_block_sync 240L -pinY sysref 260L -pinY lmfc_edge 0R -pinY lmfc_clk 40R -pinY device_event_sysref_alignment_error 260R -pinY device_event_sysref_edge 180R -pinY event_frame_alignment_error 320R -pinY event_unexpected_lane_state_error 400R -pinBusY sync 60R -pinY phy_en_char_align 280R -pinBusY rx_data 80R -pinY rx_valid 100R -pinBusY rx_eof 300R -pinBusY rx_sof 160R -pinBusY rx_eomf 240R -pinBusY rx_somf 120R -pinBusY cfg_lanes_disable 80L -pinBusY cfg_links_disable 60L -pinBusY cfg_octets_per_multiframe 520L -pinBusY cfg_octets_per_frame 540L -pinY cfg_disable_scrambler 20L -pinY cfg_disable_char_replacement 40L -pinBusY cfg_frame_align_err_threshold 0L -pinBusY device_cfg_octets_per_multiframe 460L -pinBusY device_cfg_octets_per_frame 480L -pinBusY device_cfg_beats_per_multiframe 420L -pinBusY device_cfg_lmfc_offset 400L -pinY device_cfg_sysref_oneshot 380L -pinY device_cfg_sysref_disable 360L -pinY device_cfg_buffer_early_release 340L -pinBusY device_cfg_buffer_delay 320L -pinY ctrl_err_statistics_reset 280L -pinBusY ctrl_err_statistics_mask 300L -pinBusY status_err_statistics_cnt 140R -pinBusY ilas_config_valid 360R -pinBusY ilas_config_addr 380R -pinBusY ilas_config_data 340R -pinBusY status_ctrl_state 220R -pinBusY status_lane_cgs_state 200R -pinBusY status_lane_ifs_ready 440R -pinBusY status_lane_latency 460R -pinBusY status_lane_emb_state 420R -pinBusY status_lane_frame_align_err_cnt 480R -pinBusY status_synth_params0 500R -pinBusY status_synth_params1 520R -pinBusY status_synth_params2 540R
+preplace netloc Net 1 0 2 0 830 NJ
+preplace netloc axi_jesd204_rx_core_cfg_disable_char_replacement 1 0 3 260 50 NJ 50 1580
+preplace netloc axi_jesd204_rx_core_cfg_disable_scrambler 1 0 3 280 70 NJ 70 1560
+preplace netloc axi_jesd204_rx_core_cfg_frame_align_err_threshold 1 0 3 300 90 NJ 90 1540
+preplace netloc axi_jesd204_rx_core_cfg_lanes_disable 1 0 3 20 10 NJ 10 1800
+preplace netloc axi_jesd204_rx_core_cfg_links_disable 1 0 3 40 30 NJ 30 1780
+preplace netloc axi_jesd204_rx_core_cfg_octets_per_frame 1 0 3 300 890 NJ 890 1540
+preplace netloc axi_jesd204_rx_core_cfg_octets_per_multiframe 1 0 3 280 910 NJ 910 1560
+preplace netloc axi_jesd204_rx_core_ctrl_err_statistics_mask 1 0 3 60 1130 NJ 1130 1780
+preplace netloc axi_jesd204_rx_core_ctrl_err_statistics_reset 1 0 3 40 1150 NJ 1150 1800
+preplace netloc axi_jesd204_rx_core_reset 1 0 3 260 930 NJ 930 1580
+preplace netloc axi_jesd204_rx_device_cfg_beats_per_multiframe 1 0 3 180 1010 NJ 1010 1660
+preplace netloc axi_jesd204_rx_device_cfg_buffer_delay 1 0 3 80 1110 NJ 1110 1760
+preplace netloc axi_jesd204_rx_device_cfg_buffer_early_release 1 0 3 100 1090 NJ 1090 1740
+preplace netloc axi_jesd204_rx_device_cfg_lmfc_offset 1 0 3 160 1030 NJ 1030 1680
+preplace netloc axi_jesd204_rx_device_cfg_octets_per_frame 1 0 3 240 950 NJ 950 1600
+preplace netloc axi_jesd204_rx_device_cfg_octets_per_multiframe 1 0 3 220 970 NJ 970 1620
+preplace netloc axi_jesd204_rx_device_cfg_sysref_disable 1 0 3 120 1070 NJ 1070 1720
+preplace netloc axi_jesd204_rx_device_cfg_sysref_oneshot 1 0 3 140 1050 NJ 1050 1700
+preplace netloc axi_jesd204_rx_device_reset 1 0 3 200 990 NJ 990 1640
+preplace netloc axi_jesd204_rx_irq 1 2 1 N 250
+preplace netloc jesd204_rx_0_status_lane_frame_align_err_cnt 1 1 1 N 630
+preplace netloc jesd204_rx_0_status_synth_params0 1 1 1 N 650
+preplace netloc jesd204_rx_0_status_synth_params1 1 1 1 N 670
+preplace netloc jesd204_rx_0_status_synth_params2 1 1 1 N 690
+preplace netloc jesd204_rx_device_event_sysref_alignment_error 1 1 1 N 410
+preplace netloc jesd204_rx_device_event_sysref_edge 1 1 1 880 330n
+preplace netloc jesd204_rx_event_frame_alignment_error 1 1 1 N 470
+preplace netloc jesd204_rx_event_unexpected_lane_state_error 1 1 1 N 550
+preplace netloc jesd204_rx_ilas_config_addr 1 1 1 N 530
+preplace netloc jesd204_rx_ilas_config_data 1 1 1 N 490
+preplace netloc jesd204_rx_ilas_config_valid 1 1 1 N 510
+preplace netloc jesd204_rx_status_ctrl_state 1 1 1 840 370n
+preplace netloc jesd204_rx_status_err_statistics_cnt 1 1 1 920 290n
+preplace netloc jesd204_rx_status_lane_cgs_state 1 1 1 860 350n
+preplace netloc jesd204_rx_status_lane_emb_state 1 1 1 N 570
+preplace netloc jesd204_rx_status_lane_ifs_ready 1 1 1 N 590
+preplace netloc jesd204_rx_status_lane_latency 1 1 1 N 610
+preplace netloc link_clk_1 1 0 2 20 810 NJ
+preplace netloc s_axi_aclk_1 1 0 2 NJ 770 NJ
+preplace netloc s_axi_aresetn_1 1 0 2 NJ 790 NJ
+preplace netloc s_axi_1 1 0 2 NJ 750 900J
+levelinfo -pg 1 -20 570 1250 1820
+pagesize -pg 1 -db -bbox -sgen -170 0 1890 1160
+",
+   "Reduced Jogs_ScaleFactor":"0.809164",
+   "Reduced Jogs_TopLeft":"-898,27",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace inst axi_jesd204_rx -pg 1 -lvl 2 -x 1110 -y 440 -defaultsOSRD
+preplace inst jesd204_rx -pg 1 -lvl 1 -x 440 -y 360 -defaultsOSRD
+preplace netloc jesd204_rx_0_status_synth_params2 1 1 1 690 620n
+preplace netloc jesd204_rx_0_status_synth_params1 1 1 1 700 600n
+preplace netloc jesd204_rx_0_status_synth_params0 1 1 1 710 580n
+preplace netloc jesd204_rx_0_status_lane_frame_align_err_cnt 1 1 1 720 560n
+preplace netloc Net 1 0 2 40 10 840J
+preplace netloc axi_jesd204_rx_core_reset 1 0 3 20 780 NJ 780 1550
+preplace netloc axi_jesd204_rx_device_reset 1 0 3 60 730 NJ 730 1520
+preplace netloc axi_jesd204_rx_core_cfg_lanes_disable 1 0 3 70 740 NJ 740 1510
+preplace netloc axi_jesd204_rx_core_cfg_links_disable 1 0 3 80 750 NJ 750 1500
+preplace netloc axi_jesd204_rx_core_cfg_octets_per_multiframe 1 0 3 40 770 NJ 770 1530
+preplace netloc axi_jesd204_rx_core_cfg_octets_per_frame 1 0 3 170 760 NJ 760 1390
+preplace netloc axi_jesd204_rx_core_cfg_disable_scrambler 1 0 3 160 30 NJ 30 1400
+preplace netloc axi_jesd204_rx_core_cfg_disable_char_replacement 1 0 3 30 20 NJ 20 1540
+preplace netloc axi_jesd204_rx_core_cfg_frame_align_err_threshold 1 0 3 190 720 NJ 720 1380
+preplace netloc axi_jesd204_rx_device_cfg_octets_per_multiframe 1 0 3 90 790 NJ 790 1490
+preplace netloc axi_jesd204_rx_device_cfg_octets_per_frame 1 0 3 100 800 NJ 800 1480
+preplace netloc axi_jesd204_rx_device_cfg_beats_per_multiframe 1 0 3 110 810 NJ 810 1470
+preplace netloc axi_jesd204_rx_device_cfg_lmfc_offset 1 0 3 120 820 NJ 820 1460
+preplace netloc axi_jesd204_rx_device_cfg_sysref_oneshot 1 0 3 130 830 NJ 830 1450
+preplace netloc axi_jesd204_rx_device_cfg_sysref_disable 1 0 3 140 840 NJ 840 1440
+preplace netloc axi_jesd204_rx_device_cfg_buffer_early_release 1 0 3 150 850 NJ 850 1430
+preplace netloc axi_jesd204_rx_device_cfg_buffer_delay 1 0 3 160 860 NJ 860 1420
+preplace netloc axi_jesd204_rx_core_ctrl_err_statistics_reset 1 0 3 50 880 NJ 880 1400
+preplace netloc axi_jesd204_rx_core_ctrl_err_statistics_mask 1 0 3 180 870 NJ 870 1410
+preplace netloc jesd204_rx_device_event_sysref_alignment_error 1 1 1 830 140n
+preplace netloc jesd204_rx_device_event_sysref_edge 1 1 1 820 160n
+preplace netloc jesd204_rx_event_frame_alignment_error 1 1 1 810 180n
+preplace netloc jesd204_rx_event_unexpected_lane_state_error 1 1 1 800 200n
+preplace netloc jesd204_rx_status_err_statistics_cnt 1 1 1 780 380n
+preplace netloc jesd204_rx_ilas_config_valid 1 1 1 750 340n
+preplace netloc jesd204_rx_ilas_config_addr 1 1 1 770 360n
+preplace netloc jesd204_rx_ilas_config_data 1 1 1 790 380n
+preplace netloc jesd204_rx_status_ctrl_state 1 1 1 770 460n
+preplace netloc jesd204_rx_status_lane_cgs_state 1 1 1 750 480n
+preplace netloc jesd204_rx_status_lane_ifs_ready 1 1 1 740 500n
+preplace netloc jesd204_rx_status_lane_emb_state 1 1 1 N 540
+preplace netloc jesd204_rx_status_lane_latency 1 1 1 730 520n
+preplace netloc s_axi_1 1 0 2 NJ 690 760J
+levelinfo -pg 1 0 440 1110 1570
+pagesize -pg 1 -db -bbox -sgen -90 0 1570 890
+"
+}
+0
