@@ -1,0 +1,570 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Nov  6 14:47:20 2024
+# Process ID: 20684
+# Current directory: C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1
+# Command line: vivado.exe -log axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.tcl
+# Log file: C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.vds
+# Journal file: C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1\vivado.jou
+# Running On: PSD033, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 8388 MB
+#-----------------------------------------------------------
+source axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1002.105 ; gain = 115.438
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/jesd204/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0
+Command: synth_design -top axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0 -part xczu7ev-fbvb900-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29060
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'adc_sync_armed', assumed default net type 'wire' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_core.v:111]
+INFO: [Synth 8-11241] undeclared symbol 'adc_ext_sync_arm', assumed default net type 'wire' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc.v:181]
+INFO: [Synth 8-11241] undeclared symbol 'adc_ext_sync_disarm', assumed default net type 'wire' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc.v:182]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 3193.070 ; gain = 335.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/synth/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ad_ip_jesd204_tpl_adc' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_ip_jesd204_tpl_adc_regmap' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_cntrl' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_cntrl.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_cntrl' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_cntrl.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_status' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_status.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_status' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_status.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_adc_channel' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:38]
+WARNING: [Synth 8-7071] port 'adc_read_data' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'adc_status_header' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'adc_crc_err' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'adc_softspan' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'up_adc_crc_err' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7023] instance 'i_up_adc_channel' of module 'up_adc_channel' has 49 connections declared, but only 44 given [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+INFO: [Synth 8-6157] synthesizing module 'up_adc_channel__parameterized0' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_adc_channel__parameterized0' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:38]
+WARNING: [Synth 8-7071] port 'adc_read_data' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'adc_status_header' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'adc_crc_err' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'adc_softspan' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7071] port 'up_adc_crc_err' of module 'up_adc_channel' is unconnected for instance 'i_up_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+WARNING: [Synth 8-7023] instance 'i_up_adc_channel' of module 'up_adc_channel' has 49 connections declared, but only 44 given [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:290]
+INFO: [Synth 8-6157] synthesizing module 'up_axi' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_axi.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_axi' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_axi.v:38]
+WARNING: [Synth 8-689] width (16) of port connection 'up_axi_awaddr' does not match port width (13) of module 'up_axi' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:161]
+WARNING: [Synth 8-689] width (16) of port connection 'up_axi_araddr' does not match port width (13) of module 'up_axi' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:171]
+INFO: [Synth 8-6157] synthesizing module 'up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_common.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_rst' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_rst.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_rst' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_rst.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_cntrl__parameterized0' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_cntrl.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_cntrl__parameterized0' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_cntrl.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_status__parameterized0' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_status.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_status__parameterized0' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_xfer_status.v:38]
+INFO: [Synth 8-6157] synthesizing module 'up_clock_mon' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_clock_mon.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_clock_mon' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_clock_mon.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_adc_common' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_common.v:38]
+WARNING: [Synth 8-7071] port 'adc_num_lanes' of module 'up_adc_common' is unconnected for instance 'i_up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+WARNING: [Synth 8-7071] port 'adc_custom_control' of module 'up_adc_common' is unconnected for instance 'i_up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+WARNING: [Synth 8-7071] port 'adc_crc_enable' of module 'up_adc_common' is unconnected for instance 'i_up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+WARNING: [Synth 8-7071] port 'adc_sdr_ddr_n' of module 'up_adc_common' is unconnected for instance 'i_up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+WARNING: [Synth 8-7071] port 'adc_symb_op' of module 'up_adc_common' is unconnected for instance 'i_up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+WARNING: [Synth 8-7071] port 'adc_symb_8_16b' of module 'up_adc_common' is unconnected for instance 'i_up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+WARNING: [Synth 8-7071] port 'up_adc_r1_mode' of module 'up_adc_common' is unconnected for instance 'i_up_adc_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+WARNING: [Synth 8-7023] instance 'i_up_adc_common' of module 'up_adc_common' has 55 connections declared, but only 48 given [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:229]
+INFO: [Synth 8-6157] synthesizing module 'up_tpl_common' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_tpl_common.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_tpl_common' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_tpl_common.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_ip_jesd204_tpl_adc_regmap' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_regmap.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_ip_jesd204_tpl_adc_core' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_core.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_ip_jesd204_tpl_adc_channel' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_channel.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_datafmt' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_datafmt.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'ad_datafmt' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_datafmt.v:39]
+INFO: [Synth 8-6157] synthesizing module 'ad_ip_jesd204_tpl_adc_pnmon' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_pnmon.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_pnmon' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_pnmon.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'ad_pnmon' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_pnmon.v:39]
+WARNING: [Synth 8-7071] port 'adc_pattern_has_zero' of module 'ad_pnmon' is unconnected for instance 'i_pnmon' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_pnmon.v:154]
+WARNING: [Synth 8-7023] instance 'i_pnmon' of module 'ad_pnmon' has 7 connections declared, but only 6 given [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_pnmon.v:154]
+INFO: [Synth 8-6155] done synthesizing module 'ad_ip_jesd204_tpl_adc_pnmon' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_pnmon.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_ip_jesd204_tpl_adc_channel' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_channel.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_ext_sync' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/util_ext_sync.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_ext_sync' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/util_ext_sync.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_ip_jesd204_tpl_adc_deframer' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_deframer.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_xcvr_rx_if' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_xcvr_rx_if.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_xcvr_rx_if' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_xcvr_rx_if.v:38]
+INFO: [Synth 8-6157] synthesizing module 'ad_perfect_shuffle' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_perfect_shuffle.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ad_perfect_shuffle' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_perfect_shuffle.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ad_perfect_shuffle__parameterized0' [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_perfect_shuffle.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ad_perfect_shuffle__parameterized0' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_perfect_shuffle.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ad_ip_jesd204_tpl_adc_deframer' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_deframer.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_ip_jesd204_tpl_adc_core' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc_core.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ad_ip_jesd204_tpl_adc' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/ad_ip_jesd204_tpl_adc.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0' (0#1) [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/synth/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_dcfilt_enb_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:231]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_dcfilt_coeff_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:310]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_iqcor_coeff_1_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:330]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_iqcor_coeff_2_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:331]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_be_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:363]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_signed_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:364]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_total_bits_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:366]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_bits_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:367]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_decimation_m_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:368]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_decimation_n_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:369]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_iqcor_coeff_tc_2_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:448]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_dcfilt_enb_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:231]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_dcfilt_coeff_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:310]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_iqcor_coeff_1_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:330]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_iqcor_coeff_2_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:331]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_be_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:363]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_signed_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:364]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_total_bits_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:366]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_datatype_bits_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:367]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_decimation_m_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:368]
+WARNING: [Synth 8-6014] Unused sequential element up_usr_decimation_n_int_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:369]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_iqcor_coeff_tc_2_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_channel.v:448]
+WARNING: [Synth 8-6014] Unused sequential element up_adc_start_code_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/up_adc_common.v:427]
+WARNING: [Synth 8-6014] Unused sequential element ext_sync_arm_d1_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/util_ext_sync.v:58]
+WARNING: [Synth 8-6014] Unused sequential element ext_sync_disarm_d1_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/util_ext_sync.v:59]
+WARNING: [Synth 8-6014] Unused sequential element sync_in_d1_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/util_ext_sync.v:61]
+WARNING: [Synth 8-6014] Unused sequential element sync_in_d2_reg was removed.  [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ipshared/fafe/util_ext_sync.v:62]
+WARNING: [Synth 8-7129] Port ext_sync_arm in module util_ext_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_sync_disarm in module util_ext_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sync_in in module util_ext_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_pattern_has_zero in module ad_pnmon is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc_sync in module ad_ip_jesd204_tpl_adc_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[31] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[30] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[29] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[28] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[27] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[26] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[25] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[24] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[23] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[22] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[21] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[20] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[19] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[18] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[17] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[16] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[15] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[14] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[13] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[12] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[11] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[10] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[9] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[8] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[7] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[6] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[5] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[4] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[3] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[2] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[1] in module up_tpl_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[31] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[30] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[29] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[28] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[27] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[26] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[25] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[24] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[23] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[22] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[21] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[20] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[19] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[18] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[17] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[16] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[15] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[14] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[13] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[12] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[11] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[10] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[9] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[8] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[7] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[6] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[5] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[4] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[3] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[2] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[1] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_rdata[0] in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_drp_ready in module up_adc_common is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_awaddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_awaddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[3] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[2] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[31] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[30] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[29] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[28] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[27] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[26] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[25] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[24] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[23] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[22] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[21] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[20] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[15] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[14] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[13] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[9] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[8] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[7] in module up_adc_channel__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[31] in module up_adc_channel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[30] in module up_adc_channel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[29] in module up_adc_channel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[28] in module up_adc_channel is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_wdata[27] in module up_adc_channel is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 3296.637 ; gain = 438.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 3314.535 ; gain = 456.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 3314.535 ; gain = 456.844
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 3314.535 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc] for cell 'inst'
+Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc] for cell 'inst'
+Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc] for cell 'inst'
+Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc] for cell 'inst'
+Parsing XDC File [C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3438.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.747 . Memory (MB): peak = 3438.074 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 3438.074 ; gain = 580.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 3438.074 ; gain = 580.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_core_rst_reg/rst_async_d1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_core_rst_reg/rst_async_d2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_mmcm_rst_reg/rst_async_d1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_mmcm_rst_reg/rst_async_d2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_core_rst_reg/rst_sync_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc, line 5).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_mmcm_rst_reg/rst_sync_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc, line 5).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_count_running_m1_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_count_running_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_count_running_m2_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_count_running_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_count_running_m3_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_count_running_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/d_count_run_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/d_count_run_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/d_count_run_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_clock_mon/up_d_count_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc, line 4).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m1_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m2_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m1_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m2_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/up_xfer_state_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/up_xfer_state_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/up_xfer_state_m1_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/up_xfer_state_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/up_xfer_state_m2_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/up_xfer_state_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/up_xfer_state_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/d_xfer_toggle_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/d_xfer_toggle_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_cntrl/d_xfer_toggle_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/d_xfer_toggle_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/d_xfer_toggle_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_cntrl/d_xfer_toggle_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_cntrl_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/d_xfer_state_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/d_xfer_state_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/d_xfer_state_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/d_xfer_state_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/d_xfer_state_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/d_xfer_state_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/d_xfer_state_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/d_xfer_state_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/d_xfer_state_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 2).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m1_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m2_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m3_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[0].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m1_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m2_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m3_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/\g_channel[1].i_up_adc_channel /i_xfer_status/up_xfer_toggle_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/up_xfer_toggle_m1_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/up_xfer_toggle_m1_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/up_xfer_toggle_m2_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/up_xfer_toggle_m2_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/up_xfer_toggle_m3_i. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property ASYNC_REG = true for inst/i_regmap/i_up_adc_common/i_xfer_status/up_xfer_toggle_m3_reg. (constraint file  c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_xfer_status_constr.xdc, line 3).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 3438.074 ; gain = 580.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 3438.074 ; gain = 580.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 6     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     56 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 30    
++---Registers : 
+	              122 Bit    Registers := 2     
+	               81 Bit    Registers := 4     
+	               56 Bit    Registers := 2     
+	               44 Bit    Registers := 6     
+	               36 Bit    Registers := 3     
+	               32 Bit    Registers := 21    
+	               16 Bit    Registers := 13    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 164   
++---Muxes : 
+	   2 Input   56 Bit        Muxes := 2     
+	   2 Input   44 Bit        Muxes := 2     
+	   2 Input   36 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 16    
+	  30 Input   32 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 47    
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 3438.074 ; gain = 580.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:14 . Memory (MB): peak = 3879.746 ; gain = 1022.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:15 . Memory (MB): peak = 3881.895 ; gain = 1024.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:16 . Memory (MB): peak = 3953.586 ; gain = 1095.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:20 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:20 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    17|
+|2     |LUT1   |    14|
+|3     |LUT2   |   135|
+|4     |LUT3   |   303|
+|5     |LUT4   |   153|
+|6     |LUT5   |   343|
+|7     |LUT6   |   444|
+|8     |FDCE   |    76|
+|9     |FDPE   |     3|
+|10    |FDRE   |  1009|
+|11    |FDSE   |    33|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:20 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:14 . Memory (MB): peak = 3968.426 ; gain = 987.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:21 . Memory (MB): peak = 3968.426 ; gain = 1110.734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 3980.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3997.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d7bc9cb7
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:51 . Memory (MB): peak = 3997.566 ; gain = 2208.457
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3997.566 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0, cache-ID = 82bfb9bc9455e374
+INFO: [Coretcl 2-1174] Renamed 35 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_utilization_synth.rpt -pb axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  6 14:51:45 2024...

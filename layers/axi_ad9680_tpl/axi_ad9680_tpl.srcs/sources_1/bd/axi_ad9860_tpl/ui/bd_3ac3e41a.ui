@@ -1,0 +1,50 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.812903",
+   "Default View_TopLeft":"-416,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_link_clk -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_link_valid -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_adc_dovf -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace portBus link_sof -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace portBus link_data -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace portBus adc_enable_0 -pg 1 -lvl 3 -x 650 -y 60 -defaultsOSRD
+preplace portBus adc_enable_1 -pg 1 -lvl 3 -x 650 -y 160 -defaultsOSRD
+preplace portBus adc_valid_0 -pg 1 -lvl 3 -x 650 -y 260 -defaultsOSRD
+preplace portBus adc_valid_1 -pg 1 -lvl 3 -x 650 -y 360 -defaultsOSRD
+preplace portBus adc_data_0 -pg 1 -lvl 3 -x 650 -y 460 -defaultsOSRD
+preplace portBus adc_data_1 -pg 1 -lvl 3 -x 650 -y 560 -defaultsOSRD
+preplace inst ad_ip_jesd204_tpl_adc -pg 1 -lvl 1 -x 210 -y 270 -defaultsOSRD
+preplace inst enable_xlslice_0 -pg 1 -lvl 2 -x 520 -y 60 -defaultsOSRD
+preplace inst enable_xlslice_1 -pg 1 -lvl 2 -x 520 -y 160 -defaultsOSRD
+preplace inst valid_xlslice_0 -pg 1 -lvl 2 -x 520 -y 260 -defaultsOSRD
+preplace inst valid_xlslice_1 -pg 1 -lvl 2 -x 520 -y 360 -defaultsOSRD
+preplace inst data_xlslice_0 -pg 1 -lvl 2 -x 520 -y 460 -defaultsOSRD
+preplace inst data_xlslice_1 -pg 1 -lvl 2 -x 520 -y 560 -defaultsOSRD
+preplace netloc link_clk_1 1 0 1 NJ 200
+preplace netloc link_sof_1 1 0 1 NJ 220
+preplace netloc link_valid_1 1 0 1 NJ 240
+preplace netloc link_data_1 1 0 1 NJ 260
+preplace netloc adc_dovf_1 1 0 1 NJ 280
+preplace netloc s_axi_aclk_1 1 0 1 NJ 340
+preplace netloc s_axi_aresetn_1 1 0 1 NJ 360
+preplace netloc ad_ip_jesd204_tpl_adc_enable 1 1 1 410 60n
+preplace netloc xlslice_0_Dout 1 2 1 NJ 60
+preplace netloc enable_xlslice_1_Dout 1 2 1 NJ 160
+preplace netloc ad_ip_jesd204_tpl_adc_adc_valid 1 1 1 410 260n
+preplace netloc valid_xlslice_0_Dout 1 2 1 NJ 260
+preplace netloc valid_xlslice_1_Dout 1 2 1 NJ 360
+preplace netloc ad_ip_jesd204_tpl_adc_adc_data 1 1 1 400 280n
+preplace netloc data_xlslice_0_Dout 1 2 1 NJ 460
+preplace netloc data_xlslice_1_Dout 1 2 1 NJ 560
+preplace netloc s_axi_1 1 0 1 NJ 180
+levelinfo -pg 1 0 210 520 650
+pagesize -pg 1 -db -bbox -sgen -150 0 820 620
+"
+}
+
