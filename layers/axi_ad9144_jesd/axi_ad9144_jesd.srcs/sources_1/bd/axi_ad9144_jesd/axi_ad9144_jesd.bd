@@ -1,0 +1,692 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC60A7ABA62FADD90",
+      "device": "xczu7ev-fbvb900-1-e",
+      "gen_directory": "../../../../axi_ad9144_jesd.gen/sources_1/bd/axi_ad9144_jesd",
+      "name": "axi_ad9144_jesd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "axi_jesd204_tx": "",
+      "jesd204_tx": ""
+    },
+    "interface_ports": {
+      "s_axi": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "14"
+          },
+          "ARUSER_WIDTH": {
+            "value": "0"
+          },
+          "AWUSER_WIDTH": {
+            "value": "0"
+          },
+          "BUSER_WIDTH": {
+            "value": "0"
+          },
+          "CLK_DOMAIN": {
+            "value": "axi_ad9144_jesd_s_axi_aclk",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_BURST": {
+            "value": "0"
+          },
+          "HAS_CACHE": {
+            "value": "0"
+          },
+          "HAS_LOCK": {
+            "value": "0"
+          },
+          "HAS_PROT": {
+            "value": "1"
+          },
+          "HAS_QOS": {
+            "value": "0"
+          },
+          "HAS_REGION": {
+            "value": "0"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "ID_WIDTH": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "MAX_BURST_LENGTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_READ_THREADS": {
+            "value": "1"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "1"
+          },
+          "NUM_WRITE_THREADS": {
+            "value": "1"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          },
+          "RUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "RUSER_WIDTH": {
+            "value": "0"
+          },
+          "SUPPORTS_NARROW_BURST": {
+            "value": "0"
+          },
+          "WUSER_BITS_PER_BYTE": {
+            "value": "0"
+          },
+          "WUSER_WIDTH": {
+            "value": "0"
+          }
+        },
+        "address_space_ref": "s_axi",
+        "base_address": {
+          "minimum": "0x00000000",
+          "maximum": "0x00003FFF",
+          "width": "14"
+        },
+        "port_maps": {
+          "AWADDR": {
+            "physical_name": "s_axi_awaddr",
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "AWPROT": {
+            "physical_name": "s_axi_awprot",
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "AWVALID": {
+            "physical_name": "s_axi_awvalid",
+            "direction": "I"
+          },
+          "AWREADY": {
+            "physical_name": "s_axi_awready",
+            "direction": "O"
+          },
+          "WDATA": {
+            "physical_name": "s_axi_wdata",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "WSTRB": {
+            "physical_name": "s_axi_wstrb",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "WVALID": {
+            "physical_name": "s_axi_wvalid",
+            "direction": "I"
+          },
+          "WREADY": {
+            "physical_name": "s_axi_wready",
+            "direction": "O"
+          },
+          "BRESP": {
+            "physical_name": "s_axi_bresp",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "BVALID": {
+            "physical_name": "s_axi_bvalid",
+            "direction": "O"
+          },
+          "BREADY": {
+            "physical_name": "s_axi_bready",
+            "direction": "I"
+          },
+          "ARADDR": {
+            "physical_name": "s_axi_araddr",
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "ARPROT": {
+            "physical_name": "s_axi_arprot",
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "ARVALID": {
+            "physical_name": "s_axi_arvalid",
+            "direction": "I"
+          },
+          "ARREADY": {
+            "physical_name": "s_axi_arready",
+            "direction": "O"
+          },
+          "RDATA": {
+            "physical_name": "s_axi_rdata",
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "RRESP": {
+            "physical_name": "s_axi_rresp",
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "RVALID": {
+            "physical_name": "s_axi_rvalid",
+            "direction": "O"
+          },
+          "RREADY": {
+            "physical_name": "s_axi_rready",
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "ports": {
+      "s_axi_aclk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "s_axi",
+            "value_src": "default"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "s_axi_aresetn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "axi_ad9144_jesd_s_axi_aclk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "s_axi_aresetn": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "link_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "axi_ad9144_jesd_link_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "device_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "axi_ad9144_jesd_device_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "sync": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "sysref": {
+        "direction": "I"
+      },
+      "irq": {
+        "type": "intr",
+        "direction": "O",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "tx_valid": {
+        "direction": "I"
+      },
+      "tx_data": {
+        "direction": "I",
+        "left": "127",
+        "right": "0"
+      },
+      "phy_data": {
+        "direction": "O",
+        "left": "127",
+        "right": "0"
+      },
+      "phy_charisk": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "phy_header": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "tx_ready": {
+        "direction": "O"
+      },
+      "tx_sof": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "axi_jesd204_tx": {
+        "vlnv": "analog.devices:user:axi_jesd204_tx:1.0",
+        "xci_name": "axi_ad9144_jesd_axi_jesd204_tx_0_0",
+        "xci_path": "ip\\axi_ad9144_jesd_axi_jesd204_tx_0_0\\axi_ad9144_jesd_axi_jesd204_tx_0_0.xci",
+        "inst_hier_path": "axi_jesd204_tx",
+        "parameters": {
+          "NUM_LANES": {
+            "value": "4"
+          }
+        },
+        "interface_ports": {
+          "s_axi": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "s_axi"
+          }
+        }
+      },
+      "jesd204_tx": {
+        "vlnv": "analog.devices:user:jesd204_tx:1.0",
+        "xci_name": "axi_ad9144_jesd_jesd204_tx_0_0",
+        "xci_path": "ip\\axi_ad9144_jesd_jesd204_tx_0_0\\axi_ad9144_jesd_jesd204_tx_0_0.xci",
+        "inst_hier_path": "jesd204_tx",
+        "parameters": {
+          "ASYNC_CLK": {
+            "value": "0"
+          },
+          "NUM_LANES": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "s_axi_1": {
+        "interface_ports": [
+          "s_axi",
+          "axi_jesd204_tx/s_axi"
+        ]
+      }
+    },
+    "nets": {
+      "axi_jesd204_tx_core_cfg_continuous_cgs": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_continuous_cgs",
+          "jesd204_tx/cfg_continuous_cgs"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_continuous_ilas": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_continuous_ilas",
+          "jesd204_tx/cfg_continuous_ilas"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_disable_char_replacement": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_disable_char_replacement",
+          "jesd204_tx/cfg_disable_char_replacement"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_disable_scrambler": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_disable_scrambler",
+          "jesd204_tx/cfg_disable_scrambler"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_lanes_disable": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_lanes_disable",
+          "jesd204_tx/cfg_lanes_disable"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_links_disable": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_links_disable",
+          "jesd204_tx/cfg_links_disable"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_mframes_per_ilas": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_mframes_per_ilas",
+          "jesd204_tx/cfg_mframes_per_ilas"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_octets_per_frame": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_octets_per_frame",
+          "jesd204_tx/cfg_octets_per_frame"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_octets_per_multiframe": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_octets_per_multiframe",
+          "jesd204_tx/cfg_octets_per_multiframe"
+        ]
+      },
+      "axi_jesd204_tx_core_cfg_skip_ilas": {
+        "ports": [
+          "axi_jesd204_tx/core_cfg_skip_ilas",
+          "jesd204_tx/cfg_skip_ilas"
+        ]
+      },
+      "axi_jesd204_tx_core_ctrl_manual_sync_request": {
+        "ports": [
+          "axi_jesd204_tx/core_ctrl_manual_sync_request",
+          "jesd204_tx/ctrl_manual_sync_request"
+        ]
+      },
+      "axi_jesd204_tx_core_ilas_config_data": {
+        "ports": [
+          "axi_jesd204_tx/core_ilas_config_data",
+          "jesd204_tx/ilas_config_data"
+        ]
+      },
+      "axi_jesd204_tx_core_reset": {
+        "ports": [
+          "axi_jesd204_tx/core_reset",
+          "jesd204_tx/reset"
+        ]
+      },
+      "axi_jesd204_tx_device_cfg_beats_per_multiframe": {
+        "ports": [
+          "axi_jesd204_tx/device_cfg_beats_per_multiframe",
+          "jesd204_tx/device_cfg_beats_per_multiframe"
+        ]
+      },
+      "axi_jesd204_tx_device_cfg_lmfc_offset": {
+        "ports": [
+          "axi_jesd204_tx/device_cfg_lmfc_offset",
+          "jesd204_tx/device_cfg_lmfc_offset"
+        ]
+      },
+      "axi_jesd204_tx_device_cfg_octets_per_frame": {
+        "ports": [
+          "axi_jesd204_tx/device_cfg_octets_per_frame",
+          "jesd204_tx/device_cfg_octets_per_frame"
+        ]
+      },
+      "axi_jesd204_tx_device_cfg_octets_per_multiframe": {
+        "ports": [
+          "axi_jesd204_tx/device_cfg_octets_per_multiframe",
+          "jesd204_tx/device_cfg_octets_per_multiframe"
+        ]
+      },
+      "axi_jesd204_tx_device_cfg_sysref_disable": {
+        "ports": [
+          "axi_jesd204_tx/device_cfg_sysref_disable",
+          "jesd204_tx/device_cfg_sysref_disable"
+        ]
+      },
+      "axi_jesd204_tx_device_cfg_sysref_oneshot": {
+        "ports": [
+          "axi_jesd204_tx/device_cfg_sysref_oneshot",
+          "jesd204_tx/device_cfg_sysref_oneshot"
+        ]
+      },
+      "axi_jesd204_tx_device_reset": {
+        "ports": [
+          "axi_jesd204_tx/device_reset",
+          "jesd204_tx/device_reset"
+        ]
+      },
+      "axi_jesd204_tx_irq": {
+        "ports": [
+          "axi_jesd204_tx/irq",
+          "irq"
+        ]
+      },
+      "device_clk_1": {
+        "ports": [
+          "device_clk",
+          "axi_jesd204_tx/device_clk",
+          "jesd204_tx/device_clk"
+        ]
+      },
+      "jesd204_tx_device_event_sysref_alignment_error": {
+        "ports": [
+          "jesd204_tx/device_event_sysref_alignment_error",
+          "axi_jesd204_tx/device_event_sysref_alignment_error"
+        ]
+      },
+      "jesd204_tx_device_event_sysref_edge": {
+        "ports": [
+          "jesd204_tx/device_event_sysref_edge",
+          "axi_jesd204_tx/device_event_sysref_edge"
+        ]
+      },
+      "jesd204_tx_ilas_config_addr": {
+        "ports": [
+          "jesd204_tx/ilas_config_addr",
+          "axi_jesd204_tx/core_ilas_config_addr"
+        ]
+      },
+      "jesd204_tx_ilas_config_rd": {
+        "ports": [
+          "jesd204_tx/ilas_config_rd",
+          "axi_jesd204_tx/core_ilas_config_rd"
+        ]
+      },
+      "jesd204_tx_phy_charisk": {
+        "ports": [
+          "jesd204_tx/phy_charisk",
+          "phy_charisk"
+        ]
+      },
+      "jesd204_tx_phy_data": {
+        "ports": [
+          "jesd204_tx/phy_data",
+          "phy_data"
+        ]
+      },
+      "jesd204_tx_phy_header": {
+        "ports": [
+          "jesd204_tx/phy_header",
+          "phy_header"
+        ]
+      },
+      "jesd204_tx_status_state": {
+        "ports": [
+          "jesd204_tx/status_state",
+          "axi_jesd204_tx/core_status_state"
+        ]
+      },
+      "jesd204_tx_status_sync": {
+        "ports": [
+          "jesd204_tx/status_sync",
+          "axi_jesd204_tx/core_status_sync"
+        ]
+      },
+      "jesd204_tx_status_synth_params0": {
+        "ports": [
+          "jesd204_tx/status_synth_params0",
+          "axi_jesd204_tx/status_synth_params0"
+        ]
+      },
+      "jesd204_tx_status_synth_params1": {
+        "ports": [
+          "jesd204_tx/status_synth_params1",
+          "axi_jesd204_tx/status_synth_params1"
+        ]
+      },
+      "jesd204_tx_status_synth_params2": {
+        "ports": [
+          "jesd204_tx/status_synth_params2",
+          "axi_jesd204_tx/status_synth_params2"
+        ]
+      },
+      "jesd204_tx_tx_ready": {
+        "ports": [
+          "jesd204_tx/tx_ready",
+          "tx_ready"
+        ]
+      },
+      "jesd204_tx_tx_sof": {
+        "ports": [
+          "jesd204_tx/tx_sof",
+          "tx_sof"
+        ]
+      },
+      "link_clk_1": {
+        "ports": [
+          "link_clk",
+          "axi_jesd204_tx/core_clk",
+          "jesd204_tx/clk"
+        ]
+      },
+      "s_axi_aclk_1": {
+        "ports": [
+          "s_axi_aclk",
+          "axi_jesd204_tx/s_axi_aclk"
+        ]
+      },
+      "s_axi_aresetn_1": {
+        "ports": [
+          "s_axi_aresetn",
+          "axi_jesd204_tx/s_axi_aresetn"
+        ]
+      },
+      "sync_1": {
+        "ports": [
+          "sync",
+          "jesd204_tx/sync"
+        ]
+      },
+      "sysref_1": {
+        "ports": [
+          "sysref",
+          "jesd204_tx/sysref"
+        ]
+      },
+      "tx_data_1": {
+        "ports": [
+          "tx_data",
+          "jesd204_tx/tx_data"
+        ]
+      },
+      "tx_valid_1": {
+        "ports": [
+          "tx_valid",
+          "jesd204_tx/tx_valid"
+        ]
+      }
+    },
+    "addressing": {
+      "/": {
+        "address_spaces": {
+          "s_axi": {
+            "range": "16K",
+            "width": "14"
+          }
+        }
+      }
+    }
+  }
+}
