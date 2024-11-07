@@ -1,0 +1,357 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-432,-103",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi_ad9144_xcvr -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port s_axi_ad9680_xcvr -pg 1 -lvl 0 -x 0 -y 2510 -defaultsOSRD
+preplace port port-id_rx_out_clk_0 -pg 1 -lvl 4 -x 900 -y 340 -defaultsOSRD
+preplace port port-id_tx_out_clk_0 -pg 1 -lvl 4 -x 900 -y 360 -defaultsOSRD
+preplace port port-id_sys_cpu_resetn -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_sys_cpu_clk -pg 1 -lvl 0 -x 0 -y 2450 -defaultsOSRD
+preplace port port-id_tx_ref_clk -pg 1 -lvl 0 -x 0 -y 5160 -defaultsOSRD
+preplace port port-id_rx_ref_clk -pg 1 -lvl 0 -x 0 -y 2350 -defaultsOSRD
+preplace port port-id_rx_0_p -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_rx_0_n -pg 1 -lvl 0 -x 0 -y 2370 -defaultsOSRD
+preplace port port-id_phy_rx_calign -pg 1 -lvl 0 -x 0 -y 4880 -defaultsOSRD
+preplace port port-id_tx_0_p -pg 1 -lvl 4 -x 900 -y 400 -defaultsOSRD
+preplace port port-id_tx_0_n -pg 1 -lvl 4 -x 900 -y 380 -defaultsOSRD
+preplace port port-id_tx_1_p -pg 1 -lvl 4 -x 900 -y 920 -defaultsOSRD
+preplace port port-id_tx_1_n -pg 1 -lvl 4 -x 900 -y 900 -defaultsOSRD
+preplace port port-id_tx_3_p -pg 1 -lvl 4 -x 900 -y 1000 -defaultsOSRD
+preplace port port-id_tx_3_n -pg 1 -lvl 4 -x 900 -y 980 -defaultsOSRD
+preplace port port-id_tx_2_p -pg 1 -lvl 4 -x 900 -y 960 -defaultsOSRD
+preplace port port-id_tx_2_n -pg 1 -lvl 4 -x 900 -y 940 -defaultsOSRD
+preplace port port-id_rx_3_p -pg 1 -lvl 0 -x 0 -y 2430 -defaultsOSRD
+preplace port port-id_rx_3_n -pg 1 -lvl 0 -x 0 -y 2410 -defaultsOSRD
+preplace port port-id_rx_2_p -pg 1 -lvl 0 -x 0 -y 2390 -defaultsOSRD
+preplace port port-id_rx_2_n -pg 1 -lvl 0 -x 0 -y 5140 -defaultsOSRD
+preplace port port-id_rx_1_p -pg 1 -lvl 0 -x 0 -y 5020 -defaultsOSRD
+preplace port port-id_rx_1_n -pg 1 -lvl 0 -x 0 -y 5000 -defaultsOSRD
+preplace port port-id_s_axi_ad9144_aclk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_s_axi_ad9144_aresetn -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_s_axi_ad9680_aclk -pg 1 -lvl 0 -x 0 -y 2530 -defaultsOSRD
+preplace port port-id_s_axi_ad9680_aresetn -pg 1 -lvl 0 -x 0 -y 2550 -defaultsOSRD
+preplace portBus phy_rx_charisk -pg 1 -lvl 4 -x 900 -y 1060 -defaultsOSRD
+preplace portBus phy_rx_data -pg 1 -lvl 4 -x 900 -y 60 -defaultsOSRD
+preplace portBus phy_rx_disperr -pg 1 -lvl 4 -x 900 -y 620 -defaultsOSRD
+preplace portBus phy_rx_notintable -pg 1 -lvl 4 -x 900 -y 780 -defaultsOSRD
+preplace portBus phy_rx_block_sync -pg 1 -lvl 4 -x 900 -y 220 -defaultsOSRD
+preplace portBus phy_rx_header -pg 1 -lvl 4 -x 900 -y 460 -defaultsOSRD
+preplace portBus phy_tx_charisk -pg 1 -lvl 0 -x 0 -y 4320 -defaultsOSRD
+preplace portBus phy_tx_header -pg 1 -lvl 0 -x 0 -y 5220 -defaultsOSRD
+preplace portBus phy_tx_data -pg 1 -lvl 0 -x 0 -y 4900 -defaultsOSRD
+preplace inst axi_ad9144_adxcvr_hier -pg 1 -lvl 1 -x 180 -y 2510 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 45 24 28 27 20 26 29 33 30 25 41 22 49 21 51 47 37 39 35 23 53 31 42 43 64 102 32 82 57 89 80 38 92 44 91 36 85 108 59 96 54 104 58 62 69 79 107 77 61 46 78 90 71 67 74 95 94 84 40 93 72 63 101 65 56 73 83 68 100 106 70 97 86 34 66 103 75 105 60 50 88 55 81 48 52 98 76 87 99} -defaultsOSRD -pinDir s_axi left -pinY s_axi 0L -pinDir up_ch_rst_done_0 right -pinY up_ch_rst_done_0 460R -pinDir up_ch_pll_locked_0 right -pinY up_ch_pll_locked_0 80R -pinBusDir up_ch_bufstatus_0 right -pinBusY up_ch_bufstatus_0 160R -pinBusDir up_ch_rdata_0 right -pinBusY up_ch_rdata_0 140R -pinDir up_ch_ready_0 right -pinY up_ch_ready_0 0R -pinDir up_ch_pll_locked_3 right -pinY up_ch_pll_locked_3 120R -pinDir up_ch_rst_done_3 right -pinY up_ch_rst_done_3 180R -pinBusDir up_ch_bufstatus_3 right -pinBusY up_ch_bufstatus_3 260R -pinBusDir up_ch_rdata_3 right -pinBusY up_ch_rdata_3 200R -pinDir up_ch_ready_3 right -pinY up_ch_ready_3 100R -pinDir up_ch_pll_locked_1 right -pinY up_ch_pll_locked_1 420R -pinDir up_ch_rst_done_1 right -pinY up_ch_rst_done_1 40R -pinBusDir up_ch_bufstatus_1 right -pinBusY up_ch_bufstatus_1 540R -pinBusDir up_ch_rdata_1 right -pinBusY up_ch_rdata_1 20R -pinDir up_ch_ready_1 right -pinY up_ch_ready_1 580R -pinDir up_ch_pll_locked_2 right -pinY up_ch_pll_locked_2 500R -pinBusDir up_ch_bufstatus_2 right -pinBusY up_ch_bufstatus_2 340R -pinBusDir up_ch_rdata_2 right -pinBusY up_ch_rdata_2 380R -pinDir up_ch_rst_done_2 right -pinY up_ch_rst_done_2 300R -pinDir up_ch_ready_2 right -pinY up_ch_ready_2 60R -pinBusDir up_cm_rdata_0 right -pinBusY up_cm_rdata_0 620R -pinDir up_cm_ready_0 right -pinY up_cm_ready_0 220R -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 40L -pinDir up_cm_enb_0 right -pinY up_cm_enb_0 840R -pinBusDir up_cm_addr_0 right -pinBusY up_cm_addr_0 1600R -pinDir up_cm_wr_0 right -pinY up_cm_wr_0 240R -pinBusDir up_cm_wdata_0 right -pinBusY up_cm_wdata_0 1200R -pinDir up_ch_rst_0 right -pinY up_ch_rst_0 700R -pinDir up_ch_user_ready_0 right -pinY up_ch_user_ready_0 1340R -pinDir up_ch_prbsforceerr_0 right -pinY up_ch_prbsforceerr_0 1160R -pinBusDir up_ch_prbssel_0 right -pinBusY up_ch_prbssel_0 360R -pinDir up_ch_lpm_dfe_n_0 right -pinY up_ch_lpm_dfe_n_0 1400R -pinBusDir up_ch_rate_0 right -pinBusY up_ch_rate_0 440R -pinBusDir up_ch_sys_clk_sel_0 right -pinBusY up_ch_sys_clk_sel_0 1380R -pinBusDir up_ch_out_clk_sel_0 right -pinBusY up_ch_out_clk_sel_0 320R -pinBusDir up_ch_tx_diffctrl_0 right -pinBusY up_ch_tx_diffctrl_0 1260R -pinBusDir up_ch_tx_postcursor_0 right -pinBusY up_ch_tx_postcursor_0 1720R -pinBusDir up_ch_tx_precursor_0 right -pinBusY up_ch_tx_precursor_0 740R -pinDir up_ch_enb_0 right -pinY up_ch_enb_0 1480R -pinBusDir up_ch_addr_0 right -pinBusY up_ch_addr_0 640R -pinDir up_ch_wr_0 right -pinY up_ch_wr_0 1640R -pinBusDir up_ch_wdata_0 right -pinBusY up_ch_wdata_0 720R -pinDir up_ch_rst_1 right -pinY up_ch_rst_1 800R -pinDir up_ch_user_ready_1 right -pinY up_ch_user_ready_1 940R -pinDir up_ch_prbsforceerr_1 right -pinY up_ch_prbsforceerr_1 1140R -pinBusDir up_ch_prbssel_1 right -pinBusY up_ch_prbssel_1 1700R -pinDir up_ch_lpm_dfe_n_1 right -pinY up_ch_lpm_dfe_n_1 1100R -pinBusDir up_ch_rate_1 right -pinBusY up_ch_rate_1 780R -pinBusDir up_ch_sys_clk_sel_1 right -pinBusY up_ch_sys_clk_sel_1 480R -pinBusDir up_ch_out_clk_sel_1 right -pinBusY up_ch_out_clk_sel_1 1120R -pinBusDir up_ch_tx_diffctrl_1 right -pinBusY up_ch_tx_diffctrl_1 1360R -pinBusDir up_ch_tx_postcursor_1 right -pinBusY up_ch_tx_postcursor_1 980R -pinBusDir up_ch_tx_precursor_1 right -pinBusY up_ch_tx_precursor_1 900R -pinDir up_ch_enb_1 right -pinY up_ch_enb_1 1040R -pinBusDir up_ch_addr_1 right -pinBusY up_ch_addr_1 1460R -pinDir up_ch_wr_1 right -pinY up_ch_wr_1 1440R -pinBusDir up_ch_wdata_1 right -pinBusY up_ch_wdata_1 1240R -pinDir up_ch_rst_2 right -pinY up_ch_rst_2 400R -pinDir up_ch_user_ready_2 right -pinY up_ch_user_ready_2 1420R -pinDir up_ch_prbsforceerr_2 right -pinY up_ch_prbsforceerr_2 1000R -pinBusDir up_ch_prbssel_2 right -pinBusY up_ch_prbssel_2 820R -pinDir up_ch_lpm_dfe_n_2 right -pinY up_ch_lpm_dfe_n_2 1580R -pinBusDir up_ch_rate_2 right -pinBusY up_ch_rate_2 860R -pinBusDir up_ch_sys_clk_sel_2 right -pinBusY up_ch_sys_clk_sel_2 680R -pinBusDir up_ch_out_clk_sel_2 right -pinBusY up_ch_out_clk_sel_2 1020R -pinBusDir up_ch_tx_diffctrl_2 right -pinBusY up_ch_tx_diffctrl_2 1220R -pinBusDir up_ch_tx_postcursor_2 right -pinBusY up_ch_tx_postcursor_2 920R -pinBusDir up_ch_tx_precursor_2 right -pinBusY up_ch_tx_precursor_2 1560R -pinDir up_ch_enb_2 right -pinY up_ch_enb_2 1680R -pinBusDir up_ch_addr_2 right -pinBusY up_ch_addr_2 960R -pinDir up_ch_wr_2 right -pinY up_ch_wr_2 1500R -pinBusDir up_ch_wdata_2 right -pinBusY up_ch_wdata_2 1280R -pinDir up_ch_rst_3 right -pinY up_ch_rst_3 280R -pinDir up_ch_user_ready_3 right -pinY up_ch_user_ready_3 880R -pinDir up_ch_prbsforceerr_3 right -pinY up_ch_prbsforceerr_3 1620R -pinBusDir up_ch_prbssel_3 right -pinBusY up_ch_prbssel_3 1060R -pinDir up_ch_lpm_dfe_n_3 right -pinY up_ch_lpm_dfe_n_3 1660R -pinBusDir up_ch_rate_3 right -pinBusY up_ch_rate_3 760R -pinBusDir up_ch_sys_clk_sel_3 right -pinBusY up_ch_sys_clk_sel_3 560R -pinBusDir up_ch_out_clk_sel_3 right -pinBusY up_ch_out_clk_sel_3 1320R -pinBusDir up_ch_tx_diffctrl_3 right -pinBusY up_ch_tx_diffctrl_3 660R -pinBusDir up_ch_tx_postcursor_3 right -pinBusY up_ch_tx_postcursor_3 1180R -pinBusDir up_ch_tx_precursor_3 right -pinBusY up_ch_tx_precursor_3 520R -pinDir up_ch_enb_3 right -pinY up_ch_enb_3 600R -pinBusDir up_ch_addr_3 right -pinBusY up_ch_addr_3 1520R -pinDir up_ch_wr_3 right -pinY up_ch_wr_3 1080R -pinBusDir up_ch_wdata_3 right -pinBusY up_ch_wdata_3 1300R -pinDir up_pll_rst right -pinY up_pll_rst 1540R
+preplace inst axi_ad9680_adxcvr_hier -pg 1 -lvl 1 -x 180 -y 140 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 28 44 66 118 100 37 114 102 70 90 108 96 104 124 42 93 80 122 58 112 88 86 76 110 34 120 106 22 82 74 116 94 98 52 78 84 56 57 125 119 62 115 47 48 64 33 29 113 25 38 35 73 46 41 45 43 117 91 130 77 121 75 20 21 60 127 97 49 99 128 53 95 40 31 89 72 55 50 27 23 107 63 61 111 59 71 101 87 24 83 105 30 32 123 39 36 54 26 79 67 51 65 81 109 103 129 69 126 68 85 92} -defaultsOSRD -pinDir s_axi left -pinY s_axi 0L -pinDir up_ch_ready_3 right -pinY up_ch_ready_3 160R -pinBusDir up_ch_rdata_3 right -pinBusY up_ch_rdata_3 480R -pinDir up_ch_ready_2 right -pinY up_ch_ready_2 880R -pinDir up_ch_ready_1 right -pinY up_ch_ready_1 1920R -pinBusDir up_es_rdata_0 right -pinBusY up_es_rdata_0 1560R -pinDir up_ch_pll_locked_0 right -pinY up_ch_pll_locked_0 340R -pinDir up_ch_prbserr_0 right -pinY up_ch_prbserr_0 1840R -pinDir up_es_ready_0 right -pinY up_es_ready_0 1600R -pinDir up_ch_rst_done_0 right -pinY up_ch_rst_done_0 960R -pinDir up_ch_prbslocked_0 right -pinY up_ch_prbslocked_0 1360R -pinBusDir up_ch_bufstatus_0 right -pinBusY up_ch_bufstatus_0 1720R -pinBusDir up_ch_rdata_0 right -pinBusY up_ch_rdata_0 1480R -pinDir up_ch_ready_0 right -pinY up_ch_ready_0 1640R -pinBusDir up_es_rdata_1 right -pinBusY up_es_rdata_1 2040R -pinDir up_es_ready_1 right -pinY up_es_ready_1 440R -pinDir up_ch_pll_locked_1 right -pinY up_ch_pll_locked_1 1420R -pinDir up_ch_rst_done_1 right -pinY up_ch_rst_done_1 1160R -pinDir up_ch_prbserr_1 right -pinY up_ch_prbserr_1 2000R -pinDir up_ch_prbslocked_1 right -pinY up_ch_prbslocked_1 720R -pinBusDir up_ch_bufstatus_1 right -pinBusY up_ch_bufstatus_1 1800R -pinBusDir up_ch_rdata_1 right -pinBusY up_ch_rdata_1 1320R -pinBusDir up_es_rdata_2 right -pinBusY up_es_rdata_2 1280R -pinDir up_es_ready_2 right -pinY up_es_ready_2 1080R -pinDir up_ch_pll_locked_2 right -pinY up_ch_pll_locked_2 1760R -pinDir up_ch_rst_done_2 right -pinY up_ch_rst_done_2 280R -pinDir up_ch_prbserr_2 right -pinY up_ch_prbserr_2 1960R -pinDir up_ch_prbslocked_2 right -pinY up_ch_prbslocked_2 1680R -pinBusDir up_ch_rdata_2 right -pinBusY up_ch_rdata_2 40R -pinBusDir up_es_rdata_3 right -pinBusY up_es_rdata_3 1200R -pinDir up_es_ready_3 right -pinY up_es_ready_3 1040R -pinDir up_ch_pll_locked_3 right -pinY up_ch_pll_locked_3 1880R -pinDir up_ch_rst_done_3 right -pinY up_ch_rst_done_3 1440R -pinDir up_ch_prbserr_3 right -pinY up_ch_prbserr_3 1520R -pinDir up_ch_prbslocked_3 right -pinY up_ch_prbslocked_3 640R -pinBusDir up_ch_bufstatus_3 right -pinBusY up_ch_bufstatus_3 1120R -pinBusDir up_ch_bufstatus_2 right -pinBusY up_ch_bufstatus_2 1240R -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 40L -pinDir up_es_enb_0 right -pinY up_es_enb_0 2060R -pinBusDir up_es_addr_0 right -pinBusY up_es_addr_0 1940R -pinDir up_es_wr_0 right -pinY up_es_wr_0 800R -pinDir up_es_reset_0 right -pinY up_es_reset_0 1860R -pinBusDir up_es_wdata_0 right -pinBusY up_es_wdata_0 540R -pinDir up_ch_rst_0 right -pinY up_ch_rst_0 560R -pinDir up_ch_user_ready_0 right -pinY up_ch_user_ready_0 840R -pinBusDir up_ch_prbssel_0 right -pinBusY up_ch_prbssel_0 260R -pinDir up_ch_prbscntreset_0 right -pinY up_ch_prbscntreset_0 180R -pinDir up_ch_bufstatus_rst_0 right -pinY up_ch_bufstatus_rst_0 1820R -pinDir up_ch_lpm_dfe_n_0 right -pinY up_ch_lpm_dfe_n_0 100R -pinBusDir up_ch_rate_0 right -pinBusY up_ch_rate_0 360R -pinBusDir up_ch_sys_clk_sel_0 right -pinBusY up_ch_sys_clk_sel_0 300R -pinBusDir up_ch_out_clk_sel_0 right -pinBusY up_ch_out_clk_sel_0 1020R -pinDir up_ch_enb_0 right -pinY up_ch_enb_0 520R -pinBusDir up_ch_addr_0 right -pinBusY up_ch_addr_0 420R -pinDir up_ch_wr_0 right -pinY up_ch_wr_0 500R -pinBusDir up_ch_wdata_0 right -pinBusY up_ch_wdata_0 460R -pinDir up_es_enb_1 right -pinY up_es_enb_1 1900R -pinBusDir up_es_addr_1 right -pinBusY up_es_addr_1 1380R -pinDir up_es_wr_1 right -pinY up_es_wr_1 2160R -pinDir up_es_reset_1 right -pinY up_es_reset_1 1100R -pinBusDir up_es_wdata_1 right -pinBusY up_es_wdata_1 1980R -pinDir up_ch_rst_1 right -pinY up_ch_rst_1 1060R -pinDir up_ch_user_ready_1 right -pinY up_ch_user_ready_1 0R -pinBusDir up_ch_prbssel_1 right -pinBusY up_ch_prbssel_1 20R -pinDir up_ch_prbscntreset_1 right -pinY up_ch_prbscntreset_1 760R -pinDir up_ch_bufstatus_rst_1 right -pinY up_ch_bufstatus_rst_1 2100R -pinDir up_ch_lpm_dfe_n_1 right -pinY up_ch_lpm_dfe_n_1 1500R -pinBusDir up_ch_rate_1 right -pinBusY up_ch_rate_1 580R -pinBusDir up_ch_sys_clk_sel_1 right -pinBusY up_ch_sys_clk_sel_1 1540R -pinBusDir up_ch_out_clk_sel_1 right -pinBusY up_ch_out_clk_sel_1 2120R -pinDir up_ch_enb_1 right -pinY up_ch_enb_1 660R -pinBusDir up_ch_addr_1 right -pinBusY up_ch_addr_1 1460R -pinDir up_ch_wr_1 right -pinY up_ch_wr_1 400R -pinBusDir up_ch_wdata_1 right -pinBusY up_ch_wdata_1 220R -pinDir up_es_enb_2 right -pinY up_es_enb_2 1340R -pinBusDir up_es_addr_2 right -pinBusY up_es_addr_2 1000R -pinDir up_es_wr_2 right -pinY up_es_wr_2 700R -pinDir up_es_reset_2 right -pinY up_es_reset_2 600R -pinBusDir up_es_wdata_2 right -pinBusY up_es_wdata_2 140R -pinDir up_ch_rst_2 right -pinY up_ch_rst_2 60R -pinDir up_ch_user_ready_2 right -pinY up_ch_user_ready_2 1700R -pinBusDir up_ch_prbssel_2 right -pinBusY up_ch_prbssel_2 820R -pinDir up_ch_prbscntreset_2 right -pinY up_ch_prbscntreset_2 780R -pinDir up_ch_bufstatus_rst_2 right -pinY up_ch_bufstatus_rst_2 1780R -pinDir up_ch_lpm_dfe_n_2 right -pinY up_ch_lpm_dfe_n_2 740R -pinBusDir up_ch_rate_2 right -pinBusY up_ch_rate_2 980R -pinBusDir up_ch_sys_clk_sel_2 right -pinBusY up_ch_sys_clk_sel_2 1580R -pinBusDir up_ch_out_clk_sel_2 right -pinBusY up_ch_out_clk_sel_2 1300R -pinDir up_ch_enb_2 right -pinY up_ch_enb_2 80R -pinBusDir up_ch_addr_2 right -pinBusY up_ch_addr_2 1220R -pinDir up_ch_wr_2 right -pinY up_ch_wr_2 1660R -pinBusDir up_ch_wdata_2 right -pinBusY up_ch_wdata_2 200R -pinDir up_es_enb_3 right -pinY up_es_enb_3 240R -pinBusDir up_es_addr_3 right -pinBusY up_es_addr_3 2020R -pinDir up_es_wr_3 right -pinY up_es_wr_3 380R -pinDir up_es_reset_3 right -pinY up_es_reset_3 320R -pinBusDir up_es_wdata_3 right -pinBusY up_es_wdata_3 680R -pinDir up_ch_rst_3 right -pinY up_ch_rst_3 120R -pinDir up_ch_user_ready_3 right -pinY up_ch_user_ready_3 1140R -pinBusDir up_ch_prbssel_3 right -pinBusY up_ch_prbssel_3 900R -pinDir up_ch_prbscntreset_3 right -pinY up_ch_prbscntreset_3 620R -pinDir up_ch_bufstatus_rst_3 right -pinY up_ch_bufstatus_rst_3 860R -pinDir up_ch_lpm_dfe_n_3 right -pinY up_ch_lpm_dfe_n_3 1180R -pinBusDir up_ch_rate_3 right -pinBusY up_ch_rate_3 1740R -pinBusDir up_ch_sys_clk_sel_3 right -pinBusY up_ch_sys_clk_sel_3 1620R -pinBusDir up_ch_out_clk_sel_3 right -pinBusY up_ch_out_clk_sel_3 2140R -pinDir up_ch_enb_3 right -pinY up_ch_enb_3 940R -pinBusDir up_ch_addr_3 right -pinBusY up_ch_addr_3 2080R -pinDir up_ch_wr_3 right -pinY up_ch_wr_3 920R -pinBusDir up_ch_wdata_3 right -pinBusY up_ch_wdata_3 1260R -pinDir up_pll_rst right -pinY up_pll_rst 1400R
+preplace inst util_daq2_xcvr_hier -pg 1 -lvl 2 -x 510 -y 60 -swap {21 22 2 150 250 228 145 106 3 146 244 12 36 72 132 40 39 84 45 62 0 41 17 182 162 114 29 128 116 76 104 122 110 118 155 174 159 158 151 85 46 63 1 42 18 67 66 138 34 107 94 136 56 126 102 157 160 164 161 156 86 60 64 15 43 19 81 80 100 90 124 26 134 120 6 172 153 178 152 180 87 61 65 16 44 20 83 82 96 88 130 108 112 52 92 98 176 166 168 170 154 139 133 68 129 47 48 70 25 13 127 9 30 27 79 38 33 37 35 131 105 144 91 135 89 4 5 58 141 111 49 113 142 53 109 32 23 103 78 55 50 11 7 121 69 59 125 57 77 115 101 8 97 119 14 24 137 31 28 54 10 93 73 51 71 95 123 117 143 75 140 74 99 149 148 147 249 247 246 193 231 163 211 186 218 209 169 221 173 220 167 214 237 188 225 183 233 187 191 198 208 236 206 190 175 207 219 200 196 203 224 223 213 171 222 201 192 230 194 185 202 212 197 229 235 199 226 215 165 195 232 204 234 189 179 217 184 210 177 181 227 205 216 238 245 252 241 248 254 239 242 251 240 243 253} -defaultsOSRD -pinDir rx_out_clk_0 right -pinY rx_out_clk_0 280R -pinDir tx_out_clk_0 right -pinY tx_out_clk_0 300R -pinDir sys_cpu_resetn left -pinY sys_cpu_resetn 0L -pinDir sys_cpu_clk left -pinY sys_cpu_clk 2390L -pinDir tx_ref_clk left -pinY tx_ref_clk 5100L -pinDir up_qpll_rst_0 left -pinY up_qpll_rst_0 3990L -pinDir rx_ref_clk left -pinY rx_ref_clk 2290L -pinDir up_cpll_rst_0 left -pinY up_cpll_rst_0 1480L -pinDir rx_0_p left -pinY rx_0_p 20L -pinDir rx_0_n left -pinY rx_0_n 2310L -pinDir phy_rx_calign left -pinY phy_rx_calign 4820L -pinDir up_rx_ready_3 left -pinY up_rx_ready_3 240L -pinBusDir up_rx_rdata_3 left -pinBusY up_rx_rdata_3 560L -pinDir up_rx_ready_2 left -pinY up_rx_ready_2 960L -pinDir up_rx_ready_1 left -pinY up_rx_ready_1 2000L -pinDir tx_0_p right -pinY tx_0_p 340R -pinDir tx_0_n right -pinY tx_0_n 320R -pinBusDir rx_charisk_0 right -pinBusY rx_charisk_0 1000R -pinBusDir rx_disperr_0 right -pinBusY rx_disperr_0 560R -pinBusDir rx_notintable_0 right -pinBusY rx_notintable_0 720R -pinBusDir rx_data_0 right -pinBusY rx_data_0 0R -pinBusDir rx_header_0 right -pinBusY rx_header_0 400R -pinDir rx_block_sync_0 right -pinY rx_block_sync_0 160R -pinBusDir up_cm_rdata_0 left -pinBusY up_cm_rdata_0 3070L -pinDir up_cm_ready_0 left -pinY up_cm_ready_0 2670L -pinBusDir up_es_rdata_0 left -pinBusY up_es_rdata_0 1640L -pinDir up_rx_pll_locked_0 left -pinY up_rx_pll_locked_0 420L -pinDir up_rx_prbserr_0 left -pinY up_rx_prbserr_0 1920L -pinDir up_es_ready_0 left -pinY up_es_ready_0 1680L -pinDir up_rx_rst_done_0 left -pinY up_rx_rst_done_0 1040L -pinDir up_rx_prbslocked_0 left -pinY up_rx_prbslocked_0 1440L -pinBusDir up_rx_bufstatus_0 left -pinBusY up_rx_bufstatus_0 1800L -pinBusDir up_rx_rdata_0 left -pinBusY up_rx_rdata_0 1560L -pinDir up_rx_ready_0 left -pinY up_rx_ready_0 1720L -pinDir up_tx_pll_locked_0 left -pinY up_tx_pll_locked_0 2530L -pinDir up_tx_rst_done_0 left -pinY up_tx_rst_done_0 2910L -pinBusDir up_tx_bufstatus_0 left -pinBusY up_tx_bufstatus_0 2610L -pinBusDir up_tx_rdata_0 left -pinBusY up_tx_rdata_0 2590L -pinDir up_tx_ready_0 left -pinY up_tx_ready_0 2450L -pinBusDir rx_charisk_1 right -pinBusY rx_charisk_1 1020R -pinBusDir rx_disperr_1 right -pinBusY rx_disperr_1 580R -pinBusDir rx_notintable_1 right -pinBusY rx_notintable_1 740R -pinBusDir rx_data_1 right -pinBusY rx_data_1 20R -pinBusDir rx_header_1 right -pinBusY rx_header_1 420R -pinDir rx_block_sync_1 right -pinY rx_block_sync_1 180R -pinDir tx_1_p right -pinY tx_1_p 860R -pinDir tx_1_n right -pinY tx_1_n 840R -pinBusDir up_es_rdata_1 left -pinBusY up_es_rdata_1 2120L -pinDir up_es_ready_1 left -pinY up_es_ready_1 520L -pinDir up_rx_pll_locked_1 left -pinY up_rx_pll_locked_1 1500L -pinDir up_rx_rst_done_1 left -pinY up_rx_rst_done_1 1240L -pinDir up_rx_prbserr_1 left -pinY up_rx_prbserr_1 2080L -pinDir up_rx_prbslocked_1 left -pinY up_rx_prbslocked_1 800L -pinBusDir up_rx_bufstatus_1 left -pinBusY up_rx_bufstatus_1 1880L -pinBusDir up_rx_rdata_1 left -pinBusY up_rx_rdata_1 1400L -pinDir up_tx_pll_locked_1 left -pinY up_tx_pll_locked_1 2570L -pinDir up_tx_rst_done_1 left -pinY up_tx_rst_done_1 2630L -pinBusDir up_tx_bufstatus_1 left -pinBusY up_tx_bufstatus_1 2710L -pinBusDir up_tx_rdata_1 left -pinBusY up_tx_rdata_1 2650L -pinDir up_tx_ready_1 left -pinY up_tx_ready_1 2550L -pinBusDir rx_charisk_2 right -pinBusY rx_charisk_2 1040R -pinBusDir rx_disperr_2 right -pinBusY rx_disperr_2 600R -pinBusDir rx_notintable_2 right -pinBusY rx_notintable_2 760R -pinBusDir rx_data_2 right -pinBusY rx_data_2 40R -pinBusDir rx_header_2 right -pinBusY rx_header_2 440R -pinDir rx_block_sync_2 right -pinY rx_block_sync_2 200R -pinDir tx_2_p right -pinY tx_2_p 900R -pinDir tx_2_n right -pinY tx_2_n 880R -pinBusDir up_es_rdata_2 left -pinBusY up_es_rdata_2 1360L -pinDir up_es_ready_2 left -pinY up_es_ready_2 1160L -pinDir up_rx_pll_locked_2 left -pinY up_rx_pll_locked_2 1840L -pinDir up_rx_rst_done_2 left -pinY up_rx_rst_done_2 360L -pinDir up_rx_prbserr_2 left -pinY up_rx_prbserr_2 2040L -pinDir up_rx_prbslocked_2 left -pinY up_rx_prbslocked_2 1760L -pinBusDir up_rx_rdata_2 left -pinBusY up_rx_rdata_2 120L -pinDir up_tx_pll_locked_2 left -pinY up_tx_pll_locked_2 2870L -pinDir up_tx_rst_done_2 left -pinY up_tx_rst_done_2 2490L -pinBusDir up_tx_bufstatus_2 left -pinBusY up_tx_bufstatus_2 2990L -pinBusDir up_tx_rdata_2 left -pinBusY up_tx_rdata_2 2470L -pinDir up_tx_ready_2 left -pinY up_tx_ready_2 3030L -pinBusDir rx_charisk_3 right -pinBusY rx_charisk_3 1060R -pinBusDir rx_disperr_3 right -pinBusY rx_disperr_3 620R -pinBusDir rx_notintable_3 right -pinBusY rx_notintable_3 780R -pinBusDir rx_data_3 right -pinBusY rx_data_3 60R -pinBusDir rx_header_3 right -pinBusY rx_header_3 460R -pinDir rx_block_sync_3 right -pinY rx_block_sync_3 220R -pinDir tx_3_p right -pinY tx_3_p 940R -pinDir tx_3_n right -pinY tx_3_n 920R -pinBusDir up_es_rdata_3 left -pinBusY up_es_rdata_3 1280L -pinDir up_es_ready_3 left -pinY up_es_ready_3 1120L -pinDir up_rx_pll_locked_3 left -pinY up_rx_pll_locked_3 1960L -pinDir up_rx_rst_done_3 left -pinY up_rx_rst_done_3 1520L -pinDir up_rx_prbserr_3 left -pinY up_rx_prbserr_3 1600L -pinDir up_rx_prbslocked_3 left -pinY up_rx_prbslocked_3 720L -pinBusDir up_rx_bufstatus_3 left -pinBusY up_rx_bufstatus_3 1200L -pinBusDir up_rx_bufstatus_2 left -pinBusY up_rx_bufstatus_2 1320L -pinDir up_tx_pll_locked_3 left -pinY up_tx_pll_locked_3 2950L -pinDir up_tx_rst_done_3 left -pinY up_tx_rst_done_3 2750L -pinBusDir up_tx_bufstatus_3 left -pinBusY up_tx_bufstatus_3 2790L -pinBusDir up_tx_rdata_3 left -pinBusY up_tx_rdata_3 2830L -pinDir up_tx_ready_3 left -pinY up_tx_ready_3 2510L -pinDir up_es_enb_0 left -pinY up_es_enb_0 2140L -pinBusDir up_es_addr_0 left -pinBusY up_es_addr_0 2020L -pinDir up_es_wr_0 left -pinY up_es_wr_0 880L -pinDir up_es_reset_0 left -pinY up_es_reset_0 1940L -pinBusDir up_es_wdata_0 left -pinBusY up_es_wdata_0 620L -pinDir up_rx_rst_0 left -pinY up_rx_rst_0 640L -pinDir up_rx_user_ready_0 left -pinY up_rx_user_ready_0 920L -pinBusDir up_rx_prbssel_0 left -pinBusY up_rx_prbssel_0 340L -pinDir up_rx_prbscntreset_0 left -pinY up_rx_prbscntreset_0 260L -pinDir up_rx_bufstatus_rst_0 left -pinY up_rx_bufstatus_rst_0 1900L -pinDir up_rx_lpm_dfe_n_0 left -pinY up_rx_lpm_dfe_n_0 180L -pinBusDir up_rx_rate_0 left -pinBusY up_rx_rate_0 440L -pinBusDir up_rx_sys_clk_sel_0 left -pinBusY up_rx_sys_clk_sel_0 380L -pinBusDir up_rx_out_clk_sel_0 left -pinBusY up_rx_out_clk_sel_0 1100L -pinDir up_rx_enb_0 left -pinY up_rx_enb_0 600L -pinBusDir up_rx_addr_0 left -pinBusY up_rx_addr_0 500L -pinDir up_rx_wr_0 left -pinY up_rx_wr_0 580L -pinBusDir up_rx_wdata_0 left -pinBusY up_rx_wdata_0 540L -pinDir up_es_enb_1 left -pinY up_es_enb_1 1980L -pinBusDir up_es_addr_1 left -pinBusY up_es_addr_1 1460L -pinDir up_es_wr_1 left -pinY up_es_wr_1 2240L -pinDir up_es_reset_1 left -pinY up_es_reset_1 1180L -pinBusDir up_es_wdata_1 left -pinBusY up_es_wdata_1 2060L -pinDir up_rx_rst_1 left -pinY up_rx_rst_1 1140L -pinDir up_rx_user_ready_1 left -pinY up_rx_user_ready_1 80L -pinBusDir up_rx_prbssel_1 left -pinBusY up_rx_prbssel_1 100L -pinDir up_rx_prbscntreset_1 left -pinY up_rx_prbscntreset_1 840L -pinDir up_rx_bufstatus_rst_1 left -pinY up_rx_bufstatus_rst_1 2180L -pinDir up_rx_lpm_dfe_n_1 left -pinY up_rx_lpm_dfe_n_1 1580L -pinBusDir up_rx_rate_1 left -pinBusY up_rx_rate_1 660L -pinBusDir up_rx_sys_clk_sel_1 left -pinBusY up_rx_sys_clk_sel_1 1620L -pinBusDir up_rx_out_clk_sel_1 left -pinBusY up_rx_out_clk_sel_1 2200L -pinDir up_rx_enb_1 left -pinY up_rx_enb_1 740L -pinBusDir up_rx_addr_1 left -pinBusY up_rx_addr_1 1540L -pinDir up_rx_wr_1 left -pinY up_rx_wr_1 480L -pinBusDir up_rx_wdata_1 left -pinBusY up_rx_wdata_1 300L -pinDir up_es_enb_2 left -pinY up_es_enb_2 1420L -pinBusDir up_es_addr_2 left -pinBusY up_es_addr_2 1080L -pinDir up_es_wr_2 left -pinY up_es_wr_2 780L -pinDir up_es_reset_2 left -pinY up_es_reset_2 680L -pinBusDir up_es_wdata_2 left -pinBusY up_es_wdata_2 220L -pinDir up_rx_rst_2 left -pinY up_rx_rst_2 140L -pinDir up_rx_user_ready_2 left -pinY up_rx_user_ready_2 1780L -pinBusDir up_rx_prbssel_2 left -pinBusY up_rx_prbssel_2 900L -pinDir up_rx_prbscntreset_2 left -pinY up_rx_prbscntreset_2 860L -pinDir up_rx_bufstatus_rst_2 left -pinY up_rx_bufstatus_rst_2 1860L -pinDir up_rx_lpm_dfe_n_2 left -pinY up_rx_lpm_dfe_n_2 820L -pinBusDir up_rx_rate_2 left -pinBusY up_rx_rate_2 1060L -pinBusDir up_rx_sys_clk_sel_2 left -pinBusY up_rx_sys_clk_sel_2 1660L -pinBusDir up_rx_out_clk_sel_2 left -pinBusY up_rx_out_clk_sel_2 1380L -pinDir up_rx_enb_2 left -pinY up_rx_enb_2 160L -pinBusDir up_rx_addr_2 left -pinBusY up_rx_addr_2 1300L -pinDir up_rx_wr_2 left -pinY up_rx_wr_2 1740L -pinBusDir up_rx_wdata_2 left -pinBusY up_rx_wdata_2 280L -pinDir up_es_enb_3 left -pinY up_es_enb_3 320L -pinBusDir up_es_addr_3 left -pinBusY up_es_addr_3 2100L -pinDir up_es_wr_3 left -pinY up_es_wr_3 460L -pinDir up_es_reset_3 left -pinY up_es_reset_3 400L -pinBusDir up_es_wdata_3 left -pinBusY up_es_wdata_3 760L -pinDir up_rx_rst_3 left -pinY up_rx_rst_3 200L -pinDir up_rx_user_ready_3 left -pinY up_rx_user_ready_3 1220L -pinBusDir up_rx_prbssel_3 left -pinBusY up_rx_prbssel_3 980L -pinDir up_rx_prbscntreset_3 left -pinY up_rx_prbscntreset_3 700L -pinDir up_rx_bufstatus_rst_3 left -pinY up_rx_bufstatus_rst_3 940L -pinDir up_rx_lpm_dfe_n_3 left -pinY up_rx_lpm_dfe_n_3 1260L -pinBusDir up_rx_rate_3 left -pinBusY up_rx_rate_3 1820L -pinBusDir up_rx_sys_clk_sel_3 left -pinBusY up_rx_sys_clk_sel_3 1700L -pinBusDir up_rx_out_clk_sel_3 left -pinBusY up_rx_out_clk_sel_3 2220L -pinDir up_rx_enb_3 left -pinY up_rx_enb_3 1020L -pinBusDir up_rx_addr_3 left -pinBusY up_rx_addr_3 2160L -pinDir up_rx_wr_3 left -pinY up_rx_wr_3 1000L -pinBusDir up_rx_wdata_3 left -pinBusY up_rx_wdata_3 1340L -pinDir rx_3_p left -pinY rx_3_p 2370L -pinDir rx_3_n left -pinY rx_3_n 2350L -pinDir rx_2_p left -pinY rx_2_p 2330L -pinDir rx_2_n left -pinY rx_2_n 5080L -pinDir rx_1_p left -pinY rx_1_p 4960L -pinDir rx_1_n left -pinY rx_1_n 4940L -pinDir up_cm_enb_0 left -pinY up_cm_enb_0 3290L -pinBusDir up_cm_addr_0 left -pinBusY up_cm_addr_0 4050L -pinDir up_cm_wr_0 left -pinY up_cm_wr_0 2690L -pinBusDir up_cm_wdata_0 left -pinBusY up_cm_wdata_0 3650L -pinDir up_tx_rst_0 left -pinY up_tx_rst_0 3150L -pinDir up_tx_user_ready_0 left -pinY up_tx_user_ready_0 3790L -pinDir up_tx_prbsforceerr_0 left -pinY up_tx_prbsforceerr_0 3610L -pinBusDir up_tx_prbssel_0 left -pinBusY up_tx_prbssel_0 2810L -pinDir up_tx_lpm_dfe_n_0 left -pinY up_tx_lpm_dfe_n_0 3850L -pinBusDir up_tx_rate_0 left -pinBusY up_tx_rate_0 2890L -pinBusDir up_tx_sys_clk_sel_0 left -pinBusY up_tx_sys_clk_sel_0 3830L -pinBusDir up_tx_out_clk_sel_0 left -pinBusY up_tx_out_clk_sel_0 2770L -pinBusDir up_tx_diffctrl_0 left -pinBusY up_tx_diffctrl_0 3710L -pinBusDir up_tx_postcursor_0 left -pinBusY up_tx_postcursor_0 4170L -pinBusDir up_tx_precursor_0 left -pinBusY up_tx_precursor_0 3190L -pinDir up_tx_enb_0 left -pinY up_tx_enb_0 3930L -pinBusDir up_tx_addr_0 left -pinBusY up_tx_addr_0 3090L -pinDir up_tx_wr_0 left -pinY up_tx_wr_0 4090L -pinBusDir up_tx_wdata_0 left -pinBusY up_tx_wdata_0 3170L -pinDir up_tx_rst_2 left -pinY up_tx_rst_2 3250L -pinDir up_tx_user_ready_2 left -pinY up_tx_user_ready_2 3390L -pinDir up_tx_prbsforceerr_2 left -pinY up_tx_prbsforceerr_2 3590L -pinBusDir up_tx_prbssel_2 left -pinBusY up_tx_prbssel_2 4150L -pinDir up_tx_lpm_dfe_n_2 left -pinY up_tx_lpm_dfe_n_2 3550L -pinBusDir up_tx_rate_2 left -pinBusY up_tx_rate_2 3230L -pinBusDir up_tx_sys_clk_sel_2 left -pinBusY up_tx_sys_clk_sel_2 2930L -pinBusDir up_tx_out_clk_sel_2 left -pinBusY up_tx_out_clk_sel_2 3570L -pinBusDir up_tx_diffctrl_2 left -pinBusY up_tx_diffctrl_2 3810L -pinBusDir up_tx_postcursor_2 left -pinBusY up_tx_postcursor_2 3430L -pinBusDir up_tx_precursor_2 left -pinBusY up_tx_precursor_2 3350L -pinDir up_tx_enb_2 left -pinY up_tx_enb_2 3490L -pinBusDir up_tx_addr_2 left -pinBusY up_tx_addr_2 3910L -pinDir up_tx_wr_2 left -pinY up_tx_wr_2 3890L -pinBusDir up_tx_wdata_2 left -pinBusY up_tx_wdata_2 3690L -pinDir up_tx_rst_3 left -pinY up_tx_rst_3 2850L -pinDir up_tx_user_ready_3 left -pinY up_tx_user_ready_3 3870L -pinDir up_tx_prbsforceerr_3 left -pinY up_tx_prbsforceerr_3 3450L -pinBusDir up_tx_prbssel_3 left -pinBusY up_tx_prbssel_3 3270L -pinDir up_tx_lpm_dfe_n_3 left -pinY up_tx_lpm_dfe_n_3 4030L -pinBusDir up_tx_rate_3 left -pinBusY up_tx_rate_3 3310L -pinBusDir up_tx_sys_clk_sel_3 left -pinBusY up_tx_sys_clk_sel_3 3130L -pinBusDir up_tx_out_clk_sel_3 left -pinBusY up_tx_out_clk_sel_3 3470L -pinBusDir up_tx_diffctrl_3 left -pinBusY up_tx_diffctrl_3 3670L -pinBusDir up_tx_postcursor_3 left -pinBusY up_tx_postcursor_3 3370L -pinBusDir up_tx_precursor_3 left -pinBusY up_tx_precursor_3 4010L -pinDir up_tx_enb_3 left -pinY up_tx_enb_3 4130L -pinBusDir up_tx_addr_3 left -pinBusY up_tx_addr_3 3410L -pinDir up_tx_wr_3 left -pinY up_tx_wr_3 3950L -pinBusDir up_tx_wdata_3 left -pinBusY up_tx_wdata_3 3730L -pinDir up_tx_rst_1 left -pinY up_tx_rst_1 2730L -pinDir up_tx_user_ready_1 left -pinY up_tx_user_ready_1 3330L -pinDir up_tx_prbsforceerr_1 left -pinY up_tx_prbsforceerr_1 4070L -pinBusDir up_tx_prbssel_1 left -pinBusY up_tx_prbssel_1 3510L -pinDir up_tx_lpm_dfe_n_1 left -pinY up_tx_lpm_dfe_n_1 4110L -pinBusDir up_tx_rate_1 left -pinBusY up_tx_rate_1 3210L -pinBusDir up_tx_sys_clk_sel_1 left -pinBusY up_tx_sys_clk_sel_1 3010L -pinBusDir up_tx_out_clk_sel_1 left -pinBusY up_tx_out_clk_sel_1 3770L -pinBusDir up_tx_diffctrl_1 left -pinBusY up_tx_diffctrl_1 3110L -pinBusDir up_tx_postcursor_1 left -pinBusY up_tx_postcursor_1 3630L -pinBusDir up_tx_precursor_1 left -pinBusY up_tx_precursor_1 2970L -pinDir up_tx_enb_1 left -pinY up_tx_enb_1 3050L -pinBusDir up_tx_addr_1 left -pinBusY up_tx_addr_1 3970L -pinDir up_tx_wr_1 left -pinY up_tx_wr_1 3530L -pinBusDir up_tx_wdata_1 left -pinBusY up_tx_wdata_1 3750L -pinBusDir tx_charisk_0 left -pinBusY tx_charisk_0 4260L -pinBusDir tx_data_0 left -pinBusY tx_data_0 4880L -pinBusDir tx_header_0 left -pinBusY tx_header_0 5260L -pinBusDir tx_charisk_1 left -pinBusY tx_charisk_1 4560L -pinBusDir tx_data_1 left -pinBusY tx_data_1 5020L -pinBusDir tx_header_1 left -pinBusY tx_header_1 5460L -pinBusDir tx_charisk_2 left -pinBusY tx_charisk_2 4360L -pinBusDir tx_data_2 left -pinBusY tx_data_2 4660L -pinBusDir tx_header_2 left -pinBusY tx_header_2 5160L -pinBusDir tx_charisk_3 left -pinBusY tx_charisk_3 4460L -pinBusDir tx_data_3 left -pinBusY tx_data_3 4760L -pinBusDir tx_header_3 left -pinBusY tx_header_3 5360L
+preplace inst xlconcat_charisk -pg 1 -lvl 3 -x 780 -y 1060 -defaultsOSRD -pinBusDir In0 left -pinBusY In0 0L -pinBusDir In1 left -pinBusY In1 20L -pinBusDir In2 left -pinBusY In2 40L -pinBusDir In3 left -pinBusY In3 60L -pinBusDir dout right -pinBusY dout 0R
+preplace inst xlconcat_data -pg 1 -lvl 3 -x 780 -y 60 -defaultsOSRD -pinBusDir In0 left -pinBusY In0 0L -pinBusDir In1 left -pinBusY In1 20L -pinBusDir In2 left -pinBusY In2 40L -pinBusDir In3 left -pinBusY In3 60L -pinBusDir dout right -pinBusY dout 0R
+preplace inst xlconcat_disperr -pg 1 -lvl 3 -x 780 -y 620 -defaultsOSRD -pinBusDir In0 left -pinBusY In0 0L -pinBusDir In1 left -pinBusY In1 20L -pinBusDir In2 left -pinBusY In2 40L -pinBusDir In3 left -pinBusY In3 60L -pinBusDir dout right -pinBusY dout 0R
+preplace inst xlconcat_notintable -pg 1 -lvl 3 -x 780 -y 780 -defaultsOSRD -pinBusDir In0 left -pinBusY In0 0L -pinBusDir In1 left -pinBusY In1 20L -pinBusDir In2 left -pinBusY In2 40L -pinBusDir In3 left -pinBusY In3 60L -pinBusDir dout right -pinBusY dout 0R
+preplace inst xlconcat_block_sync -pg 1 -lvl 3 -x 780 -y 220 -defaultsOSRD -pinBusDir In0 left -pinBusY In0 0L -pinBusDir In1 left -pinBusY In1 20L -pinBusDir In2 left -pinBusY In2 40L -pinBusDir In3 left -pinBusY In3 60L -pinBusDir dout right -pinBusY dout 0R
+preplace inst xlconcat_header -pg 1 -lvl 3 -x 780 -y 460 -defaultsOSRD -pinBusDir In0 left -pinBusY In0 0L -pinBusDir In1 left -pinBusY In1 20L -pinBusDir In2 left -pinBusY In2 40L -pinBusDir In3 left -pinBusY In3 60L -pinBusDir dout right -pinBusY dout 0R
+preplace inst xlslice_charisk_0 -pg 1 -lvl 1 -x 180 -y 4320 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_charisk_1 -pg 1 -lvl 1 -x 180 -y 4420 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_charisk_2 -pg 1 -lvl 1 -x 180 -y 4520 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_charisk_3 -pg 1 -lvl 1 -x 180 -y 4620 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_header_0 -pg 1 -lvl 1 -x 180 -y 5320 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_header_1 -pg 1 -lvl 1 -x 180 -y 5220 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_header_2 -pg 1 -lvl 1 -x 180 -y 5420 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_header_3 -pg 1 -lvl 1 -x 180 -y 5520 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_data_0 -pg 1 -lvl 1 -x 180 -y 4940 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_data_1 -pg 1 -lvl 1 -x 180 -y 4720 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_data_2 -pg 1 -lvl 1 -x 180 -y 4820 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace inst xlslice_data_3 -pg 1 -lvl 1 -x 180 -y 5080 -defaultsOSRD -pinBusDir Din left -pinBusY Din 0L -pinBusDir Dout right -pinBusY Dout 0R
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_addr_0 1 1 1 N 560
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_addr_1 1 1 1 N 1600
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_addr_2 1 1 1 N 1360
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_addr_3 1 1 1 N 2220
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_bufstatus_rst_0 1 1 1 N 1960
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_bufstatus_rst_1 1 1 1 N 2240
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_bufstatus_rst_2 1 1 1 N 1920
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_bufstatus_rst_3 1 1 1 N 1000
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_enb_0 1 1 1 N 660
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_enb_1 1 1 1 N 800
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_enb_2 1 1 1 N 220
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_enb_3 1 1 1 N 1080
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_lpm_dfe_n_0 1 1 1 N 240
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_lpm_dfe_n_1 1 1 1 N 1640
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_lpm_dfe_n_2 1 1 1 N 880
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_lpm_dfe_n_3 1 1 1 N 1320
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_out_clk_sel_0 1 1 1 N 1160
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_out_clk_sel_1 1 1 1 N 2260
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_out_clk_sel_2 1 1 1 N 1440
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_out_clk_sel_3 1 1 1 N 2280
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbscntreset_0 1 1 1 N 320
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbscntreset_1 1 1 1 N 900
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbscntreset_2 1 1 1 N 920
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbscntreset_3 1 1 1 N 760
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbssel_0 1 1 1 N 400
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbssel_1 1 1 1 N 160
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbssel_2 1 1 1 N 960
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_prbssel_3 1 1 1 N 1040
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rate_0 1 1 1 N 500
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rate_1 1 1 1 N 720
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rate_2 1 1 1 N 1120
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rate_3 1 1 1 N 1880
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rst_0 1 1 1 N 700
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rst_1 1 1 1 N 1200
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rst_2 1 1 1 N 200
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_rst_3 1 1 1 N 260
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_sys_clk_sel_0 1 1 1 N 440
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_sys_clk_sel_1 1 1 1 N 1680
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_sys_clk_sel_2 1 1 1 N 1720
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_sys_clk_sel_3 1 1 1 N 1760
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_user_ready_0 1 1 1 N 980
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_user_ready_1 1 1 1 N 140
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_user_ready_2 1 1 1 N 1840
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_user_ready_3 1 1 1 N 1280
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wdata_0 1 1 1 N 600
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wdata_1 1 1 1 N 360
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wdata_2 1 1 1 N 340
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wdata_3 1 1 1 N 1400
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wr_0 1 1 1 N 640
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wr_1 1 1 1 N 540
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wr_2 1 1 1 N 1800
+preplace netloc axi_ad9680_adxcvr_hier_up_ch_wr_3 1 1 1 N 1060
+preplace netloc axi_ad9680_adxcvr_hier_up_es_addr_0 1 1 1 N 2080
+preplace netloc axi_ad9680_adxcvr_hier_up_es_addr_1 1 1 1 N 1520
+preplace netloc axi_ad9680_adxcvr_hier_up_es_addr_2 1 1 1 N 1140
+preplace netloc axi_ad9680_adxcvr_hier_up_es_addr_3 1 1 1 N 2160
+preplace netloc axi_ad9680_adxcvr_hier_up_es_enb_0 1 1 1 N 2200
+preplace netloc axi_ad9680_adxcvr_hier_up_es_enb_1 1 1 1 N 2040
+preplace netloc axi_ad9680_adxcvr_hier_up_es_enb_2 1 1 1 N 1480
+preplace netloc axi_ad9680_adxcvr_hier_up_es_enb_3 1 1 1 N 380
+preplace netloc axi_ad9680_adxcvr_hier_up_es_reset_0 1 1 1 N 2000
+preplace netloc axi_ad9680_adxcvr_hier_up_es_reset_1 1 1 1 N 1240
+preplace netloc axi_ad9680_adxcvr_hier_up_es_reset_2 1 1 1 N 740
+preplace netloc axi_ad9680_adxcvr_hier_up_es_reset_3 1 1 1 N 460
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wdata_0 1 1 1 N 680
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wdata_1 1 1 1 N 2120
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wdata_2 1 1 1 N 280
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wdata_3 1 1 1 N 820
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wr_0 1 1 1 N 940
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wr_1 1 1 1 N 2300
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wr_2 1 1 1 N 840
+preplace netloc axi_ad9680_adxcvr_hier_up_es_wr_3 1 1 1 N 520
+preplace netloc phy_rx_calign_1 1 0 2 NJ 4880 NJ
+preplace netloc rx_0_n_1 1 0 2 NJ 2370 NJ
+preplace netloc rx_0_p_1 1 0 2 NJ 80 NJ
+preplace netloc rx_1_n_1 1 0 2 NJ 5000 NJ
+preplace netloc rx_1_p_1 1 0 2 NJ 5020 NJ
+preplace netloc rx_2_n_1 1 0 2 NJ 5140 NJ
+preplace netloc rx_2_p_1 1 0 2 NJ 2390 NJ
+preplace netloc rx_3_n_1 1 0 2 NJ 2410 NJ
+preplace netloc rx_3_p_1 1 0 2 NJ 2430 NJ
+preplace netloc rx_ref_clk_1 1 0 2 NJ 2350 NJ
+preplace netloc sys_cpu_clk_1 1 0 2 NJ 2450 NJ
+preplace netloc sys_cpu_resetn_1 1 0 2 NJ 60 NJ
+preplace netloc tx_ref_clk_1 1 0 2 NJ 5160 NJ
+preplace netloc up_ch_bufstatus_2_1 1 1 1 N 2850
+preplace netloc up_ch_rdata_2_1 1 1 1 N 2890
+preplace netloc up_ch_rst_done_0_1 1 1 1 N 2970
+preplace netloc up_cpll_rst_0_1 1 1 1 N 1540
+preplace netloc util_daq2_xcvr_hier_rx_out_clk_0_0 1 2 2 NJ 340 NJ
+preplace netloc util_daq2_xcvr_hier_tx_0_n 1 2 2 NJ 380 NJ
+preplace netloc util_daq2_xcvr_hier_tx_0_p 1 2 2 NJ 400 NJ
+preplace netloc util_daq2_xcvr_hier_tx_1_n 1 2 2 NJ 900 NJ
+preplace netloc util_daq2_xcvr_hier_tx_1_p 1 2 2 NJ 920 NJ
+preplace netloc util_daq2_xcvr_hier_tx_2_n 1 2 2 NJ 940 NJ
+preplace netloc util_daq2_xcvr_hier_tx_2_p 1 2 2 NJ 960 NJ
+preplace netloc util_daq2_xcvr_hier_tx_3_n 1 2 2 NJ 980 NJ
+preplace netloc util_daq2_xcvr_hier_tx_3_p 1 2 2 NJ 1000 NJ
+preplace netloc util_daq2_xcvr_hier_tx_out_clk_0 1 2 2 NJ 360 NJ
+preplace netloc util_daq2_xcvr_hier_up_cm_rdata_0 1 1 1 N 3130
+preplace netloc util_daq2_xcvr_hier_up_cm_ready_0 1 1 1 N 2730
+preplace netloc util_daq2_xcvr_hier_up_es_rdata_0 1 1 1 N 1700
+preplace netloc util_daq2_xcvr_hier_up_es_rdata_1 1 1 1 N 2180
+preplace netloc util_daq2_xcvr_hier_up_es_rdata_2 1 1 1 N 1420
+preplace netloc util_daq2_xcvr_hier_up_es_rdata_3 1 1 1 N 1340
+preplace netloc util_daq2_xcvr_hier_up_es_ready_0 1 1 1 N 1740
+preplace netloc util_daq2_xcvr_hier_up_es_ready_1 1 1 1 N 580
+preplace netloc util_daq2_xcvr_hier_up_es_ready_2 1 1 1 N 1220
+preplace netloc util_daq2_xcvr_hier_up_es_ready_3 1 1 1 N 1180
+preplace netloc util_daq2_xcvr_hier_up_rx_bufstatus_0 1 1 1 N 1860
+preplace netloc util_daq2_xcvr_hier_up_rx_bufstatus_1 1 1 1 N 1940
+preplace netloc util_daq2_xcvr_hier_up_rx_bufstatus_2 1 1 1 N 1380
+preplace netloc util_daq2_xcvr_hier_up_rx_bufstatus_3 1 1 1 N 1260
+preplace netloc util_daq2_xcvr_hier_up_rx_pll_locked_0 1 1 1 N 480
+preplace netloc util_daq2_xcvr_hier_up_rx_pll_locked_1 1 1 1 N 1560
+preplace netloc util_daq2_xcvr_hier_up_rx_pll_locked_2 1 1 1 N 1900
+preplace netloc util_daq2_xcvr_hier_up_rx_pll_locked_3 1 1 1 N 2020
+preplace netloc util_daq2_xcvr_hier_up_rx_prbserr_0 1 1 1 N 1980
+preplace netloc util_daq2_xcvr_hier_up_rx_prbserr_1 1 1 1 N 2140
+preplace netloc util_daq2_xcvr_hier_up_rx_prbserr_2 1 1 1 N 2100
+preplace netloc util_daq2_xcvr_hier_up_rx_prbserr_3 1 1 1 N 1660
+preplace netloc util_daq2_xcvr_hier_up_rx_prbslocked_0 1 1 1 N 1500
+preplace netloc util_daq2_xcvr_hier_up_rx_prbslocked_1 1 1 1 N 860
+preplace netloc util_daq2_xcvr_hier_up_rx_prbslocked_2 1 1 1 N 1820
+preplace netloc util_daq2_xcvr_hier_up_rx_prbslocked_3 1 1 1 N 780
+preplace netloc util_daq2_xcvr_hier_up_rx_rdata_0 1 1 1 N 1620
+preplace netloc util_daq2_xcvr_hier_up_rx_rdata_1 1 1 1 N 1460
+preplace netloc util_daq2_xcvr_hier_up_rx_rdata_2 1 1 1 N 180
+preplace netloc util_daq2_xcvr_hier_up_rx_rdata_3 1 1 1 N 620
+preplace netloc util_daq2_xcvr_hier_up_rx_ready_0 1 1 1 N 1780
+preplace netloc util_daq2_xcvr_hier_up_rx_ready_1 1 1 1 N 2060
+preplace netloc util_daq2_xcvr_hier_up_rx_ready_2 1 1 1 N 1020
+preplace netloc util_daq2_xcvr_hier_up_rx_ready_3 1 1 1 N 300
+preplace netloc util_daq2_xcvr_hier_up_rx_rst_done_0 1 1 1 N 1100
+preplace netloc util_daq2_xcvr_hier_up_rx_rst_done_1 1 1 1 N 1300
+preplace netloc util_daq2_xcvr_hier_up_rx_rst_done_2 1 1 1 N 420
+preplace netloc util_daq2_xcvr_hier_up_rx_rst_done_3 1 1 1 N 1580
+preplace netloc util_daq2_xcvr_hier_up_tx_bufstatus_0 1 1 1 N 2670
+preplace netloc util_daq2_xcvr_hier_up_tx_bufstatus_1 1 1 1 N 2770
+preplace netloc util_daq2_xcvr_hier_up_tx_bufstatus_2 1 1 1 N 3050
+preplace netloc util_daq2_xcvr_hier_up_tx_pll_locked_0 1 1 1 N 2590
+preplace netloc util_daq2_xcvr_hier_up_tx_pll_locked_1 1 1 1 N 2630
+preplace netloc util_daq2_xcvr_hier_up_tx_pll_locked_2 1 1 1 N 2930
+preplace netloc util_daq2_xcvr_hier_up_tx_pll_locked_3 1 1 1 N 3010
+preplace netloc util_daq2_xcvr_hier_up_tx_rdata_0 1 1 1 N 2650
+preplace netloc util_daq2_xcvr_hier_up_tx_rdata_1 1 1 1 N 2710
+preplace netloc util_daq2_xcvr_hier_up_tx_rdata_2 1 1 1 N 2530
+preplace netloc util_daq2_xcvr_hier_up_tx_ready_0 1 1 1 N 2510
+preplace netloc util_daq2_xcvr_hier_up_tx_ready_1 1 1 1 N 2610
+preplace netloc util_daq2_xcvr_hier_up_tx_ready_2 1 1 1 N 3090
+preplace netloc util_daq2_xcvr_hier_up_tx_ready_3 1 1 1 N 2570
+preplace netloc util_daq2_xcvr_hier_up_tx_rst_done_1 1 1 1 N 2690
+preplace netloc util_daq2_xcvr_hier_up_tx_rst_done_2 1 1 1 N 2550
+preplace netloc util_daq2_xcvr_hier_up_tx_rst_done_3 1 1 1 N 2810
+preplace netloc axi_ad9144_adxcvr_hier_up_cm_enb_0 1 1 1 N 3350
+preplace netloc axi_ad9144_adxcvr_hier_up_cm_addr_0 1 1 1 N 4110
+preplace netloc axi_ad9144_adxcvr_hier_up_cm_wr_0 1 1 1 N 2750
+preplace netloc axi_ad9144_adxcvr_hier_up_cm_wdata_0 1 1 1 N 3710
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rst_0 1 1 1 N 3210
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_user_ready_0 1 1 1 N 3850
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbsforceerr_0 1 1 1 N 3670
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbssel_0 1 1 1 N 2870
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_lpm_dfe_n_0 1 1 1 N 3910
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rate_0 1 1 1 N 2950
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_sys_clk_sel_0 1 1 1 N 3890
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_out_clk_sel_0 1 1 1 N 2830
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_diffctrl_0 1 1 1 N 3770
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_postcursor_0 1 1 1 N 4230
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_precursor_0 1 1 1 N 3250
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_enb_0 1 1 1 N 3990
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_addr_0 1 1 1 N 3150
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wr_0 1 1 1 N 4150
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wdata_0 1 1 1 N 3230
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rst_1 1 1 1 N 3310
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_user_ready_1 1 1 1 N 3450
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbsforceerr_1 1 1 1 N 3650
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbssel_1 1 1 1 N 4210
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_lpm_dfe_n_1 1 1 1 N 3610
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rate_1 1 1 1 N 3290
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_sys_clk_sel_1 1 1 1 N 2990
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_out_clk_sel_1 1 1 1 N 3630
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_diffctrl_1 1 1 1 N 3870
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_postcursor_1 1 1 1 N 3490
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_precursor_1 1 1 1 N 3410
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_enb_1 1 1 1 N 3550
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_addr_1 1 1 1 N 3970
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wr_1 1 1 1 N 3950
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wdata_1 1 1 1 N 3750
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rst_2 1 1 1 N 2910
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_user_ready_2 1 1 1 N 3930
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbsforceerr_2 1 1 1 N 3510
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbssel_2 1 1 1 N 3330
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_lpm_dfe_n_2 1 1 1 N 4090
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rate_2 1 1 1 N 3370
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_sys_clk_sel_2 1 1 1 N 3190
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_out_clk_sel_2 1 1 1 N 3530
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_diffctrl_2 1 1 1 N 3730
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_postcursor_2 1 1 1 N 3430
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_precursor_2 1 1 1 N 4070
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_enb_2 1 1 1 N 4190
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_addr_2 1 1 1 N 3470
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wr_2 1 1 1 N 4010
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wdata_2 1 1 1 N 3790
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rst_3 1 1 1 N 2790
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_user_ready_3 1 1 1 N 3390
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbsforceerr_3 1 1 1 N 4130
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_prbssel_3 1 1 1 N 3570
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_lpm_dfe_n_3 1 1 1 N 4170
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_rate_3 1 1 1 N 3270
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_sys_clk_sel_3 1 1 1 N 3070
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_out_clk_sel_3 1 1 1 N 3830
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_diffctrl_3 1 1 1 N 3170
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_postcursor_3 1 1 1 N 3690
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_tx_precursor_3 1 1 1 N 3030
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_enb_3 1 1 1 N 3110
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_addr_3 1 1 1 N 4030
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wr_3 1 1 1 N 3590
+preplace netloc axi_ad9144_adxcvr_hier_up_ch_wdata_3 1 1 1 N 3810
+preplace netloc up_qpll_rst_0_1 1 1 1 N 4050
+preplace netloc util_daq2_xcvr_hier_rx_charisk_0 1 2 1 N 1060
+preplace netloc util_daq2_xcvr_hier_rx_charisk_2 1 2 1 N 1100
+preplace netloc util_daq2_xcvr_hier_rx_charisk_1 1 2 1 N 1080
+preplace netloc util_daq2_xcvr_hier_rx_charisk_3 1 2 1 N 1120
+preplace netloc xlconcat_charisk_dout 1 3 1 NJ 1060
+preplace netloc util_daq2_xcvr_hier_rx_data_1 1 2 1 N 80
+preplace netloc util_daq2_xcvr_hier_rx_data_0 1 2 1 N 60
+preplace netloc util_daq2_xcvr_hier_rx_data_3 1 2 1 N 120
+preplace netloc util_daq2_xcvr_hier_rx_data_2 1 2 1 N 100
+preplace netloc xlconcat_data_dout 1 3 1 NJ 60
+preplace netloc util_daq2_xcvr_hier_rx_disperr_0 1 2 1 N 620
+preplace netloc util_daq2_xcvr_hier_rx_disperr_2 1 2 1 N 660
+preplace netloc util_daq2_xcvr_hier_rx_disperr_3 1 2 1 N 680
+preplace netloc util_daq2_xcvr_hier_rx_disperr_1 1 2 1 N 640
+preplace netloc xlconcat_disperr_dout 1 3 1 NJ 620
+preplace netloc util_daq2_xcvr_hier_rx_notintable_1 1 2 1 N 800
+preplace netloc util_daq2_xcvr_hier_rx_notintable_2 1 2 1 N 820
+preplace netloc util_daq2_xcvr_hier_rx_notintable_3 1 2 1 N 840
+preplace netloc util_daq2_xcvr_hier_rx_notintable_0 1 2 1 N 780
+preplace netloc xlconcat_notintable_dout 1 3 1 NJ 780
+preplace netloc util_daq2_xcvr_hier_rx_block_sync_3 1 2 1 N 280
+preplace netloc util_daq2_xcvr_hier_rx_block_sync_1 1 2 1 N 240
+preplace netloc util_daq2_xcvr_hier_rx_block_sync_0 1 2 1 N 220
+preplace netloc util_daq2_xcvr_hier_rx_block_sync_2 1 2 1 N 260
+preplace netloc xlconcat_sync_dout 1 3 1 NJ 220
+preplace netloc util_daq2_xcvr_hier_rx_header_0 1 2 1 N 460
+preplace netloc util_daq2_xcvr_hier_rx_header_1 1 2 1 N 480
+preplace netloc util_daq2_xcvr_hier_rx_header_2 1 2 1 N 500
+preplace netloc util_daq2_xcvr_hier_rx_header_3 1 2 1 N 520
+preplace netloc xlconcat_header_dout 1 3 1 NJ 460
+preplace netloc s_axi_aclk_1 1 0 1 NJ 160
+preplace netloc s_axi_aresetn_1 1 0 1 NJ 180
+preplace netloc s_axi_aclk_2 1 0 1 NJ 2530
+preplace netloc s_axi_aresetn_2 1 0 1 NJ 2550
+preplace netloc phy_tx_charisk_1 1 0 1 20 4320n
+preplace netloc tx_charisk_0_1 1 1 1 NJ 4320
+preplace netloc xlslice_charisk_2_Dout 1 1 1 NJ 4520
+preplace netloc tx_charisk_1_1 1 1 1 NJ 4620
+preplace netloc tx_charisk_2_1 1 1 1 NJ 4420
+preplace netloc tx_header_0_1 1 1 1 NJ 5320
+preplace netloc phy_tx_header_1 1 0 1 20 5220n
+preplace netloc xlslice_header_1_Dout 1 1 1 NJ 5220
+preplace netloc tx_header_3_1 1 1 1 NJ 5420
+preplace netloc xlslice_header_3_Dout 1 1 1 NJ 5520
+preplace netloc tx_data_0_1 1 1 1 NJ 4940
+preplace netloc phy_tx_data_1 1 0 1 20 4720n
+preplace netloc xlslice_data_1_Dout 1 1 1 NJ 4720
+preplace netloc tx_data_1_1 1 1 1 NJ 5080
+preplace netloc xlslice_data_2_Dout 1 1 1 NJ 4820
+preplace netloc s_axi_1 1 0 1 NJ 140
+preplace netloc s_axi_2 1 0 1 NJ 2510
+levelinfo -pg 1 0 180 510 780 900
+pagesize -pg 1 -db -bbox -sgen -200 0 1100 5580
+",
+   "No Loops_ScaleFactor":"0.629043",
+   "No Loops_TopLeft":"-588,4779",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_rx_out_clk_0 -pg 1 -lvl 2 -x 260 -y 60 -defaultsOSRD
+preplace port port-id_tx_out_clk_0 -pg 1 -lvl 2 -x 260 -y 80 -defaultsOSRD
+preplace inst axi_ad9144_adxcvr_hier -pg 1 -lvl 1 -x 110 -y 230 -defaultsOSRD
+preplace inst axi_ad9680_adxcvr_hier -pg 1 -lvl 1 -x 110 -y 300 -defaultsOSRD
+preplace inst util_daq2_xcvr_hier -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
+preplace netloc util_daq2_xcvr_hier_rx_out_clk_0_0 1 1 1 NJ 60
+preplace netloc util_daq2_xcvr_hier_tx_out_clk_0 1 1 1 NJ 80
+levelinfo -pg 1 -30 110 260
+pagesize -pg 1 -db -bbox -sgen -30 -70 390 340
+"
+}
+0

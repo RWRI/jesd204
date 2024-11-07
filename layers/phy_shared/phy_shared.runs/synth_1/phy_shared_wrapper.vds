@@ -1,0 +1,556 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Nov  7 10:06:50 2024
+# Process ID: 19200
+# Current directory: C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1
+# Command line: vivado.exe -log phy_shared_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source phy_shared_wrapper.tcl
+# Log file: C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/phy_shared_wrapper.vds
+# Journal file: C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1\vivado.jou
+# Running On: PSD033, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 8388 MB
+#-----------------------------------------------------------
+source phy_shared_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.484 ; gain = 86.949
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/jesd204/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1779.152 ; gain = 35.520
+Command: synth_design -top phy_shared_wrapper -part xczu7ev-fbvb900-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18572
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 3195.227 ; gain = 337.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_wrapper' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/hdl/phy_shared_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:1780]
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9144_adxcvr_hier_imp_Z4HG1S' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:12]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_axi_adxcvr_0_0' [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/.Xil/Vivado-19200-PSD033/realtime/phy_shared_axi_adxcvr_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_axi_adxcvr_0_0' (0#1) [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/.Xil/Vivado-19200-PSD033/realtime/phy_shared_axi_adxcvr_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'up_es_enb_0' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_0' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wr_0' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_reset_0' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wdata_0' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbscntreset_0' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_bufstatus_rst_0' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_enb_1' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_1' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wr_1' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_reset_1' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wdata_1' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbscntreset_1' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_bufstatus_rst_1' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_enb_2' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_2' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wr_2' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_reset_2' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wdata_2' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbscntreset_2' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_bufstatus_rst_2' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_enb_3' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_3' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wr_3' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_reset_3' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wdata_3' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbscntreset_3' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_bufstatus_rst_3' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_cm_enb_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_cm_addr_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_cm_wr_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_cm_wdata_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_enb_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wr_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_reset_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wdata_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_rst_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_user_ready_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbsforceerr_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbssel_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbscntreset_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_bufstatus_rst_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_lpm_dfe_n_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_rate_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_sys_clk_sel_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_out_clk_sel_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_diffctrl_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_postcursor_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_precursor_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_enb_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_addr_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_wr_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_wdata_4' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_enb_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wr_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_reset_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wdata_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_rst_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_user_ready_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbsforceerr_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbssel_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbscntreset_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_bufstatus_rst_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_lpm_dfe_n_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_rate_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_sys_clk_sel_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_out_clk_sel_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_diffctrl_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_postcursor_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_precursor_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_enb_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_addr_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_wr_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_wdata_5' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_enb_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wr_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_reset_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_wdata_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_rst_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_user_ready_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbsforceerr_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbssel_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_prbscntreset_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_bufstatus_rst_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_lpm_dfe_n_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_rate_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_sys_clk_sel_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_out_clk_sel_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_diffctrl_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_postcursor_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_tx_precursor_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_enb_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_addr_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_wr_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_ch_wdata_6' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_enb_7' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+WARNING: [Synth 8-7071] port 'up_es_addr_7' of module 'phy_shared_axi_adxcvr_0_0' is unconnected for instance 'axi_ad9144_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'axi_ad9144_adxcvr' of module 'phy_shared_axi_adxcvr_0_0' has 1082 connections declared, but only 398 given [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:447]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9144_adxcvr_hier_imp_Z4HG1S' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:12]
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9680_adxcvr_hier_imp_37IPGA' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:848]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_axi_adxcvr_0_1' [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/.Xil/Vivado-19200-PSD033/realtime/phy_shared_axi_adxcvr_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_axi_adxcvr_0_1' (0#1) [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/.Xil/Vivado-19200-PSD033/realtime/phy_shared_axi_adxcvr_0_1_stub.v:5]
+WARNING: [Synth 8-7023] instance 'axi_ad9680_adxcvr' of module 'phy_shared_axi_adxcvr_0_1' has 1082 connections declared, but only 406 given [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:1371]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9680_adxcvr_hier_imp_37IPGA' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:848]
+INFO: [Synth 8-6157] synthesizing module 'util_daq2_xcvr_hier_imp_FFV36Z' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:2882]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_util_adxcvr_0_0' [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/.Xil/Vivado-19200-PSD033/realtime/phy_shared_util_adxcvr_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_util_adxcvr_0_0' (0#1) [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/.Xil/Vivado-19200-PSD033/realtime/phy_shared_util_adxcvr_0_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'util_daq2_xcvr' of module 'phy_shared_util_adxcvr_0_0' has 2338 connections declared, but only 1582 given [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:3905]
+INFO: [Synth 8-6155] done synthesizing module 'util_daq2_xcvr_hier_imp_FFV36Z' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:2882]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlconcat_0_4' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_4/synth/phy_shared_xlconcat_0_4.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlconcat_0_4' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_4/synth/phy_shared_xlconcat_0_4.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlconcat_0_0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_0/synth/phy_shared_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlconcat_0_0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_0/synth/phy_shared_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlconcat_0_1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_1/synth/phy_shared_xlconcat_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlconcat_0_1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_1/synth/phy_shared_xlconcat_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlconcat_0_2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_2/synth/phy_shared_xlconcat_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlconcat_0_2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_2/synth/phy_shared_xlconcat_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlconcat_0_5' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_5/synth/phy_shared_xlconcat_0_5.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlconcat_0_5' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_5/synth/phy_shared_xlconcat_0_5.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlconcat_0_3' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_3/synth/phy_shared_xlconcat_0_3.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlconcat_0_3' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlconcat_0_3/synth/phy_shared_xlconcat_0_3.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_0_0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_0_0/synth/phy_shared_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_0_0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_0_0/synth/phy_shared_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_charisk_0_0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_charisk_0_0/synth/phy_shared_xlslice_charisk_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_charisk_0_0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_charisk_0_0/synth/phy_shared_xlslice_charisk_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_charisk_0_1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_charisk_0_1/synth/phy_shared_xlslice_charisk_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_charisk_0_1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_charisk_0_1/synth/phy_shared_xlslice_charisk_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_charisk_0_2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_charisk_0_2/synth/phy_shared_xlslice_charisk_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_charisk_0_2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_charisk_0_2/synth/phy_shared_xlslice_charisk_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_0_2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_0_2/synth/phy_shared_xlslice_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_0_2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_0_2/synth/phy_shared_xlslice_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_data_0_0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_data_0_0/synth/phy_shared_xlslice_data_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_data_0_0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_data_0_0/synth/phy_shared_xlslice_data_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_data_0_1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_data_0_1/synth/phy_shared_xlslice_data_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_data_0_1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_data_0_1/synth/phy_shared_xlslice_data_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_data_0_2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_data_0_2/synth/phy_shared_xlslice_data_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_data_0_2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_data_0_2/synth/phy_shared_xlslice_data_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_0_1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_0_1/synth/phy_shared_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_0_1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_0_1/synth/phy_shared_xlslice_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_header_0_0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_header_0_0/synth/phy_shared_xlslice_header_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_header_0_0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_header_0_0/synth/phy_shared_xlslice_header_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_header_0_1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_header_0_1/synth/phy_shared_xlslice_header_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized6' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized6' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_header_0_1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_header_0_1/synth/phy_shared_xlslice_header_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_xlslice_header_0_2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_header_0_2/synth/phy_shared_xlslice_header_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized7' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized7' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_xlslice_header_0_2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_xlslice_header_0_2/synth/phy_shared_xlslice_header_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/synth/phy_shared.v:1780]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_wrapper' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/hdl/phy_shared_wrapper.v:12]
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_2_xlslice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[127] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[126] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[125] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[124] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[123] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[122] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[121] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[120] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[119] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[118] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[117] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[116] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[115] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[114] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[113] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[112] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[111] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[110] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[109] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[108] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[107] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[106] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[105] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[104] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[103] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[102] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[101] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[100] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[99] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[98] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[97] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[96] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[95] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[94] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[93] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[92] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[91] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[90] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[89] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[88] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[87] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[86] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[85] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[84] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[83] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[82] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[81] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[80] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[79] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[78] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[77] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[76] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[75] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[74] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[73] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[72] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[71] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[70] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[69] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[68] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[67] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[66] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[65] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[64] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[63] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[62] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[61] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[60] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[59] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[58] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[57] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[56] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[55] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[54] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[53] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[52] in module xlslice_v1_0_2_xlslice__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 3307.273 ; gain = 449.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 3325.207 ; gain = 467.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 3325.207 ; gain = 467.082
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 3325.207 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_axi_adxcvr_0_0/phy_shared_axi_adxcvr_0_0/phy_shared_axi_adxcvr_0_0_in_context.xdc] for cell 'phy_shared_i/axi_ad9144_adxcvr_hier/axi_ad9144_adxcvr'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_axi_adxcvr_0_0/phy_shared_axi_adxcvr_0_0/phy_shared_axi_adxcvr_0_0_in_context.xdc] for cell 'phy_shared_i/axi_ad9144_adxcvr_hier/axi_ad9144_adxcvr'
+Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_axi_adxcvr_0_1/phy_shared_axi_adxcvr_0_1/phy_shared_axi_adxcvr_0_1_in_context.xdc] for cell 'phy_shared_i/axi_ad9680_adxcvr_hier/axi_ad9680_adxcvr'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_axi_adxcvr_0_1/phy_shared_axi_adxcvr_0_1/phy_shared_axi_adxcvr_0_1_in_context.xdc] for cell 'phy_shared_i/axi_ad9680_adxcvr_hier/axi_ad9680_adxcvr'
+Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc] for cell 'phy_shared_i/util_daq2_xcvr_hier/util_daq2_xcvr'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc] for cell 'phy_shared_i/util_daq2_xcvr_hier/util_daq2_xcvr'
+Parsing XDC File [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3363.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 3363.891 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 3363.891 ; gain = 505.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 3363.891 ; gain = 505.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for rx_0_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_0_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_0_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_0_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_1_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_1_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_1_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_1_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_2_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_2_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_2_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_2_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_3_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_3_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for rx_3_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for rx_3_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_0_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_0_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_0_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_0_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_1_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_1_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_1_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_1_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_2_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_2_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_2_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_2_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_3_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_3_n. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for tx_3_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for tx_3_p. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0/phy_shared_util_adxcvr_0_0_in_context.xdc, line 32).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/axi_ad9144_adxcvr_hier/axi_ad9144_adxcvr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/axi_ad9680_adxcvr_hier/axi_ad9680_adxcvr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/util_daq2_xcvr_hier/util_daq2_xcvr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlconcat_charisk. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlconcat_data. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlconcat_disperr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlconcat_notintable. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlconcat_block_sync. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlconcat_header. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_charisk_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_charisk_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_charisk_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_charisk_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_header_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_header_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_header_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_header_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_data_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_data_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_data_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for phy_shared_i/xlslice_data_3. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 3363.891 ; gain = 505.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 3363.891 ; gain = 505.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:39 . Memory (MB): peak = 3363.891 ; gain = 505.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:01:04 . Memory (MB): peak = 3867.504 ; gain = 1009.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:04 . Memory (MB): peak = 3868.441 ; gain = 1010.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:01:05 . Memory (MB): peak = 3888.781 ; gain = 1030.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |phy_shared_axi_adxcvr_0_0  |         1|
+|2     |phy_shared_axi_adxcvr_0_1  |         1|
+|3     |phy_shared_util_adxcvr_0_0 |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |phy_shared_axi_adxcvr_0  |     2|
+|3     |phy_shared_util_adxcvr_0 |     1|
+|4     |IBUF                     |   223|
+|5     |OBUF                     |   272|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:09 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 457 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:54 . Memory (MB): peak = 3895.516 ; gain = 998.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:10 . Memory (MB): peak = 3895.516 ; gain = 1037.391
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 3907.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 223 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3947.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 223 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 223 instances
+
+Synth Design complete, checksum: 5d79356e
+INFO: [Common 17-83] Releasing license: Synthesis
+100 Infos, 204 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:40 . Memory (MB): peak = 3947.742 ; gain = 2168.590
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/synth_1/phy_shared_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file phy_shared_wrapper_utilization_synth.rpt -pb phy_shared_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 10:10:55 2024...

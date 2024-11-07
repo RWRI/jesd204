@@ -1,0 +1,565 @@
+
+*** Running vivado
+    with args -log phy_shared_util_adxcvr_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source phy_shared_util_adxcvr_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source phy_shared_util_adxcvr_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1003.363 ; gain = 116.535
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/jesd204/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:31 . Memory (MB): peak = 1756.738 ; gain = 29.914
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: phy_shared_util_adxcvr_0_0
+Command: synth_design -top phy_shared_util_adxcvr_0_0 -part xczu7ev-fbvb900-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-fbvb900-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20880
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'rx_bitslip_req_s', assumed default net type 'wire' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:490]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 3196.020 ; gain = 334.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'phy_shared_util_adxcvr_0_0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/synth/phy_shared_util_adxcvr_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'util_adxcvr' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:39]
+INFO: [Synth 8-6157] synthesizing module 'util_adxcvr_xcm' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xcm.v:38]
+INFO: [Synth 8-6157] synthesizing module 'GTHE4_COMMON' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:44340]
+INFO: [Synth 8-6155] done synthesizing module 'GTHE4_COMMON' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:44340]
+INFO: [Synth 8-6155] done synthesizing module 'util_adxcvr_xcm' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xcm.v:38]
+INFO: [Synth 8-6157] synthesizing module 'util_adxcvr_xch' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:38]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1258]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1258]
+INFO: [Synth 8-6157] synthesizing module 'GTHE4_CHANNEL' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:43148]
+INFO: [Synth 8-6155] done synthesizing module 'GTHE4_CHANNEL' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:43148]
+WARNING: [Synth 8-689] width (2) of port connection 'RXBUFSTATUS' does not match port width (3) of module 'GTHE4_CHANNEL' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:2407]
+WARNING: [Synth 8-689] width (2) of port connection 'RXHEADER' does not match port width (6) of module 'GTHE4_CHANNEL' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:2496]
+WARNING: [Synth 8-689] width (6) of port connection 'TXDIFFCTRL' does not match port width (5) of module 'GTHE4_CHANNEL' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:2593]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized0' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized1' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized1' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sync_bits__parameterized2' [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sync_bits__parameterized2' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/sync_bits.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'util_adxcvr_xch' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'util_adxcvr' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'phy_shared_util_adxcvr_0_0' (0#1) [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/synth/phy_shared_util_adxcvr_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element rx_bufstatus_sticky_0_reg was removed.  [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:421]
+WARNING: [Synth 8-3848] Net rx_header in module/entity util_adxcvr_xch does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:122]
+WARNING: [Synth 8-3848] Net rx_block_sync in module/entity util_adxcvr_xch does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr_xch.v:123]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:446]
+WARNING: [Synth 8-3848] Net rx_header_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:454]
+WARNING: [Synth 8-3848] Net rx_block_sync_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:455]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:460]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:486]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:487]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:488]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_4 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:504]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:527]
+WARNING: [Synth 8-3848] Net rx_header_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:535]
+WARNING: [Synth 8-3848] Net rx_block_sync_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:536]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:541]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:561]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:562]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:563]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_5 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:579]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:602]
+WARNING: [Synth 8-3848] Net rx_header_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:610]
+WARNING: [Synth 8-3848] Net rx_block_sync_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:611]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:616]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:636]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:637]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:638]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_6 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:654]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:677]
+WARNING: [Synth 8-3848] Net rx_header_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:685]
+WARNING: [Synth 8-3848] Net rx_block_sync_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:686]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:691]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:711]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:712]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:713]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_7 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:729]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:754]
+WARNING: [Synth 8-3848] Net rx_header_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:762]
+WARNING: [Synth 8-3848] Net rx_block_sync_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:763]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:768]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:794]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:795]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:796]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_8 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:812]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:835]
+WARNING: [Synth 8-3848] Net rx_header_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:843]
+WARNING: [Synth 8-3848] Net rx_block_sync_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:844]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:849]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:869]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:870]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:871]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_9 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:887]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:910]
+WARNING: [Synth 8-3848] Net rx_header_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:918]
+WARNING: [Synth 8-3848] Net rx_block_sync_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:919]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:924]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:944]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:945]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:946]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_10 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:962]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:985]
+WARNING: [Synth 8-3848] Net rx_header_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:993]
+WARNING: [Synth 8-3848] Net rx_block_sync_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:994]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:999]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1019]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1020]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1021]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_11 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1037]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1062]
+WARNING: [Synth 8-3848] Net rx_header_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1070]
+WARNING: [Synth 8-3848] Net rx_block_sync_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1071]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1076]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1102]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1103]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1104]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_12 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1120]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1143]
+WARNING: [Synth 8-3848] Net rx_header_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1151]
+WARNING: [Synth 8-3848] Net rx_block_sync_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1152]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1157]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1177]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1178]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1179]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_13 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1195]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1218]
+WARNING: [Synth 8-3848] Net rx_header_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1226]
+WARNING: [Synth 8-3848] Net rx_block_sync_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1227]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1232]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1252]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1253]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1254]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_14 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1270]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1293]
+WARNING: [Synth 8-3848] Net rx_header_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1301]
+WARNING: [Synth 8-3848] Net rx_block_sync_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1302]
+WARNING: [Synth 8-3848] Net tx_out_clk_div2_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1307]
+WARNING: [Synth 8-3848] Net up_rx_prbserr_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1327]
+WARNING: [Synth 8-3848] Net up_rx_prbslocked_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1328]
+WARNING: [Synth 8-3848] Net up_rx_bufstatus_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1329]
+WARNING: [Synth 8-3848] Net up_tx_bufstatus_15 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1345]
+WARNING: [Synth 8-3848] Net rx_out_clk_div2_16 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1370]
+WARNING: [Synth 8-3848] Net rx_header_16 in module/entity util_adxcvr does not have driver. [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ipshared/07df/util_adxcvr.v:1378]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port rx_header[1] in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header[0] in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_clk_2x in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_clk_2x in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_lpm_dfe_n in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_diffctrl[4] in module util_adxcvr_xch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_4 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_4[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_4[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_4 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_4 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_4 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_4 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_4[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_4[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_4[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_4[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_5 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_5[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_5[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_5 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_5 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_5 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_5 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_5[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_5[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_5[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_5[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_6 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_6[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_6[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_6 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_6 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_6 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_6 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_6[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_6[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_6[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_6[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_7 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_7[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_7[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_7 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_7 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_7 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_7 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_7[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_7[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_7[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_7[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_8[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_8[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_8 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_8[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_8[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_8[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_8[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_9[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_9[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_9 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_9[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_9[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_9[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_9[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_10[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_10[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_10 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_10[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_10[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_10[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_10[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_11[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_11[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbserr_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_prbslocked_11 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_11[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_rx_bufstatus_11[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_11[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_tx_bufstatus_11[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_out_clk_div2_12 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_12[1] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_header_12[0] in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_block_sync_12 in module util_adxcvr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_out_clk_div2_12 in module util_adxcvr is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:51 . Memory (MB): peak = 3302.855 ; gain = 441.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:52 . Memory (MB): peak = 3320.773 ; gain = 459.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:52 . Memory (MB): peak = 3320.773 ; gain = 459.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 3332.793 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc] for cell 'inst'
+Parsing XDC File [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3438.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+write_xdc: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3438.219 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 3438.219 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:02:19 . Memory (MB): peak = 3438.219 ; gain = 576.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-fbvb900-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:02:20 . Memory (MB): peak = 3438.219 ; gain = 576.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property ASYNC_REG = true for inst/i_xch_0/up_rx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/up_rx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/up_rx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/up_rx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/up_rx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/up_rx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/up_rx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/up_rx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 6).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/up_tx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/up_tx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/up_tx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/up_tx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/up_tx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/up_tx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/up_tx_rst_done_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/up_tx_rst_done_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 7).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/rx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/rx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 8).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_0/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_1/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_2/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/tx_rate_m1_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property ASYNC_REG = true for inst/i_xch_3/tx_rate_m2_reg. (constraint file  c:/GitHub/jesd204/layers/phy_shared/phy_shared.gen/sources_1/bd/phy_shared/ip/phy_shared_util_adxcvr_0_0/util_adxcvr_constr.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:02:21 . Memory (MB): peak = 3438.219 ; gain = 576.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:02:23 . Memory (MB): peak = 3438.219 ; gain = 576.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 18    
+	               12 Bit    Registers := 5     
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 20    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 56    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 14    
+	   2 Input   12 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 50    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:02:28 . Memory (MB): peak = 3438.219 ; gain = 576.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:03:29 . Memory (MB): peak = 3883.523 ; gain = 1022.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:03:30 . Memory (MB): peak = 3902.020 ; gain = 1040.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:03:30 . Memory (MB): peak = 3913.441 ; gain = 1051.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:03:35 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:03:35 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:03:35 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:03:35 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:03:35 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:03:35 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG_GT       |    16|
+|2     |GTHE4_CHANNEL |     4|
+|3     |GTHE4_COMMON  |     1|
+|4     |LUT1          |     1|
+|5     |LUT2          |    62|
+|6     |LUT3          |    13|
+|7     |LUT4          |   218|
+|8     |LUT5          |     8|
+|9     |LUT6          |   108|
+|10    |FDCE          |   392|
+|11    |FDRE          |   176|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:03:35 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5769 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:02:23 . Memory (MB): peak = 3925.219 ; gain = 946.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:03:36 . Memory (MB): peak = 3925.219 ; gain = 1063.703
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 3925.219 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_0/BUFG_GT_SYNC for BUFG_GT inst/i_xch_0/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_0/BUFG_GT_SYNC_1 for BUFG_GT inst/i_xch_0/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_1/BUFG_GT_SYNC for BUFG_GT inst/i_xch_1/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_1/BUFG_GT_SYNC_1 for BUFG_GT inst/i_xch_1/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_2/BUFG_GT_SYNC for BUFG_GT inst/i_xch_2/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_2/BUFG_GT_SYNC_1 for BUFG_GT inst/i_xch_2/i_tx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_3/BUFG_GT_SYNC for BUFG_GT inst/i_xch_3/i_rx_bufg
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/i_xch_3/BUFG_GT_SYNC_1 for BUFG_GT inst/i_xch_3/i_tx_bufg
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3983.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 21d135be
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 205 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:05:58 . Memory (MB): peak = 3983.230 ; gain = 2188.961
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/phy_shared_util_adxcvr_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3983.230 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP phy_shared_util_adxcvr_0_0, cache-ID = a12875a135d99971
+INFO: [Coretcl 2-1174] Renamed 26 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/phy_shared_util_adxcvr_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file phy_shared_util_adxcvr_0_0_utilization_synth.rpt -pb phy_shared_util_adxcvr_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 09:56:59 2024...
+
+*** Running vivado
+    with args -log phy_shared_util_adxcvr_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source phy_shared_util_adxcvr_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source phy_shared_util_adxcvr_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.668 ; gain = 117.184
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/GitHub/jesd204/ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1745.004 ; gain = 29.891
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: phy_shared_util_adxcvr_0_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry a12875a135d99971 to dir: C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/GitHub/jesd204/layers/phy_shared/phy_shared.cache/ip/2022.2/a/1/a12875a135d99971/phy_shared_util_adxcvr_0_0.dcp to C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/phy_shared_util_adxcvr_0_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/GitHub/jesd204/layers/phy_shared/phy_shared.cache/ip/2022.2/a/1/a12875a135d99971/phy_shared_util_adxcvr_0_0_sim_netlist.v to C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/phy_shared_util_adxcvr_0_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/GitHub/jesd204/layers/phy_shared/phy_shared.cache/ip/2022.2/a/1/a12875a135d99971/phy_shared_util_adxcvr_0_0_sim_netlist.vhdl to C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/phy_shared_util_adxcvr_0_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/GitHub/jesd204/layers/phy_shared/phy_shared.cache/ip/2022.2/a/1/a12875a135d99971/phy_shared_util_adxcvr_0_0_stub.v to C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/phy_shared_util_adxcvr_0_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/GitHub/jesd204/layers/phy_shared/phy_shared.cache/ip/2022.2/a/1/a12875a135d99971/phy_shared_util_adxcvr_0_0_stub.vhdl to C:/GitHub/jesd204/layers/phy_shared/phy_shared.runs/phy_shared_util_adxcvr_0_0_synth_1/phy_shared_util_adxcvr_0_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP phy_shared_util_adxcvr_0_0, cache-ID = a12875a135d99971.
+config_ip_cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1785.605 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 10:05:51 2024...
