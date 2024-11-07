@@ -1,11 +1,62 @@
 {
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.933333",
+   "Default View_TopLeft":"-506,0",
    "ExpandedHierarchyInLayout":"",
+   "commentid":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace inst PS -pg 1 -lvl 1 -x 70 -y -110 -defaultsOSRD
-preplace inst jesd204b -pg 1 -lvl 1 -x 70 -y 120 -defaultsOSRD
-levelinfo -pg 1 -120 70 260
-pagesize -pg 1 -db -bbox -sgen -120 -320 260 160
+preplace port s_axi_ad9144_xcvr -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port s_axi_ad9680_xcvr -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_rx_0_n -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_rx_0_p -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_rx_1_n -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_rx_1_p -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_rx_2_n -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_rx_2_p -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_rx_3_n -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace port port-id_rx_3_p -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace port port-id_rx_ref_clk -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_tx_ref_clk -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port port-id_tx_0_n -pg 1 -lvl 2 -x 390 -y 260 -defaultsOSRD
+preplace port port-id_tx_0_p -pg 1 -lvl 2 -x 390 -y 280 -defaultsOSRD
+preplace port port-id_tx_1_n -pg 1 -lvl 2 -x 390 -y 300 -defaultsOSRD
+preplace port port-id_tx_1_p -pg 1 -lvl 2 -x 390 -y 320 -defaultsOSRD
+preplace port port-id_tx_2_n -pg 1 -lvl 2 -x 390 -y 340 -defaultsOSRD
+preplace port port-id_tx_2_p -pg 1 -lvl 2 -x 390 -y 360 -defaultsOSRD
+preplace port port-id_tx_3_n -pg 1 -lvl 2 -x 390 -y 380 -defaultsOSRD
+preplace port port-id_tx_3_p -pg 1 -lvl 2 -x 390 -y 400 -defaultsOSRD
+preplace port port-id_s_axi_aresetn_100M -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port port-id_s_axi_aclk_100M -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port port-id_s_axi_aclk_250M -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port port-id_s_axi_aresetn_250M -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace inst phy_shared_0 -pg 1 -lvl 1 -x 200 -y 270 -defaultsOSRD
+preplace netloc rx_0_n_1 1 0 1 NJ 180
+preplace netloc rx_0_p_1 1 0 1 NJ 200
+preplace netloc rx_1_n_1 1 0 1 NJ 220
+preplace netloc rx_1_p_1 1 0 1 NJ 240
+preplace netloc rx_2_n_1 1 0 1 NJ 260
+preplace netloc rx_2_p_1 1 0 1 NJ 280
+preplace netloc rx_3_n_1 1 0 1 NJ 300
+preplace netloc rx_3_p_1 1 0 1 NJ 320
+preplace netloc rx_ref_clk_1 1 0 1 NJ 340
+preplace netloc tx_ref_clk_1 1 0 1 NJ 480
+preplace netloc phy_shared_0_tx_0_n 1 1 1 NJ 260
+preplace netloc phy_shared_0_tx_0_p 1 1 1 NJ 280
+preplace netloc phy_shared_0_tx_1_n 1 1 1 NJ 300
+preplace netloc phy_shared_0_tx_1_p 1 1 1 NJ 320
+preplace netloc phy_shared_0_tx_2_n 1 1 1 NJ 340
+preplace netloc phy_shared_0_tx_2_p 1 1 1 NJ 360
+preplace netloc phy_shared_0_tx_3_n 1 1 1 NJ 380
+preplace netloc phy_shared_0_tx_3_p 1 1 1 NJ 400
+preplace netloc s_axi_ad9680_aresetn_1 1 0 1 20 420n
+preplace netloc s_axi_ad9680_aclk_1 1 0 1 30 400n
+preplace netloc s_axi_ad9144_aclk_1 1 0 1 NJ 360
+preplace netloc s_axi_ad9144_aresetn_1 1 0 1 NJ 380
+preplace netloc Conn1 1 0 1 NJ 60
+preplace netloc Conn2 1 0 1 NJ 80
+levelinfo -pg 1 0 200 390
+pagesize -pg 1 -db -bbox -sgen -190 0 490 540
 "
 }
-
+0
