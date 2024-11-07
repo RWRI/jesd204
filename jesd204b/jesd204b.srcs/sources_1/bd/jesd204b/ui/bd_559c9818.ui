@@ -5,77 +5,87 @@
    "No Loops_ExpandedHierarchyInLayout":"",
    "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port gpio -pg 1 -lvl 3 -x 780 -y 140 -defaultsOSRD
-preplace port port-id_spi_clk -pg 1 -lvl 3 -x 780 -y 260 -defaultsOSRD
-preplace port port-id_spi_mosi -pg 1 -lvl 3 -x 780 -y 280 -defaultsOSRD
-preplace port port-id_spi_miso -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
-preplace port port-id_rx_0_n -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
-preplace port port-id_rx_0_p -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
-preplace port port-id_rx_1_n -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
-preplace port port-id_rx_1_p -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
-preplace port port-id_rx_2_n -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
-preplace port port-id_rx_2_p -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
-preplace port port-id_rx_3_n -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
-preplace port port-id_rx_3_p -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
-preplace port port-id_rx_ref_clk -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
-preplace port port-id_tx_ref_clk -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
-preplace port port-id_tx_0_n -pg 1 -lvl 3 -x 780 -y 20 -defaultsOSRD
-preplace port port-id_tx_0_p -pg 1 -lvl 3 -x 780 -y 40 -defaultsOSRD
-preplace port port-id_tx_1_n -pg 1 -lvl 3 -x 780 -y 60 -defaultsOSRD
-preplace port port-id_tx_1_p -pg 1 -lvl 3 -x 780 -y 80 -defaultsOSRD
-preplace port port-id_tx_2_n -pg 1 -lvl 3 -x 780 -y 550 -defaultsOSRD
-preplace port port-id_tx_2_p -pg 1 -lvl 3 -x 780 -y 570 -defaultsOSRD
-preplace port port-id_tx_3_n -pg 1 -lvl 3 -x 780 -y 590 -defaultsOSRD
-preplace port port-id_tx_3_p -pg 1 -lvl 3 -x 780 -y 610 -defaultsOSRD
-preplace port port-id_rx_sysref -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
-preplace portBus spi_csn -pg 1 -lvl 3 -x 780 -y 240 -defaultsOSRD
-preplace portBus rx_sync -pg 1 -lvl 3 -x 780 -y 630 -defaultsOSRD
-preplace inst PS -pg 1 -lvl 2 -x 560 -y 140 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 336 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 40 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 84 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 264 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 300 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 408 373 374 375 376 377 378 379 380 381 382 383 384 385 386 387 388 389 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 405 406 407 372 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443 444 445 454 447 446 451 449 450 452 453 448} -defaultsOSRD -pinDir s_axi_dma_ad9680 left -pinY s_axi_dma_ad9680 0L -pinDir s_axi_dma_ad9144 left -pinY s_axi_dma_ad9144 100L -pinDir gpio right -pinY gpio 0R -pinDir m_axi_ad9144_xcvr left -pinY m_axi_ad9144_xcvr 20L -pinDir m_axi_ad9144_jesd right -pinY m_axi_ad9144_jesd 20R -pinDir m_axi_ad9144_tpl right -pinY m_axi_ad9144_tpl 40R -pinDir m_axi_gpio_counter right -pinY m_axi_gpio_counter 60R -pinDir m_axi_ad9144_dma right -pinY m_axi_ad9144_dma 80R -pinDir m_axi_ad9680_xcvr left -pinY m_axi_ad9680_xcvr 40L -pinDir m_axi_ad9680_jesd left -pinY m_axi_ad9680_jesd 60L -pinDir m_axi_ad9680_tpl left -pinY m_axi_ad9680_tpl 80L -pinDir m_axi_ad9680_offload left -pinY m_axi_ad9680_offload 140L -pinDir m_axi_ad9680_dma left -pinY m_axi_ad9680_dma 120L -pinBusDir spi_csn right -pinBusY spi_csn 100R -pinDir spi_clk right -pinY spi_clk 120R -pinDir spi_miso left -pinY spi_miso 360L -pinDir spi_mosi right -pinY spi_mosi 140R -pinBusDir pl_ps_irq0 left -pinBusY pl_ps_irq0 240L -pinDir pl_clk_250M left -pinY pl_clk_250M 320L -pinDir pl_clk_100M left -pinY pl_clk_100M 280L -pinBusDir peripheral_aresetn_100M left -pinBusY peripheral_aresetn_100M 300L -pinBusDir peripheral_aresetn_250M left -pinBusY peripheral_aresetn_250M 340L -pinBusDir peripheral_reset_250M right -pinBusY peripheral_reset_250M 160R -pinDir ext_reset_in left -pinY ext_reset_in 260L
-preplace inst jesd204b -pg 1 -lvl 1 -x 160 -y 140 -swap {20 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 40 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 0 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 177 178 179 180 174 173 175 176 172 181 171 182} -defaultsOSRD -pinDir s_axi_ad9144_xcvr right -pinY s_axi_ad9144_xcvr 20R -pinDir s_axi_ad9680_xcvr right -pinY s_axi_ad9680_xcvr 40R -pinDir m_axi_ad9680_dma right -pinY m_axi_ad9680_dma 0R -pinDir s_axi_ad9680_jesd right -pinY s_axi_ad9680_jesd 60R -pinDir s_axi_ad9680_tpl right -pinY s_axi_ad9680_tpl 80R -pinDir s_axi_ad9680_dma right -pinY s_axi_ad9680_dma 120R -pinDir s_axi_ad9680_offload right -pinY s_axi_ad9680_offload 140R -pinDir rx_0_n left -pinY rx_0_n 0L -pinDir rx_0_p left -pinY rx_0_p 20L -pinDir rx_1_n left -pinY rx_1_n 40L -pinDir rx_1_p left -pinY rx_1_p 60L -pinDir rx_2_n left -pinY rx_2_n 80L -pinDir rx_2_p left -pinY rx_2_p 100L -pinDir rx_3_n left -pinY rx_3_n 120L -pinDir rx_3_p left -pinY rx_3_p 140L -pinDir rx_ref_clk left -pinY rx_ref_clk 160L -pinDir tx_ref_clk left -pinY tx_ref_clk 180L -pinDir tx_0_n right -pinY tx_0_n 160R -pinDir tx_0_p right -pinY tx_0_p 180R -pinDir tx_1_n right -pinY tx_1_n 200R -pinDir tx_1_p right -pinY tx_1_p 220R -pinDir tx_2_n right -pinY tx_2_n 410R -pinDir tx_2_p right -pinY tx_2_p 430R -pinDir tx_3_n right -pinY tx_3_n 450R -pinDir tx_3_p right -pinY tx_3_p 470R -pinDir s_axi_aresetn_100M right -pinY s_axi_aresetn_100M 300R -pinDir s_axi_aclk_100M right -pinY s_axi_aclk_100M 280R -pinDir s_axi_aclk_250M right -pinY s_axi_aclk_250M 320R -pinDir s_axi_aresetn_250M right -pinY s_axi_aresetn_250M 340R -pinDir ext_reset_in right -pinY ext_reset_in 260R -pinBusDir rx_sync right -pinBusY rx_sync 490R -pinBusDir jesd204b_irq right -pinBusY jesd204b_irq 240R -pinDir rx_sysref left -pinY rx_sysref 200L
-preplace netloc PS_spi_csn 1 2 1 NJ 240
-preplace netloc PS_spi_clk 1 2 1 NJ 260
-preplace netloc PS_spi_mosi 1 2 1 NJ 280
-preplace netloc spi_miso_1 1 0 2 NJ 680 320J
-preplace netloc rx_0_n_1 1 0 1 NJ 140
-preplace netloc rx_0_p_1 1 0 1 NJ 160
-preplace netloc rx_1_n_1 1 0 1 NJ 180
-preplace netloc rx_1_p_1 1 0 1 NJ 200
-preplace netloc rx_2_n_1 1 0 1 NJ 220
-preplace netloc rx_2_p_1 1 0 1 NJ 240
-preplace netloc rx_3_n_1 1 0 1 NJ 260
-preplace netloc rx_3_p_1 1 0 1 NJ 280
-preplace netloc rx_ref_clk_1 1 0 1 NJ 300
-preplace netloc tx_ref_clk_1 1 0 1 NJ 320
-preplace netloc jesd204b_tx_0_n 1 1 2 300J 20 NJ
-preplace netloc jesd204b_tx_0_p 1 1 2 320J 40 NJ
-preplace netloc jesd204b_tx_1_n 1 1 2 340J 60 NJ
-preplace netloc jesd204b_tx_1_p 1 1 2 360J 80 NJ
-preplace netloc jesd204b_tx_2_n 1 1 2 NJ 550 NJ
-preplace netloc jesd204b_tx_2_p 1 1 2 NJ 570 NJ
-preplace netloc jesd204b_tx_3_n 1 1 2 NJ 590 NJ
-preplace netloc jesd204b_tx_3_p 1 1 2 NJ 610 NJ
-preplace netloc PS_peripheral_aresetn_100M 1 1 1 N 440
-preplace netloc PS_pl_clk_100M 1 1 1 N 420
-preplace netloc PS_pl_clk_250M 1 1 1 N 460
-preplace netloc PS_peripheral_aresetn_250M 1 1 1 N 480
-preplace netloc PS_ext_reset_in 1 1 1 N 400
-preplace netloc jesd204b_rx_sync 1 1 2 NJ 630 NJ
+preplace port gpio -pg 1 -lvl 3 -x 680 -y 100 -defaultsOSRD
+preplace port port-id_spi_clk -pg 1 -lvl 3 -x 680 -y 140 -defaultsOSRD
+preplace port port-id_spi_mosi -pg 1 -lvl 3 -x 680 -y 160 -defaultsOSRD
+preplace port port-id_spi_miso -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace port port-id_rx_0_n -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_rx_0_p -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_rx_1_n -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_rx_1_p -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_rx_2_n -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_rx_2_p -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_rx_3_n -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_rx_3_p -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_rx_ref_clk -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_tx_ref_clk -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_tx_0_n -pg 1 -lvl 3 -x 680 -y 20 -defaultsOSRD
+preplace port port-id_tx_0_p -pg 1 -lvl 3 -x 680 -y 40 -defaultsOSRD
+preplace port port-id_tx_1_n -pg 1 -lvl 3 -x 680 -y 570 -defaultsOSRD
+preplace port port-id_tx_1_p -pg 1 -lvl 3 -x 680 -y 590 -defaultsOSRD
+preplace port port-id_tx_2_n -pg 1 -lvl 3 -x 680 -y 610 -defaultsOSRD
+preplace port port-id_tx_2_p -pg 1 -lvl 3 -x 680 -y 630 -defaultsOSRD
+preplace port port-id_tx_3_n -pg 1 -lvl 3 -x 680 -y 650 -defaultsOSRD
+preplace port port-id_tx_3_p -pg 1 -lvl 3 -x 680 -y 670 -defaultsOSRD
+preplace port port-id_rx_sysref -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace port port-id_tx_sysref -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace portBus spi_csn -pg 1 -lvl 3 -x 680 -y 120 -defaultsOSRD
+preplace portBus rx_sync -pg 1 -lvl 3 -x 680 -y 690 -defaultsOSRD
+preplace portBus tx_sync -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace inst PS -pg 1 -lvl 2 -x 500 -y 100 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 229 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 54 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 74 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 114 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 132 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 259 252 251 257 255 256 258 253 254} -defaultsOSRD -pinDir s_axi_dma_ad9680 left -pinY s_axi_dma_ad9680 0L -pinDir s_axi_dma_ad9144 left -pinY s_axi_dma_ad9144 20L -pinDir gpio right -pinY gpio 0R -pinDir m_axi_ad9144_xcvr left -pinY m_axi_ad9144_xcvr 220L -pinDir m_axi_ad9144_jesd left -pinY m_axi_ad9144_jesd 40L -pinDir m_axi_ad9144_tpl left -pinY m_axi_ad9144_tpl 80L -pinDir m_axi_gpio_counter left -pinY m_axi_gpio_counter 60L -pinDir m_axi_ad9144_dma left -pinY m_axi_ad9144_dma 100L -pinDir m_axi_ad9680_xcvr left -pinY m_axi_ad9680_xcvr 140L -pinDir m_axi_ad9680_jesd left -pinY m_axi_ad9680_jesd 160L -pinDir m_axi_ad9680_tpl left -pinY m_axi_ad9680_tpl 180L -pinDir m_axi_ad9680_offload left -pinY m_axi_ad9680_offload 200L -pinDir m_axi_ad9680_dma left -pinY m_axi_ad9680_dma 120L -pinBusDir spi_csn right -pinBusY spi_csn 20R -pinDir spi_clk right -pinY spi_clk 40R -pinDir spi_miso left -pinY spi_miso 420L -pinDir spi_mosi right -pinY spi_mosi 60R -pinBusDir pl_ps_irq0 left -pinBusY pl_ps_irq0 280L -pinDir pl_clk_250M left -pinY pl_clk_250M 380L -pinDir pl_clk_100M left -pinY pl_clk_100M 340L -pinBusDir peripheral_aresetn_100M left -pinBusY peripheral_aresetn_100M 360L -pinBusDir peripheral_aresetn_250M left -pinBusY peripheral_aresetn_250M 400L -pinBusDir peripheral_reset_250M left -pinBusY peripheral_reset_250M 300L -pinDir ext_reset_in left -pinY ext_reset_in 320L
+preplace inst jesd204b -pg 1 -lvl 1 -x 170 -y 100 -swap {231 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 156 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 0 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 176 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 196 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 136 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 213 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 96 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 40 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 116 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 76 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 20 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 264 265 266 267 268 269 261 260 262 263 259 271 257 270 258 272 273} -defaultsOSRD -pinDir s_axi_ad9144_xcvr right -pinY s_axi_ad9144_xcvr 220R -pinDir s_axi_ad9680_xcvr right -pinY s_axi_ad9680_xcvr 140R -pinDir m_axi_ad9680_dma right -pinY m_axi_ad9680_dma 0R -pinDir s_axi_ad9680_jesd right -pinY s_axi_ad9680_jesd 160R -pinDir s_axi_ad9680_tpl right -pinY s_axi_ad9680_tpl 180R -pinDir s_axi_ad9680_dma right -pinY s_axi_ad9680_dma 120R -pinDir s_axi_ad9680_offload right -pinY s_axi_ad9680_offload 200R -pinDir s_axi_ad9144_tpl right -pinY s_axi_ad9144_tpl 80R -pinDir s_axi_ad9144_jesd right -pinY s_axi_ad9144_jesd 40R -pinDir s_axi_ad9144_dma right -pinY s_axi_ad9144_dma 100R -pinDir s_axi_gpio_counter right -pinY s_axi_gpio_counter 60R -pinDir m_axi_dma_ad9144 right -pinY m_axi_dma_ad9144 20R -pinDir rx_0_n left -pinY rx_0_n 0L -pinDir rx_0_p left -pinY rx_0_p 20L -pinDir rx_1_n left -pinY rx_1_n 40L -pinDir rx_1_p left -pinY rx_1_p 60L -pinDir rx_2_n left -pinY rx_2_n 80L -pinDir rx_2_p left -pinY rx_2_p 100L -pinDir rx_3_n left -pinY rx_3_n 120L -pinDir rx_3_p left -pinY rx_3_p 140L -pinDir rx_ref_clk left -pinY rx_ref_clk 160L -pinDir tx_ref_clk left -pinY tx_ref_clk 180L -pinDir tx_0_n right -pinY tx_0_n 240R -pinDir tx_0_p right -pinY tx_0_p 260R -pinDir tx_1_n right -pinY tx_1_n 470R -pinDir tx_1_p right -pinY tx_1_p 490R -pinDir tx_2_n right -pinY tx_2_n 510R -pinDir tx_2_p right -pinY tx_2_p 530R -pinDir tx_3_n right -pinY tx_3_n 550R -pinDir tx_3_p right -pinY tx_3_p 570R -pinDir s_axi_aresetn_100M right -pinY s_axi_aresetn_100M 360R -pinDir s_axi_aclk_100M right -pinY s_axi_aclk_100M 340R -pinDir s_axi_aclk_250M right -pinY s_axi_aclk_250M 380R -pinDir s_axi_aresetn_250M right -pinY s_axi_aresetn_250M 400R -pinDir ext_reset_in right -pinY ext_reset_in 320R -pinBusDir rx_sync right -pinBusY rx_sync 590R -pinBusDir jesd204b_irq right -pinBusY jesd204b_irq 280R -pinDir rx_sysref left -pinY rx_sysref 200L -pinDir reset_upack right -pinY reset_upack 300R -pinDir tx_sysref left -pinY tx_sysref 220L -pinBusDir tx_sync left -pinBusY tx_sync 240L
+preplace netloc PS_spi_csn 1 2 1 NJ 120
+preplace netloc PS_spi_clk 1 2 1 NJ 140
+preplace netloc PS_spi_mosi 1 2 1 NJ 160
+preplace netloc spi_miso_1 1 0 2 NJ 740 320J
+preplace netloc rx_0_n_1 1 0 1 NJ 100
+preplace netloc rx_0_p_1 1 0 1 NJ 120
+preplace netloc rx_1_n_1 1 0 1 NJ 140
+preplace netloc rx_1_p_1 1 0 1 NJ 160
+preplace netloc rx_2_n_1 1 0 1 NJ 180
+preplace netloc rx_2_p_1 1 0 1 NJ 200
+preplace netloc rx_3_n_1 1 0 1 NJ 220
+preplace netloc rx_3_p_1 1 0 1 NJ 240
+preplace netloc rx_ref_clk_1 1 0 1 NJ 260
+preplace netloc tx_ref_clk_1 1 0 1 NJ 280
+preplace netloc jesd204b_tx_0_n 1 1 2 320J 20 NJ
+preplace netloc jesd204b_tx_0_p 1 1 2 340J 40 NJ
+preplace netloc jesd204b_tx_1_n 1 1 2 NJ 570 NJ
+preplace netloc jesd204b_tx_1_p 1 1 2 NJ 590 NJ
+preplace netloc jesd204b_tx_2_n 1 1 2 NJ 610 NJ
+preplace netloc jesd204b_tx_2_p 1 1 2 NJ 630 NJ
+preplace netloc jesd204b_tx_3_n 1 1 2 NJ 650 NJ
+preplace netloc jesd204b_tx_3_p 1 1 2 NJ 670 NJ
+preplace netloc PS_peripheral_aresetn_100M 1 1 1 N 460
+preplace netloc PS_pl_clk_100M 1 1 1 N 440
+preplace netloc PS_pl_clk_250M 1 1 1 N 480
+preplace netloc PS_peripheral_aresetn_250M 1 1 1 N 500
+preplace netloc PS_ext_reset_in 1 1 1 N 420
+preplace netloc jesd204b_rx_sync 1 1 2 NJ 690 NJ
 preplace netloc jesd204b_jesd204b_irq 1 1 1 N 380
-preplace netloc rx_sysref_1 1 0 1 N 340
-preplace netloc PS_gpio 1 2 1 NJ 140
-preplace netloc PS_m_axi_ad9144_xcvr 1 1 1 N 160
-preplace netloc PS_m_axi_ad9680_xcvr 1 1 1 N 180
-preplace netloc s_axi_dma_ad9680_1 1 1 1 N 140
-preplace netloc PS_m_axi_ad9680_jesd 1 1 1 N 200
-preplace netloc PS_m_axi_ad9680_tpl 1 1 1 N 220
-preplace netloc PS_m_axi_ad9680_dma 1 1 1 N 260
-preplace netloc PS_m_axi_ad9680_offload 1 1 1 N 280
+preplace netloc rx_sysref_1 1 0 1 NJ 300
+preplace netloc PS_peripheral_reset_250M 1 1 1 N 400
+preplace netloc tx_sysref_1 1 0 1 NJ 320
+preplace netloc tx_sync_1 1 0 1 NJ 340
+preplace netloc PS_gpio 1 2 1 NJ 100
+preplace netloc PS_m_axi_ad9144_xcvr 1 1 1 N 320
+preplace netloc PS_m_axi_ad9680_xcvr 1 1 1 N 240
+preplace netloc s_axi_dma_ad9680_1 1 1 1 N 100
+preplace netloc PS_m_axi_ad9680_jesd 1 1 1 N 260
+preplace netloc PS_m_axi_ad9680_tpl 1 1 1 N 280
+preplace netloc PS_m_axi_ad9680_dma 1 1 1 N 220
+preplace netloc PS_m_axi_ad9680_offload 1 1 1 N 300
+preplace netloc PS_m_axi_ad9144_tpl 1 1 1 N 180
+preplace netloc PS_m_axi_ad9144_jesd 1 1 1 N 140
+preplace netloc PS_m_axi_ad9144_dma 1 1 1 N 200
+preplace netloc PS_m_axi_gpio_counter 1 1 1 N 160
+preplace netloc s_axi_dma_ad9144_1 1 1 1 N 120
 preplace cgraphic comment_0 place top 0 0 textcolor 4 linecolor 3
-levelinfo -pg 1 0 160 560 780
-pagesize -pg 1 -db -bbox -sgen -120 0 910 700
+levelinfo -pg 1 0 170 500 680
+pagesize -pg 1 -db -bbox -sgen -130 0 810 760
 ",
-   "No Loops_ScaleFactor":"0.68",
-   "No Loops_TopLeft":"-503,0",
+   "No Loops_ScaleFactor":"0.626316",
+   "No Loops_TopLeft":"-637,0",
    "comment_0":"Enter Comments here",
    "commentid":"comment_0|",
    "fillcolor_comment_0":"",
