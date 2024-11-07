@@ -1,0 +1,28 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"0.933333",
+   "Default View_TopLeft":"-573,-380",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port gpio -pg 1 -lvl 2 -x 420 -y 130 -defaultsOSRD
+preplace port port-id_spi_clk -pg 1 -lvl 2 -x 420 -y 370 -defaultsOSRD
+preplace port port-id_spi_mosi -pg 1 -lvl 2 -x 420 -y 390 -defaultsOSRD
+preplace port port-id_spi_miso -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace portBus spi_csn -pg 1 -lvl 2 -x 420 -y 350 -defaultsOSRD
+preplace inst PS -pg 1 -lvl 1 -x 210 -y 130 -defaultsOSRD -pinDir s_axi_dma_ad9680 left -pinY s_axi_dma_ad9680 0L -pinDir s_axi_dma_ad9144 left -pinY s_axi_dma_ad9144 20L -pinDir gpio right -pinY gpio 0R -pinDir m_axi_ad9144_xcvr right -pinY m_axi_ad9144_xcvr 20R -pinDir m_axi_ad9144_jesd right -pinY m_axi_ad9144_jesd 40R -pinDir m_axi_ad9144_tpl right -pinY m_axi_ad9144_tpl 60R -pinDir m_axi_gpio_counter right -pinY m_axi_gpio_counter 80R -pinDir m_axi_ad9144_dma right -pinY m_axi_ad9144_dma 100R -pinDir m_axi_ad9680_xcvr right -pinY m_axi_ad9680_xcvr 120R -pinDir m_axi_ad9680_jesd right -pinY m_axi_ad9680_jesd 140R -pinDir m_axi_ad9680_tpl right -pinY m_axi_ad9680_tpl 160R -pinDir m_axi_ad9680_offload right -pinY m_axi_ad9680_offload 180R -pinDir m_axi_ad9680_dma right -pinY m_axi_ad9680_dma 200R -pinBusDir spi_csn right -pinBusY spi_csn 220R -pinDir spi_clk right -pinY spi_clk 240R -pinDir spi_miso left -pinY spi_miso 40L -pinDir spi_mosi right -pinY spi_mosi 260R -pinBusDir pl_ps_irq0 left -pinBusY pl_ps_irq0 60L -pinDir pl_clk_250M right -pinY pl_clk_250M 280R -pinDir pl_clk_100M right -pinY pl_clk_100M 300R -pinBusDir peripheral_aresetn_100M right -pinBusY peripheral_aresetn_100M 320R -pinBusDir peripheral_aresetn_250M right -pinBusY peripheral_aresetn_250M 340R -pinBusDir peripheral_reset_250M right -pinBusY peripheral_reset_250M 360R
+preplace inst jesd204b -pg 1 -lvl 1 -x 210 -y 60 -defaultsOSRD
+preplace netloc PS_spi_csn 1 1 1 NJ 350
+preplace netloc PS_spi_clk 1 1 1 NJ 370
+preplace netloc PS_spi_mosi 1 1 1 NJ 390
+preplace netloc spi_miso_1 1 0 1 N 170
+preplace netloc PS_gpio 1 1 1 NJ 130
+levelinfo -pg 1 0 210 420
+pagesize -pg 1 -db -bbox -sgen -110 0 550 540
+",
+   "No Loops_ScaleFactor":"0.933333",
+   "No Loops_TopLeft":"-436,0"
+}
+{
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

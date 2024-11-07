@@ -1,0 +1,11 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst PS -pg 1 -lvl 1 -x 70 -y -110 -defaultsOSRD
+preplace inst jesd204b -pg 1 -lvl 1 -x 70 -y 120 -defaultsOSRD
+levelinfo -pg 1 -120 70 260
+pagesize -pg 1 -db -bbox -sgen -120 -320 260 160
+"
+}
+
