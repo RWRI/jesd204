@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>analog.devices</spirit:vendor>
   <spirit:library>user</spirit:library>
-  <spirit:name>axi_ad9860_tpl</spirit:name>
+  <spirit:name>axi_ad9680_tpl</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -185,7 +185,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_ARESETN.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_ARESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1c48f5dc</spirit:value>
+            <spirit:value>e984af76</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -288,7 +288,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>92a86f19</spirit:value>
+            <spirit:value>dd7d3c24</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -441,7 +441,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:left spirit:format="long">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -829,7 +829,7 @@
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_74b5137e</spirit:name>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
@@ -885,7 +885,7 @@
       <spirit:file>
         <spirit:name>axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/hdl/axi_ad9860_tpl_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_fb3bd178</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_7145a33f</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -977,14 +977,14 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/axi_ad9860_tpl_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/axi_ad9680_tpl_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>axi_ad9860_tpl_v1_0</spirit:description>
+  <spirit:description>axi_ad9680_tpl_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -999,18 +999,18 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>axi_ad9860_tpl_v1_0</xilinx:displayName>
+      <xilinx:displayName>axi_ad9680_tpl_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:vendorDisplayName>Analog Devices</xilinx:vendorDisplayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-11-06T18:04:10Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-11-07T14:57:07Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="fedf2415"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="1b2fc866"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="d62e736d"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1ae642d2"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="62222bcd"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5ebc1123"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="ae0474ac"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2d732343"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

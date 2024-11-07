@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x3EF75C6E0FC79C94",
+      "boundary_crc": "0xF20DAF08D071AEAF",
       "device": "xczu7ev-fbvb900-1-e",
       "gen_directory": "../../../../axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl",
       "name": "axi_ad9860_tpl",
@@ -261,11 +261,6 @@
       "link_valid": {
         "direction": "I"
       },
-      "link_data": {
-        "direction": "I",
-        "left": "31",
-        "right": "0"
-      },
       "adc_dovf": {
         "direction": "I"
       },
@@ -344,6 +339,11 @@
       "adc_data_1": {
         "direction": "O",
         "left": "63",
+        "right": "0"
+      },
+      "link_data": {
+        "direction": "I",
+        "left": "127",
         "right": "0"
       }
     },

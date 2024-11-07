@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Nov  6 14:46:56 2024
+//Date        : Thu Nov  7 11:47:27 2024
 //Host        : PSD033 running 64-bit major release  (build 9200)
 //Command     : generate_target axi_ad9860_tpl_wrapper.bd
 //Design      : axi_ad9860_tpl_wrapper
@@ -50,7 +50,7 @@ module axi_ad9860_tpl_wrapper
   output [0:0]adc_valid_0;
   output [0:0]adc_valid_1;
   input link_clk;
-  input [31:0]link_data;
+  input [127:0]link_data;
   input [3:0]link_sof;
   input link_valid;
   input s_axi_aclk;
@@ -83,7 +83,7 @@ module axi_ad9860_tpl_wrapper
   wire [0:0]adc_valid_0;
   wire [0:0]adc_valid_1;
   wire link_clk;
-  wire [31:0]link_data;
+  wire [127:0]link_data;
   wire [3:0]link_sof;
   wire link_valid;
   wire s_axi_aclk;

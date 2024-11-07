@@ -84,13 +84,16 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Xilinx/Vivado/2022.2/data/boards/board_file} [current_project]
 set_property board_part iwavesystems.com:iw-g30m-c7ev-4e004g-e008g-lea:part0:1.0 [current_project]
-set_property ip_repo_paths c:/GitHub/jesd204/ips [current_project]
+set_property ip_repo_paths {
+  c:/github/jesd204/layers/axi_ad9680_tpl
+  c:/GitHub/jesd204/ips
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/hdl/axi_ad9860_tpl_wrapper.v
+read_verilog -library xil_defaultlib C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/hdl/axi_ad9860_tpl_wrapper.v
 add_files C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.srcs/sources_1/bd/axi_ad9860_tpl/axi_ad9860_tpl.bd
 set_property used_in_implementation false [get_files -all c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/ad_rst_constr.xdc]
 set_property used_in_implementation false [get_files -all c:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.gen/sources_1/bd/axi_ad9860_tpl/ip/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0/up_clock_mon_constr.xdc]
@@ -110,6 +113,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.srcs/utils_1/imports/synth_1/axi_ad9860_tpl_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

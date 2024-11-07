@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Wed Nov  6 14:46:56 2024
+//Date        : Thu Nov  7 11:47:27 2024
 //Host        : PSD033 running 64-bit major release  (build 9200)
 //Command     : generate_target axi_ad9860_tpl.bd
 //Design      : axi_ad9860_tpl
@@ -51,7 +51,7 @@ module axi_ad9860_tpl
   output [0:0]adc_valid_0;
   output [0:0]adc_valid_1;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.LINK_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.LINK_CLK, CLK_DOMAIN axi_ad9860_tpl_link_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input link_clk;
-  input [31:0]link_data;
+  input [127:0]link_data;
   input [3:0]link_sof;
   input link_valid;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.S_AXI_ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.S_AXI_ACLK, ASSOCIATED_BUSIF s_axi, ASSOCIATED_RESET s_axi_aresetn, CLK_DOMAIN axi_ad9860_tpl_s_axi_aclk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input s_axi_aclk;
@@ -84,7 +84,7 @@ module axi_ad9860_tpl
   wire [63:0]data_xlslice_1_Dout;
   wire [0:0]enable_xlslice_1_Dout;
   wire link_clk_1;
-  wire [31:0]link_data_1;
+  wire [127:0]link_data_1;
   wire [3:0]link_sof_1;
   wire link_valid_1;
   wire [12:0]s_axi_1_ARADDR;
@@ -120,7 +120,7 @@ module axi_ad9860_tpl
   assign adc_valid_0[0] = valid_xlslice_0_Dout;
   assign adc_valid_1[0] = valid_xlslice_1_Dout;
   assign link_clk_1 = link_clk;
-  assign link_data_1 = link_data[31:0];
+  assign link_data_1 = link_data[127:0];
   assign link_sof_1 = link_sof[3:0];
   assign link_valid_1 = link_valid;
   assign s_axi_1_ARADDR = s_axi_araddr[12:0];
@@ -152,7 +152,7 @@ module axi_ad9860_tpl
         .adc_valid(ad_ip_jesd204_tpl_adc_adc_valid),
         .enable(ad_ip_jesd204_tpl_adc_enable),
         .link_clk(link_clk_1),
-        .link_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,link_data_1}),
+        .link_data(link_data_1),
         .link_sof(link_sof_1),
         .link_valid(link_valid_1),
         .s_axi_aclk(s_axi_aclk_1),

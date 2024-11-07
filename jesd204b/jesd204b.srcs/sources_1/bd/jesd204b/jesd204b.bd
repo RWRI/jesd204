@@ -36,7 +36,25 @@
         "proc_sys_reset_250M": ""
       },
       "jesd204b": {
-        "phy_shared_0": ""
+        "phy_shared_0": "",
+        "adc": {
+          "axi_ad9680_jesd": "",
+          "axi_ad9680_rstgen": "",
+          "xlconcat_irq": "",
+          "axi_ad9680_offload": {
+            "storage_unit": "",
+            "i_data_offload": "",
+            "GND": ""
+          },
+          "axi_ad9680_dma": {
+            "axi_dmac": ""
+          },
+          "axi_ad9680_cpack": {
+            "axi_ad9680_cpack": ""
+          },
+          "axi_ad9680_tpl": ""
+        },
+        "xlconcat_0": ""
       }
     },
     "interface_ports": {
@@ -128,6 +146,14 @@
       },
       "tx_3_p": {
         "direction": "O"
+      },
+      "rx_sync": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "rx_sysref": {
+        "direction": "I"
       }
     },
     "components": {
@@ -239,6 +265,9 @@
             "direction": "O",
             "left": "0",
             "right": "0"
+          },
+          "ext_reset_in": {
+            "direction": "O"
           }
         },
         "components": {
@@ -2798,7 +2827,8 @@
             "ports": [
               "zynq_ultra_ps_e_0/pl_resetn0",
               "proc_sys_reset_250M/ext_reset_in",
-              "proc_sys_reset_100M/ext_reset_in"
+              "proc_sys_reset_100M/ext_reset_in",
+              "ext_reset_in"
             ]
           }
         }
@@ -2811,6 +2841,31 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
           },
           "s_axi_ad9680_xcvr": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "m_axi_ad9680_dma": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "s_axi_ad9680_jesd": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "s_axi_ad9680_tpl": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "s_axi_ad9680_dma": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "s_axi_ad9680_offload": {
             "mode": "Slave",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
@@ -2886,6 +2941,23 @@
           "s_axi_aresetn_250M": {
             "type": "rst",
             "direction": "I"
+          },
+          "ext_reset_in": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "rx_sync": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "jesd204b_irq": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "rx_sysref": {
+            "direction": "I"
           }
         },
         "components": {
@@ -2906,6 +2978,903 @@
                 "memory_map_ref": "s_axi_ad9680_xcvr"
               }
             }
+          },
+          "adc": {
+            "interface_ports": {
+              "s_axi_ad9680_jesd": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "s_axi_ad9680_tpl": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "s_axi_ad9680_offload": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "s_axi_ad9680_dma": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "m_axi_ad9680_dma": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "ports": {
+              "pl_clk_100M": {
+                "type": "clk",
+                "direction": "I"
+              },
+              "rx_out_clk_0": {
+                "type": "clk",
+                "direction": "I"
+              },
+              "phy_block_sync": {
+                "direction": "I",
+                "left": "3",
+                "right": "0"
+              },
+              "phy_charisk": {
+                "direction": "I",
+                "left": "15",
+                "right": "0"
+              },
+              "phy_data": {
+                "direction": "I",
+                "left": "127",
+                "right": "0"
+              },
+              "phy_disperr": {
+                "direction": "I",
+                "left": "15",
+                "right": "0"
+              },
+              "phy_header": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "phy_notintable": {
+                "direction": "I",
+                "left": "15",
+                "right": "0"
+              },
+              "peripheral_aresetn_100M": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "rx_sysref": {
+                "direction": "I"
+              },
+              "adc_irq": {
+                "direction": "O",
+                "left": "1",
+                "right": "0"
+              },
+              "phy_en_char_align": {
+                "direction": "O"
+              },
+              "rx_sync": {
+                "direction": "O",
+                "left": "0",
+                "right": "0"
+              },
+              "ext_reset_in": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "components": {
+              "axi_ad9680_jesd": {
+                "vlnv": "analog.devices:user:axi_ad9680_jesd:1.0",
+                "xci_name": "jesd204b_axi_ad9680_jesd_0_0",
+                "xci_path": "ip\\jesd204b_axi_ad9680_jesd_0_0\\jesd204b_axi_ad9680_jesd_0_0.xci",
+                "inst_hier_path": "jesd204b/adc/axi_ad9680_jesd",
+                "interface_ports": {
+                  "s_axi": {
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                    "mode": "Slave",
+                    "memory_map_ref": "s_axi"
+                  }
+                }
+              },
+              "axi_ad9680_rstgen": {
+                "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+                "xci_name": "jesd204b_proc_sys_reset_0_2",
+                "xci_path": "ip\\jesd204b_proc_sys_reset_0_2\\jesd204b_proc_sys_reset_0_2.xci",
+                "inst_hier_path": "jesd204b/adc/axi_ad9680_rstgen"
+              },
+              "xlconcat_irq": {
+                "vlnv": "xilinx.com:ip:xlconcat:2.1",
+                "xci_name": "jesd204b_xlconcat_0_1",
+                "xci_path": "ip\\jesd204b_xlconcat_0_1\\jesd204b_xlconcat_0_1.xci",
+                "inst_hier_path": "jesd204b/adc/xlconcat_irq"
+              },
+              "axi_ad9680_offload": {
+                "interface_ports": {
+                  "s_axi": {
+                    "mode": "Slave",
+                    "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+                  },
+                  "s_axis": {
+                    "mode": "Slave",
+                    "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                    "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+                  },
+                  "m_axis": {
+                    "mode": "Master",
+                    "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                    "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+                  }
+                },
+                "ports": {
+                  "s_axis_aclk": {
+                    "direction": "I"
+                  },
+                  "s_axis_aresetn": {
+                    "direction": "I"
+                  },
+                  "m_axis_aclk": {
+                    "direction": "I"
+                  },
+                  "m_axis_aresetn": {
+                    "direction": "I"
+                  },
+                  "s_axi_aclk": {
+                    "direction": "I"
+                  },
+                  "s_axi_aresetn": {
+                    "direction": "I"
+                  },
+                  "init_req": {
+                    "direction": "I"
+                  }
+                },
+                "components": {
+                  "storage_unit": {
+                    "vlnv": "analog.devices:user:util_do_ram:1.0",
+                    "xci_name": "jesd204b_util_do_ram_0_0",
+                    "xci_path": "ip\\jesd204b_util_do_ram_0_0\\jesd204b_util_do_ram_0_0.xci",
+                    "inst_hier_path": "jesd204b/adc/axi_ad9680_offload/storage_unit",
+                    "parameters": {
+                      "LENGTH_WIDTH": {
+                        "value": "20"
+                      },
+                      "SRC_DATA_WIDTH": {
+                        "value": "128"
+                      }
+                    }
+                  },
+                  "i_data_offload": {
+                    "vlnv": "analog.devices:user:data_offload:1.0",
+                    "xci_name": "jesd204b_data_offload_0_0",
+                    "xci_path": "ip\\jesd204b_data_offload_0_0\\jesd204b_data_offload_0_0.xci",
+                    "inst_hier_path": "jesd204b/adc/axi_ad9680_offload/i_data_offload",
+                    "parameters": {
+                      "MEM_SIZE_LOG2": {
+                        "value": "20"
+                      },
+                      "SRC_DATA_WIDTH": {
+                        "value": "128"
+                      }
+                    },
+                    "interface_ports": {
+                      "s_axi": {
+                        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "s_axi"
+                      }
+                    }
+                  },
+                  "GND": {
+                    "vlnv": "xilinx.com:ip:xlconstant:1.1",
+                    "xci_name": "jesd204b_xlconstant_0_1",
+                    "xci_path": "ip\\jesd204b_xlconstant_0_1\\jesd204b_xlconstant_0_1.xci",
+                    "inst_hier_path": "jesd204b/adc/axi_ad9680_offload/GND",
+                    "parameters": {
+                      "CONST_VAL": {
+                        "value": "0"
+                      }
+                    }
+                  }
+                },
+                "interface_nets": {
+                  "Conn1": {
+                    "interface_ports": [
+                      "m_axis",
+                      "i_data_offload/m_axis"
+                    ]
+                  },
+                  "i_data_offload_m_storage_axis": {
+                    "interface_ports": [
+                      "i_data_offload/m_storage_axis",
+                      "storage_unit/s_axis"
+                    ]
+                  },
+                  "s_axi_1": {
+                    "interface_ports": [
+                      "s_axi",
+                      "i_data_offload/s_axi"
+                    ]
+                  },
+                  "s_axis_1": {
+                    "interface_ports": [
+                      "s_axis",
+                      "i_data_offload/s_axis"
+                    ]
+                  },
+                  "storage_unit_m_axis": {
+                    "interface_ports": [
+                      "storage_unit/m_axis",
+                      "i_data_offload/s_storage_axis"
+                    ]
+                  }
+                },
+                "nets": {
+                  "GND_dout": {
+                    "ports": [
+                      "GND/dout",
+                      "i_data_offload/sync_ext"
+                    ]
+                  },
+                  "i_data_offload_rd_request_enable": {
+                    "ports": [
+                      "i_data_offload/rd_request_enable",
+                      "storage_unit/rd_request_enable"
+                    ]
+                  },
+                  "i_data_offload_rd_request_length": {
+                    "ports": [
+                      "i_data_offload/rd_request_length",
+                      "storage_unit/rd_request_length"
+                    ]
+                  },
+                  "i_data_offload_rd_request_valid": {
+                    "ports": [
+                      "i_data_offload/rd_request_valid",
+                      "storage_unit/rd_request_valid"
+                    ]
+                  },
+                  "i_data_offload_wr_request_enable": {
+                    "ports": [
+                      "i_data_offload/wr_request_enable",
+                      "storage_unit/wr_request_enable"
+                    ]
+                  },
+                  "i_data_offload_wr_request_length": {
+                    "ports": [
+                      "i_data_offload/wr_request_length",
+                      "storage_unit/wr_request_length"
+                    ]
+                  },
+                  "i_data_offload_wr_request_valid": {
+                    "ports": [
+                      "i_data_offload/wr_request_valid",
+                      "storage_unit/wr_request_valid"
+                    ]
+                  },
+                  "init_req_1": {
+                    "ports": [
+                      "init_req",
+                      "i_data_offload/init_req"
+                    ]
+                  },
+                  "m_axis_aclk_1": {
+                    "ports": [
+                      "m_axis_aclk",
+                      "storage_unit/m_axis_aclk",
+                      "i_data_offload/m_axis_aclk"
+                    ]
+                  },
+                  "m_axis_aresetn_1": {
+                    "ports": [
+                      "m_axis_aresetn",
+                      "storage_unit/m_axis_aresetn",
+                      "i_data_offload/m_axis_aresetn"
+                    ]
+                  },
+                  "s_axi_aclk_1": {
+                    "ports": [
+                      "s_axi_aclk",
+                      "i_data_offload/s_axi_aclk"
+                    ]
+                  },
+                  "s_axi_aresetn_1": {
+                    "ports": [
+                      "s_axi_aresetn",
+                      "i_data_offload/s_axi_aresetn"
+                    ]
+                  },
+                  "s_axis_aclk_1": {
+                    "ports": [
+                      "s_axis_aclk",
+                      "storage_unit/s_axis_aclk",
+                      "i_data_offload/s_axis_aclk"
+                    ]
+                  },
+                  "s_axis_aresetn_1": {
+                    "ports": [
+                      "s_axis_aresetn",
+                      "storage_unit/s_axis_aresetn",
+                      "i_data_offload/s_axis_aresetn"
+                    ]
+                  },
+                  "storage_unit_rd_request_ready": {
+                    "ports": [
+                      "storage_unit/rd_request_ready",
+                      "i_data_offload/rd_request_ready"
+                    ]
+                  },
+                  "storage_unit_rd_response_eot": {
+                    "ports": [
+                      "storage_unit/rd_response_eot",
+                      "i_data_offload/rd_response_eot"
+                    ]
+                  },
+                  "storage_unit_wr_request_ready": {
+                    "ports": [
+                      "storage_unit/wr_request_ready",
+                      "i_data_offload/wr_request_ready"
+                    ]
+                  },
+                  "storage_unit_wr_response_eot": {
+                    "ports": [
+                      "storage_unit/wr_response_eot",
+                      "i_data_offload/wr_response_eot"
+                    ]
+                  },
+                  "storage_unit_wr_response_measured_length": {
+                    "ports": [
+                      "storage_unit/wr_response_measured_length",
+                      "i_data_offload/wr_response_measured_length"
+                    ]
+                  }
+                }
+              },
+              "axi_ad9680_dma": {
+                "interface_ports": {
+                  "s_axi": {
+                    "mode": "Slave",
+                    "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+                  },
+                  "s_axis": {
+                    "mode": "Slave",
+                    "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+                    "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+                  },
+                  "m_dest_axi": {
+                    "mode": "Master",
+                    "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+                  }
+                },
+                "ports": {
+                  "m_dest_axi_aclk": {
+                    "direction": "I"
+                  },
+                  "axi_aresetn": {
+                    "direction": "I"
+                  },
+                  "irq": {
+                    "direction": "O"
+                  },
+                  "s_axis_xfer_req": {
+                    "direction": "O"
+                  }
+                },
+                "components": {
+                  "axi_dmac": {
+                    "vlnv": "analog.devices:user:axi_dmac:1.0",
+                    "xci_name": "jesd204b_axi_dmac_0_1",
+                    "xci_path": "ip\\jesd204b_axi_dmac_0_1\\jesd204b_axi_dmac_0_1.xci",
+                    "inst_hier_path": "jesd204b/adc/axi_ad9680_dma/axi_dmac",
+                    "parameters": {
+                      "CYCLIC": {
+                        "value": "0"
+                      },
+                      "DMA_DATA_WIDTH_DEST": {
+                        "value": "128"
+                      },
+                      "DMA_DATA_WIDTH_SRC": {
+                        "value": "128"
+                      },
+                      "DMA_TYPE_SRC": {
+                        "value": "1"
+                      },
+                      "MAX_BYTES_PER_BURST": {
+                        "value": "256"
+                      }
+                    },
+                    "interface_ports": {
+                      "m_dest_axi": {
+                        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                        "mode": "Master",
+                        "address_space_ref": "m_dest_axi",
+                        "base_address": {
+                          "minimum": "0x00000000",
+                          "maximum": "0xFFFFFFFF",
+                          "width": "32"
+                        }
+                      },
+                      "m_sg_axi": {
+                        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                        "mode": "Master",
+                        "address_space_ref": "m_sg_axi",
+                        "base_address": {
+                          "minimum": "0x00000000",
+                          "maximum": "0xFFFFFFFF",
+                          "width": "32"
+                        }
+                      },
+                      "m_src_axi": {
+                        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                        "mode": "Master",
+                        "address_space_ref": "m_src_axi",
+                        "base_address": {
+                          "minimum": "0x00000000",
+                          "maximum": "0xFFFFFFFF",
+                          "width": "32"
+                        }
+                      },
+                      "s_axi": {
+                        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                        "mode": "Slave",
+                        "memory_map_ref": "s_axi"
+                      }
+                    },
+                    "addressing": {
+                      "address_spaces": {
+                        "m_dest_axi": {
+                          "range": "4G",
+                          "width": "32"
+                        },
+                        "m_sg_axi": {
+                          "range": "4G",
+                          "width": "32"
+                        },
+                        "m_src_axi": {
+                          "range": "4G",
+                          "width": "32"
+                        }
+                      }
+                    }
+                  }
+                },
+                "interface_nets": {
+                  "axi_dmac_0_m_dest_axi": {
+                    "interface_ports": [
+                      "m_dest_axi",
+                      "axi_dmac/m_dest_axi"
+                    ]
+                  },
+                  "s_axi_1": {
+                    "interface_ports": [
+                      "s_axi",
+                      "axi_dmac/s_axi"
+                    ]
+                  },
+                  "s_axis_1": {
+                    "interface_ports": [
+                      "s_axis",
+                      "axi_dmac/s_axis"
+                    ]
+                  }
+                },
+                "nets": {
+                  "axi_aresetn_1": {
+                    "ports": [
+                      "axi_aresetn",
+                      "axi_dmac/s_axi_aresetn",
+                      "axi_dmac/m_dest_axi_aresetn"
+                    ]
+                  },
+                  "axi_dmac_0_irq": {
+                    "ports": [
+                      "axi_dmac/irq",
+                      "irq"
+                    ]
+                  },
+                  "axi_dmac_0_s_axis_xfer_req": {
+                    "ports": [
+                      "axi_dmac/s_axis_xfer_req",
+                      "s_axis_xfer_req"
+                    ]
+                  },
+                  "m_dest_axi_aclk_1": {
+                    "ports": [
+                      "m_dest_axi_aclk",
+                      "axi_dmac/m_dest_axi_aclk",
+                      "axi_dmac/s_axi_aclk",
+                      "axi_dmac/m_src_axi_aclk",
+                      "axi_dmac/m_sg_axi_aclk",
+                      "axi_dmac/s_axis_aclk",
+                      "axi_dmac/m_axis_aclk",
+                      "axi_dmac/fifo_wr_clk",
+                      "axi_dmac/fifo_rd_clk"
+                    ]
+                  }
+                }
+              },
+              "axi_ad9680_cpack": {
+                "ports": {
+                  "clk": {
+                    "direction": "I"
+                  },
+                  "reset": {
+                    "direction": "I"
+                  },
+                  "enable_0": {
+                    "direction": "I"
+                  },
+                  "enable_1": {
+                    "direction": "I"
+                  },
+                  "fifo_wr_en": {
+                    "direction": "I"
+                  },
+                  "fifo_wr_data_0": {
+                    "direction": "I",
+                    "left": "63",
+                    "right": "0"
+                  },
+                  "fifo_wr_data_1": {
+                    "direction": "I",
+                    "left": "63",
+                    "right": "0"
+                  },
+                  "fifo_wr_overflow": {
+                    "direction": "O"
+                  },
+                  "packed_fifo_wr_en": {
+                    "direction": "O"
+                  },
+                  "packed_fifo_wr_data": {
+                    "direction": "O",
+                    "left": "127",
+                    "right": "0"
+                  }
+                },
+                "components": {
+                  "axi_ad9680_cpack": {
+                    "vlnv": "analog.devices:user:util_cpack2:1.0",
+                    "xci_name": "jesd204b_util_cpack2_0_0",
+                    "xci_path": "ip\\jesd204b_util_cpack2_0_0\\jesd204b_util_cpack2_0_0.xci",
+                    "inst_hier_path": "jesd204b/adc/axi_ad9680_cpack/axi_ad9680_cpack",
+                    "parameters": {
+                      "NUM_OF_CHANNELS": {
+                        "value": "2"
+                      },
+                      "SAMPLES_PER_CHANNEL": {
+                        "value": "4"
+                      }
+                    }
+                  }
+                },
+                "nets": {
+                  "axi_ad9680_cpack_fifo_wr_overflow": {
+                    "ports": [
+                      "axi_ad9680_cpack/fifo_wr_overflow",
+                      "fifo_wr_overflow"
+                    ]
+                  },
+                  "axi_ad9680_cpack_packed_fifo_wr_data": {
+                    "ports": [
+                      "axi_ad9680_cpack/packed_fifo_wr_data",
+                      "packed_fifo_wr_data"
+                    ]
+                  },
+                  "axi_ad9680_cpack_packed_fifo_wr_en": {
+                    "ports": [
+                      "axi_ad9680_cpack/packed_fifo_wr_en",
+                      "packed_fifo_wr_en"
+                    ]
+                  },
+                  "clk_1": {
+                    "ports": [
+                      "clk",
+                      "axi_ad9680_cpack/clk"
+                    ]
+                  },
+                  "enable_0_1": {
+                    "ports": [
+                      "enable_0",
+                      "axi_ad9680_cpack/enable_0"
+                    ]
+                  },
+                  "enable_1_1": {
+                    "ports": [
+                      "enable_1",
+                      "axi_ad9680_cpack/enable_1"
+                    ]
+                  },
+                  "fifo_wr_data_0_1": {
+                    "ports": [
+                      "fifo_wr_data_0",
+                      "axi_ad9680_cpack/fifo_wr_data_0"
+                    ]
+                  },
+                  "fifo_wr_data_1_1": {
+                    "ports": [
+                      "fifo_wr_data_1",
+                      "axi_ad9680_cpack/fifo_wr_data_1"
+                    ]
+                  },
+                  "fifo_wr_en_1": {
+                    "ports": [
+                      "fifo_wr_en",
+                      "axi_ad9680_cpack/fifo_wr_en"
+                    ]
+                  },
+                  "reset_1": {
+                    "ports": [
+                      "reset",
+                      "axi_ad9680_cpack/reset"
+                    ]
+                  }
+                }
+              },
+              "axi_ad9680_tpl": {
+                "vlnv": "analog.devices:user:axi_ad9680_tpl:1.0",
+                "xci_name": "jesd204b_axi_ad9680_tpl_0_0",
+                "xci_path": "ip\\jesd204b_axi_ad9680_tpl_0_0\\jesd204b_axi_ad9680_tpl_0_0.xci",
+                "inst_hier_path": "jesd204b/adc/axi_ad9680_tpl",
+                "interface_ports": {
+                  "s_axi": {
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                    "mode": "Slave",
+                    "memory_map_ref": "s_axi"
+                  }
+                }
+              }
+            },
+            "interface_nets": {
+              "axi_ad9680_dma_m_dest_axi": {
+                "interface_ports": [
+                  "m_axi_ad9680_dma",
+                  "axi_ad9680_dma/m_dest_axi"
+                ]
+              },
+              "s_axi_ad9680_dma_1": {
+                "interface_ports": [
+                  "s_axi_ad9680_dma",
+                  "axi_ad9680_dma/s_axi"
+                ]
+              },
+              "s_axi_ad9680_jesd_1": {
+                "interface_ports": [
+                  "s_axi_ad9680_jesd",
+                  "axi_ad9680_jesd/s_axi"
+                ]
+              },
+              "s_axi_ad9680_offload_1": {
+                "interface_ports": [
+                  "s_axi_ad9680_offload",
+                  "axi_ad9680_offload/s_axi"
+                ]
+              },
+              "s_axi_ad9680_tpl_1": {
+                "interface_ports": [
+                  "s_axi_ad9680_tpl",
+                  "axi_ad9680_tpl/s_axi"
+                ]
+              },
+              "s_axis_1": {
+                "interface_ports": [
+                  "axi_ad9680_dma/s_axis",
+                  "axi_ad9680_offload/m_axis"
+                ]
+              }
+            },
+            "nets": {
+              "axi_ad9680_cpack_fifo_wr_overflow": {
+                "ports": [
+                  "axi_ad9680_cpack/fifo_wr_overflow",
+                  "axi_ad9680_tpl/adc_dovf"
+                ]
+              },
+              "axi_ad9680_cpack_packed_fifo_wr_data": {
+                "ports": [
+                  "axi_ad9680_cpack/packed_fifo_wr_data",
+                  "axi_ad9680_offload/s_axis_tdata"
+                ]
+              },
+              "axi_ad9680_cpack_packed_fifo_wr_en": {
+                "ports": [
+                  "axi_ad9680_cpack/packed_fifo_wr_en",
+                  "axi_ad9680_offload/s_axis_tvalid"
+                ]
+              },
+              "axi_ad9680_dma_irq": {
+                "ports": [
+                  "axi_ad9680_dma/irq",
+                  "xlconcat_irq/In1"
+                ]
+              },
+              "axi_ad9680_dma_s_axis_xfer_req": {
+                "ports": [
+                  "axi_ad9680_dma/s_axis_xfer_req",
+                  "axi_ad9680_offload/init_req"
+                ]
+              },
+              "axi_ad9680_jesd_0_irq": {
+                "ports": [
+                  "axi_ad9680_jesd/irq",
+                  "xlconcat_irq/In0"
+                ]
+              },
+              "axi_ad9680_jesd_0_phy_en_char_align": {
+                "ports": [
+                  "axi_ad9680_jesd/phy_en_char_align",
+                  "phy_en_char_align"
+                ]
+              },
+              "axi_ad9680_jesd_0_rx_data_tdata": {
+                "ports": [
+                  "axi_ad9680_jesd/rx_data_tdata",
+                  "axi_ad9680_tpl/link_data"
+                ]
+              },
+              "axi_ad9680_jesd_0_rx_data_tvalid": {
+                "ports": [
+                  "axi_ad9680_jesd/rx_data_tvalid",
+                  "axi_ad9680_tpl/link_valid"
+                ]
+              },
+              "axi_ad9680_jesd_0_rx_sof": {
+                "ports": [
+                  "axi_ad9680_jesd/rx_sof",
+                  "axi_ad9680_tpl/link_sof"
+                ]
+              },
+              "axi_ad9680_jesd_0_rx_sync": {
+                "ports": [
+                  "axi_ad9680_jesd/rx_sync",
+                  "rx_sync"
+                ]
+              },
+              "axi_ad9680_tpl_adc_data_0": {
+                "ports": [
+                  "axi_ad9680_tpl/adc_data_0",
+                  "axi_ad9680_cpack/fifo_wr_data_0"
+                ]
+              },
+              "axi_ad9680_tpl_adc_data_1": {
+                "ports": [
+                  "axi_ad9680_tpl/adc_data_1",
+                  "axi_ad9680_cpack/fifo_wr_data_1"
+                ]
+              },
+              "axi_ad9680_tpl_adc_enable_0": {
+                "ports": [
+                  "axi_ad9680_tpl/adc_enable_0",
+                  "axi_ad9680_cpack/enable_0"
+                ]
+              },
+              "axi_ad9680_tpl_adc_enable_1": {
+                "ports": [
+                  "axi_ad9680_tpl/adc_enable_1",
+                  "axi_ad9680_cpack/enable_1"
+                ]
+              },
+              "axi_ad9680_tpl_adc_valid_0": {
+                "ports": [
+                  "axi_ad9680_tpl/adc_valid_0",
+                  "axi_ad9680_cpack/fifo_wr_en"
+                ]
+              },
+              "device_clk_1": {
+                "ports": [
+                  "rx_out_clk_0",
+                  "axi_ad9680_jesd/device_clk",
+                  "axi_ad9680_jesd/link_clk",
+                  "axi_ad9680_tpl/link_clk",
+                  "axi_ad9680_cpack/clk",
+                  "axi_ad9680_rstgen/slowest_sync_clk",
+                  "axi_ad9680_offload/s_axis_aclk"
+                ]
+              },
+              "ext_reset_in_1": {
+                "ports": [
+                  "ext_reset_in",
+                  "axi_ad9680_rstgen/ext_reset_in"
+                ]
+              },
+              "peripheral_aresetn_100M_1": {
+                "ports": [
+                  "peripheral_aresetn_100M",
+                  "axi_ad9680_jesd/s_axi_aresetn",
+                  "axi_ad9680_tpl/s_axi_aresetn",
+                  "axi_ad9680_offload/s_axi_aresetn",
+                  "axi_ad9680_offload/m_axis_aresetn",
+                  "axi_ad9680_dma/axi_aresetn"
+                ]
+              },
+              "phy_block_sync_1": {
+                "ports": [
+                  "phy_block_sync",
+                  "axi_ad9680_jesd/phy_block_sync"
+                ]
+              },
+              "phy_charisk_1": {
+                "ports": [
+                  "phy_charisk",
+                  "axi_ad9680_jesd/phy_charisk"
+                ]
+              },
+              "phy_data_1": {
+                "ports": [
+                  "phy_data",
+                  "axi_ad9680_jesd/phy_data"
+                ]
+              },
+              "phy_disperr_1": {
+                "ports": [
+                  "phy_disperr",
+                  "axi_ad9680_jesd/phy_disperr"
+                ]
+              },
+              "phy_header_1": {
+                "ports": [
+                  "phy_header",
+                  "axi_ad9680_jesd/phy_header"
+                ]
+              },
+              "phy_notintable_1": {
+                "ports": [
+                  "phy_notintable",
+                  "axi_ad9680_jesd/phy_notintable"
+                ]
+              },
+              "pl_clk_100M_1": {
+                "ports": [
+                  "pl_clk_100M",
+                  "axi_ad9680_jesd/s_axi_aclk",
+                  "axi_ad9680_tpl/s_axi_aclk",
+                  "axi_ad9680_offload/s_axi_aclk",
+                  "axi_ad9680_offload/m_axis_aclk",
+                  "axi_ad9680_dma/m_dest_axi_aclk"
+                ]
+              },
+              "reset_1": {
+                "ports": [
+                  "axi_ad9680_rstgen/peripheral_reset",
+                  "axi_ad9680_cpack/reset"
+                ]
+              },
+              "rx_sysref_1": {
+                "ports": [
+                  "rx_sysref",
+                  "axi_ad9680_jesd/sysref"
+                ]
+              },
+              "s_axis_aresetn_1": {
+                "ports": [
+                  "axi_ad9680_rstgen/peripheral_aresetn",
+                  "axi_ad9680_offload/s_axis_aresetn"
+                ]
+              },
+              "xlconcat_irq_dout": {
+                "ports": [
+                  "xlconcat_irq/dout",
+                  "adc_irq"
+                ]
+              }
+            }
+          },
+          "xlconcat_0": {
+            "vlnv": "xilinx.com:ip:xlconcat:2.1",
+            "xci_name": "jesd204b_xlconcat_0_2",
+            "xci_path": "ip\\jesd204b_xlconcat_0_2\\jesd204b_xlconcat_0_2.xci",
+            "inst_hier_path": "jesd204b/xlconcat_0"
           }
         },
         "interface_nets": {
@@ -2920,9 +3889,105 @@
               "s_axi_ad9680_xcvr",
               "phy_shared_0/s_axi_ad9680_xcvr"
             ]
+          },
+          "Conn3": {
+            "interface_ports": [
+              "m_axi_ad9680_dma",
+              "adc/m_axi_ad9680_dma"
+            ]
+          },
+          "Conn4": {
+            "interface_ports": [
+              "s_axi_ad9680_jesd",
+              "adc/s_axi_ad9680_jesd"
+            ]
+          },
+          "Conn5": {
+            "interface_ports": [
+              "s_axi_ad9680_tpl",
+              "adc/s_axi_ad9680_tpl"
+            ]
+          },
+          "Conn6": {
+            "interface_ports": [
+              "s_axi_ad9680_dma",
+              "adc/s_axi_ad9680_dma"
+            ]
+          },
+          "Conn7": {
+            "interface_ports": [
+              "s_axi_ad9680_offload",
+              "adc/s_axi_ad9680_offload"
+            ]
           }
         },
         "nets": {
+          "adc_adc_irq": {
+            "ports": [
+              "adc/adc_irq",
+              "xlconcat_0/In0"
+            ]
+          },
+          "adc_phy_en_char_align": {
+            "ports": [
+              "adc/phy_en_char_align",
+              "phy_shared_0/phy_rx_calign"
+            ]
+          },
+          "adc_rx_sync": {
+            "ports": [
+              "adc/rx_sync",
+              "rx_sync"
+            ]
+          },
+          "ext_reset_in_1": {
+            "ports": [
+              "ext_reset_in",
+              "adc/ext_reset_in"
+            ]
+          },
+          "phy_shared_0_phy_rx_block_sync": {
+            "ports": [
+              "phy_shared_0/phy_rx_block_sync",
+              "adc/phy_block_sync"
+            ]
+          },
+          "phy_shared_0_phy_rx_charisk": {
+            "ports": [
+              "phy_shared_0/phy_rx_charisk",
+              "adc/phy_charisk"
+            ]
+          },
+          "phy_shared_0_phy_rx_data": {
+            "ports": [
+              "phy_shared_0/phy_rx_data",
+              "adc/phy_data"
+            ]
+          },
+          "phy_shared_0_phy_rx_disperr": {
+            "ports": [
+              "phy_shared_0/phy_rx_disperr",
+              "adc/phy_disperr"
+            ]
+          },
+          "phy_shared_0_phy_rx_header": {
+            "ports": [
+              "phy_shared_0/phy_rx_header",
+              "adc/phy_header"
+            ]
+          },
+          "phy_shared_0_phy_rx_notintable": {
+            "ports": [
+              "phy_shared_0/phy_rx_notintable",
+              "adc/phy_notintable"
+            ]
+          },
+          "phy_shared_0_rx_out_clk_0": {
+            "ports": [
+              "phy_shared_0/rx_out_clk_0",
+              "adc/rx_out_clk_0"
+            ]
+          },
           "phy_shared_0_tx_0_n": {
             "ports": [
               "phy_shared_0/tx_0_n",
@@ -3025,6 +4090,12 @@
               "phy_shared_0/rx_ref_clk"
             ]
           },
+          "rx_sysref_1": {
+            "ports": [
+              "rx_sysref",
+              "adc/rx_sysref"
+            ]
+          },
           "s_axi_ad9144_aclk_1": {
             "ports": [
               "s_axi_aclk_250M",
@@ -3041,20 +4112,28 @@
             "ports": [
               "s_axi_aclk_100M",
               "phy_shared_0/s_axi_ad9680_aclk",
-              "phy_shared_0/sys_cpu_clk"
+              "phy_shared_0/sys_cpu_clk",
+              "adc/pl_clk_100M"
             ]
           },
           "s_axi_ad9680_aresetn_1": {
             "ports": [
               "s_axi_aresetn_100M",
               "phy_shared_0/s_axi_ad9680_aresetn",
-              "phy_shared_0/sys_cpu_resetn"
+              "phy_shared_0/sys_cpu_resetn",
+              "adc/peripheral_aresetn_100M"
             ]
           },
           "tx_ref_clk_1": {
             "ports": [
               "tx_ref_clk",
               "phy_shared_0/tx_ref_clk"
+            ]
+          },
+          "xlconcat_0_dout": {
+            "ports": [
+              "xlconcat_0/dout",
+              "jesd204b_irq"
             ]
           }
         }
@@ -3073,14 +4152,50 @@
           "jesd204b/s_axi_ad9144_xcvr"
         ]
       },
+      "PS_m_axi_ad9680_dma": {
+        "interface_ports": [
+          "PS/m_axi_ad9680_dma",
+          "jesd204b/s_axi_ad9680_dma"
+        ]
+      },
+      "PS_m_axi_ad9680_jesd": {
+        "interface_ports": [
+          "PS/m_axi_ad9680_jesd",
+          "jesd204b/s_axi_ad9680_jesd"
+        ]
+      },
+      "PS_m_axi_ad9680_offload": {
+        "interface_ports": [
+          "PS/m_axi_ad9680_offload",
+          "jesd204b/s_axi_ad9680_offload"
+        ]
+      },
+      "PS_m_axi_ad9680_tpl": {
+        "interface_ports": [
+          "PS/m_axi_ad9680_tpl",
+          "jesd204b/s_axi_ad9680_tpl"
+        ]
+      },
       "PS_m_axi_ad9680_xcvr": {
         "interface_ports": [
           "PS/m_axi_ad9680_xcvr",
           "jesd204b/s_axi_ad9680_xcvr"
         ]
+      },
+      "s_axi_dma_ad9680_1": {
+        "interface_ports": [
+          "PS/s_axi_dma_ad9680",
+          "jesd204b/m_axi_ad9680_dma"
+        ]
       }
     },
     "nets": {
+      "PS_ext_reset_in": {
+        "ports": [
+          "PS/ext_reset_in",
+          "jesd204b/ext_reset_in"
+        ]
+      },
       "PS_peripheral_aresetn_100M": {
         "ports": [
           "PS/peripheral_aresetn_100M",
@@ -3121,6 +4236,18 @@
         "ports": [
           "PS/spi_mosi",
           "spi_mosi"
+        ]
+      },
+      "jesd204b_jesd204b_irq": {
+        "ports": [
+          "jesd204b/jesd204b_irq",
+          "PS/pl_ps_irq0"
+        ]
+      },
+      "jesd204b_rx_sync": {
+        "ports": [
+          "jesd204b/rx_sync",
+          "rx_sync"
         ]
       },
       "jesd204b_tx_0_n": {
@@ -3223,6 +4350,12 @@
         "ports": [
           "rx_ref_clk",
           "jesd204b/rx_ref_clk"
+        ]
+      },
+      "rx_sysref_1": {
+        "ports": [
+          "rx_sysref",
+          "jesd204b/rx_sysref"
         ]
       },
       "spi_miso_1": {
