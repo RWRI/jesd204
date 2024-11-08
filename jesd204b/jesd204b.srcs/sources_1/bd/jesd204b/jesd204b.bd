@@ -66,12 +66,12 @@
           "axi_ad9144_upack": {
             "util_upack2_0": ""
           },
-          "axi_ad9144_tpl": "",
           "axi_ad9144_jesd": "",
           "xlconcat_irq": "",
           "axi_ad9144_dma": "",
           "axi_gpio_0": "",
-          "counter_ceil_0": ""
+          "counter_ceil_0": "",
+          "axi_ad9144_tpl": ""
         }
       }
     },
@@ -4173,19 +4173,6 @@
                   }
                 }
               },
-              "axi_ad9144_tpl": {
-                "vlnv": "analog.devices:user:axi_ad9144_tpl:1.0",
-                "xci_name": "jesd204b_axi_ad9144_tpl_0_0",
-                "xci_path": "ip\\jesd204b_axi_ad9144_tpl_0_0\\jesd204b_axi_ad9144_tpl_0_0.xci",
-                "inst_hier_path": "jesd204b/dac/axi_ad9144_tpl",
-                "interface_ports": {
-                  "s_axi": {
-                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-                    "mode": "Slave",
-                    "memory_map_ref": "s_axi"
-                  }
-                }
-              },
               "axi_ad9144_jesd": {
                 "vlnv": "analog.devices:user:axi_ad9144_jesd:1.0",
                 "xci_name": "jesd204b_axi_ad9144_jesd_0_0",
@@ -4323,6 +4310,19 @@
                   },
                   "done": {
                     "direction": "O"
+                  }
+                }
+              },
+              "axi_ad9144_tpl": {
+                "vlnv": "analog.devices:user:axi_ad9144_tpl:1.0",
+                "xci_name": "jesd204b_axi_ad9144_tpl_0_0",
+                "xci_path": "ip\\jesd204b_axi_ad9144_tpl_0_0\\jesd204b_axi_ad9144_tpl_0_0.xci",
+                "inst_hier_path": "jesd204b/dac/axi_ad9144_tpl",
+                "interface_ports": {
+                  "s_axi": {
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                    "mode": "Slave",
+                    "memory_map_ref": "s_axi"
                   }
                 }
               }
@@ -4467,9 +4467,9 @@
                 "ports": [
                   "tx_out_clk_0",
                   "axi_ad9144_upack/clk",
-                  "axi_ad9144_tpl/link_clk",
                   "axi_ad9144_jesd/device_clk",
-                  "axi_ad9144_jesd/link_clk"
+                  "axi_ad9144_jesd/link_clk",
+                  "axi_ad9144_tpl/link_clk"
                 ]
               },
               "counter_ceil_0_done": {
@@ -4483,9 +4483,9 @@
                   "peripheral_aresetn_250M",
                   "axi_gpio_0/s_axi_aresetn",
                   "axi_ad9144_dma/axi_resetn",
-                  "axi_ad9144_tpl/s_axi_aresetn",
                   "axi_ad9144_jesd/s_axi_aresetn",
-                  "counter_ceil_0/rst"
+                  "counter_ceil_0/rst",
+                  "axi_ad9144_tpl/s_axi_aresetn"
                 ]
               },
               "pl_clk_250M_1": {
@@ -4494,9 +4494,9 @@
                   "axi_gpio_0/s_axi_aclk",
                   "axi_ad9144_dma/s_axi_lite_aclk",
                   "axi_ad9144_dma/m_axi_mm2s_aclk",
-                  "axi_ad9144_tpl/s_axi_aclk",
                   "axi_ad9144_jesd/s_axi_aclk",
-                  "counter_ceil_0/clk"
+                  "counter_ceil_0/clk",
+                  "axi_ad9144_tpl/s_axi_aclk"
                 ]
               },
               "reset_upak_1": {

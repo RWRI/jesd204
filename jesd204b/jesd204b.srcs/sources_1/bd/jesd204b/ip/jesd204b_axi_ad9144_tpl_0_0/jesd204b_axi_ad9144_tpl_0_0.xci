@@ -4,7 +4,7 @@
     "xci_name": "jesd204b_axi_ad9144_tpl_0_0",
     "cell_name": "jesd204b/dac/axi_ad9144_tpl",
     "component_reference": "analog.devices:user:axi_ad9144_tpl:1.0",
-    "ip_revision": "2",
+    "ip_revision": "3",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_axi_ad9144_tpl_0_0",
     "parameters": {
       "component_parameters": {
@@ -27,7 +27,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2" } ],
+        "IPREVISION": [ { "value": "3" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_axi_ad9144_tpl_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
