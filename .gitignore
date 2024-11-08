@@ -1,6 +1,22 @@
+# Pastas temporárias e arquivos gerados automaticamente
 *.cache/
 *.gen/
 *.hw/
 *.ip_user_files/
 *.runs/
 *.sim/
+
+# Arquivos de log e temporários
+*.log
+*.jou
+
+# Arquivos de projetos temporários
+*.str     
+*.wcfg     
+*.tcl.save 
+*.xml      
+
+# Arquivos de configuração local de ambiente
+*.backup   
+*.tmp    
+*.lock 
