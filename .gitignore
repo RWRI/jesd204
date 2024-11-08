@@ -1,6 +1,6 @@
 # Pastas temporárias e arquivos gerados automaticamente
 *.cache/
-*.gen/
+jesd204b.gen/
 *.hw/
 *.ip_user_files/
 *.runs/
@@ -13,8 +13,7 @@
 # Arquivos de projetos temporários
 *.str     
 *.wcfg     
-*.tcl.save 
-*.xml      
+*.tcl.save     
 
 # Arquivos de configuração local de ambiente
 *.backup   
