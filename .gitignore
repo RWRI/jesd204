@@ -1,6 +1,6 @@
 # Pastas temporárias e arquivos gerados automaticamente
 *.cache/
-jesd204b.gen/
+*.gen/
 *.hw/
 *.ip_user_files/
 *.runs/
