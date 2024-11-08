@@ -96,8 +96,5 @@ pagesize -pg 1 -db -bbox -sgen -130 0 810 760
    "textcolor_comment_0":""
 }
 {
-   "da_zynq_ultra_ps_e_cnt":"1"
-}
-{
-   "/jesd204b/phy_shared_0/tx_0_p/comment_1":"comment_0"
+   ""da_zynq_ultra_ps_e_cnt"":"1"
 }

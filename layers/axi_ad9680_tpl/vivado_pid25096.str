@@ -1404,3 +1404,26 @@ selectButton("OptionPane.button", "OK"); // JButton
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 20 ms. Decreasing delay to 2020 ms.
 // WARNING: HEventQueue.dispatchEvent() is taking  1095 ms.
 // WARNING: HEventQueue.dispatchEvent() is taking  2497 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1714 ms. Increasing delay to 5142 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,035 MB. GUI used memory: 211 MB. Current time: 11/7/24, 2:19:21 PM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  87766 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5301 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2431 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 3576ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3576 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1716 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1610ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1610 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2975 ms. Increasing delay to 8925 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 807ms to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 700ms to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 642ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5973 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1985 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1603 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1103 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4392 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2878 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1835 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 7613ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7613 ms.

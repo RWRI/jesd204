@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_axi_interconnect_0_1",
-    "cell_name": "axi_interconnect_ad9680",
+    "cell_name": "PS/axi_interconnect_ad9680",
     "component_reference": "xilinx.com:ip:axi_interconnect:2.1",
     "ip_revision": "28",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_axi_interconnect_0_1",

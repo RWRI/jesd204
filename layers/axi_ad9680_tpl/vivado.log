@@ -477,3 +477,4 @@ INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
 ipx::save_core [ipx::current_core]
 update_ip_catalog -rebuild -repo_path c:/github/jesd204/layers/axi_ad9680_tpl
 INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/github/jesd204/layers/axi_ad9680_tpl'
+exit

@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_data_offload_0_0",
-    "cell_name": "i_data_offload",
+    "cell_name": "jesd204b/adc/axi_ad9680_offload/i_data_offload",
     "component_reference": "analog.devices:user:data_offload:1.0",
     "ip_revision": "2",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_data_offload_0_0",

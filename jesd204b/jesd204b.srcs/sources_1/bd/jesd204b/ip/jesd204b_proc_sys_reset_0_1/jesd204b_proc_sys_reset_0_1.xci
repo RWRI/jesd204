@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_proc_sys_reset_0_1",
-    "cell_name": "proc_sys_reset_250M",
+    "cell_name": "PS/proc_sys_reset_250M",
     "component_reference": "xilinx.com:ip:proc_sys_reset:5.0",
     "ip_revision": "13",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_proc_sys_reset_0_1",

@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_util_do_ram_0_0",
-    "cell_name": "storage_unit",
+    "cell_name": "jesd204b/adc/axi_ad9680_offload/storage_unit",
     "component_reference": "analog.devices:user:util_do_ram:1.0",
     "ip_revision": "2",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_util_do_ram_0_0",

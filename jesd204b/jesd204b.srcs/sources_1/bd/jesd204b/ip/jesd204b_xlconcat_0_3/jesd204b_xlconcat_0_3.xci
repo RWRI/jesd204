@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_xlconcat_0_3",
-    "cell_name": "xlconcat_irq",
+    "cell_name": "jesd204b/dac/xlconcat_irq",
     "component_reference": "xilinx.com:ip:xlconcat:2.1",
     "ip_revision": "4",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_xlconcat_0_3",

@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1" LaunchDir="C:/GitHub/jesd204/layers/axi_ad9680_tpl/axi_ad9680_tpl.runs/axi_ad9860_tpl_ad_ip_jesd204_tpl_adc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Parameters>
-		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
-		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
-	</Parameters>
-</Runs>
-
