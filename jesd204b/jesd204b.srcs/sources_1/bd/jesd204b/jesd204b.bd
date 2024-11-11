@@ -12,9 +12,9 @@
     },
     "design_tree": {
       "PS": {
-        "zynq_ultra_ps_e_0": "",
+        "zynq_ultra_ps_e": "",
         "VCC": "",
-        "xlconcat_0": "",
+        "xlconcat_spi_csn": "",
         "axi_interconnect_ad9144": {
           "xbar": "",
           "s00_couplers": {
@@ -57,22 +57,22 @@
           "axi_ad9680_cpack": {
             "axi_ad9680_cpack": ""
           },
-          "axi_ad9680_jesd": "",
-          "axi_ad9680_tpl": ""
+          "axi_ad9680_tpl": "",
+          "axi_ad9680_jesd": ""
         },
-        "xlconcat_0": "",
+        "xlconcat_irqs": "",
         "dac": {
           "axi_ad9144_upack": {
-            "util_upack2_0": ""
+            "util_upack2": ""
           },
           "xlconcat_irq": "",
           "axi_ad9144_dma": "",
-          "axi_gpio_0": "",
-          "counter_ceil_0": "",
+          "axi_gpio_counter": "",
+          "counter_ceil": "",
           "axi_ad9144_jesd": "",
           "axi_ad9144_tpl": ""
         },
-        "phy_shared_0": ""
+        "phy_shared": ""
       }
     },
     "interface_ports": {
@@ -309,11 +309,11 @@
           }
         },
         "components": {
-          "zynq_ultra_ps_e_0": {
+          "zynq_ultra_ps_e": {
             "vlnv": "xilinx.com:ip:zynq_ultra_ps_e:3.4",
             "xci_name": "jesd204b_zynq_ultra_ps_e_0_0",
             "xci_path": "ip\\jesd204b_zynq_ultra_ps_e_0_0\\jesd204b_zynq_ultra_ps_e_0_0.xci",
-            "inst_hier_path": "PS/zynq_ultra_ps_e_0",
+            "inst_hier_path": "PS/zynq_ultra_ps_e",
             "parameters": {
               "CAN0_BOARD_INTERFACE": {
                 "value": "custom"
@@ -3369,11 +3369,11 @@
             "xci_path": "ip\\jesd204b_xlconstant_0_0\\jesd204b_xlconstant_0_0.xci",
             "inst_hier_path": "PS/VCC"
           },
-          "xlconcat_0": {
+          "xlconcat_spi_csn": {
             "vlnv": "xilinx.com:ip:xlconcat:2.1",
             "xci_name": "jesd204b_xlconcat_0_0",
             "xci_path": "ip\\jesd204b_xlconcat_0_0\\jesd204b_xlconcat_0_0.xci",
-            "inst_hier_path": "PS/xlconcat_0",
+            "inst_hier_path": "PS/xlconcat_spi_csn",
             "parameters": {
               "NUM_PORTS": {
                 "value": "3"
@@ -4877,30 +4877,30 @@
           "s_axi_dma_ad9144_1": {
             "interface_ports": [
               "s_axi_dma_ad9144",
-              "zynq_ultra_ps_e_0/S_AXI_HP1_FPD"
+              "zynq_ultra_ps_e/S_AXI_HP1_FPD"
             ]
           },
           "s_axi_dma_ad9680_1": {
             "interface_ports": [
               "s_axi_dma_ad9680",
-              "zynq_ultra_ps_e_0/S_AXI_HP0_FPD"
+              "zynq_ultra_ps_e/S_AXI_HP0_FPD"
             ]
           },
           "zynq_ultra_ps_e_0_GPIO_0": {
             "interface_ports": [
               "gpio",
-              "zynq_ultra_ps_e_0/GPIO_0"
+              "zynq_ultra_ps_e/GPIO_0"
             ]
           },
           "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
             "interface_ports": [
-              "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD",
+              "zynq_ultra_ps_e/M_AXI_HPM0_FPD",
               "axi_interconnect_ad9680/S00_AXI"
             ]
           },
           "zynq_ultra_ps_e_0_M_AXI_HPM1_FPD": {
             "interface_ports": [
-              "zynq_ultra_ps_e_0/M_AXI_HPM1_FPD",
+              "zynq_ultra_ps_e/M_AXI_HPM1_FPD",
               "axi_interconnect_ad9144/S00_AXI"
             ]
           }
@@ -4909,13 +4909,13 @@
           "VCC_dout": {
             "ports": [
               "VCC/dout",
-              "zynq_ultra_ps_e_0/emio_spi0_ss_i_n"
+              "zynq_ultra_ps_e/emio_spi0_ss_i_n"
             ]
           },
           "pl_ps_irq0_1": {
             "ports": [
               "pl_ps_irq0",
-              "zynq_ultra_ps_e_0/pl_ps_irq0"
+              "zynq_ultra_ps_e/pl_ps_irq0"
             ]
           },
           "proc_sys_reset_100M_peripheral_aresetn": {
@@ -4953,50 +4953,50 @@
           "spi_miso_1": {
             "ports": [
               "spi_miso",
-              "zynq_ultra_ps_e_0/emio_spi0_m_i"
+              "zynq_ultra_ps_e/emio_spi0_m_i"
             ]
           },
           "xlconcat_0_dout": {
             "ports": [
-              "xlconcat_0/dout",
+              "xlconcat_spi_csn/dout",
               "spi_csn"
             ]
           },
           "zynq_ultra_ps_e_0_emio_spi0_m_o": {
             "ports": [
-              "zynq_ultra_ps_e_0/emio_spi0_m_o",
+              "zynq_ultra_ps_e/emio_spi0_m_o",
               "spi_mosi"
             ]
           },
           "zynq_ultra_ps_e_0_emio_spi0_sclk_o": {
             "ports": [
-              "zynq_ultra_ps_e_0/emio_spi0_sclk_o",
+              "zynq_ultra_ps_e/emio_spi0_sclk_o",
               "spi_clk"
             ]
           },
           "zynq_ultra_ps_e_0_emio_spi0_ss1_o_n": {
             "ports": [
-              "zynq_ultra_ps_e_0/emio_spi0_ss1_o_n",
-              "xlconcat_0/In1"
+              "zynq_ultra_ps_e/emio_spi0_ss1_o_n",
+              "xlconcat_spi_csn/In1"
             ]
           },
           "zynq_ultra_ps_e_0_emio_spi0_ss2_o_n": {
             "ports": [
-              "zynq_ultra_ps_e_0/emio_spi0_ss2_o_n",
-              "xlconcat_0/In2"
+              "zynq_ultra_ps_e/emio_spi0_ss2_o_n",
+              "xlconcat_spi_csn/In2"
             ]
           },
           "zynq_ultra_ps_e_0_emio_spi0_ss_o_n": {
             "ports": [
-              "zynq_ultra_ps_e_0/emio_spi0_ss_o_n",
-              "xlconcat_0/In0"
+              "zynq_ultra_ps_e/emio_spi0_ss_o_n",
+              "xlconcat_spi_csn/In0"
             ]
           },
           "zynq_ultra_ps_e_0_pl_clk0": {
             "ports": [
-              "zynq_ultra_ps_e_0/pl_clk0",
-              "zynq_ultra_ps_e_0/saxihp0_fpd_aclk",
-              "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
+              "zynq_ultra_ps_e/pl_clk0",
+              "zynq_ultra_ps_e/saxihp0_fpd_aclk",
+              "zynq_ultra_ps_e/maxihpm0_fpd_aclk",
               "axi_interconnect_ad9680/ACLK",
               "axi_interconnect_ad9680/M01_ACLK",
               "axi_interconnect_ad9680/M00_ACLK",
@@ -5010,9 +5010,9 @@
           },
           "zynq_ultra_ps_e_0_pl_clk1": {
             "ports": [
-              "zynq_ultra_ps_e_0/pl_clk1",
-              "zynq_ultra_ps_e_0/saxihp1_fpd_aclk",
-              "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
+              "zynq_ultra_ps_e/pl_clk1",
+              "zynq_ultra_ps_e/saxihp1_fpd_aclk",
+              "zynq_ultra_ps_e/maxihpm1_fpd_aclk",
               "axi_interconnect_ad9144/M01_ACLK",
               "axi_interconnect_ad9144/ACLK",
               "axi_interconnect_ad9144/S00_ACLK",
@@ -5026,7 +5026,7 @@
           },
           "zynq_ultra_ps_e_0_pl_resetn0": {
             "ports": [
-              "zynq_ultra_ps_e_0/pl_resetn0",
+              "zynq_ultra_ps_e/pl_resetn0",
               "proc_sys_reset_250M/ext_reset_in",
               "proc_sys_reset_100M/ext_reset_in",
               "ext_reset_in"
@@ -5828,11 +5828,11 @@
                   }
                 }
               },
-              "axi_ad9680_jesd": {
-                "vlnv": "analog.devices:user:axi_ad9680_jesd:1.0",
-                "xci_name": "jesd204b_axi_ad9680_jesd_0_0",
-                "xci_path": "ip\\jesd204b_axi_ad9680_jesd_0_0\\jesd204b_axi_ad9680_jesd_0_0.xci",
-                "inst_hier_path": "jesd204b/adc/axi_ad9680_jesd",
+              "axi_ad9680_tpl": {
+                "vlnv": "analog.devices:user:axi_ad9680_tpl:1.0",
+                "xci_name": "jesd204b_axi_ad9680_tpl_0_0",
+                "xci_path": "ip\\jesd204b_axi_ad9680_tpl_0_0\\jesd204b_axi_ad9680_tpl_0_0.xci",
+                "inst_hier_path": "jesd204b/adc/axi_ad9680_tpl",
                 "interface_ports": {
                   "s_axi": {
                     "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -5841,11 +5841,11 @@
                   }
                 }
               },
-              "axi_ad9680_tpl": {
-                "vlnv": "analog.devices:user:axi_ad9680_tpl:1.0",
-                "xci_name": "jesd204b_axi_ad9680_tpl_0_0",
-                "xci_path": "ip\\jesd204b_axi_ad9680_tpl_0_0\\jesd204b_axi_ad9680_tpl_0_0.xci",
-                "inst_hier_path": "jesd204b/adc/axi_ad9680_tpl",
+              "axi_ad9680_jesd": {
+                "vlnv": "analog.devices:user:axi_ad9680_jesd:1.0",
+                "xci_name": "jesd204b_axi_ad9680_jesd_0_0",
+                "xci_path": "ip\\jesd204b_axi_ad9680_jesd_0_0\\jesd204b_axi_ad9680_jesd_0_0.xci",
+                "inst_hier_path": "jesd204b/adc/axi_ad9680_jesd",
                 "interface_ports": {
                   "s_axi": {
                     "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -5996,9 +5996,9 @@
                   "axi_ad9680_cpack/clk",
                   "axi_ad9680_rstgen/slowest_sync_clk",
                   "axi_ad9680_offload/s_axis_aclk",
+                  "axi_ad9680_tpl/link_clk",
                   "axi_ad9680_jesd/device_clk",
-                  "axi_ad9680_jesd/link_clk",
-                  "axi_ad9680_tpl/link_clk"
+                  "axi_ad9680_jesd/link_clk"
                 ]
               },
               "ext_reset_in_1": {
@@ -6013,8 +6013,8 @@
                   "axi_ad9680_offload/s_axi_aresetn",
                   "axi_ad9680_offload/m_axis_aresetn",
                   "axi_ad9680_dma/axi_aresetn",
-                  "axi_ad9680_jesd/s_axi_aresetn",
-                  "axi_ad9680_tpl/s_axi_aresetn"
+                  "axi_ad9680_tpl/s_axi_aresetn",
+                  "axi_ad9680_jesd/s_axi_aresetn"
                 ]
               },
               "phy_block_sync_1": {
@@ -6059,8 +6059,8 @@
                   "axi_ad9680_offload/s_axi_aclk",
                   "axi_ad9680_offload/m_axis_aclk",
                   "axi_ad9680_dma/m_dest_axi_aclk",
-                  "axi_ad9680_jesd/s_axi_aclk",
-                  "axi_ad9680_tpl/s_axi_aclk"
+                  "axi_ad9680_tpl/s_axi_aclk",
+                  "axi_ad9680_jesd/s_axi_aclk"
                 ]
               },
               "reset_1": {
@@ -6089,11 +6089,11 @@
               }
             }
           },
-          "xlconcat_0": {
+          "xlconcat_irqs": {
             "vlnv": "xilinx.com:ip:xlconcat:2.1",
             "xci_name": "jesd204b_xlconcat_0_2",
             "xci_path": "ip\\jesd204b_xlconcat_0_2\\jesd204b_xlconcat_0_2.xci",
-            "inst_hier_path": "jesd204b/xlconcat_0"
+            "inst_hier_path": "jesd204b/xlconcat_irqs"
           },
           "dac": {
             "interface_ports": {
@@ -6208,11 +6208,11 @@
                   }
                 },
                 "components": {
-                  "util_upack2_0": {
+                  "util_upack2": {
                     "vlnv": "analog.devices:user:util_upack2:1.0",
                     "xci_name": "jesd204b_util_upack2_0_0",
                     "xci_path": "ip\\jesd204b_util_upack2_0_0\\jesd204b_util_upack2_0_0.xci",
-                    "inst_hier_path": "jesd204b/dac/axi_ad9144_upack/util_upack2_0",
+                    "inst_hier_path": "jesd204b/dac/axi_ad9144_upack/util_upack2",
                     "parameters": {
                       "NUM_OF_CHANNELS": {
                         "value": "2"
@@ -6227,60 +6227,60 @@
                   "clk_1": {
                     "ports": [
                       "clk",
-                      "util_upack2_0/clk"
+                      "util_upack2/clk"
                     ]
                   },
                   "enable_0_1": {
                     "ports": [
                       "enable_0",
-                      "util_upack2_0/enable_0"
+                      "util_upack2/enable_0"
                     ]
                   },
                   "enable_1_1": {
                     "ports": [
                       "enable_1",
-                      "util_upack2_0/enable_1"
+                      "util_upack2/enable_1"
                     ]
                   },
                   "fifo_rd_en_1": {
                     "ports": [
                       "fifo_rd_en",
-                      "util_upack2_0/fifo_rd_en"
+                      "util_upack2/fifo_rd_en"
                     ]
                   },
                   "reset_1": {
                     "ports": [
                       "reset",
-                      "util_upack2_0/reset"
+                      "util_upack2/reset"
                     ]
                   },
                   "s_axis_data_1": {
                     "ports": [
                       "s_axis_data",
-                      "util_upack2_0/s_axis_data"
+                      "util_upack2/s_axis_data"
                     ]
                   },
                   "s_axis_valid_1": {
                     "ports": [
                       "s_axis_valid",
-                      "util_upack2_0/s_axis_valid"
+                      "util_upack2/s_axis_valid"
                     ]
                   },
                   "util_upack2_0_fifo_rd_data_0": {
                     "ports": [
-                      "util_upack2_0/fifo_rd_data_0",
+                      "util_upack2/fifo_rd_data_0",
                       "fifo_rd_data_0"
                     ]
                   },
                   "util_upack2_0_fifo_rd_data_1": {
                     "ports": [
-                      "util_upack2_0/fifo_rd_data_1",
+                      "util_upack2/fifo_rd_data_1",
                       "fifo_rd_data_1"
                     ]
                   },
                   "util_upack2_0_fifo_rd_underflow": {
                     "ports": [
-                      "util_upack2_0/fifo_rd_underflow",
+                      "util_upack2/fifo_rd_underflow",
                       "fifo_rd_underflow"
                     ]
                   }
@@ -6338,11 +6338,11 @@
                   }
                 }
               },
-              "axi_gpio_0": {
+              "axi_gpio_counter": {
                 "vlnv": "xilinx.com:ip:axi_gpio:2.0",
                 "xci_name": "jesd204b_axi_gpio_0_0",
                 "xci_path": "ip\\jesd204b_axi_gpio_0_0\\jesd204b_axi_gpio_0_0.xci",
-                "inst_hier_path": "jesd204b/dac/axi_gpio_0",
+                "inst_hier_path": "jesd204b/dac/axi_gpio_counter",
                 "parameters": {
                   "C_ALL_INPUTS": {
                     "value": "1"
@@ -6361,11 +6361,11 @@
                   }
                 }
               },
-              "counter_ceil_0": {
+              "counter_ceil": {
                 "vlnv": "xilinx.com:module_ref:counter_ceil:1.0",
                 "xci_name": "jesd204b_counter_ceil_0_0",
                 "xci_path": "ip\\jesd204b_counter_ceil_0_0\\jesd204b_counter_ceil_0_0.xci",
-                "inst_hier_path": "jesd204b/dac/counter_ceil_0",
+                "inst_hier_path": "jesd204b/dac/counter_ceil",
                 "reference_info": {
                   "ref_type": "hdl",
                   "ref_name": "counter_ceil",
@@ -6468,7 +6468,7 @@
               "s_axi_gpio_counter_1": {
                 "interface_ports": [
                   "s_axi_gpio_counter",
-                  "axi_gpio_0/S_AXI"
+                  "axi_gpio_counter/S_AXI"
                 ]
               }
             },
@@ -6483,7 +6483,7 @@
                 "ports": [
                   "axi_ad9144_dma/m_axis_mm2s_tvalid",
                   "axi_ad9144_upack/s_axis_valid",
-                  "counter_ceil_0/start"
+                  "counter_ceil/start"
                 ]
               },
               "axi_ad9144_dma_mm2s_introut": {
@@ -6572,8 +6572,8 @@
               },
               "axi_gpio_0_gpio2_io_o": {
                 "ports": [
-                  "axi_gpio_0/gpio2_io_o",
-                  "counter_ceil_0/ceil"
+                  "axi_gpio_counter/gpio2_io_o",
+                  "counter_ceil/ceil"
                 ]
               },
               "clk_1": {
@@ -6587,16 +6587,16 @@
               },
               "counter_ceil_0_done": {
                 "ports": [
-                  "counter_ceil_0/done",
-                  "axi_gpio_0/gpio_io_i"
+                  "counter_ceil/done",
+                  "axi_gpio_counter/gpio_io_i"
                 ]
               },
               "peripheral_aresetn_250M_1": {
                 "ports": [
                   "peripheral_aresetn_250M",
-                  "axi_gpio_0/s_axi_aresetn",
+                  "axi_gpio_counter/s_axi_aresetn",
                   "axi_ad9144_dma/axi_resetn",
-                  "counter_ceil_0/rst",
+                  "counter_ceil/rst",
                   "axi_ad9144_jesd/s_axi_aresetn",
                   "axi_ad9144_tpl/s_axi_aresetn"
                 ]
@@ -6604,10 +6604,10 @@
               "pl_clk_250M_1": {
                 "ports": [
                   "pl_clk_250M",
-                  "axi_gpio_0/s_axi_aclk",
+                  "axi_gpio_counter/s_axi_aclk",
                   "axi_ad9144_dma/s_axi_lite_aclk",
                   "axi_ad9144_dma/m_axi_mm2s_aclk",
-                  "counter_ceil_0/clk",
+                  "counter_ceil/clk",
                   "axi_ad9144_jesd/s_axi_aclk",
                   "axi_ad9144_tpl/s_axi_aclk"
                 ]
@@ -6638,11 +6638,11 @@
               }
             }
           },
-          "phy_shared_0": {
+          "phy_shared": {
             "vlnv": "analog.devices:user:phy_shared:1.0",
             "xci_name": "jesd204b_phy_shared_0_0",
             "xci_path": "ip\\jesd204b_phy_shared_0_0\\jesd204b_phy_shared_0_0.xci",
-            "inst_hier_path": "jesd204b/phy_shared_0",
+            "inst_hier_path": "jesd204b/phy_shared",
             "interface_ports": {
               "s_axi_ad9144_xcvr": {
                 "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -6661,13 +6661,13 @@
           "Conn1": {
             "interface_ports": [
               "s_axi_ad9144_xcvr",
-              "phy_shared_0/s_axi_ad9144_xcvr"
+              "phy_shared/s_axi_ad9144_xcvr"
             ]
           },
           "Conn2": {
             "interface_ports": [
               "s_axi_ad9680_xcvr",
-              "phy_shared_0/s_axi_ad9680_xcvr"
+              "phy_shared/s_axi_ad9680_xcvr"
             ]
           },
           "Conn3": {
@@ -6735,13 +6735,13 @@
           "adc_adc_irq": {
             "ports": [
               "adc/adc_irq",
-              "xlconcat_0/In0"
+              "xlconcat_irqs/In0"
             ]
           },
           "adc_phy_en_char_align": {
             "ports": [
               "adc/phy_en_char_align",
-              "phy_shared_0/phy_rx_calign"
+              "phy_shared/phy_rx_calign"
             ]
           },
           "adc_rx_sync": {
@@ -6753,25 +6753,25 @@
           "dac_dac_irq": {
             "ports": [
               "dac/dac_irq",
-              "xlconcat_0/In1"
+              "xlconcat_irqs/In1"
             ]
           },
           "dac_phy_charisk": {
             "ports": [
               "dac/phy_charisk",
-              "phy_shared_0/phy_tx_charisk"
+              "phy_shared/phy_tx_charisk"
             ]
           },
           "dac_phy_data": {
             "ports": [
               "dac/phy_data",
-              "phy_shared_0/phy_tx_data"
+              "phy_shared/phy_tx_data"
             ]
           },
           "dac_phy_header": {
             "ports": [
               "dac/phy_header",
-              "phy_shared_0/phy_tx_header"
+              "phy_shared/phy_tx_header"
             ]
           },
           "ext_reset_in_1": {
@@ -6782,97 +6782,97 @@
           },
           "phy_shared_0_phy_rx_block_sync": {
             "ports": [
-              "phy_shared_0/phy_rx_block_sync",
+              "phy_shared/phy_rx_block_sync",
               "adc/phy_block_sync"
             ]
           },
           "phy_shared_0_phy_rx_charisk": {
             "ports": [
-              "phy_shared_0/phy_rx_charisk",
+              "phy_shared/phy_rx_charisk",
               "adc/phy_charisk"
             ]
           },
           "phy_shared_0_phy_rx_data": {
             "ports": [
-              "phy_shared_0/phy_rx_data",
+              "phy_shared/phy_rx_data",
               "adc/phy_data"
             ]
           },
           "phy_shared_0_phy_rx_disperr": {
             "ports": [
-              "phy_shared_0/phy_rx_disperr",
+              "phy_shared/phy_rx_disperr",
               "adc/phy_disperr"
             ]
           },
           "phy_shared_0_phy_rx_header": {
             "ports": [
-              "phy_shared_0/phy_rx_header",
+              "phy_shared/phy_rx_header",
               "adc/phy_header"
             ]
           },
           "phy_shared_0_phy_rx_notintable": {
             "ports": [
-              "phy_shared_0/phy_rx_notintable",
+              "phy_shared/phy_rx_notintable",
               "adc/phy_notintable"
             ]
           },
           "phy_shared_0_rx_out_clk_0": {
             "ports": [
-              "phy_shared_0/rx_out_clk_0",
+              "phy_shared/rx_out_clk_0",
               "adc/rx_out_clk_0"
             ]
           },
           "phy_shared_0_tx_0_n": {
             "ports": [
-              "phy_shared_0/tx_0_n",
+              "phy_shared/tx_0_n",
               "tx_0_n"
             ]
           },
           "phy_shared_0_tx_0_p": {
             "ports": [
-              "phy_shared_0/tx_0_p",
+              "phy_shared/tx_0_p",
               "tx_0_p"
             ]
           },
           "phy_shared_0_tx_1_n": {
             "ports": [
-              "phy_shared_0/tx_1_n",
+              "phy_shared/tx_1_n",
               "tx_1_n"
             ]
           },
           "phy_shared_0_tx_1_p": {
             "ports": [
-              "phy_shared_0/tx_1_p",
+              "phy_shared/tx_1_p",
               "tx_1_p"
             ]
           },
           "phy_shared_0_tx_2_n": {
             "ports": [
-              "phy_shared_0/tx_2_n",
+              "phy_shared/tx_2_n",
               "tx_2_n"
             ]
           },
           "phy_shared_0_tx_2_p": {
             "ports": [
-              "phy_shared_0/tx_2_p",
+              "phy_shared/tx_2_p",
               "tx_2_p"
             ]
           },
           "phy_shared_0_tx_3_n": {
             "ports": [
-              "phy_shared_0/tx_3_n",
+              "phy_shared/tx_3_n",
               "tx_3_n"
             ]
           },
           "phy_shared_0_tx_3_p": {
             "ports": [
-              "phy_shared_0/tx_3_p",
+              "phy_shared/tx_3_p",
               "tx_3_p"
             ]
           },
           "phy_shared_0_tx_out_clk_0": {
             "ports": [
-              "phy_shared_0/tx_out_clk_0",
+              "phy_shared/tx_out_clk_0",
               "dac/tx_out_clk_0"
             ]
           },
@@ -6885,55 +6885,55 @@
           "rx_0_n_1": {
             "ports": [
               "rx_0_n",
-              "phy_shared_0/rx_0_n"
+              "phy_shared/rx_0_n"
             ]
           },
           "rx_0_p_1": {
             "ports": [
               "rx_0_p",
-              "phy_shared_0/rx_0_p"
+              "phy_shared/rx_0_p"
             ]
           },
           "rx_1_n_1": {
             "ports": [
               "rx_1_n",
-              "phy_shared_0/rx_1_n"
+              "phy_shared/rx_1_n"
             ]
           },
           "rx_1_p_1": {
             "ports": [
               "rx_1_p",
-              "phy_shared_0/rx_1_p"
+              "phy_shared/rx_1_p"
             ]
           },
           "rx_2_n_1": {
             "ports": [
               "rx_2_n",
-              "phy_shared_0/rx_2_n"
+              "phy_shared/rx_2_n"
             ]
           },
           "rx_2_p_1": {
             "ports": [
               "rx_2_p",
-              "phy_shared_0/rx_2_p"
+              "phy_shared/rx_2_p"
             ]
           },
           "rx_3_n_1": {
             "ports": [
               "rx_3_n",
-              "phy_shared_0/rx_3_n"
+              "phy_shared/rx_3_n"
             ]
           },
           "rx_3_p_1": {
             "ports": [
               "rx_3_p",
-              "phy_shared_0/rx_3_p"
+              "phy_shared/rx_3_p"
             ]
           },
           "rx_ref_clk_1": {
             "ports": [
               "rx_ref_clk",
-              "phy_shared_0/rx_ref_clk"
+              "phy_shared/rx_ref_clk"
             ]
           },
           "rx_sysref_1": {
@@ -6946,36 +6946,36 @@
             "ports": [
               "s_axi_aclk_250M",
               "dac/pl_clk_250M",
-              "phy_shared_0/s_axi_ad9144_aclk"
+              "phy_shared/s_axi_ad9144_aclk"
             ]
           },
           "s_axi_ad9144_aresetn_1": {
             "ports": [
               "s_axi_aresetn_250M",
               "dac/peripheral_aresetn_250M",
-              "phy_shared_0/s_axi_ad9144_aresetn"
+              "phy_shared/s_axi_ad9144_aresetn"
             ]
           },
           "s_axi_ad9680_aclk_1": {
             "ports": [
               "s_axi_aclk_100M",
               "adc/pl_clk_100M",
-              "phy_shared_0/s_axi_ad9680_aclk",
-              "phy_shared_0/sys_cpu_clk"
+              "phy_shared/s_axi_ad9680_aclk",
+              "phy_shared/sys_cpu_clk"
             ]
           },
           "s_axi_ad9680_aresetn_1": {
             "ports": [
               "s_axi_aresetn_100M",
               "adc/peripheral_aresetn_100M",
-              "phy_shared_0/s_axi_ad9680_aresetn",
-              "phy_shared_0/sys_cpu_resetn"
+              "phy_shared/s_axi_ad9680_aresetn",
+              "phy_shared/sys_cpu_resetn"
             ]
           },
           "tx_ref_clk_1": {
             "ports": [
               "tx_ref_clk",
-              "phy_shared_0/tx_ref_clk"
+              "phy_shared/tx_ref_clk"
             ]
           },
           "tx_sync_1": {
@@ -6992,7 +6992,7 @@
           },
           "xlconcat_0_dout": {
             "ports": [
-              "xlconcat_0/dout",
+              "xlconcat_irqs/dout",
               "jesd204b_irq"
             ]
           }
@@ -7279,13 +7279,8 @@
         ]
       }
     },
-    "comments": {
-      "/": {
-        "comment_0": "Enter Comments here"
-      }
-    },
     "addressing": {
-      "/PS/zynq_ultra_ps_e_0": {
+      "/PS/zynq_ultra_ps_e": {
         "address_spaces": {
           "Data": {
             "segments": {
@@ -7320,7 +7315,7 @@
                 "range": "4K"
               },
               "SEG_axi_gpio_0_Reg": {
-                "address_block": "/jesd204b/dac/axi_gpio_0/S_AXI/Reg",
+                "address_block": "/jesd204b/dac/axi_gpio_counter/S_AXI/Reg",
                 "offset": "0x00B0030000",
                 "range": "64K"
               },
@@ -7330,12 +7325,12 @@
                 "range": "64K"
               },
               "SEG_phy_shared_0_reg0": {
-                "address_block": "/jesd204b/phy_shared_0/s_axi_ad9680_xcvr/reg0",
+                "address_block": "/jesd204b/phy_shared/s_axi_ad9680_xcvr/reg0",
                 "offset": "0x00A0000000",
                 "range": "64K"
               },
               "SEG_phy_shared_0_reg0_1": {
-                "address_block": "/jesd204b/phy_shared_0/s_axi_ad9144_xcvr/reg0",
+                "address_block": "/jesd204b/phy_shared/s_axi_ad9144_xcvr/reg0",
                 "offset": "0x00B0010000",
                 "range": "64K"
               }
@@ -7348,18 +7343,18 @@
           "m_dest_axi": {
             "segments": {
               "SEG_zynq_ultra_ps_e_0_HP0_DDR_HIGH": {
-                "address_block": "/PS/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH",
+                "address_block": "/PS/zynq_ultra_ps_e/SAXIGP2/HP0_DDR_HIGH",
                 "offset": "0x00000000",
                 "range": "1",
                 "is_excluded": "TRUE"
               },
               "SEG_zynq_ultra_ps_e_0_HP0_DDR_LOW": {
-                "address_block": "/PS/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW",
+                "address_block": "/PS/zynq_ultra_ps_e/SAXIGP2/HP0_DDR_LOW",
                 "offset": "0x40000000",
                 "range": "1G"
               },
               "SEG_zynq_ultra_ps_e_0_HP0_LPS_OCM": {
-                "address_block": "/PS/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM",
+                "address_block": "/PS/zynq_ultra_ps_e/SAXIGP2/HP0_LPS_OCM",
                 "offset": "0xFF000000",
                 "range": "16M"
               }
@@ -7372,18 +7367,18 @@
           "Data_MM2S": {
             "segments": {
               "SEG_zynq_ultra_ps_e_0_HP1_DDR_HIGH": {
-                "address_block": "/PS/zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH",
+                "address_block": "/PS/zynq_ultra_ps_e/SAXIGP3/HP1_DDR_HIGH",
                 "offset": "0x00000000",
                 "range": "1",
                 "is_excluded": "TRUE"
               },
               "SEG_zynq_ultra_ps_e_0_HP1_DDR_LOW": {
-                "address_block": "/PS/zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_LOW",
+                "address_block": "/PS/zynq_ultra_ps_e/SAXIGP3/HP1_DDR_LOW",
                 "offset": "0x40000000",
                 "range": "1G"
               },
               "SEG_zynq_ultra_ps_e_0_HP1_LPS_OCM": {
-                "address_block": "/PS/zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM",
+                "address_block": "/PS/zynq_ultra_ps_e/SAXIGP3/HP1_LPS_OCM",
                 "offset": "0xFF000000",
                 "range": "16M",
                 "is_excluded": "TRUE"

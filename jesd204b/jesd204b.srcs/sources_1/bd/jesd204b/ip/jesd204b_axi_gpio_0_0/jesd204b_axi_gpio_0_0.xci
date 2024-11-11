@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_axi_gpio_0_0",
-    "cell_name": "jesd204b/dac/axi_gpio_0",
+    "cell_name": "jesd204b/dac/axi_gpio_counter",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
     "ip_revision": "29",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_axi_gpio_0_0",

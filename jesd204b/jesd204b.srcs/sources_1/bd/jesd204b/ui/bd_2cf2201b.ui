@@ -1,73 +1,73 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.15658",
-   "Default View_TopLeft":"231,189",
+   "Default View_ScaleFactor":"0.430769",
+   "Default View_TopLeft":"-817,0",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
 preplace port s_axi_dma_ad9680 -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
 preplace port s_axi_dma_ad9144 -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
-preplace port gpio -pg 1 -lvl 3 -x 1150 -y 40 -defaultsOSRD
-preplace port m_axi_ad9144_xcvr -pg 1 -lvl 3 -x 1150 -y 200 -defaultsOSRD
-preplace port m_axi_ad9144_jesd -pg 1 -lvl 3 -x 1150 -y 220 -defaultsOSRD
-preplace port m_axi_ad9144_tpl -pg 1 -lvl 3 -x 1150 -y 240 -defaultsOSRD
-preplace port m_axi_gpio_counter -pg 1 -lvl 3 -x 1150 -y 260 -defaultsOSRD
-preplace port m_axi_ad9144_dma -pg 1 -lvl 3 -x 1150 -y 280 -defaultsOSRD
-preplace port m_axi_ad9680_xcvr -pg 1 -lvl 3 -x 1150 -y 790 -defaultsOSRD
-preplace port m_axi_ad9680_jesd -pg 1 -lvl 3 -x 1150 -y 810 -defaultsOSRD
-preplace port m_axi_ad9680_tpl -pg 1 -lvl 3 -x 1150 -y 830 -defaultsOSRD
-preplace port m_axi_ad9680_offload -pg 1 -lvl 3 -x 1150 -y 850 -defaultsOSRD
-preplace port m_axi_ad9680_dma -pg 1 -lvl 3 -x 1150 -y 870 -defaultsOSRD
-preplace port port-id_spi_clk -pg 1 -lvl 3 -x 1150 -y 430 -defaultsOSRD
+preplace port gpio -pg 1 -lvl 3 -x 1140 -y 40 -defaultsOSRD
+preplace port m_axi_ad9144_xcvr -pg 1 -lvl 3 -x 1140 -y 200 -defaultsOSRD
+preplace port m_axi_ad9144_jesd -pg 1 -lvl 3 -x 1140 -y 220 -defaultsOSRD
+preplace port m_axi_ad9144_tpl -pg 1 -lvl 3 -x 1140 -y 240 -defaultsOSRD
+preplace port m_axi_gpio_counter -pg 1 -lvl 3 -x 1140 -y 260 -defaultsOSRD
+preplace port m_axi_ad9144_dma -pg 1 -lvl 3 -x 1140 -y 280 -defaultsOSRD
+preplace port m_axi_ad9680_xcvr -pg 1 -lvl 3 -x 1140 -y 810 -defaultsOSRD
+preplace port m_axi_ad9680_jesd -pg 1 -lvl 3 -x 1140 -y 830 -defaultsOSRD
+preplace port m_axi_ad9680_tpl -pg 1 -lvl 3 -x 1140 -y 850 -defaultsOSRD
+preplace port m_axi_ad9680_offload -pg 1 -lvl 3 -x 1140 -y 870 -defaultsOSRD
+preplace port m_axi_ad9680_dma -pg 1 -lvl 3 -x 1140 -y 890 -defaultsOSRD
+preplace port port-id_spi_clk -pg 1 -lvl 3 -x 1140 -y 430 -defaultsOSRD
 preplace port port-id_spi_miso -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
-preplace port port-id_spi_mosi -pg 1 -lvl 3 -x 1150 -y 450 -defaultsOSRD
-preplace port port-id_pl_clk_250M -pg 1 -lvl 3 -x 1150 -y 470 -defaultsOSRD
-preplace port port-id_pl_clk_100M -pg 1 -lvl 3 -x 1150 -y 640 -defaultsOSRD
-preplace port port-id_ext_reset_in -pg 1 -lvl 3 -x 1150 -y 320 -defaultsOSRD
-preplace portBus spi_csn -pg 1 -lvl 3 -x 1150 -y 540 -defaultsOSRD
+preplace port port-id_spi_mosi -pg 1 -lvl 3 -x 1140 -y 450 -defaultsOSRD
+preplace port port-id_pl_clk_250M -pg 1 -lvl 3 -x 1140 -y 470 -defaultsOSRD
+preplace port port-id_pl_clk_100M -pg 1 -lvl 3 -x 1140 -y 650 -defaultsOSRD
+preplace port port-id_ext_reset_in -pg 1 -lvl 3 -x 1140 -y 630 -defaultsOSRD
+preplace portBus spi_csn -pg 1 -lvl 3 -x 1140 -y 540 -defaultsOSRD
 preplace portBus pl_ps_irq0 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
-preplace portBus peripheral_aresetn_100M -pg 1 -lvl 3 -x 1150 -y 1030 -defaultsOSRD
-preplace portBus peripheral_aresetn_250M -pg 1 -lvl 3 -x 1150 -y 620 -defaultsOSRD
-preplace portBus peripheral_reset_250M -pg 1 -lvl 3 -x 1150 -y 1050 -defaultsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 380 -y 220 -defaultsOSRD
+preplace portBus peripheral_aresetn_100M -pg 1 -lvl 3 -x 1140 -y 1050 -defaultsOSRD
+preplace portBus peripheral_aresetn_250M -pg 1 -lvl 3 -x 1140 -y 610 -defaultsOSRD
+preplace portBus peripheral_reset_250M -pg 1 -lvl 3 -x 1140 -y 1070 -defaultsOSRD
 preplace inst VCC -pg 1 -lvl 1 -x 380 -y 460 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 2 -x 970 -y 540 -defaultsOSRD
+preplace inst xlconcat_spi_csn -pg 1 -lvl 2 -x 970 -y 540 -defaultsOSRD
 preplace inst axi_interconnect_ad9144 -pg 1 -lvl 2 -x 970 -y 240 -defaultsOSRD
-preplace inst axi_interconnect_ad9680 -pg 1 -lvl 2 -x 970 -y 830 -defaultsOSRD
-preplace inst proc_sys_reset_100M -pg 1 -lvl 1 -x 380 -y 640 -defaultsOSRD
-preplace inst proc_sys_reset_250M -pg 1 -lvl 1 -x 380 -y 1050 -defaultsOSRD
+preplace inst axi_interconnect_ad9680 -pg 1 -lvl 2 -x 970 -y 850 -defaultsOSRD
+preplace inst proc_sys_reset_100M -pg 1 -lvl 1 -x 380 -y 710 -defaultsOSRD
+preplace inst proc_sys_reset_250M -pg 1 -lvl 1 -x 380 -y 1070 -defaultsOSRD
+preplace inst zynq_ultra_ps_e -pg 1 -lvl 1 -x 380 -y 220 -defaultsOSRD
 preplace netloc VCC_dout 1 1 1 720 220n
-preplace netloc zynq_ultra_ps_e_0_emio_spi0_ss_o_n 1 1 1 780 240n
-preplace netloc zynq_ultra_ps_e_0_emio_spi0_ss1_o_n 1 1 1 760 260n
-preplace netloc zynq_ultra_ps_e_0_emio_spi0_ss2_o_n 1 1 1 750 280n
-preplace netloc xlconcat_0_dout 1 2 1 NJ 540
-preplace netloc zynq_ultra_ps_e_0_emio_spi0_sclk_o 1 1 2 730J 30 1130J
-preplace netloc spi_miso_1 1 0 2 NJ 20 720
-preplace netloc zynq_ultra_ps_e_0_emio_spi0_m_o 1 1 2 800J 450 NJ
-preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 0 3 20 10 810 460 1130J
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 40 520 740 630 1120J
 preplace netloc pl_ps_irq0_1 1 0 1 NJ 280
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 3 30 530 730 440 1120
-preplace netloc proc_sys_reset_100M_peripheral_aresetn 1 1 2 720 1030 NJ
-preplace netloc proc_sys_reset_250M_peripheral_aresetn 1 1 2 790 620 NJ
-preplace netloc proc_sys_reset_250M_peripheral_reset 1 1 2 NJ 1050 NJ
-preplace netloc s_axi_dma_ad9680_1 1 0 1 NJ 160
-preplace netloc s_axi_dma_ad9144_1 1 0 1 NJ 180
-preplace netloc zynq_ultra_ps_e_0_GPIO_0 1 1 2 740J 40 NJ
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 770 80n
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N 100
+preplace netloc proc_sys_reset_100M_peripheral_aresetn 1 1 2 800 1050 NJ
+preplace netloc proc_sys_reset_250M_peripheral_aresetn 1 1 2 820 620 1120J
+preplace netloc proc_sys_reset_250M_peripheral_reset 1 1 2 NJ 1070 NJ
+preplace netloc spi_miso_1 1 0 2 NJ 20 720
+preplace netloc xlconcat_0_dout 1 2 1 NJ 540
+preplace netloc zynq_ultra_ps_e_0_emio_spi0_m_o 1 1 2 740J 450 NJ
+preplace netloc zynq_ultra_ps_e_0_emio_spi0_sclk_o 1 1 2 760J 440 1120J
+preplace netloc zynq_ultra_ps_e_0_emio_spi0_ss1_o_n 1 1 1 790 260n
+preplace netloc zynq_ultra_ps_e_0_emio_spi0_ss2_o_n 1 1 1 780 280n
+preplace netloc zynq_ultra_ps_e_0_emio_spi0_ss_o_n 1 1 1 730 240n
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 20 530 750 650 NJ
+preplace netloc zynq_ultra_ps_e_0_pl_clk1 1 0 3 30 520 800 460 1120J
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 3 40 610 770 630 NJ
 preplace netloc axi_interconnect_ad9144_M00_AXI 1 2 1 NJ 200
 preplace netloc axi_interconnect_ad9144_M01_AXI 1 2 1 NJ 220
 preplace netloc axi_interconnect_ad9144_M02_AXI 1 2 1 NJ 240
 preplace netloc axi_interconnect_ad9144_M03_AXI 1 2 1 NJ 260
 preplace netloc axi_interconnect_ad9144_M04_AXI 1 2 1 NJ 280
-preplace netloc axi_interconnect_ad9680_M00_AXI 1 2 1 NJ 790
-preplace netloc axi_interconnect_ad9680_M01_AXI 1 2 1 NJ 810
-preplace netloc axi_interconnect_ad9680_M02_AXI 1 2 1 NJ 830
-preplace netloc axi_interconnect_ad9680_M03_AXI 1 2 1 NJ 850
-preplace netloc axi_interconnect_ad9680_M04_AXI 1 2 1 NJ 870
-levelinfo -pg 1 0 380 970 1150
-pagesize -pg 1 -db -bbox -sgen -180 -20 1400 1150
+preplace netloc axi_interconnect_ad9680_M00_AXI 1 2 1 NJ 810
+preplace netloc axi_interconnect_ad9680_M01_AXI 1 2 1 NJ 830
+preplace netloc axi_interconnect_ad9680_M02_AXI 1 2 1 NJ 850
+preplace netloc axi_interconnect_ad9680_M03_AXI 1 2 1 NJ 870
+preplace netloc axi_interconnect_ad9680_M04_AXI 1 2 1 NJ 890
+preplace netloc s_axi_dma_ad9144_1 1 0 1 NJ 180
+preplace netloc s_axi_dma_ad9680_1 1 0 1 NJ 160
+preplace netloc zynq_ultra_ps_e_0_GPIO_0 1 1 2 760J 40 NJ
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 810 80n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N 100
+levelinfo -pg 1 0 380 970 1140
+pagesize -pg 1 -db -bbox -sgen -180 0 1390 1170
 "
 }
 0

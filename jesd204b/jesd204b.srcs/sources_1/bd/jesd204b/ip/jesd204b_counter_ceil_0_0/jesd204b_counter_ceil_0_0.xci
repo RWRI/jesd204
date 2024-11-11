@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_counter_ceil_0_0",
-    "cell_name": "jesd204b/dac/counter_ceil_0",
+    "cell_name": "jesd204b/dac/counter_ceil",
     "component_reference": "xilinx.com:module_ref:counter_ceil:1.0",
     "ip_revision": "1",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_counter_ceil_0_0",

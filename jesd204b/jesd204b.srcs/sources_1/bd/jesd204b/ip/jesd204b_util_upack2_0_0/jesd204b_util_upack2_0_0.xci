@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "jesd204b_util_upack2_0_0",
-    "cell_name": "jesd204b/dac/axi_ad9144_upack/util_upack2_0",
+    "cell_name": "jesd204b/dac/axi_ad9144_upack/util_upack2",
     "component_reference": "analog.devices:user:util_upack2:1.0",
     "ip_revision": "2",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_util_upack2_0_0",

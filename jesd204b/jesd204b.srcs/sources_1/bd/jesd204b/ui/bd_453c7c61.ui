@@ -149,12 +149,12 @@ preplace port s_axi_ad9680_jesd -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
 preplace port s_axi_ad9680_tpl -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
 preplace port s_axi_ad9680_offload -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
 preplace port s_axi_ad9680_dma -pg 1 -lvl 0 -x 0 -y 700 -defaultsOSRD
-preplace port m_axi_ad9680_dma -pg 1 -lvl 6 -x 1760 -y 690 -defaultsOSRD
+preplace port m_axi_ad9680_dma -pg 1 -lvl 6 -x 1840 -y 690 -defaultsOSRD
 preplace port port-id_pl_clk_100M -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
 preplace port port-id_rx_out_clk_0 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
 preplace port port-id_peripheral_aresetn_100M -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
 preplace port port-id_rx_sysref -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
-preplace port port-id_phy_en_char_align -pg 1 -lvl 6 -x 1760 -y 610 -defaultsOSRD
+preplace port port-id_phy_en_char_align -pg 1 -lvl 6 -x 1840 -y 610 -defaultsOSRD
 preplace port port-id_ext_reset_in -pg 1 -lvl 0 -x 0 -y 910 -defaultsOSRD
 preplace portBus phy_block_sync -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
 preplace portBus phy_charisk -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
@@ -162,53 +162,53 @@ preplace portBus phy_data -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
 preplace portBus phy_disperr -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
 preplace portBus phy_header -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
 preplace portBus phy_notintable -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
-preplace portBus adc_irq -pg 1 -lvl 6 -x 1760 -y 280 -defaultsOSRD
-preplace portBus rx_sync -pg 1 -lvl 6 -x 1760 -y 790 -defaultsOSRD
+preplace portBus adc_irq -pg 1 -lvl 6 -x 1840 -y 280 -defaultsOSRD
+preplace portBus rx_sync -pg 1 -lvl 6 -x 1840 -y 790 -defaultsOSRD
+preplace inst axi_ad9680_rstgen -pg 1 -lvl 2 -x 610 -y 890 -swap {0 3 1 2 4 6 7 5 8 9} -defaultsOSRD
+preplace inst xlconcat_irq -pg 1 -lvl 5 -x 1650 -y 280 -swap {1 0 2} -defaultsOSRD
+preplace inst axi_ad9680_offload -pg 1 -lvl 4 -x 1350 -y 530 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 37 33 35 34 36 38} -defaultsOSRD
+preplace inst axi_ad9680_dma -pg 1 -lvl 5 -x 1650 -y 710 -defaultsOSRD
+preplace inst axi_ad9680_cpack -pg 1 -lvl 3 -x 980 -y 150 -swap {5 6 0 1 2 3 4 7 9 8} -defaultsOSRD
+preplace inst axi_ad9680_tpl -pg 1 -lvl 2 -x 610 -y 140 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 22 20 21 23 26 27 28 29 30 31 32} -defaultsOSRD
 preplace inst axi_ad9680_jesd -pg 1 -lvl 1 -x 200 -y 240 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 33 22 23 24 25 26 21 28 29 27 31 30 32 34 35 36} -defaultsOSRD
-preplace inst axi_ad9680_rstgen -pg 1 -lvl 2 -x 600 -y 890 -swap {0 3 1 2 4 6 7 5 8 9} -defaultsOSRD
-preplace inst xlconcat_irq -pg 1 -lvl 5 -x 1570 -y 280 -swap {1 0 2} -defaultsOSRD
-preplace inst axi_ad9680_offload -pg 1 -lvl 4 -x 1300 -y 530 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 37 33 35 34 36 38} -defaultsOSRD
-preplace inst axi_ad9680_dma -pg 1 -lvl 5 -x 1570 -y 710 -swap {20 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 0 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 70 69} -defaultsOSRD
-preplace inst axi_ad9680_cpack -pg 1 -lvl 3 -x 960 -y 150 -swap {5 6 0 1 2 3 4 7 9 8} -defaultsOSRD
-preplace inst axi_ad9680_tpl -pg 1 -lvl 2 -x 600 -y 140 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 24 25 22 20 21 23 26 27 28 29 30 31 32} -defaultsOSRD
-preplace netloc pl_clk_100M_1 1 0 5 30 420 410 420 NJ 420 1140 720 NJ
-preplace netloc device_clk_1 1 0 4 30 60 390 280 780 280 1160J
+preplace netloc axi_ad9680_cpack_fifo_wr_overflow 1 1 3 430 270 NJ 270 1160
+preplace netloc axi_ad9680_cpack_packed_fifo_wr_data 1 3 1 1200 150n
+preplace netloc axi_ad9680_cpack_packed_fifo_wr_en 1 3 1 1190 170n
+preplace netloc axi_ad9680_dma_irq 1 4 2 1510 350 1800
+preplace netloc axi_ad9680_dma_s_axis_xfer_req 1 3 3 1190 680 1490J 620 1790
+preplace netloc axi_ad9680_jesd_0_irq 1 1 4 NJ 290 NJ 290 NJ 290 N
+preplace netloc axi_ad9680_jesd_0_phy_en_char_align 1 1 5 360J 10 NJ 10 NJ 10 NJ 10 1820J
+preplace netloc axi_ad9680_jesd_0_rx_data_tdata 1 1 1 370 130n
+preplace netloc axi_ad9680_jesd_0_rx_data_tvalid 1 1 1 400 170n
+preplace netloc axi_ad9680_jesd_0_rx_sof 1 1 1 380 150n
+preplace netloc axi_ad9680_jesd_0_rx_sync 1 1 5 370J 370 NJ 370 NJ 370 NJ 370 1810J
+preplace netloc axi_ad9680_tpl_adc_data_0 1 2 1 N 150
+preplace netloc axi_ad9680_tpl_adc_data_1 1 2 1 N 170
+preplace netloc axi_ad9680_tpl_adc_enable_0 1 2 1 N 90
+preplace netloc axi_ad9680_tpl_adc_enable_1 1 2 1 N 110
+preplace netloc axi_ad9680_tpl_adc_valid_0 1 2 1 N 130
+preplace netloc device_clk_1 1 0 4 30 60 390 280 790 280 1180J
+preplace netloc ext_reset_in_1 1 0 2 NJ 910 NJ
+preplace netloc peripheral_aresetn_100M_1 1 0 5 20 410 420 410 NJ 410 1170 690 1490J
 preplace netloc phy_block_sync_1 1 0 1 NJ 190
 preplace netloc phy_charisk_1 1 0 1 NJ 210
 preplace netloc phy_data_1 1 0 1 NJ 230
 preplace netloc phy_disperr_1 1 0 1 NJ 250
 preplace netloc phy_header_1 1 0 1 NJ 270
 preplace netloc phy_notintable_1 1 0 1 NJ 290
-preplace netloc peripheral_aresetn_100M_1 1 0 5 20 410 420 410 NJ 410 1150 690 1420J
+preplace netloc pl_clk_100M_1 1 0 5 30 420 410 420 NJ 420 1160 720 NJ
+preplace netloc reset_1 1 2 1 780 210n
 preplace netloc rx_sysref_1 1 0 1 NJ 350
+preplace netloc s_axis_aresetn_1 1 2 2 790 610 NJ
 preplace netloc xlconcat_irq_dout 1 5 1 NJ 280
-preplace netloc axi_ad9680_jesd_0_irq 1 1 4 NJ 290 NJ 290 NJ 290 N
-preplace netloc axi_ad9680_dma_irq 1 4 2 1430 350 1720
-preplace netloc axi_ad9680_jesd_0_phy_en_char_align 1 1 5 360J 10 NJ 10 NJ 10 NJ 10 1740J
-preplace netloc axi_ad9680_jesd_0_rx_data_tdata 1 1 1 370 130n
-preplace netloc axi_ad9680_jesd_0_rx_data_tvalid 1 1 1 400 170n
-preplace netloc axi_ad9680_jesd_0_rx_sof 1 1 1 380 150n
-preplace netloc axi_ad9680_jesd_0_rx_sync 1 1 5 370J 370 NJ 370 NJ 370 NJ 370 1730J
-preplace netloc axi_ad9680_cpack_fifo_wr_overflow 1 1 3 430 270 NJ 270 1140
-preplace netloc axi_ad9680_tpl_adc_data_0 1 2 1 N 150
-preplace netloc axi_ad9680_tpl_adc_data_1 1 2 1 N 170
-preplace netloc axi_ad9680_tpl_adc_enable_0 1 2 1 N 90
-preplace netloc axi_ad9680_tpl_adc_enable_1 1 2 1 N 110
-preplace netloc axi_ad9680_tpl_adc_valid_0 1 2 1 N 130
-preplace netloc axi_ad9680_cpack_packed_fifo_wr_data 1 3 1 1180 150n
-preplace netloc axi_ad9680_cpack_packed_fifo_wr_en 1 3 1 1170 170n
-preplace netloc reset_1 1 2 1 770 210n
-preplace netloc ext_reset_in_1 1 0 2 NJ 910 NJ
-preplace netloc s_axis_aresetn_1 1 2 2 780 610 NJ
-preplace netloc axi_ad9680_dma_s_axis_xfer_req 1 3 3 1170 680 1420J 620 1710
-preplace netloc s_axi_ad9680_jesd_1 1 0 1 NJ 130
-preplace netloc s_axi_ad9680_tpl_1 1 0 2 NJ 70 NJ
-preplace netloc s_axi_ad9680_offload_1 1 0 4 NJ 430 NJ 430 NJ 430 NJ
-preplace netloc s_axi_ad9680_dma_1 1 0 5 NJ 700 NJ 700 NJ 700 NJ 700 NJ
 preplace netloc axi_ad9680_dma_m_dest_axi 1 5 1 NJ 690
-preplace netloc s_axis_1 1 4 1 1430 530n
-levelinfo -pg 1 0 200 600 960 1300 1570 1760
-pagesize -pg 1 -db -bbox -sgen -220 0 1940 990
+preplace netloc s_axi_ad9680_dma_1 1 0 5 NJ 700 NJ 700 NJ 700 NJ 700 1500J
+preplace netloc s_axi_ad9680_jesd_1 1 0 1 NJ 130
+preplace netloc s_axi_ad9680_offload_1 1 0 4 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc s_axi_ad9680_tpl_1 1 0 2 NJ 70 NJ
+preplace netloc s_axis_1 1 4 1 1510 530n
+levelinfo -pg 1 0 200 610 980 1350 1650 1840
+pagesize -pg 1 -db -bbox -sgen -220 0 2020 990
 "
 }
-
+0
