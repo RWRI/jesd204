@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.033871",
-   "Default View_TopLeft":"-17862,-5964",
+   "Default View_ScaleFactor":"0.383207",
+   "Default View_TopLeft":"-1430,-5960",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -21,33 +21,33 @@ preplace port port-id_up_ch_ready_2 -pg 1 -lvl 0 -x -20 -y -1000 -defaultsOSRD
 preplace port port-id_up_cm_ready_0 -pg 1 -lvl 0 -x -20 -y -1540 -defaultsOSRD
 preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x -20 -y 4520 -defaultsOSRD
 preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x -20 -y 4540 -defaultsOSRD
-preplace port port-id_up_cm_enb_0 -pg 1 -lvl 2 -x 410 -y -5880 -defaultsOSRD
-preplace port port-id_up_cm_wr_0 -pg 1 -lvl 2 -x 410 -y -5840 -defaultsOSRD
-preplace port port-id_up_ch_rst_0 -pg 1 -lvl 2 -x 410 -y -5700 -defaultsOSRD
-preplace port port-id_up_ch_user_ready_0 -pg 1 -lvl 2 -x 410 -y -5680 -defaultsOSRD
-preplace port port-id_up_ch_prbsforceerr_0 -pg 1 -lvl 2 -x 410 -y -5660 -defaultsOSRD
-preplace port port-id_up_ch_lpm_dfe_n_0 -pg 1 -lvl 2 -x 410 -y -5580 -defaultsOSRD
-preplace port port-id_up_ch_enb_0 -pg 1 -lvl 2 -x 410 -y -5440 -defaultsOSRD
-preplace port port-id_up_ch_wr_0 -pg 1 -lvl 2 -x 410 -y -5400 -defaultsOSRD
-preplace port port-id_up_ch_rst_1 -pg 1 -lvl 2 -x 410 -y -5260 -defaultsOSRD
-preplace port port-id_up_ch_user_ready_1 -pg 1 -lvl 2 -x 410 -y -5240 -defaultsOSRD
-preplace port port-id_up_ch_prbsforceerr_1 -pg 1 -lvl 2 -x 410 -y -5220 -defaultsOSRD
-preplace port port-id_up_ch_lpm_dfe_n_1 -pg 1 -lvl 2 -x 410 -y -5140 -defaultsOSRD
-preplace port port-id_up_ch_enb_1 -pg 1 -lvl 2 -x 410 -y -5000 -defaultsOSRD
-preplace port port-id_up_ch_wr_1 -pg 1 -lvl 2 -x 410 -y -4960 -defaultsOSRD
-preplace port port-id_up_ch_rst_2 -pg 1 -lvl 2 -x 410 -y -4820 -defaultsOSRD
-preplace port port-id_up_ch_user_ready_2 -pg 1 -lvl 2 -x 410 -y -4800 -defaultsOSRD
-preplace port port-id_up_ch_prbsforceerr_2 -pg 1 -lvl 2 -x 410 -y -4780 -defaultsOSRD
-preplace port port-id_up_ch_lpm_dfe_n_2 -pg 1 -lvl 2 -x 410 -y -4700 -defaultsOSRD
-preplace port port-id_up_ch_enb_2 -pg 1 -lvl 2 -x 410 -y -4560 -defaultsOSRD
-preplace port port-id_up_ch_wr_2 -pg 1 -lvl 2 -x 410 -y -4520 -defaultsOSRD
-preplace port port-id_up_ch_rst_3 -pg 1 -lvl 2 -x 410 -y -4380 -defaultsOSRD
-preplace port port-id_up_ch_user_ready_3 -pg 1 -lvl 2 -x 410 -y -4360 -defaultsOSRD
-preplace port port-id_up_ch_prbsforceerr_3 -pg 1 -lvl 2 -x 410 -y -4340 -defaultsOSRD
-preplace port port-id_up_ch_lpm_dfe_n_3 -pg 1 -lvl 2 -x 410 -y -4260 -defaultsOSRD
-preplace port port-id_up_ch_enb_3 -pg 1 -lvl 2 -x 410 -y -4120 -defaultsOSRD
-preplace port port-id_up_ch_wr_3 -pg 1 -lvl 2 -x 410 -y -4080 -defaultsOSRD
-preplace port port-id_up_pll_rst -pg 1 -lvl 2 -x 410 -y 8860 -defaultsOSRD
+preplace port port-id_up_cm_enb_0 -pg 1 -lvl 2 -x 420 -y -5880 -defaultsOSRD
+preplace port port-id_up_cm_wr_0 -pg 1 -lvl 2 -x 420 -y -5840 -defaultsOSRD
+preplace port port-id_up_ch_rst_0 -pg 1 -lvl 2 -x 420 -y -5700 -defaultsOSRD
+preplace port port-id_up_ch_user_ready_0 -pg 1 -lvl 2 -x 420 -y -5680 -defaultsOSRD
+preplace port port-id_up_ch_prbsforceerr_0 -pg 1 -lvl 2 -x 420 -y -5660 -defaultsOSRD
+preplace port port-id_up_ch_lpm_dfe_n_0 -pg 1 -lvl 2 -x 420 -y -5580 -defaultsOSRD
+preplace port port-id_up_ch_enb_0 -pg 1 -lvl 2 -x 420 -y -5440 -defaultsOSRD
+preplace port port-id_up_ch_wr_0 -pg 1 -lvl 2 -x 420 -y -5400 -defaultsOSRD
+preplace port port-id_up_ch_rst_1 -pg 1 -lvl 2 -x 420 -y -5260 -defaultsOSRD
+preplace port port-id_up_ch_user_ready_1 -pg 1 -lvl 2 -x 420 -y -5240 -defaultsOSRD
+preplace port port-id_up_ch_prbsforceerr_1 -pg 1 -lvl 2 -x 420 -y -5220 -defaultsOSRD
+preplace port port-id_up_ch_lpm_dfe_n_1 -pg 1 -lvl 2 -x 420 -y -5140 -defaultsOSRD
+preplace port port-id_up_ch_enb_1 -pg 1 -lvl 2 -x 420 -y -5000 -defaultsOSRD
+preplace port port-id_up_ch_wr_1 -pg 1 -lvl 2 -x 420 -y -4960 -defaultsOSRD
+preplace port port-id_up_ch_rst_2 -pg 1 -lvl 2 -x 420 -y -4820 -defaultsOSRD
+preplace port port-id_up_ch_user_ready_2 -pg 1 -lvl 2 -x 420 -y -4800 -defaultsOSRD
+preplace port port-id_up_ch_prbsforceerr_2 -pg 1 -lvl 2 -x 420 -y -4780 -defaultsOSRD
+preplace port port-id_up_ch_lpm_dfe_n_2 -pg 1 -lvl 2 -x 420 -y -4700 -defaultsOSRD
+preplace port port-id_up_ch_enb_2 -pg 1 -lvl 2 -x 420 -y -4560 -defaultsOSRD
+preplace port port-id_up_ch_wr_2 -pg 1 -lvl 2 -x 420 -y -4520 -defaultsOSRD
+preplace port port-id_up_ch_rst_3 -pg 1 -lvl 2 -x 420 -y -4380 -defaultsOSRD
+preplace port port-id_up_ch_user_ready_3 -pg 1 -lvl 2 -x 420 -y -4360 -defaultsOSRD
+preplace port port-id_up_ch_prbsforceerr_3 -pg 1 -lvl 2 -x 420 -y -4340 -defaultsOSRD
+preplace port port-id_up_ch_lpm_dfe_n_3 -pg 1 -lvl 2 -x 420 -y -4260 -defaultsOSRD
+preplace port port-id_up_ch_enb_3 -pg 1 -lvl 2 -x 420 -y -4120 -defaultsOSRD
+preplace port port-id_up_ch_wr_3 -pg 1 -lvl 2 -x 420 -y -4080 -defaultsOSRD
+preplace port port-id_up_pll_rst -pg 1 -lvl 2 -x 420 -y 8860 -defaultsOSRD
 preplace portBus up_ch_bufstatus_0 -pg 1 -lvl 0 -x -20 -y -1400 -defaultsOSRD
 preplace portBus up_ch_rdata_0 -pg 1 -lvl 0 -x -20 -y -1380 -defaultsOSRD
 preplace portBus up_ch_bufstatus_3 -pg 1 -lvl 0 -x -20 -y -860 -defaultsOSRD
@@ -57,45 +57,112 @@ preplace portBus up_ch_rdata_1 -pg 1 -lvl 0 -x -20 -y -1200 -defaultsOSRD
 preplace portBus up_ch_bufstatus_2 -pg 1 -lvl 0 -x -20 -y -1040 -defaultsOSRD
 preplace portBus up_ch_rdata_2 -pg 1 -lvl 0 -x -20 -y -1020 -defaultsOSRD
 preplace portBus up_cm_rdata_0 -pg 1 -lvl 0 -x -20 -y -1560 -defaultsOSRD
-preplace portBus up_cm_addr_0 -pg 1 -lvl 2 -x 410 -y -5860 -defaultsOSRD
-preplace portBus up_cm_wdata_0 -pg 1 -lvl 2 -x 410 -y -5820 -defaultsOSRD
-preplace portBus up_ch_prbssel_0 -pg 1 -lvl 2 -x 410 -y -5640 -defaultsOSRD
-preplace portBus up_ch_rate_0 -pg 1 -lvl 2 -x 410 -y -5560 -defaultsOSRD
-preplace portBus up_ch_sys_clk_sel_0 -pg 1 -lvl 2 -x 410 -y -5540 -defaultsOSRD
-preplace portBus up_ch_out_clk_sel_0 -pg 1 -lvl 2 -x 410 -y -5520 -defaultsOSRD
-preplace portBus up_ch_tx_diffctrl_0 -pg 1 -lvl 2 -x 410 -y -5500 -defaultsOSRD
-preplace portBus up_ch_tx_postcursor_0 -pg 1 -lvl 2 -x 410 -y -5480 -defaultsOSRD
-preplace portBus up_ch_tx_precursor_0 -pg 1 -lvl 2 -x 410 -y -5460 -defaultsOSRD
-preplace portBus up_ch_addr_0 -pg 1 -lvl 2 -x 410 -y -5420 -defaultsOSRD
-preplace portBus up_ch_wdata_0 -pg 1 -lvl 2 -x 410 -y -5380 -defaultsOSRD
-preplace portBus up_ch_prbssel_1 -pg 1 -lvl 2 -x 410 -y -5200 -defaultsOSRD
-preplace portBus up_ch_rate_1 -pg 1 -lvl 2 -x 410 -y -5120 -defaultsOSRD
-preplace portBus up_ch_sys_clk_sel_1 -pg 1 -lvl 2 -x 410 -y -5100 -defaultsOSRD
-preplace portBus up_ch_out_clk_sel_1 -pg 1 -lvl 2 -x 410 -y -5080 -defaultsOSRD
-preplace portBus up_ch_tx_diffctrl_1 -pg 1 -lvl 2 -x 410 -y -5060 -defaultsOSRD
-preplace portBus up_ch_tx_postcursor_1 -pg 1 -lvl 2 -x 410 -y -5040 -defaultsOSRD
-preplace portBus up_ch_tx_precursor_1 -pg 1 -lvl 2 -x 410 -y -5020 -defaultsOSRD
-preplace portBus up_ch_addr_1 -pg 1 -lvl 2 -x 410 -y -4980 -defaultsOSRD
-preplace portBus up_ch_wdata_1 -pg 1 -lvl 2 -x 410 -y -4940 -defaultsOSRD
-preplace portBus up_ch_prbssel_2 -pg 1 -lvl 2 -x 410 -y -4760 -defaultsOSRD
-preplace portBus up_ch_rate_2 -pg 1 -lvl 2 -x 410 -y -4680 -defaultsOSRD
-preplace portBus up_ch_sys_clk_sel_2 -pg 1 -lvl 2 -x 410 -y -4660 -defaultsOSRD
-preplace portBus up_ch_out_clk_sel_2 -pg 1 -lvl 2 -x 410 -y -4640 -defaultsOSRD
-preplace portBus up_ch_tx_diffctrl_2 -pg 1 -lvl 2 -x 410 -y -4620 -defaultsOSRD
-preplace portBus up_ch_tx_postcursor_2 -pg 1 -lvl 2 -x 410 -y -4600 -defaultsOSRD
-preplace portBus up_ch_tx_precursor_2 -pg 1 -lvl 2 -x 410 -y -4580 -defaultsOSRD
-preplace portBus up_ch_addr_2 -pg 1 -lvl 2 -x 410 -y -4540 -defaultsOSRD
-preplace portBus up_ch_wdata_2 -pg 1 -lvl 2 -x 410 -y -4500 -defaultsOSRD
-preplace portBus up_ch_prbssel_3 -pg 1 -lvl 2 -x 410 -y -4320 -defaultsOSRD
-preplace portBus up_ch_rate_3 -pg 1 -lvl 2 -x 410 -y -4240 -defaultsOSRD
-preplace portBus up_ch_sys_clk_sel_3 -pg 1 -lvl 2 -x 410 -y -4220 -defaultsOSRD
-preplace portBus up_ch_out_clk_sel_3 -pg 1 -lvl 2 -x 410 -y -4200 -defaultsOSRD
-preplace portBus up_ch_tx_diffctrl_3 -pg 1 -lvl 2 -x 410 -y -4180 -defaultsOSRD
-preplace portBus up_ch_tx_postcursor_3 -pg 1 -lvl 2 -x 410 -y -4160 -defaultsOSRD
-preplace portBus up_ch_tx_precursor_3 -pg 1 -lvl 2 -x 410 -y -4140 -defaultsOSRD
-preplace portBus up_ch_addr_3 -pg 1 -lvl 2 -x 410 -y -4100 -defaultsOSRD
-preplace portBus up_ch_wdata_3 -pg 1 -lvl 2 -x 410 -y -4060 -defaultsOSRD
+preplace portBus up_cm_addr_0 -pg 1 -lvl 2 -x 420 -y -5860 -defaultsOSRD
+preplace portBus up_cm_wdata_0 -pg 1 -lvl 2 -x 420 -y -5820 -defaultsOSRD
+preplace portBus up_ch_prbssel_0 -pg 1 -lvl 2 -x 420 -y -5640 -defaultsOSRD
+preplace portBus up_ch_rate_0 -pg 1 -lvl 2 -x 420 -y -5560 -defaultsOSRD
+preplace portBus up_ch_sys_clk_sel_0 -pg 1 -lvl 2 -x 420 -y -5540 -defaultsOSRD
+preplace portBus up_ch_out_clk_sel_0 -pg 1 -lvl 2 -x 420 -y -5520 -defaultsOSRD
+preplace portBus up_ch_tx_diffctrl_0 -pg 1 -lvl 2 -x 420 -y -5500 -defaultsOSRD
+preplace portBus up_ch_tx_postcursor_0 -pg 1 -lvl 2 -x 420 -y -5480 -defaultsOSRD
+preplace portBus up_ch_tx_precursor_0 -pg 1 -lvl 2 -x 420 -y -5460 -defaultsOSRD
+preplace portBus up_ch_addr_0 -pg 1 -lvl 2 -x 420 -y -5420 -defaultsOSRD
+preplace portBus up_ch_wdata_0 -pg 1 -lvl 2 -x 420 -y -5380 -defaultsOSRD
+preplace portBus up_ch_prbssel_1 -pg 1 -lvl 2 -x 420 -y -5200 -defaultsOSRD
+preplace portBus up_ch_rate_1 -pg 1 -lvl 2 -x 420 -y -5120 -defaultsOSRD
+preplace portBus up_ch_sys_clk_sel_1 -pg 1 -lvl 2 -x 420 -y -5100 -defaultsOSRD
+preplace portBus up_ch_out_clk_sel_1 -pg 1 -lvl 2 -x 420 -y -5080 -defaultsOSRD
+preplace portBus up_ch_tx_diffctrl_1 -pg 1 -lvl 2 -x 420 -y -5060 -defaultsOSRD
+preplace portBus up_ch_tx_postcursor_1 -pg 1 -lvl 2 -x 420 -y -5040 -defaultsOSRD
+preplace portBus up_ch_tx_precursor_1 -pg 1 -lvl 2 -x 420 -y -5020 -defaultsOSRD
+preplace portBus up_ch_addr_1 -pg 1 -lvl 2 -x 420 -y -4980 -defaultsOSRD
+preplace portBus up_ch_wdata_1 -pg 1 -lvl 2 -x 420 -y -4940 -defaultsOSRD
+preplace portBus up_ch_prbssel_2 -pg 1 -lvl 2 -x 420 -y -4760 -defaultsOSRD
+preplace portBus up_ch_rate_2 -pg 1 -lvl 2 -x 420 -y -4680 -defaultsOSRD
+preplace portBus up_ch_sys_clk_sel_2 -pg 1 -lvl 2 -x 420 -y -4660 -defaultsOSRD
+preplace portBus up_ch_out_clk_sel_2 -pg 1 -lvl 2 -x 420 -y -4640 -defaultsOSRD
+preplace portBus up_ch_tx_diffctrl_2 -pg 1 -lvl 2 -x 420 -y -4620 -defaultsOSRD
+preplace portBus up_ch_tx_postcursor_2 -pg 1 -lvl 2 -x 420 -y -4600 -defaultsOSRD
+preplace portBus up_ch_tx_precursor_2 -pg 1 -lvl 2 -x 420 -y -4580 -defaultsOSRD
+preplace portBus up_ch_addr_2 -pg 1 -lvl 2 -x 420 -y -4540 -defaultsOSRD
+preplace portBus up_ch_wdata_2 -pg 1 -lvl 2 -x 420 -y -4500 -defaultsOSRD
+preplace portBus up_ch_prbssel_3 -pg 1 -lvl 2 -x 420 -y -4320 -defaultsOSRD
+preplace portBus up_ch_rate_3 -pg 1 -lvl 2 -x 420 -y -4240 -defaultsOSRD
+preplace portBus up_ch_sys_clk_sel_3 -pg 1 -lvl 2 -x 420 -y -4220 -defaultsOSRD
+preplace portBus up_ch_out_clk_sel_3 -pg 1 -lvl 2 -x 420 -y -4200 -defaultsOSRD
+preplace portBus up_ch_tx_diffctrl_3 -pg 1 -lvl 2 -x 420 -y -4180 -defaultsOSRD
+preplace portBus up_ch_tx_postcursor_3 -pg 1 -lvl 2 -x 420 -y -4160 -defaultsOSRD
+preplace portBus up_ch_tx_precursor_3 -pg 1 -lvl 2 -x 420 -y -4140 -defaultsOSRD
+preplace portBus up_ch_addr_3 -pg 1 -lvl 2 -x 420 -y -4100 -defaultsOSRD
+preplace portBus up_ch_wdata_3 -pg 1 -lvl 2 -x 420 -y -4060 -defaultsOSRD
 preplace inst axi_ad9144_adxcvr -pg 1 -lvl 1 -x 200 -y 1480 -defaultsOSRD
+preplace netloc axi_ad9144_adxcvr_up_ch_addr_0 1 1 1 N -5420
+preplace netloc axi_ad9144_adxcvr_up_ch_addr_1 1 1 1 N -4980
+preplace netloc axi_ad9144_adxcvr_up_ch_addr_2 1 1 1 N -4540
+preplace netloc axi_ad9144_adxcvr_up_ch_addr_3 1 1 1 N -4100
+preplace netloc axi_ad9144_adxcvr_up_ch_enb_0 1 1 1 N -5440
+preplace netloc axi_ad9144_adxcvr_up_ch_enb_1 1 1 1 N -5000
+preplace netloc axi_ad9144_adxcvr_up_ch_enb_2 1 1 1 N -4560
+preplace netloc axi_ad9144_adxcvr_up_ch_enb_3 1 1 1 N -4120
+preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_0 1 1 1 N -5580
+preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_1 1 1 1 N -5140
+preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_2 1 1 1 N -4700
+preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_3 1 1 1 N -4260
+preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_0 1 1 1 N -5520
+preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_1 1 1 1 N -5080
+preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_2 1 1 1 N -4640
+preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_3 1 1 1 N -4200
+preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_0 1 1 1 N -5660
+preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_1 1 1 1 N -5220
+preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_2 1 1 1 N -4780
+preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_3 1 1 1 N -4340
+preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_0 1 1 1 N -5640
+preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_1 1 1 1 N -5200
+preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_2 1 1 1 N -4760
+preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_3 1 1 1 N -4320
+preplace netloc axi_ad9144_adxcvr_up_ch_rate_0 1 1 1 N -5560
+preplace netloc axi_ad9144_adxcvr_up_ch_rate_1 1 1 1 N -5120
+preplace netloc axi_ad9144_adxcvr_up_ch_rate_2 1 1 1 N -4680
+preplace netloc axi_ad9144_adxcvr_up_ch_rate_3 1 1 1 N -4240
+preplace netloc axi_ad9144_adxcvr_up_ch_rst_0 1 1 1 N -5700
+preplace netloc axi_ad9144_adxcvr_up_ch_rst_1 1 1 1 N -5260
+preplace netloc axi_ad9144_adxcvr_up_ch_rst_2 1 1 1 N -4820
+preplace netloc axi_ad9144_adxcvr_up_ch_rst_3 1 1 1 N -4380
+preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_0 1 1 1 N -5540
+preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_1 1 1 1 N -5100
+preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_2 1 1 1 N -4660
+preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_3 1 1 1 N -4220
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_0 1 1 1 N -5500
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_1 1 1 1 N -5060
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_2 1 1 1 N -4620
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_3 1 1 1 N -4180
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_0 1 1 1 N -5480
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_1 1 1 1 N -5040
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_2 1 1 1 N -4600
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_3 1 1 1 N -4160
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_0 1 1 1 N -5460
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_1 1 1 1 N -5020
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_2 1 1 1 N -4580
+preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_3 1 1 1 N -4140
+preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_0 1 1 1 N -5680
+preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_1 1 1 1 N -5240
+preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_2 1 1 1 N -4800
+preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_3 1 1 1 N -4360
+preplace netloc axi_ad9144_adxcvr_up_ch_wdata_0 1 1 1 N -5380
+preplace netloc axi_ad9144_adxcvr_up_ch_wdata_1 1 1 1 N -4940
+preplace netloc axi_ad9144_adxcvr_up_ch_wdata_2 1 1 1 N -4500
+preplace netloc axi_ad9144_adxcvr_up_ch_wdata_3 1 1 1 N -4060
+preplace netloc axi_ad9144_adxcvr_up_ch_wr_0 1 1 1 N -5400
+preplace netloc axi_ad9144_adxcvr_up_ch_wr_1 1 1 1 N -4960
+preplace netloc axi_ad9144_adxcvr_up_ch_wr_2 1 1 1 N -4520
+preplace netloc axi_ad9144_adxcvr_up_ch_wr_3 1 1 1 N -4080
+preplace netloc axi_ad9144_adxcvr_up_cm_addr_0 1 1 1 N -5860
+preplace netloc axi_ad9144_adxcvr_up_cm_enb_0 1 1 1 N -5880
+preplace netloc axi_ad9144_adxcvr_up_cm_wdata_0 1 1 1 N -5820
+preplace netloc axi_ad9144_adxcvr_up_cm_wr_0 1 1 1 N -5840
+preplace netloc axi_ad9144_adxcvr_up_pll_rst 1 1 1 N 8860
+preplace netloc s_axi_aclk_1 1 0 1 N 4520
+preplace netloc s_axi_aresetn_1 1 0 1 N 4540
 preplace netloc up_ch_bufstatus_0_1 1 0 1 N -1400
 preplace netloc up_ch_bufstatus_1_1 1 0 1 N -1220
 preplace netloc up_ch_bufstatus_2_1 1 0 1 N -1040
@@ -118,76 +185,9 @@ preplace netloc up_ch_rst_done_2_1 1 0 1 N -1100
 preplace netloc up_ch_rst_done_3_1 1 0 1 N -920
 preplace netloc up_cm_rdata_0_1 1 0 1 N -1560
 preplace netloc up_cm_ready_0_1 1 0 1 N -1540
-preplace netloc s_axi_aclk_1 1 0 1 N 4520
-preplace netloc s_axi_aresetn_1 1 0 1 N 4540
-preplace netloc axi_ad9144_adxcvr_up_cm_enb_0 1 1 1 N -5880
-preplace netloc axi_ad9144_adxcvr_up_cm_addr_0 1 1 1 N -5860
-preplace netloc axi_ad9144_adxcvr_up_cm_wr_0 1 1 1 N -5840
-preplace netloc axi_ad9144_adxcvr_up_cm_wdata_0 1 1 1 N -5820
-preplace netloc axi_ad9144_adxcvr_up_ch_rst_0 1 1 1 N -5700
-preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_0 1 1 1 N -5680
-preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_0 1 1 1 N -5660
-preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_0 1 1 1 N -5640
-preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_0 1 1 1 N -5580
-preplace netloc axi_ad9144_adxcvr_up_ch_rate_0 1 1 1 N -5560
-preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_0 1 1 1 N -5540
-preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_0 1 1 1 N -5520
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_0 1 1 1 N -5500
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_0 1 1 1 N -5480
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_0 1 1 1 N -5460
-preplace netloc axi_ad9144_adxcvr_up_ch_enb_0 1 1 1 N -5440
-preplace netloc axi_ad9144_adxcvr_up_ch_addr_0 1 1 1 N -5420
-preplace netloc axi_ad9144_adxcvr_up_ch_wr_0 1 1 1 N -5400
-preplace netloc axi_ad9144_adxcvr_up_ch_wdata_0 1 1 1 N -5380
-preplace netloc axi_ad9144_adxcvr_up_ch_rst_1 1 1 1 N -5260
-preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_1 1 1 1 N -5240
-preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_1 1 1 1 N -5220
-preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_1 1 1 1 N -5200
-preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_1 1 1 1 N -5140
-preplace netloc axi_ad9144_adxcvr_up_ch_rate_1 1 1 1 N -5120
-preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_1 1 1 1 N -5100
-preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_1 1 1 1 N -5080
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_1 1 1 1 N -5060
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_1 1 1 1 N -5040
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_1 1 1 1 N -5020
-preplace netloc axi_ad9144_adxcvr_up_ch_enb_1 1 1 1 N -5000
-preplace netloc axi_ad9144_adxcvr_up_ch_addr_1 1 1 1 N -4980
-preplace netloc axi_ad9144_adxcvr_up_ch_wr_1 1 1 1 N -4960
-preplace netloc axi_ad9144_adxcvr_up_ch_wdata_1 1 1 1 N -4940
-preplace netloc axi_ad9144_adxcvr_up_ch_rst_2 1 1 1 N -4820
-preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_2 1 1 1 N -4800
-preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_2 1 1 1 N -4780
-preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_2 1 1 1 N -4760
-preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_2 1 1 1 N -4700
-preplace netloc axi_ad9144_adxcvr_up_ch_rate_2 1 1 1 N -4680
-preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_2 1 1 1 N -4660
-preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_2 1 1 1 N -4640
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_2 1 1 1 N -4620
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_2 1 1 1 N -4600
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_2 1 1 1 N -4580
-preplace netloc axi_ad9144_adxcvr_up_ch_enb_2 1 1 1 N -4560
-preplace netloc axi_ad9144_adxcvr_up_ch_addr_2 1 1 1 N -4540
-preplace netloc axi_ad9144_adxcvr_up_ch_wr_2 1 1 1 N -4520
-preplace netloc axi_ad9144_adxcvr_up_ch_wdata_2 1 1 1 N -4500
-preplace netloc axi_ad9144_adxcvr_up_ch_rst_3 1 1 1 N -4380
-preplace netloc axi_ad9144_adxcvr_up_ch_user_ready_3 1 1 1 N -4360
-preplace netloc axi_ad9144_adxcvr_up_ch_prbsforceerr_3 1 1 1 N -4340
-preplace netloc axi_ad9144_adxcvr_up_ch_prbssel_3 1 1 1 N -4320
-preplace netloc axi_ad9144_adxcvr_up_ch_lpm_dfe_n_3 1 1 1 N -4260
-preplace netloc axi_ad9144_adxcvr_up_ch_rate_3 1 1 1 N -4240
-preplace netloc axi_ad9144_adxcvr_up_ch_sys_clk_sel_3 1 1 1 N -4220
-preplace netloc axi_ad9144_adxcvr_up_ch_out_clk_sel_3 1 1 1 N -4200
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_diffctrl_3 1 1 1 N -4180
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_postcursor_3 1 1 1 N -4160
-preplace netloc axi_ad9144_adxcvr_up_ch_tx_precursor_3 1 1 1 N -4140
-preplace netloc axi_ad9144_adxcvr_up_ch_enb_3 1 1 1 N -4120
-preplace netloc axi_ad9144_adxcvr_up_ch_addr_3 1 1 1 N -4100
-preplace netloc axi_ad9144_adxcvr_up_ch_wr_3 1 1 1 N -4080
-preplace netloc axi_ad9144_adxcvr_up_ch_wdata_3 1 1 1 N -4060
-preplace netloc axi_ad9144_adxcvr_up_pll_rst 1 1 1 N 8860
 preplace netloc s_axi_1 1 0 1 N -1580
-levelinfo -pg 1 -20 200 410
-pagesize -pg 1 -db -bbox -sgen -220 -5960 640 14880
+levelinfo -pg 1 -20 200 420
+pagesize -pg 1 -db -bbox -sgen -220 -5960 650 14880
 "
 }
 0
