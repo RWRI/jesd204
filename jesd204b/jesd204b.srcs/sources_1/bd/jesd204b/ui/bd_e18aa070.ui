@@ -4,7 +4,7 @@
    "Default View_TopLeft":"-592,-180",
    "ExpandedHierarchyInLayout":"",
    "No Loops_ExpandedHierarchyInLayout":"",
-   "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   "No Loops_Layout":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
 #  -string -flagsOSRD
 preplace port s_axi_ad9144_xcvr -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
 preplace port s_axi_ad9680_xcvr -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
