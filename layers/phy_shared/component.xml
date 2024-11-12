@@ -546,7 +546,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>494f3f45</spirit:value>
+            <spirit:value>954dea69</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -574,7 +574,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>91ef1f35</spirit:value>
+            <spirit:value>a2fe2239</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1860,7 +1860,7 @@
       <spirit:file>
         <spirit:name>phy_shared.gen/sources_1/bd/phy_shared/hdl/phy_shared_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_3135cd1e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_1be1e970</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2087,14 +2087,14 @@
       <xilinx:displayName>phy_shared_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:vendorDisplayName>Analog Devices</xilinx:vendorDisplayName>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-11-11T17:42:52Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-11-12T18:17:47Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="018309a7"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5969fc2b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2ce1b360"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b8de0cd0"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="5318496b"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="59df318c"/>
     </xilinx:packagingInfo>

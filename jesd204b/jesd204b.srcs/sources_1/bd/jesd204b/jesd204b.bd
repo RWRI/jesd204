@@ -4804,7 +4804,12 @@
             "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
             "xci_name": "jesd204b_proc_sys_reset_0_0",
             "xci_path": "ip\\jesd204b_proc_sys_reset_0_0\\jesd204b_proc_sys_reset_0_0.xci",
-            "inst_hier_path": "PS/proc_sys_reset_100M"
+            "inst_hier_path": "PS/proc_sys_reset_100M",
+            "parameters": {
+              "C_EXT_RST_WIDTH": {
+                "value": "4"
+              }
+            }
           },
           "proc_sys_reset_250M": {
             "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
@@ -6640,8 +6645,8 @@
           },
           "phy_shared": {
             "vlnv": "analog.devices:user:phy_shared:1.0",
-            "xci_name": "jesd204b_phy_shared_0_0",
-            "xci_path": "ip\\jesd204b_phy_shared_0_0\\jesd204b_phy_shared_0_0.xci",
+            "xci_name": "jesd204b_phy_shared_0_1",
+            "xci_path": "ip\\jesd204b_phy_shared_0_1\\jesd204b_phy_shared_0_1.xci",
             "inst_hier_path": "jesd204b/phy_shared",
             "interface_ports": {
               "s_axi_ad9144_xcvr": {
@@ -6658,18 +6663,6 @@
           }
         },
         "interface_nets": {
-          "Conn1": {
-            "interface_ports": [
-              "s_axi_ad9144_xcvr",
-              "phy_shared/s_axi_ad9144_xcvr"
-            ]
-          },
-          "Conn2": {
-            "interface_ports": [
-              "s_axi_ad9680_xcvr",
-              "phy_shared/s_axi_ad9680_xcvr"
-            ]
-          },
           "Conn3": {
             "interface_ports": [
               "m_axi_ad9680_dma",
@@ -6729,6 +6722,18 @@
               "m_axi_dma_ad9144",
               "dac/m_axi_dma_ad9144"
             ]
+          },
+          "s_axi_ad9144_xcvr_1": {
+            "interface_ports": [
+              "s_axi_ad9144_xcvr",
+              "phy_shared/s_axi_ad9144_xcvr"
+            ]
+          },
+          "s_axi_ad9680_xcvr_1": {
+            "interface_ports": [
+              "s_axi_ad9680_xcvr",
+              "phy_shared/s_axi_ad9680_xcvr"
+            ]
           }
         },
         "nets": {
@@ -6780,6 +6785,12 @@
               "adc/ext_reset_in"
             ]
           },
+          "phy_notintable_1": {
+            "ports": [
+              "phy_shared/phy_rx_notintable",
+              "adc/phy_notintable"
+            ]
+          },
           "phy_shared_0_phy_rx_block_sync": {
             "ports": [
               "phy_shared/phy_rx_block_sync",
@@ -6808,18 +6819,6 @@
             "ports": [
               "phy_shared/phy_rx_header",
               "adc/phy_header"
-            ]
-          },
-          "phy_shared_0_phy_rx_notintable": {
-            "ports": [
-              "phy_shared/phy_rx_notintable",
-              "adc/phy_notintable"
-            ]
-          },
-          "phy_shared_0_rx_out_clk_0": {
-            "ports": [
-              "phy_shared/rx_out_clk_0",
-              "adc/rx_out_clk_0"
             ]
           },
           "phy_shared_0_tx_0_n": {
@@ -6928,6 +6927,12 @@
             "ports": [
               "rx_3_p",
               "phy_shared/rx_3_p"
+            ]
+          },
+          "rx_out_clk_0_1": {
+            "ports": [
+              "phy_shared/rx_out_clk_0",
+              "adc/rx_out_clk_0"
             ]
           },
           "rx_ref_clk_1": {

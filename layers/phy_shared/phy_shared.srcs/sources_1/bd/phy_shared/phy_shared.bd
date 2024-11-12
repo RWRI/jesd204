@@ -3770,8 +3770,7 @@
               "util_daq2_xcvr/rx_calign_0",
               "util_daq2_xcvr/rx_calign_1",
               "util_daq2_xcvr/rx_calign_2",
-              "util_daq2_xcvr/rx_calign_3",
-              "util_daq2_xcvr/rx_calign_4"
+              "util_daq2_xcvr/rx_calign_3"
             ]
           },
           "rx_0_n_1": {
@@ -7205,11 +7204,25 @@
         "address_spaces": {
           "s_axi_ad9680_xcvr": {
             "range": "64K",
-            "width": "16"
+            "width": "16",
+            "segments": {
+              "SEG_axi_ad9680_adxcvr_reg0": {
+                "address_block": "/axi_ad9680_adxcvr_hier/axi_ad9680_adxcvr/s_axi/reg0",
+                "offset": "0x0000",
+                "range": "64K"
+              }
+            }
           },
           "s_axi_ad9144_xcvr": {
             "range": "64K",
-            "width": "16"
+            "width": "16",
+            "segments": {
+              "SEG_axi_ad9144_adxcvr_reg0": {
+                "address_block": "/axi_ad9144_adxcvr_hier/axi_ad9144_adxcvr/s_axi/reg0",
+                "offset": "0x0000",
+                "range": "64K"
+              }
+            }
           }
         }
       }

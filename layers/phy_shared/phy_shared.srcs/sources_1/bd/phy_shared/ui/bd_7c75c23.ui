@@ -339,7 +339,7 @@ levelinfo -pg 1 0 180 510 780 900
 pagesize -pg 1 -db -bbox -sgen -200 0 1100 5580
 ",
    "No Loops_ScaleFactor":"1.02188",
-   "No Loops_TopLeft":"-553,0",
+   "No Loops_TopLeft":"-71,2080",
    "commentid":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD

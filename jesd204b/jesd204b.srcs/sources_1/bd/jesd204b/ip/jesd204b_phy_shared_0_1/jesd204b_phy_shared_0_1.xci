@@ -1,14 +1,14 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "jesd204b_phy_shared_0_0",
+    "xci_name": "jesd204b_phy_shared_0_1",
     "cell_name": "phy_shared",
     "component_reference": "analog.devices:user:phy_shared:1.0",
-    "ip_revision": "3",
-    "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_phy_shared_0_0",
+    "ip_revision": "4",
+    "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_phy_shared_0_1",
     "parameters": {
       "component_parameters": {
-        "Component_Name": [ { "value": "jesd204b_phy_shared_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "jesd204b_phy_shared_0_1", "resolve_type": "user", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynquplus" } ],
@@ -27,9 +27,9 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "4" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_phy_shared_0_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_phy_shared_0_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2022.2" } ],
