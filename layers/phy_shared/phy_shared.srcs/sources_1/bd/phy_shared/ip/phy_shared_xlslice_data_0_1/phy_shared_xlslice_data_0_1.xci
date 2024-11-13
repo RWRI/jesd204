@@ -9,15 +9,15 @@
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "phy_shared_xlslice_data_0_1", "resolve_type": "user", "usage": "all" } ],
-        "DIN_TO": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "DIN_FROM": [ { "value": "31", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DIN_TO": [ { "value": "64", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "DIN_FROM": [ { "value": "95", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "DIN_WIDTH": [ { "value": "128", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "DOUT_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "DIN_WIDTH": [ { "value": "128", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "DIN_FROM": [ { "value": "31", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "DIN_TO": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "DIN_FROM": [ { "value": "95", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "DIN_TO": [ { "value": "64", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynquplus" } ],

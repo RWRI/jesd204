@@ -84,7 +84,7 @@ levelinfo -pg 1 0 170 510 700
 pagesize -pg 1 -db -bbox -sgen -130 0 830 760
 ",
    "No Loops_ScaleFactor":"1.05919",
-   "No Loops_TopLeft":"-330,177",
+   "No Loops_TopLeft":"-330,311",
    "commentid":""
 }
 {
