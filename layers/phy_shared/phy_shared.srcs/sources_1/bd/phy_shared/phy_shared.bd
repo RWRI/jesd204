@@ -3748,6 +3748,9 @@
             "xci_path": "ip\\phy_shared_util_adxcvr_0_0\\phy_shared_util_adxcvr_0_0.xci",
             "inst_hier_path": "util_daq2_xcvr_hier/util_daq2_xcvr",
             "parameters": {
+              "QPLL_FBDIV": {
+                "value": "\"0000010100\""
+              },
               "RX_LANE_RATE": {
                 "value": "10"
               },

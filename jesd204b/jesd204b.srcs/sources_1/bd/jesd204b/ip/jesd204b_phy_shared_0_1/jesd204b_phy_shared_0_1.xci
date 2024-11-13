@@ -4,7 +4,7 @@
     "xci_name": "jesd204b_phy_shared_0_1",
     "cell_name": "phy_shared",
     "component_reference": "analog.devices:user:phy_shared:1.0",
-    "ip_revision": "4",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_phy_shared_0_1",
     "parameters": {
       "component_parameters": {
@@ -27,7 +27,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../jesd204b.gen/sources_1/bd/jesd204b/ip/jesd204b_phy_shared_0_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

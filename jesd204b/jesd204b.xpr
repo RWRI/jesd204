@@ -68,13 +68,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="17"/>
-    <Option Name="WTModelSimExportSim" Val="16"/>
-    <Option Name="WTQuestaExportSim" Val="16"/>
+    <Option Name="WTXSimExportSim" Val="18"/>
+    <Option Name="WTModelSimExportSim" Val="17"/>
+    <Option Name="WTQuestaExportSim" Val="17"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="16"/>
-    <Option Name="WTRivieraExportSim" Val="16"/>
-    <Option Name="WTActivehdlExportSim" Val="16"/>
+    <Option Name="WTVcsExportSim" Val="17"/>
+    <Option Name="WTRivieraExportSim" Val="17"/>
+    <Option Name="WTActivehdlExportSim" Val="17"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -105,17 +105,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_zynq_ultra_ps_e_0_0/jesd204b_zynq_ultra_ps_e_0_0.xci">
-          <Proxy FileSetName="jesd204b_zynq_ultra_ps_e_0_0"/>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_util_cpack2_0_0/jesd204b_util_cpack2_0_0.xci">
+          <Proxy FileSetName="jesd204b_util_cpack2_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_util_do_ram_0_0/jesd204b_util_do_ram_0_0.xci">
-          <Proxy FileSetName="jesd204b_util_do_ram_0_0"/>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_xbar_1/jesd204b_xbar_1.xci">
+          <Proxy FileSetName="jesd204b_xbar_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_data_offload_0_0/jesd204b_data_offload_0_0.xci">
-          <Proxy FileSetName="jesd204b_data_offload_0_0"/>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_ad9144_tpl_0_0/jesd204b_axi_ad9144_tpl_0_0.xci">
+          <Proxy FileSetName="jesd204b_axi_ad9144_tpl_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_proc_sys_reset_0_1/jesd204b_proc_sys_reset_0_1.xci">
-          <Proxy FileSetName="jesd204b_proc_sys_reset_0_1"/>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_dmac_0_1/jesd204b_axi_dmac_0_1.xci">
+          <Proxy FileSetName="jesd204b_axi_dmac_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_ad9680_tpl_0_0/jesd204b_axi_ad9680_tpl_0_0.xci">
           <Proxy FileSetName="jesd204b_axi_ad9680_tpl_0_0"/>
@@ -123,17 +123,8 @@
         <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_util_upack2_0_0/jesd204b_util_upack2_0_0.xci">
           <Proxy FileSetName="jesd204b_util_upack2_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_util_cpack2_0_0/jesd204b_util_cpack2_0_0.xci">
-          <Proxy FileSetName="jesd204b_util_cpack2_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_dmac_0_1/jesd204b_axi_dmac_0_1.xci">
-          <Proxy FileSetName="jesd204b_axi_dmac_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_ad9680_jesd_0_0/jesd204b_axi_ad9680_jesd_0_0.xci">
-          <Proxy FileSetName="jesd204b_axi_ad9680_jesd_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_xbar_1/jesd204b_xbar_1.xci">
-          <Proxy FileSetName="jesd204b_xbar_1"/>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_gpio_0_0/jesd204b_axi_gpio_0_0.xci">
+          <Proxy FileSetName="jesd204b_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_xbar_0/jesd204b_xbar_0.xci">
           <Proxy FileSetName="jesd204b_xbar_0"/>
@@ -141,20 +132,29 @@
         <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_phy_shared_0_1/jesd204b_phy_shared_0_1.xci">
           <Proxy FileSetName="jesd204b_phy_shared_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_gpio_0_0/jesd204b_axi_gpio_0_0.xci">
-          <Proxy FileSetName="jesd204b_axi_gpio_0_0"/>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_util_do_ram_0_0/jesd204b_util_do_ram_0_0.xci">
+          <Proxy FileSetName="jesd204b_util_do_ram_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_dma_0_0/jesd204b_axi_dma_0_0.xci">
-          <Proxy FileSetName="jesd204b_axi_dma_0_0"/>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_ad9680_jesd_0_0/jesd204b_axi_ad9680_jesd_0_0.xci">
+          <Proxy FileSetName="jesd204b_axi_ad9680_jesd_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_counter_ceil_0_0/jesd204b_counter_ceil_0_0.xci">
           <Proxy FileSetName="jesd204b_counter_ceil_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_zynq_ultra_ps_e_0_0/jesd204b_zynq_ultra_ps_e_0_0.xci">
+          <Proxy FileSetName="jesd204b_zynq_ultra_ps_e_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_data_offload_0_0/jesd204b_data_offload_0_0.xci">
+          <Proxy FileSetName="jesd204b_data_offload_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_proc_sys_reset_0_1/jesd204b_proc_sys_reset_0_1.xci">
+          <Proxy FileSetName="jesd204b_proc_sys_reset_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_dma_0_0/jesd204b_axi_dma_0_0.xci">
+          <Proxy FileSetName="jesd204b_axi_dma_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_ad9144_jesd_0_0/jesd204b_axi_ad9144_jesd_0_0.xci">
           <Proxy FileSetName="jesd204b_axi_ad9144_jesd_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="jesd204b.bd" FileRelPathName="ip/jesd204b_axi_ad9144_tpl_0_0/jesd204b_axi_ad9144_tpl_0_0.xci">
-          <Proxy FileSetName="jesd204b_axi_ad9144_tpl_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/daq2_spi.v">
