@@ -2650,10 +2650,10 @@
                 "value": "APB"
               },
               "PSU__LPD_SLCR__CSUPMU__ACT_FREQMHZ": {
-                "value": "100.000000"
+                "value": "100"
               },
               "PSU__LPD_SLCR__CSUPMU__FREQMHZ": {
-                "value": "100.000000"
+                "value": "100"
               },
               "PSU__MAXIGP0__DATA_WIDTH": {
                 "value": "128"
@@ -7291,53 +7291,53 @@
             "segments": {
               "SEG_axi_ad9144_dma_Reg": {
                 "address_block": "/jesd204b/dac/axi_ad9144_dma/S_AXI_LITE/Reg",
-                "offset": "0x00B0020000",
-                "range": "64K"
+                "offset": "0x00B0004000",
+                "range": "8K"
               },
               "SEG_axi_ad9144_jesd_reg0": {
                 "address_block": "/jesd204b/dac/axi_ad9144_jesd/s_axi/reg0",
-                "offset": "0x00B0000000",
+                "offset": "0x00B0008000",
                 "range": "16K"
               },
               "SEG_axi_ad9144_tpl_reg0": {
                 "address_block": "/jesd204b/dac/axi_ad9144_tpl/s_axi/reg0",
-                "offset": "0x00B0004000",
+                "offset": "0x00B0002000",
                 "range": "8K"
               },
               "SEG_axi_ad9680_jesd_reg0": {
                 "address_block": "/jesd204b/adc/axi_ad9680_jesd/s_axi/reg0",
-                "offset": "0x00A0014000",
+                "offset": "0x00A0008000",
                 "range": "16K"
               },
               "SEG_axi_ad9680_tpl_reg0": {
                 "address_block": "/jesd204b/adc/axi_ad9680_tpl/s_axi/reg0",
-                "offset": "0x00A0012000",
+                "offset": "0x00A0002000",
                 "range": "8K"
               },
               "SEG_axi_dmac_reg0": {
                 "address_block": "/jesd204b/adc/axi_ad9680_dma/axi_dmac/s_axi/reg0",
-                "offset": "0x00A0010000",
+                "offset": "0x00A0004000",
                 "range": "4K"
               },
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/jesd204b/dac/axi_gpio_counter/S_AXI/Reg",
-                "offset": "0x00B0030000",
-                "range": "64K"
+                "offset": "0x00B0006000",
+                "range": "8K"
               },
               "SEG_i_data_offload_reg0": {
                 "address_block": "/jesd204b/adc/axi_ad9680_offload/i_data_offload/s_axi/reg0",
-                "offset": "0x00A0020000",
-                "range": "64K"
+                "offset": "0x00A0006000",
+                "range": "8K"
               },
               "SEG_phy_shared_0_reg0": {
                 "address_block": "/jesd204b/phy_shared/s_axi_ad9680_xcvr/reg0",
                 "offset": "0x00A0000000",
-                "range": "64K"
+                "range": "8K"
               },
               "SEG_phy_shared_0_reg0_1": {
                 "address_block": "/jesd204b/phy_shared/s_axi_ad9144_xcvr/reg0",
-                "offset": "0x00B0010000",
-                "range": "64K"
+                "offset": "0x00B0000000",
+                "range": "8K"
               }
             }
           }
