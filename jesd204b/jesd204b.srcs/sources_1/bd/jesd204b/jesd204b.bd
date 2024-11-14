@@ -7355,8 +7355,8 @@
               },
               "SEG_zynq_ultra_ps_e_0_HP0_DDR_LOW": {
                 "address_block": "/PS/zynq_ultra_ps_e/SAXIGP2/HP0_DDR_LOW",
-                "offset": "0x40000000",
-                "range": "1G"
+                "offset": "0x00000000",
+                "range": "2G"
               },
               "SEG_zynq_ultra_ps_e_0_HP0_LPS_OCM": {
                 "address_block": "/PS/zynq_ultra_ps_e/SAXIGP2/HP0_LPS_OCM",
@@ -7379,8 +7379,8 @@
               },
               "SEG_zynq_ultra_ps_e_0_HP1_DDR_LOW": {
                 "address_block": "/PS/zynq_ultra_ps_e/SAXIGP3/HP1_DDR_LOW",
-                "offset": "0x40000000",
-                "range": "1G"
+                "offset": "0x00000000",
+                "range": "2G"
               },
               "SEG_zynq_ultra_ps_e_0_HP1_LPS_OCM": {
                 "address_block": "/PS/zynq_ultra_ps_e/SAXIGP3/HP1_LPS_OCM",
