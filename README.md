@@ -3,7 +3,7 @@
     <h1>Implementação Hardware JESD204B</h1>
 </div>
 
-Este repositório faz parte do trabalho final de graduação do curso de Engenharia de Computação da Universidade Federal de Itajubá. Além disso, visa-se organizar os arquivos referentes a descrição do hardware que implementa o protocolo JESD204. Tal desenvolvimento foi realizado almejando a comunicação e controle de chips de conversão AD da Analog Device.
+Este repositório faz parte do trabalho final de graduação "Implementação do protocolo JESD204B em plataforma de desenvolvimento Zynq UltraScale+ MPSoc para controle de ADC e DAC de alta velocidade" do curso de Engenharia de Computação da Universidade Federal de Itajubá. Além disso, visa-se organizar os arquivos referentes a descrição do hardware que implementa o protocolo JESD204. Tal desenvolvimento foi realizado almejando a comunicação e controle de chips de conversão AD da Analog Device.
 
 Sendo assim, são detalhados abaixo as pastas aqui presentes:
 
