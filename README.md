@@ -1,9 +1,9 @@
 <div align="center">
-    <img src="https://pssolucoes.app.br:5055/images/somenteLogo-PS.png" alt="Logo PS Soluções" width="150">
+   <img src="https://cdn.worldvectorlogo.com/logos/unifei-1.svg" alt="Logo UNIFEI" width="150">
     <h1>Implementação Hardware JESD204B</h1>
 </div>
 
-Este repositório visa organizar os arquivos referentes a descrição do hardware que implementa o protocolo JESD204. Tal desenvolvimento foi realizado almejando a comunicação e controle de chips de conversão AD da Analog Device.
+Este repositório faz parte do trabalho final de graduação do curso de Engenharia de Computação da Universidade Federal de Itajubá. Além disso, visa-se organizar os arquivos referentes a descrição do hardware que implementa o protocolo JESD204. Tal desenvolvimento foi realizado almejando a comunicação e controle de chips de conversão AD da Analog Device.
 
 Sendo assim, são detalhados abaixo as pastas aqui presentes:
 
